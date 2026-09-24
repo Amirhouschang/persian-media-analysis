@@ -71,14 +71,14 @@ Ein eigenes Prüfskript kontrolliert die Daten auf sieben Punkte und speichert j
 | Zeitraum je Kanal vollständig | ✅ 01.01.–31.08. bei allen Kanälen |
 | Doppelte Beiträge | ✅ 0 |
 | Beiträge ohne Text | 11–27 % je Kanal (Bilder/Videos ohne Beschreibung) |
-| Tage ohne Beiträge | ⚠️ Quelle A: 16 Tage, davon 14 am Stück (09.–22.01.) · Quelle F: 6 Tage (09.–14.01.) |
+| Tage ohne Beiträge | ⚠️ Quelle A: 16 Tage – 14 am Stück (09.–22.01.) sowie 16.–17.03. · Quelle F: 6 Tage (09.–14.01.) |
 | Beiträge pro Woche | Tabelle zur Erkennung von Einbrüchen |
 
 ### Umgang mit Lücken
-Für Quelle A wurde der Zeitraum mit einem separaten Skript **gezielt erneut abgefragt**.
+Für Quelle A wurde der Januar-Zeitraum mit einem separaten Skript **gezielt erneut abgefragt**.
 Ergebnis: Die Beiträge fehlen auch direkt beim Anbieter – die Sammlung war vollständig, die Lücke liegt in der Quelle selbst.
 
-Die Lücken bei A und F fallen in denselben Zeitraum Anfang Januar, in dem der Internetzugang im Land
+Die Januar-Lücken bei A und F fallen in denselben Zeitraum Anfang Januar, in dem der Internetzugang im Land
 stark eingeschränkt war. Sie werden in der Analyse berücksichtigt
 (Vergleiche pro Tag statt absoluter Summen, Januar gesondert betrachtet).
 
