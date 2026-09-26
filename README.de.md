@@ -66,7 +66,7 @@ Ereignisse?
 - Vier Phasen des Zeitraums (vor dem Krieg, Krieg, Waffenruhe, nach dem Zusammenbruch der Waffenruhe) als eigene Tabelle
 - *Geplant:* Normalisierung persischer Schrift (arabische vs. persische Zeichen, Halbleerzeichen) mit `hazm`, Entfernen von Links und Emojis
 
-<img src="docs/images/database_schema.png" alt="Datenbankschema" width="650">
+<img src="images/database_schema.png" alt="Datenbankschema" width="650">
 
 ### 3. KI-Einordnung *(Hauptlauf)*
 - Einordnung nach **Thema** (9 Kategorien) und **Ton** (6 Kategorien) mit **lokal betriebenen Sprachmodellen** (`Ollama`) – keine Cloud
