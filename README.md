@@ -48,7 +48,7 @@ tone and reach** – and how do these patterns change around key events?
 | Step | Content | Status | Details |
 |---|---|---|---|
 | 1. Data collection | Telegram API, quality checks | ✅ done | [01 – Data collection](docs/en/01_data_collection.md) |
-| 2. Processing | Cleaning Persian text, PostgreSQL | ⬜ planned | 02 – Processing |
+| 2. Processing | PostgreSQL database, cleaning Persian text | ⏳ database done | [02 – Processing](docs/en/02_processing.md) |
 | 3. AI classification | Codebook, model comparison, main run, validation | ⏳ main run | [03 – AI classification](docs/en/03_ai_classification.md) |
 | 4. Analysis | Time series, event analysis, framing, reach | ⬜ planned | 04 – Analysis |
 | 5. Dashboard | local interactive dashboard | ⬜ planned | 05 – Dashboard |
@@ -59,10 +59,12 @@ tone and reach** – and how do these patterns change around key events?
 - Pauses on rate limits, separate files for channels added later
 - Automated quality checks (completeness, duplicates, gaps) with targeted re-checks of unusual periods
 
-### 2. Processing *(planned)*
-- Normalising Persian script (Arabic vs. Persian characters, zero-width non-joiners) with `hazm`
-- Removing links, emojis and duplicates; assigning time phases
-- Relational database in **PostgreSQL**, queries and checks in **DBeaver**
+### 2. Processing *(database done)*
+- Relational database in **PostgreSQL** (snowflake schema): posts, channels, source groups, dates, phases – queries in **DBeaver**
+- Four phases of the period (before the war, war, ceasefire, after the ceasefire collapsed) as a separate table
+- *Planned:* normalising Persian script (Arabic vs. Persian characters, zero-width non-joiners) with `hazm`, removing links and emojis
+
+<img src="docs/images/database_schema.png" alt="Database schema" width="650">
 
 ### 3. AI classification *(main run)*
 - Classification by **topic** (9 categories) and **tone** (6 categories) with **locally run language models** (`Ollama`) – no cloud
@@ -110,6 +112,7 @@ telegram-iran/
 │   └── de/              ← detailed pages in German
 ├── scripts/
 │   ├── telegram/        ← login, collection, re-collection, checks
+│   ├── database/        ← PostgreSQL: schema, loading, example queries
 │   └── ai/              ← AI classification: config, codebook, background, model comparison, main run
 ├── results/ai/          ← published AI results (no post texts)
 └── data/                ← raw data (not in the repository)
