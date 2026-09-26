@@ -21,7 +21,7 @@ für die Analyse auf.
 Die Beiträge stehen in der Mitte, beschreibende Tabellen sind über Schlüssel verbunden
 (Snowflake-Schema: `channels` → `source_groups`, `dates` → `phases`).
 
-![Datenbankschema](images/database_schema.png)
+![Datenbankschema](../images/database_schema.png)
 
 | Tabelle | Schlüssel | Inhalt | Zeilen |
 |---|---|---|---|
