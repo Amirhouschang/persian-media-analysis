@@ -50,7 +50,7 @@ Ereignisse?
 | Schritt | Inhalt | Status | Details |
 |---|---|---|---|
 | 1. Datenerhebung | Telegram-API, Qualitätsprüfung | ✅ abgeschlossen | [01 – Datenerhebung](docs/de/01_datenerhebung.md) |
-| 2. Aufbereitung | PostgreSQL-Datenbank, Bereinigung persischer Texte | ⏳ Datenbank fertig | [02 – Aufbereitung](docs/de/02_aufbereitung.md) |
+| 2. Aufbereitung | PostgreSQL-Datenbank, Bereinigung persischer Texte | ✅ Datenbank fertig | [02 – Aufbereitung](docs/de/02_aufbereitung.md) |
 | 3. KI-Einordnung | Codebuch, Modellvergleich, Hauptlauf, Validierung | ⏳ Hauptlauf | [03 – KI-Einordnung](docs/de/03_ki_einordnung.md) |
 | 4. Analyse | Zeitreihen, Ereignisanalyse, Framing, Reichweite | ⬜ geplant | 04 – Analyse |
 | 5. Dashboard | lokales interaktives Dashboard | ⬜ geplant | 05 – Dashboard |
@@ -66,7 +66,7 @@ Ereignisse?
 - Vier Phasen des Zeitraums (vor dem Krieg, Krieg, Waffenruhe, nach dem Zusammenbruch der Waffenruhe) als eigene Tabelle
 - *Geplant:* Normalisierung persischer Schrift (arabische vs. persische Zeichen, Halbleerzeichen) mit `hazm`, Entfernen von Links und Emojis
 
-<img src="images/database_schema.png" alt="Datenbankschema" width="650">
+![Datenbankschema](docs/images/database_schema.png)
 
 ### 3. KI-Einordnung *(Hauptlauf)*
 - Einordnung nach **Thema** (9 Kategorien) und **Ton** (6 Kategorien) mit **lokal betriebenen Sprachmodellen** (`Ollama`) – keine Cloud
