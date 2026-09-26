@@ -64,7 +64,7 @@ tone and reach** – and how do these patterns change around key events?
 - Four phases of the period (before the war, war, ceasefire, after the ceasefire collapsed) as a separate table
 - *Planned:* normalising Persian script (Arabic vs. Persian characters, zero-width non-joiners) with `hazm`, removing links and emojis
 
-<img src="docs/images/database_schema.png" alt="Database schema" width="650">
+<img src="images/database_schema.png" alt="Database schema" width="650">
 
 ### 3. AI classification *(main run)*
 - Classification by **topic** (9 categories) and **tone** (6 categories) with **locally run language models** (`Ollama`) – no cloud
