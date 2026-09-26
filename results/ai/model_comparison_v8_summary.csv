@@ -1,0 +1,7 @@
+model,context,topic_match_%,tone_match_%,both_match_%,topic_match_incl_2_%,both_match_incl_2_%,kappa_topic,kappa_tone,invalid_or_error,sec_per_post_median,codebook,n_posts
+gemma4:31b,True,86.7,93.3,80.7,93.3,86.7,0.85,0.79,0,16.8,v8,150
+gemma4:26b,True,84.7,89.3,78.0,94.0,84.0,0.82,0.64,0,4.4,v8,150
+qwen3.6:27b,True,87.3,81.3,75.3,92.7,76.7,0.85,0.39,0,15.0,v8,150
+qwen3.6:35b,True,81.3,86.0,70.7,87.3,76.0,0.79,0.56,0,4.6,v8,150
+qwen2.5:32b,True,72.7,88.7,65.3,78.7,68.7,0.69,0.61,0,16.6,v8,150
+aya-expanse:32b,True,70.7,80.7,58.7,78.0,64.0,0.66,0.43,1,17.5,v8,150
