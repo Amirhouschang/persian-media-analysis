@@ -20,7 +20,7 @@ This step moves the raw data into a relational **PostgreSQL** database and prepa
 Posts are at the centre; descriptive tables are linked via keys
 (snowflake schema: `channels` → `source_groups`, `dates` → `phases`).
 
-![Database schema](images/database_schema.png)
+![Database schema](../../images/database_schema.png)
 
 | Table | Key | Content | Rows |
 |---|---|---|---|
