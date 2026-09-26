@@ -62,6 +62,10 @@ CREATE TABLE posts (
     forwards        BIGINT,
     forwarded_from  TEXT,                       -- origin, if the post itself was forwarded
     post_url        TEXT NOT NULL,              -- e.g. https://t.me/Tasnimnews/424439
+    -- filled by 04_clean_text.py (run it again after every reload):
+    text_clean      TEXT,                       -- normalised text without links, signatures, emojis
+    tokens          TEXT,                       -- content words separated by spaces (stop words removed)
+    word_count      INTEGER,                    -- number of words in text_clean
     PRIMARY KEY (channel_id, post_id)
 );
 

@@ -48,7 +48,7 @@ tone and reach** – and how do these patterns change around key events?
 | Step | Content | Status | Details |
 |---|---|---|---|
 | 1. Data collection | Telegram API, quality checks | ✅ done | [01 – Data collection](docs/en/01_data_collection.md) |
-| 2. Processing | PostgreSQL database, cleaning Persian text | ✅  database done | [02 – Processing](docs/en/02_processing.md) |
+| 2. Processing | PostgreSQL database, cleaning Persian text | ✅ done | [02 – Processing](docs/en/02_processing.md) |
 | 3. AI classification | Codebook, model comparison, main run, validation | ⏳ main run | [03 – AI classification](docs/en/03_ai_classification.md) |
 | 4. Analysis | Time series, event analysis, framing, reach | ⬜ planned | 04 – Analysis |
 | 5. Dashboard | local interactive dashboard | ⬜ planned | 05 – Dashboard |
@@ -59,10 +59,10 @@ tone and reach** – and how do these patterns change around key events?
 - Pauses on rate limits, separate files for channels added later
 - Automated quality checks (completeness, duplicates, gaps) with targeted re-checks of unusual periods
 
-### 2. Processing *(database done)*
+### 2. Processing
 - Relational database in **PostgreSQL** (snowflake schema): posts, channels, source groups, dates, phases – queries in **DBeaver**
 - Four phases of the period (before the war, war, ceasefire, after the ceasefire collapsed) as a separate table
-- *Planned:* normalising Persian script (Arabic vs. Persian characters, zero-width non-joiners) with `hazm`, removing links and emojis
+- Cleaning of all 328,330 texts: normalising Persian script (Arabic vs. Persian characters, digits, half-spaces), removing links, emojis and channel advertising, removing stop words – with checks in SQL
 
 ![Database schema](images/database_schema.png)
 
@@ -93,7 +93,7 @@ tone and reach** – and how do these patterns change around key events?
 |---|---|
 | Language & environment | Python 3.11, conda, Linux |
 | Data collection | Telethon |
-| Text processing | hazm |
+| Text processing | own normaliser (regex), stop words from hazm |
 | Database & SQL | PostgreSQL, DBeaver |
 | Analysis | pandas |
 | Local AI | Ollama (Gemma 4, Qwen, Aya Expanse) |
@@ -112,7 +112,7 @@ telegram-iran/
 │   └── de/              ← detailed pages in German
 ├── scripts/
 │   ├── telegram/        ← login, collection, re-collection, checks
-│   ├── database/        ← PostgreSQL: schema, loading, example queries
+│   ├── database/        ← PostgreSQL: schema, loading, example queries, text cleaning, checks
 │   └── ai/              ← AI classification: config, codebook, background, model comparison, main run
 ├── results/ai/          ← published AI results (no post texts)
 └── data/                ← raw data (not in the repository)

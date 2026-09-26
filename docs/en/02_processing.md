@@ -9,7 +9,7 @@ This step moves the raw data into a relational **PostgreSQL** database and prepa
 | Part | Status |
 |---|---|
 | Database `iran_media_2026` | ✅ done |
-| Text cleaning with `hazm` | ⬜ planned |
+| Text cleaning | ✅ done |
 
 ---
 
@@ -24,7 +24,7 @@ Posts are at the centre; descriptive tables are linked via keys
 
 | Table | Key | Content | Rows |
 |---|---|---|---|
-| `posts` | `channel_id` + `post_id` | all posts: time, text, views, forwards, link | 328,330 |
+| `posts` | `channel_id` + `post_id` | all posts: time, text, cleaned text, views, forwards, link | 328,330 |
 | `channels` | `channel_id` | channel, name, group, link, neutral description | 6 |
 | `source_groups` | `group_id` | state, IRGC-affiliated, reformist | 3 |
 | `dates` | `date_key` (YYYYMMDD) | every day: month, calendar week, weekday, phase | 243 |
@@ -58,11 +58,61 @@ missing days, posts per phase and day, and the week before and after 28 February
 
 ---
 
-## 2. Text cleaning *(planned)*
+## 2. Text cleaning
 
-- Normalising Persian script (Arabic vs. Persian characters, zero-width non-joiners) with `hazm`
-- Removing links, emojis and channel signatures
-- Tokenising and removing stop words as the basis for the word analysis
+`04_clean_text.py` cleans every post and writes three new columns to `posts`. The original column `text` is never changed.
+
+| Column | Content |
+|---|---|
+| `text_clean` | cleaned text |
+| `tokens` | content words without stop words – basis for the word analysis |
+| `word_count` | number of words in `text_clean` |
+
+### Rules
+
+| Step | Example |
+|---|---|
+| Remove channel advertising (short lines such as "follow us on …") | `ایرنا را در بله و روبیکا دنبال کنید` → removed |
+| Remove links, `@mentions`, emojis and symbols | `🔹`, `📡 @Mehrnews`, `mehrnews.com` → removed |
+| Hashtags become words | `#اینفو_ایرنا` → `اینفو ایرنا` |
+| Arabic letter variants → Persian | `ي ى` → `ی`, `ك` → `ک`, `ة` → `ه` |
+| Arabic and Latin digits → Persian | `2026` → `۲۰۲۶` |
+| Remove diacritics and the stretching character | `شَهید` → `شهید`, `ســـلام` → `سلام` |
+| Half-space instead of a space after the prefix می / نمی | `می گوید` → `می‌گوید` |
+| Remove stop words (only in `tokens`) | `از`, `به`, `که`, `این` … |
+
+The Persian letters پ چ ژ گ and the half-space (zero-width non-joiner) are kept.
+
+**Why not `hazm`?** The library `hazm` forces an old `numpy` version that breaks `pandas` in this environment.
+The rules are therefore implemented directly in the script; only hazm's stop word list is used (`stopwords_fa.txt`, MIT licence).
+
+### Result
+
+| Channel | Posts | without text | Ø words per post |
+|---|---|---|---|
+| IRNA | 59,546 | 16.4% | 86 |
+| IRIB News | 47,698 | 10.8% | 45 |
+| Mehr News | 65,728 | 21.2% | 48 |
+| Tasnim News | 58,160 | 17.0% | 63 |
+| Fars News | 49,925 | 26.6% | 46 |
+| Jamaran | 47,273 | 18.5% | 78 |
+
+"Without text" = images or videos without a caption, or posts that consisted only of advertising or links.
+
+### Checks
+
+`05_check_cleaning.sql` checks the result:
+
+| Check | Result |
+|---|---|
+| Arabic letter variants left | ✅ 0 |
+| Links or `@mentions` left | 1 – checked, correct |
+| Posts with Persian text that are empty after cleaning | 22 – checked: only advertising lines |
+| 20 posts with the most removed words | ✅ checked: only advertising, links, `@mentions` removed |
+| Random sample of 20 posts, read in full | ✅ correct |
+
+The first run split words beginning with می (`میدان` → `می‌دان`). The rule was restricted to
+`می` followed by a space, and the cleaning was run again.
 
 ---
 
@@ -75,3 +125,6 @@ PostgreSQL 18 · Python (`pandas`, `SQLAlchemy`, `psycopg`) · DBeaver
 | `scripts/database/01_schema.sql` | table structure |
 | `scripts/database/02_load_database.py` | load raw data |
 | `scripts/database/03_example_queries.sql` | example queries |
+| `scripts/database/04_clean_text.py` | text cleaning |
+| `scripts/database/stopwords_fa.txt` | Persian stop words (from `hazm`, MIT licence) |
+| `scripts/database/05_check_cleaning.sql` | checks of the cleaning |

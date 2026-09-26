@@ -10,7 +10,7 @@ für die Analyse auf.
 | Teil | Status |
 |---|---|
 | Datenbank `iran_media_2026` | ✅ abgeschlossen |
-| Textbereinigung mit `hazm` | ⬜ geplant |
+| Textbereinigung | ✅ abgeschlossen |
 
 ---
 
@@ -25,7 +25,7 @@ Die Beiträge stehen in der Mitte, beschreibende Tabellen sind über Schlüssel 
 
 | Tabelle | Schlüssel | Inhalt | Zeilen |
 |---|---|---|---|
-| `posts` | `channel_id` + `post_id` | alle Beiträge: Zeitpunkt, Text, Aufrufe, Weiterleitungen, Link | 328.330 |
+| `posts` | `channel_id` + `post_id` | alle Beiträge: Zeitpunkt, Text, bereinigter Text, Aufrufe, Weiterleitungen, Link | 328.330 |
 | `channels` | `channel_id` | Kanal, Name, Gruppe, Link, neutrale Beschreibung | 6 |
 | `source_groups` | `group_id` | staatlich, IRGC-nah, reformorientiert | 3 |
 | `dates` | `date_key` (JJJJMMTT) | jeder Tag: Monat, Kalenderwoche, Wochentag, Phase | 243 |
@@ -59,11 +59,62 @@ Aufrufe pro Kanal, fehlende Tage, Beiträge pro Phase und Tag sowie die Woche vo
 
 ---
 
-## 2. Textbereinigung *(geplant)*
+## 2. Textbereinigung
 
-- Vereinheitlichung persischer Schrift (arabische vs. persische Zeichen, Halbleerzeichen) mit `hazm`
-- Entfernen von Links, Emojis, Kanal-Signaturen
-- Zerlegung in Wörter und Entfernen von Füllwörtern als Grundlage für die Wortanalyse
+`04_clean_text.py` bereinigt jeden Beitrag und schreibt drei neue Spalten in `posts`. Die Originalspalte `text` bleibt unverändert.
+
+| Spalte | Inhalt |
+|---|---|
+| `text_clean` | bereinigter Text |
+| `tokens` | Inhaltswörter ohne Füllwörter – Grundlage der Wortanalyse |
+| `word_count` | Anzahl Wörter in `text_clean` |
+
+### Regeln
+
+| Schritt | Beispiel |
+|---|---|
+| Kanalwerbung entfernen (kurze Zeilen wie „folgt uns auf …“) | `ایرنا را در بله و روبیکا دنبال کنید` → entfernt |
+| Links, `@Erwähnungen`, Emojis und Symbole entfernen | `🔹`, `📡 @Mehrnews`, `mehrnews.com` → entfernt |
+| Hashtags werden zu Wörtern | `#اینفو_ایرنا` → `اینفو ایرنا` |
+| Arabische Buchstabenvarianten → persisch | `ي ى` → `ی`, `ك` → `ک`, `ة` → `ه` |
+| Arabische und lateinische Ziffern → persisch | `2026` → `۲۰۲۶` |
+| Vokalzeichen und Dehnungszeichen entfernen | `شَهید` → `شهید`, `ســـلام` → `سلام` |
+| Halbleerzeichen statt Leerzeichen nach der Vorsilbe می / نمی | `می گوید` → `می‌گوید` |
+| Füllwörter entfernen (nur in `tokens`) | `از`, `به`, `که`, `این` … |
+
+Die persischen Buchstaben پ چ ژ گ und das Halbleerzeichen bleiben erhalten.
+
+**Warum nicht `hazm`?** Die Bibliothek `hazm` erzwingt eine alte `numpy`-Version, mit der `pandas` in dieser Umgebung
+nicht mehr läuft. Die Regeln sind deshalb direkt im Skript umgesetzt; nur die Füllwortliste stammt aus `hazm`
+(`stopwords_fa.txt`, MIT-Lizenz).
+
+### Ergebnis
+
+| Kanal | Beiträge | ohne Text | Ø Wörter pro Beitrag |
+|---|---|---|---|
+| IRNA | 59.546 | 16,4 % | 86 |
+| IRIB News | 47.698 | 10,8 % | 45 |
+| Mehr News | 65.728 | 21,2 % | 48 |
+| Tasnim News | 58.160 | 17,0 % | 63 |
+| Fars News | 49.925 | 26,6 % | 46 |
+| Jamaran | 47.273 | 18,5 % | 78 |
+
+„Ohne Text“ = Bilder oder Videos ohne Beschreibung oder Beiträge, die nur aus Werbung oder Links bestanden.
+
+### Prüfung
+
+`05_check_cleaning.sql` prüft das Ergebnis:
+
+| Prüfung | Ergebnis |
+|---|---|
+| Arabische Buchstabenvarianten übrig | ✅ 0 |
+| Links oder `@Erwähnungen` übrig | 1 – geprüft, korrekt |
+| Beiträge mit persischem Text, die nach der Bereinigung leer sind | 22 – geprüft: nur Werbezeilen |
+| 20 Beiträge mit den meisten entfernten Wörtern | ✅ geprüft: nur Werbung, Links, `@Erwähnungen` entfernt |
+| Zufallsstichprobe von 20 Beiträgen, vollständig gelesen | ✅ korrekt |
+
+Der erste Lauf trennte Wörter, die mit می beginnen (`میدان` → `می‌دان`). Die Regel wurde auf `می` mit
+folgendem Leerzeichen beschränkt und die Bereinigung erneut ausgeführt.
 
 ---
 
@@ -76,3 +127,6 @@ PostgreSQL 18 · Python (`pandas`, `SQLAlchemy`, `psycopg`) · DBeaver
 | `scripts/database/01_schema.sql` | Tabellenstruktur |
 | `scripts/database/02_load_database.py` | Rohdaten laden |
 | `scripts/database/03_example_queries.sql` | Beispielabfragen |
+| `scripts/database/04_clean_text.py` | Textbereinigung |
+| `scripts/database/stopwords_fa.txt` | persische Füllwörter (aus `hazm`, MIT-Lizenz) |
+| `scripts/database/05_check_cleaning.sql` | Prüfung der Bereinigung |
