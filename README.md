@@ -50,7 +50,7 @@ tone and reach** – and how do these patterns change around key events?
 | 1. Data collection | Telegram API, quality checks | ✅ done | [01 – Data collection](docs/en/01_data_collection.md) |
 | 2. Processing | PostgreSQL database, cleaning Persian text | ✅ done | [02 – Processing](docs/en/02_processing.md) |
 | 3. AI classification | Codebook, model comparison, main run, validation | ⏳ main run | [03 – AI classification](docs/en/03_ai_classification.md) |
-| 4. Analysis | Time series, event analysis, framing, reach | ⬜ planned | 04 – Analysis |
+| 4. Analysis | Word choice, naming, change over time, reach | ✅ word analysis · ⏳ AI results | [04 – Analysis](docs/en/04_analysis.md) |
 | 5. Dashboard | local interactive dashboard | ⬜ planned | 05 – Dashboard |
 | 6. Methodology & limits | Limitations, data protection, security | ⬜ planned | 06 – Methodology |
 
@@ -76,11 +76,22 @@ tone and reach** – and how do these patterns change around key events?
 - **Final validation:** 200 new posts coded blind – no changes afterwards
 - The full process, including dead ends: [03 – AI classification](docs/en/03_ai_classification.md)
 
-### 4. Analysis *(planned)*
-- Publishing activity over time and around key events
-- Comparison of source groups by topic, tone and reach
-- Terminology and framing analysis: which terms do which sources use for the same events?
-- Density of ideological terms per 1,000 words
+### 4. Analysis *(word analysis complete)*
+- Complete corpus, counted per 1,000 words; fixed terms found **without a predefined word list**, author's corrections kept openly in one file
+- **Typical terms** per source group with the weighted log-odds ratio (Monroe et al. 2008) – a term only counts if it is typical for every channel of the group
+- **Naming:** how each group names Israel, the USA, opponents and persons; words next to Trump and Netanyahu
+- **Which Khamenei?** Rule-based assignment of every mention of the Leader to Ali or Mojtaba Khamenei, checked with samples
+- **Weekly time series** around key events, **activity and reach** (posts, views, forwards)
+
+Selected findings:
+- State media have an administrative and service profile; IRGC-affiliated media focus on security, the military and protests; Jamaran on diplomacy, US politics and reformist politicians.
+- After the collapse of the ceasefire, state and IRGC-affiliated channels call Israel the "Zionist regime" in 57% and 53% of mentions; Jamaran writes "Israel" in 70%.
+- All six channels call Mojtaba Khamenei the Leader only from the day of his official appointment (8 March); even afterwards about three quarters of mentions of the Leader concern Ali Khamenei.
+- IRGC-affiliated channels reach about ten times as many views per post, but are forwarded less often relative to their views.
+
+![Share of "Zionist regime" among all names for Israel](results/timeline/charts/israel_zionist_regime_share.png)
+
+Details, all charts and limitations: [04 – Analysis](docs/en/04_analysis.md)
 
 ### 5. Dashboard *(planned)*
 - Interactive charts with `Plotly`, local dashboard with `Streamlit`
@@ -95,9 +106,9 @@ tone and reach** – and how do these patterns change around key events?
 | Data collection | Telethon |
 | Text processing | own normaliser (regex), stop words from hazm |
 | Database & SQL | PostgreSQL, DBeaver |
-| Analysis | pandas |
+| Analysis | pandas, numpy (log-odds) |
 | Local AI | Ollama (Gemma 4, Qwen, Aya Expanse) |
-| Visualisation | Plotly, Streamlit |
+| Visualisation | matplotlib; Plotly, Streamlit (planned) |
 
 ---
 
@@ -113,8 +124,15 @@ telegram-iran/
 ├── scripts/
 │   ├── telegram/        ← login, collection, re-collection, checks
 │   ├── database/        ← PostgreSQL: schema, loading, example queries, text cleaning, checks
-│   └── ai/              ← AI classification: config, codebook, background, model comparison, main run
-├── results/ai/          ← published AI results (no post texts)
+│   ├── ai/              ← AI classification: config, codebook, background, model comparison, main run
+│   └── analysis/        ← word analysis, naming, leader, time series, activity + two lists of the author
+├── results/             ← published results, numbers only (no post texts) – see results/README.md
+│   ├── words/           ← word frequencies, fixed terms, typical terms
+│   ├── leader/          ← Ali or Mojtaba Khamenei
+│   ├── naming/          ← naming, neighbouring words
+│   ├── timeline/        ← weekly values and charts
+│   ├── activity/        ← posts, views, forwards and charts
+│   └── ai/              ← AI model comparison
 └── data/                ← raw data (not in the repository)
 ```
 
@@ -133,6 +151,7 @@ telegram-iran/
 - Data collection via APIs, including error handling and rate limits
 - Data quality: systematic checks, handling gaps, documenting limitations
 - Processing non-Latin scripts
+- Text analysis without predefined word lists; statistical comparison of groups (log-odds, z-scores)
 - SQL and relational databases
 - Use and **validation** of local AI: codebook development, model comparison, measurable experiments
 - Source-critical analysis of foreign-language media

@@ -52,7 +52,7 @@ Ereignisse?
 | 1. Datenerhebung | Telegram-API, Qualitätsprüfung | ✅ abgeschlossen | [01 – Datenerhebung](docs/de/01_datenerhebung.md) |
 | 2. Aufbereitung | PostgreSQL-Datenbank, Bereinigung persischer Texte | ✅ abgeschlossen | [02 – Aufbereitung](docs/de/02_aufbereitung.md) |
 | 3. KI-Einordnung | Codebuch, Modellvergleich, Hauptlauf, Validierung | ⏳ Hauptlauf | [03 – KI-Einordnung](docs/de/03_ki_einordnung.md) |
-| 4. Analyse | Zeitreihen, Ereignisanalyse, Framing, Reichweite | ⬜ geplant | 04 – Analyse |
+| 4. Analyse | Wortwahl, Benennungen, Zeitverlauf, Reichweite | ✅ Wortanalyse · ⏳ KI-Ergebnisse | [04 – Analyse](docs/de/04_analyse.md) |
 | 5. Dashboard | lokales interaktives Dashboard | ⬜ geplant | 05 – Dashboard |
 | 6. Methodik & Grenzen | Einschränkungen, Datenschutz, Sicherheit | ⬜ geplant | 06 – Methodik |
 
@@ -78,11 +78,22 @@ Ereignisse?
 - **Endvalidierung:** 200 neue Beiträge, blind kodiert – danach keine Änderungen mehr
 - Der ganze Weg inklusive Irrwege: [03 – KI-Einordnung](docs/de/03_ki_einordnung.md)
 
-### 4. Analyse *(geplant)*
-- Veröffentlichungsaktivität im Zeitverlauf und rund um Schlüsselereignisse
-- Vergleich der Quellengruppen nach Thema, Ton und Reichweite
-- Terminologie- und Framing-Analyse: Welche Begriffe verwenden welche Quellen für dieselben Sachverhalte?
-- Dichte ideologischer Begriffe pro 1.000 Wörter
+### 4. Analyse *(Wortanalyse abgeschlossen)*
+- Vollständiges Korpus, gezählt pro 1.000 Wörter; feste Begriffe **ohne vorgegebene Wortliste** gefunden, Korrekturen des Autors offen in einer Datei
+- **Typische Begriffe** je Quellengruppe mit dem gewichteten Log-Odds-Verhältnis (Monroe et al. 2008) – ein Begriff zählt nur, wenn er für jeden Kanal der Gruppe typisch ist
+- **Benennungen:** wie jede Gruppe Israel, die USA, Gegner und Personen benennt; Wörter neben Trump und Netanjahu
+- **Welcher Khamenei?** Regelbasierte Zuordnung jeder Erwähnung des Führers zu Ali oder Mojtaba Khamenei, mit Stichproben geprüft
+- **Zeitreihen pro Woche** rund um Schlüsselereignisse, **Aktivität und Reichweite** (Beiträge, Aufrufe, Weiterleitungen)
+
+Ausgewählte Ergebnisse:
+- Staatliche Medien haben ein Verwaltungs- und Serviceprofil; IRGC-nahe Medien sind geprägt von Sicherheit, Militär und Protesten; Jamaran von Diplomatie, US-Politik und Reformpolitikern.
+- Nach dem Zusammenbruch der Waffenruhe nennen staatliche und IRGC-nahe Kanäle Israel in 57 % bzw. 53 % der Nennungen „zionistisches Regime“; Jamaran schreibt zu 70 % „Israel“.
+- Alle sechs Kanäle nennen Mojtaba Khamenei erst ab dem Tag seiner offiziellen Ernennung (08.03.) Führer; auch danach betreffen rund drei Viertel der Erwähnungen des Führers Ali Khamenei.
+- IRGC-nahe Kanäle erreichen pro Beitrag rund zehnmal so viele Aufrufe, werden im Verhältnis zu ihren Aufrufen aber seltener weitergeleitet.
+
+![Anteil „zionistisches Regime“ an allen Bezeichnungen für Israel](results/timeline/charts/israel_zionist_regime_share.png)
+
+Details, alle Diagramme und Grenzen: [04 – Analyse](docs/de/04_analyse.md)
 
 ### 5. Dashboard *(geplant)*
 - Interaktive Grafiken mit `Plotly`, lokales Dashboard mit `Streamlit`
@@ -97,9 +108,9 @@ Ereignisse?
 | Datenerhebung | Telethon |
 | Textverarbeitung | eigener Normalisierer (Regex), Füllwörter aus hazm |
 | Datenbank & SQL | PostgreSQL, DBeaver |
-| Analyse | pandas |
+| Analyse | pandas, numpy (Log-Odds) |
 | Lokale KI | Ollama (Gemma 4, Qwen, Aya Expanse) |
-| Visualisierung | Plotly, Streamlit |
+| Visualisierung | matplotlib; Plotly, Streamlit (geplant) |
 
 ---
 
@@ -115,8 +126,15 @@ telegram-iran/
 ├── scripts/
 │   ├── telegram/        ← Login, Sammlung, Nachsammlung, Prüfung
 │   ├── database/        ← PostgreSQL: Schema, Laden, Beispielabfragen, Textbereinigung, Prüfung
-│   └── ai/              ← KI-Einordnung: Konfiguration, Codebuch, Hintergrund, Modellvergleich, Hauptlauf
-├── results/ai/          ← veröffentlichte KI-Ergebnisse (ohne Beitragstexte)
+│   ├── ai/              ← KI-Einordnung: Konfiguration, Codebuch, Hintergrund, Modellvergleich, Hauptlauf
+│   └── analysis/        ← Wortanalyse, Benennungen, Führer, Zeitreihen, Aktivität + zwei Listen des Autors
+├── results/             ← veröffentlichte Ergebnisse, nur Zahlen (ohne Beitragstexte) – siehe results/README.md
+│   ├── words/           ← Worthäufigkeiten, feste Begriffe, typische Begriffe
+│   ├── leader/          ← Ali oder Mojtaba Khamenei
+│   ├── naming/          ← Benennungen, Nachbarwörter
+│   ├── timeline/        ← Werte pro Woche und Diagramme
+│   ├── activity/        ← Beiträge, Aufrufe, Weiterleitungen und Diagramme
+│   └── ai/              ← KI-Modellvergleich
 └── data/                ← Rohdaten (nicht im Repository)
 ```
 
@@ -135,6 +153,7 @@ telegram-iran/
 - Datenerhebung über APIs, inklusive Fehlerbehandlung und Ratenbegrenzung
 - Datenqualität: systematische Prüfung, Umgang mit Lücken, Dokumentation von Einschränkungen
 - Verarbeitung nicht-lateinischer Schriften
+- Textanalyse ohne vorgegebene Wortlisten; statistischer Vergleich von Gruppen (Log-Odds, z-Werte)
 - SQL und relationale Datenbanken
 - Einsatz und **Validierung** lokaler KI: Codebuch-Entwicklung, Modellvergleich, messbare Experimente
 - Quellenkritische Auswertung fremdsprachiger Medien

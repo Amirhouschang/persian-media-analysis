@@ -12,6 +12,16 @@ WHAT IT DOES (the original column 'text' is never changed)
        Arabic and Latin digits -> Persian digits
        removes diacritics (e.g. شَهید -> شهید) and the stretching character ـ (e.g. ســـلام -> سلام)
        half-space instead of a space after the prefix می / نمی (می گوید -> می‌گوید); words like میدان stay unchanged
+       half-space instead of a space before the plural ending ها / های and before ترین
+         (کشور های -> کشورهای, برنامه ها -> برنامه‌ها, بزرگ ترین -> بزرگ‌ترین)
+       half-space before ای after a word ending in ه (منطقه ای -> منطقه‌ای, بیانیه ای -> بیانیه‌ای)
+       alef with hamza -> alef, so both spellings are counted as one word (تأکید / تاکید -> تاکید)
+       heh with hamza -> heh (تنگۀ هرمز -> تنگه هرمز, دربارۀ -> درباره)
+       compounds written with spaces are joined, otherwise a stop word in the middle leaves half a word:
+         بین المللی -> بین‌المللی,  گفت و گو -> گفت‌وگو,  آموزش و پرورش -> آموزش‌وپرورش,
+         سیستان و بلوچستان, چهارمحال و بختیاری, حال و هوا
+       no half-space after letters that never join to the left (ا د ذ ر ز ژ و), where it changes nothing
+         visible but makes two different words for the computer (کشور‌های -> کشورهای)
   3. splits the text into words and removes stop words (stopwords_fa.txt, from hazm)
   and writes three columns into the table 'posts':
        text_clean – cleaned text   |   tokens – content words   |   word_count – number of words
@@ -43,11 +53,24 @@ MENTION = re.compile(r"@\w+")
 HASHTAG = re.compile(r"#(\w+)")
 DIACRITICS = re.compile("[\u064b-\u065f\u0670\u0640]")   # vowel marks, superscript alef, tatweel
 MI_PREFIX = re.compile(r"(?<![\w\u200c])(ن?می) (?=[\u0600-\u06ff])")   # only "می گوید" with a space; "میدان" stays
+SUFFIX = re.compile(r"(?<=[\u0600-\u06ff]) (ها|های|هایی|هایم|هایت|هایش|هایمان|هایتان|هایشان|ترین)(?![\w\u200c])")
+EZAFE_I = re.compile(r"(?<=ه) (ای)(?![\w\u200c])")                     # منطقه ای -> منطقه‌ای
+COMPOUNDS = [(re.compile(r"(?<![\w\u200c])بین[ \u200c]+الملل"), "بین\u200cالملل"),      # بین المللی, بین الملل
+             (re.compile(r"(?<![\w\u200c])گفت[ \u200c]*و[ \u200c]*گو"), "گفت\u200cوگو"),   # گفت و گو, گفت‌و‌گو
+             (re.compile(r"(?<![\w\u200c])جست[ \u200c]*و[ \u200c]*جو"), "جست\u200cوجو"),   # جست و جو
+             (re.compile(r"آموزش[ \u200c]*و[ \u200c]*پرورش"), "آموزش\u200cوپرورش"),
+             (re.compile(r"سیستان[ \u200c]*و[ \u200c]*بلوچستان"), "سیستان\u200cوبلوچستان"),
+             (re.compile(r"چهارمحال[ \u200c]*و[ \u200c]*بختیاری"), "چهارمحال\u200cوبختیاری"),
+             (re.compile(r"(?<![\w\u200c])حال[ \u200c]*و[ \u200c]*هوا"), "حال\u200cوهوا")]
+NON_JOINING = re.compile(r"(?<=[اآدذرزژو])\u200c")                         # کشور‌های -> کشورهای
 LETTERS = str.maketrans({
     "ي": "ی",   # Arabic yeh    -> Persian yeh  (ي -> ی)
     "ى": "ی",   # alef maksura  -> Persian yeh  (ى -> ی)
     "ك": "ک",   # Arabic kaf    -> Persian kaf  (ك -> ک)
     "ة": "ه",   # teh marbuta   -> heh          (ة -> ه)
+    "أ": "ا",   # alef with hamza above -> alef (تأکید -> تاکید)
+    "إ": "ا",   # alef with hamza below -> alef
+    "ۀ": "ه",   # heh with hamza (ezafe) -> heh, only one channel writes it (تنگۀ هرمز -> تنگه هرمز)
     **{chr(0x0660 + i): chr(0x06f0 + i) for i in range(10)},   # Arabic digits -> Persian digits
     **{str(i): chr(0x06f0 + i) for i in range(10)},            # Latin digits  -> Persian digits
 })
@@ -85,8 +108,13 @@ def clean(raw):
     t = t.translate(LETTERS)
     t = DIACRITICS.sub("", t)
     t = MI_PREFIX.sub(lambda m: m.group(1) + ZWNJ, t)
+    t = SUFFIX.sub(lambda m: ZWNJ + m.group(1), t)
+    t = EZAFE_I.sub(lambda m: ZWNJ + m.group(1), t)
+    for pattern, joined in COMPOUNDS:
+        t = pattern.sub(joined, t)
     t = re.sub("\u200c{2,}", ZWNJ, t)                          # double half-spaces
     t = re.sub(" ?\u200c ?", ZWNJ, t)                          # half-space next to a space
+    t = NON_JOINING.sub("", t)
     t = re.sub(r"[ \t]+", " ", t)
     t = re.sub(r"\n\s*\n+", "\n", t)
     return t.strip()

@@ -1,0 +1,25 @@
+﻿channel,phase,ali,mojtaba,both,ali_pct,mojtaba_pct,both_pct
+IRNA,before_war,164,0,0,100,0,0
+IRNA,war,308,161,52,59,31,10
+IRNA,ceasefire,1300,310,56,78,19,3
+IRNA,after_truce_collapse,1127,213,51,81,15,4
+IRIB News,before_war,188,0,0,100,0,0
+IRIB News,war,369,328,81,47,42,10
+IRIB News,ceasefire,1033,336,61,72,23,4
+IRIB News,after_truce_collapse,578,168,25,75,22,3
+Mehr News,before_war,317,0,0,100,0,0
+Mehr News,war,868,447,109,61,31,8
+Mehr News,ceasefire,1621,407,65,77,19,3
+Mehr News,after_truce_collapse,1100,182,32,84,14,2
+Tasnim News,before_war,355,0,0,100,0,0
+Tasnim News,war,780,481,175,54,33,12
+Tasnim News,ceasefire,1629,468,123,73,21,6
+Tasnim News,after_truce_collapse,837,195,49,77,18,5
+Fars News,before_war,172,0,0,100,0,0
+Fars News,war,336,341,81,44,45,11
+Fars News,ceasefire,1042,329,49,73,23,3
+Fars News,after_truce_collapse,738,148,21,81,16,2
+Jamaran,before_war,156,0,0,100,0,0
+Jamaran,war,337,165,64,60,29,11
+Jamaran,ceasefire,762,286,53,69,26,5
+Jamaran,after_truce_collapse,479,163,26,72,24,4
