@@ -236,13 +236,13 @@ Share of all names for Israel:
 
 ### USA
 
-- `آمریکا` *Amrika* ("America") is the main name everywhere (76–84%).
+-  *Amrika* `آمریکا` ("America") is the main name everywhere (76–84%).
 - Jamaran more often uses the formal name `ایالات متحده` *Eyalat-e Mottahedeh* ("United States"): 11% compared with
   7% (state) and 5% (IRGC-affiliated).
 - Pejorative names such as `ارتش تروریستی آمریکا` ("terrorist army of America") and `ارتش کودک‌کش آمریکا`
   ("child-killing army of America") increase clearly after the collapse of the ceasefire: together 3–5% of all names
   for the USA, 1–2% during the war, 0% before the war.
-- `رئیس دولت تروریستی آمریکا` ("head of the terrorist government of America" – for Trump) is used above all by Tasnim.
+- "head of the terrorist government of America" for Trump  `رئیس دولت تروریستی آمریکا` is used above all by Tasnim.
 
 ### Revenge, opponents, crimes, diplomacy
 
