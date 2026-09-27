@@ -6,10 +6,10 @@
 
 Ende-zu-Ende-Projekt zur Erhebung, Aufbereitung und Auswertung von über **328.000 persischsprachigen
 Telegram-Beiträgen** sechs iranischer Nachrichtenkanäle vom 1. Januar bis 31. August 2026 – dem Zeitraum
-der Proteste im Januar, des Kriegs zwischen Israel/USA und Iran ab dem 28. Februar und der folgenden
-Waffenruhen. Von der automatisierten Datensammlung über eine relationale Datenbank bis zur Einordnung mit
-lokal betriebenen Sprachmodellen. Im Mittelpunkt steht die Methode: Wie lassen sich fremdsprachige Medien
-systematisch, überprüfbar und reproduzierbar auswerten?
+der Ende Dezember 2025 begonnenen Proteste, des Kriegs zwischen Israel/USA und Iran ab dem 28. Februar
+und der folgenden Waffenruhen. Von der automatisierten Datensammlung über eine relationale Datenbank bis
+zur Einordnung mit lokal betriebenen Sprachmodellen. Im Mittelpunkt steht die Methode: Wie lassen sich
+fremdsprachige Medien systematisch, überprüfbar und reproduzierbar auswerten?
 
 > **Hinweis:** Code, Methodik und Ergebnisse sind öffentlich. Die Rohtexte der Beiträge sind aus
 > urheberrechtlichen Gründen nicht Teil des Repositorys; jeder Beitrag ist über Kanal und ID
