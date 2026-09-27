@@ -5,8 +5,8 @@
 **Python · SQL · NLP · local AI**
 
 End-to-end project collecting, processing and analysing more than **328,000 Persian-language Telegram
-posts** from six Iranian news channels between 1 January and 31 August 2026 – the period of the January
-protests, the war between Israel/the US and Iran from 28 February, and the ceasefires that followed.
+posts** from six Iranian news channels between 1 January and 31 August 2026 – the period of the protests that began in late December 2025, 
+the war between Israel/the US and Iran from 28 February, and the ceasefires that followed.
 It covers automated data collection, a relational database and classification with locally run language
 models. The focus is on method: how can foreign-language media be analysed systematically, verifiably
 and reproducibly?
