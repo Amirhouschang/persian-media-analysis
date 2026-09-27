@@ -236,13 +236,11 @@ Anteil an allen Bezeichnungen für Israel:
 
 ### USA
 
-- `آمریکا` *Amrika* („Amerika“) ist überall die Hauptbezeichnung (76–84 %).
-- Jamaran schreibt öfter die formale Bezeichnung `ایالات متحده` *Eyalat-e Mottahedeh* („Vereinigte Staaten“):
-  11 % gegenüber 7 % (staatlich) und 5 % (IRGC-nah).
-- Abwertende Bezeichnungen wie `ارتش تروریستی آمریکا` („terroristische Armee Amerikas“) und `ارتش کودک‌کش آمریکا`
-  („kindermordende Armee Amerikas“) nehmen nach dem Zusammenbruch der Waffenruhe deutlich zu: zusammen 3–5 % aller
-  Bezeichnungen für die USA, im Krieg 1–2 %, vor dem Krieg 0 %.
-- `رئیس دولت تروریستی آمریکا` („Chef der terroristischen Regierung Amerikas“ – für Trump) verwendet vor allem Tasnim.
+- *Amrika* `آمریکا` („Amerika“) ist überall die Hauptbezeichnung (76–84 %).
+- Jamaran schreibt öfter die formale Bezeichnung `ایالات متحده` *Eyalat-e Mottahedeh* („Vereinigte Staaten“): 11 % gegenüber 7 % (staatlich) und 5 % (IRGC-nah).
+- Abwertende Bezeichnungen wie `ارتش تروریستی آمریکا` („terroristische Armee Amerikas“) und `ارتش کودک‌کش آمریکا` („kindermordende Armee Amerikas“) nehmen nach dem Zusammenbruch der Waffenruhe deutlich zu: zusammen 3–5 % aller Bezeichnungen für die USA, im Krieg 1–2 %, vor dem Krieg 0 %.
+- „Chef der terroristischen Regierung Amerikas“ für Trump - „hef der terroristischen Regierung Amerikas“ – für Trump) verwendet vor allem Tasnim.
+verwendet vor allem Tasnim.
 
 ### Rache, Gegner, Verbrechen, Diplomatie
 
@@ -262,10 +260,7 @@ Pro 1.000 Wörter, ganzer Zeitraum:
 
 ## 4. Welcher Khamenei ist gemeint?
 
-`خامنه‌ای` *Khamenei* und `رهبر` *rahbar* („der Führer“) können Ali Khamenei (getötet am 28.02.) oder seinen Sohn
-und Nachfolger Mojtaba Khamenei meinen. Jede Erwähnung wurde mit Regeln zugeordnet und mit Stichproben geprüft
-(Methode: [Abschnitt 9](#9-methode)).
-
+- *Khamenei* `خامنه‌ای` und  *rahbar* `رهبر` („der Führer“) können Ali Khamenei (getötet am 28.02.) oder seinen Sohn und Nachfolger Mojtaba Khamenei meinen. Jede Erwähnung wurde mit Regeln zugeordnet und mit    Stichproben geprüft (Methode: [Abschnitt 9](#9-methode)).
 - Alle sechs Kanäle schreiben zum ersten Mal am **01.03.** `رهبر شهید` *rahbar-e shahid* („der Märtyrer-Führer“) –
   dem Tag, an dem der Tod offiziell bestätigt wurde.
 - Alle sechs Kanäle nennen Mojtaba Khamenei zum ersten Mal am **08.03.** in einem Satz mit „Führer“ – am Tag seiner
