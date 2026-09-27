@@ -242,7 +242,7 @@ Share of all names for Israel:
 - Pejorative names such as `ارتش تروریستی آمریکا` ("terrorist army of America") and `ارتش کودک‌کش آمریکا`
   ("child-killing army of America") increase clearly after the collapse of the ceasefire: together 3–5% of all names
   for the USA, 1–2% during the war, 0% before the war.
-- "head of the terrorist government of America" for Trump  `رئیس دولت تروریستی آمریکا` is used above all by Tasnim.
+- "Head of the terrorist government of America" for Trump  `رئیس دولت تروریستی آمریکا` is used above all by Tasnim.
 
 ### Revenge, opponents, crimes, diplomacy
 
@@ -262,10 +262,7 @@ Per 1,000 words, whole period:
 
 ## 4. Which Khamenei is meant?
 
-`خامنه‌ای` *Khamenei* and `رهبر` *rahbar* ("the Leader") can mean Ali Khamenei (killed on 28 Feb) or his son and
-successor Mojtaba Khamenei. Every mention was assigned with rules and checked with samples (method:
-[section 9](#9-method)).
-
+- *Khamenei* `خامنه‌ای` and `رهبر` *rahbar* ("the Leader") can mean Ali Khamenei (killed on 28 Feb) or his son and successor Mojtaba Khamenei. Every mention was assigned with rules and checked with samples (method:[section 9](#9-method)).
 - All six channels write `رهبر شهید` *rahbar-e shahid* ("the martyred Leader") for the first time on **1 March** – the
   day the death was officially confirmed.
 - All six channels mention Mojtaba Khamenei in one sentence with "Leader" for the first time on **8 March** – the day
