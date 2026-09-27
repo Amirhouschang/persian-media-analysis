@@ -52,7 +52,7 @@ Ereignisse?
 | 1. Datenerhebung | Telegram-API, Qualitätsprüfung | ✅ abgeschlossen | [01 – Datenerhebung](docs/de/01_datenerhebung.md) |
 | 2. Aufbereitung | PostgreSQL-Datenbank, Bereinigung persischer Texte | ✅ abgeschlossen | [02 – Aufbereitung](docs/de/02_aufbereitung.md) |
 | 3. KI-Einordnung | Codebuch, Modellvergleich, Hauptlauf, Validierung | ⏳ Hauptlauf | [03 – KI-Einordnung](docs/de/03_ki_einordnung.md) |
-| 4. Analyse | Wortwahl, Benennungen, Zeitverlauf, Reichweite | ✅ Wortanalyse · ⏳ KI-Ergebnisse | [04 – Analyse](docs/de/04_analyse.md) |
+| 4. Analyse | Wortwahl, Benennungen, Zeitverlauf, Länder, Reichweite | ✅ Wortanalyse · ⏳ KI-Ergebnisse | [04 – Analyse](docs/de/04_analyse.md) |
 | 5. Dashboard | lokales interaktives Dashboard | ⬜ geplant | 05 – Dashboard |
 | 6. Methodik & Grenzen | Einschränkungen, Datenschutz, Sicherheit | ⬜ geplant | 06 – Methodik |
 
@@ -83,12 +83,16 @@ Ereignisse?
 - **Typische Begriffe** je Quellengruppe mit dem gewichteten Log-Odds-Verhältnis (Monroe et al. 2008) – ein Begriff zählt nur, wenn er für jeden Kanal der Gruppe typisch ist
 - **Benennungen:** wie jede Gruppe Israel, die USA, Gegner und Personen benennt; Wörter neben Trump und Netanjahu
 - **Welcher Khamenei?** Regelbasierte Zuordnung jeder Erwähnung des Führers zu Ali oder Mojtaba Khamenei, mit Stichproben geprüft
-- **Zeitreihen pro Woche** rund um Schlüsselereignisse, **Aktivität und Reichweite** (Beiträge, Aufrufe, Weiterleitungen)
+- **Zeitreihen pro Woche** rund um Schlüsselereignisse – jede Spitze erklärt mit den Begriffen, die in dieser Woche typisch waren – sowie **Aktivität und Reichweite** (Beiträge, Aufrufe, Weiterleitungen)
+- **Länder und Verbündete:** 35 Länder und Gruppen (Golfstaaten, Libanon und Hisbollah, Irak, Jemen, Russland, China, Pakistan, Europa …) – wie oft, in welchen Wochen und wie jede Gruppe sie darstellt
 
 Ausgewählte Ergebnisse:
-- Staatliche Medien haben ein Verwaltungs- und Serviceprofil; IRGC-nahe Medien sind geprägt von Sicherheit, Militär und Protesten; Jamaran von Diplomatie, US-Politik und Reformpolitikern.
-- Nach dem Zusammenbruch der Waffenruhe nennen staatliche und IRGC-nahe Kanäle Israel in 57 % bzw. 53 % der Nennungen „zionistisches Regime“; Jamaran schreibt zu 70 % „Israel“.
-- Alle sechs Kanäle nennen Mojtaba Khamenei erst ab dem Tag seiner offiziellen Ernennung (08.03.) Führer; auch danach betreffen rund drei Viertel der Erwähnungen des Führers Ali Khamenei.
+- **Drei Stimmen:** Staatliche Kanäle sprechen als Regierung und Verwaltung (Sprecher, Minister, Sprache des Völkerrechts – „Aggression“, „Verurteilung“); IRGC-nahe Kanäle berichten über Raketen, Drohnen, Festnahmen und „Unruhen“; Jamaran über Verhandlungen, US-Politik, Atomfrage und Internet.
+- Nach dem Zusammenbruch der Waffenruhe nennen staatliche und IRGC-nahe Kanäle Israel in 57 % bzw. 53 % der Nennungen „zionistisches Regime“ (*rezhim-e sahyunisti*); Jamaran schreibt zu 70 % „Israel“.
+- Kein Kanal nennt Mojtaba Khamenei vor seiner Wahl am 08.03. Führer; auch danach betreffen rund drei Viertel der Erwähnungen des Führers Ali Khamenei.
+- Die höchsten Werte für „Märtyrer“ und „Rache“ liegen nicht beim Kriegsbeginn, sondern in den Wochen der Trauerfeier und der Trauerzüge für Ali Khamenei (Ende Juni / Anfang Juli).
+- Frühere Präsidenten und Minister des Reformlagers – Mohammad Khatami, Hassan Rouhani, Mohammad Javad Zarif – kommen fast nur bei Jamaran vor; Präsident Masoud Pezeshkian verschwindet im Krieg fast aus den Nachrichten.
+- Mit Kriegsbeginn schrumpft die Welt auf die Region: Russland und China fallen in den IRGC-nahen Kanälen auf ein Drittel; Bahrain und Kuwait, vorher kaum genannt, werden zu Schauplätzen. Dasselbe Land sieht in jeder Gruppe anders aus – die VAE sind für die Staatsmedien ein Devisenplatz, für die IRGC-nahen Kanäle ein Angriffsziel (Hafen Fudschaira), für Jamaran ein Akteur der US-Politik.
 - IRGC-nahe Kanäle erreichen pro Beitrag rund zehnmal so viele Aufrufe, werden im Verhältnis zu ihren Aufrufen aber seltener weitergeleitet.
 
 ![Anteil „zionistisches Regime“ an allen Bezeichnungen für Israel](results/timeline/charts/israel_zionist_regime_share.png)
@@ -127,13 +131,14 @@ telegram-iran/
 │   ├── telegram/        ← Login, Sammlung, Nachsammlung, Prüfung
 │   ├── database/        ← PostgreSQL: Schema, Laden, Beispielabfragen, Textbereinigung, Prüfung
 │   ├── ai/              ← KI-Einordnung: Konfiguration, Codebuch, Hintergrund, Modellvergleich, Hauptlauf
-│   └── analysis/        ← Wortanalyse, Benennungen, Führer, Zeitreihen, Aktivität + zwei Listen des Autors
+│   └── analysis/        ← Wortanalyse, Benennungen, Führer, Zeitreihen, Spitzenwochen, Aktivität, Länder + zwei Listen des Autors
 ├── results/             ← veröffentlichte Ergebnisse, nur Zahlen (ohne Beitragstexte) – siehe results/README.md
 │   ├── words/           ← Worthäufigkeiten, feste Begriffe, typische Begriffe
 │   ├── leader/          ← Ali oder Mojtaba Khamenei
 │   ├── naming/          ← Benennungen, Nachbarwörter
-│   ├── timeline/        ← Werte pro Woche und Diagramme
+│   ├── timeline/        ← Werte pro Woche, Spitzenwochen und Diagramme
 │   ├── activity/        ← Beiträge, Aufrufe, Weiterleitungen und Diagramme
+│   ├── countries/       ← Länder und Verbündete: Häufigkeit, Spitzenwochen, Darstellung, Diagramme
 │   └── ai/              ← KI-Modellvergleich
 └── data/                ← Rohdaten (nicht im Repository)
 ```

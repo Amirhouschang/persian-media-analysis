@@ -1,0 +1,2071 @@
+﻿level,name,phase,concept,label,count,per_1000_words
+group,state,all,مقاومت عراق / حشد شعبی,Iraqi militias,355,0.041
+group,state,all,مجاهدین خلق,,13,0.001
+group,state,all,امارات,UAE,2014,0.232
+group,state,all,جمهوری آذربایجان,Rep. of Azerbaijan,917,0.106
+group,state,all,کتائب حزب‌الله,,41,0.005
+group,state,all,آذربایجان شرقی/غربی (Iranian provinces),,589,0.068
+group,state,all,اتحادیه اروپا,EU / Europe,3464,0.399
+group,state,all,فلسطین اشغالی (Israel),,825,0.095
+group,state,all,عربستان,Saudi Arabia,3468,0.4
+group,state,all,سلطنت‌طلبان,,43,0.005
+group,state,all,جهاد اسلامی,,103,0.012
+group,state,all,"دریای عمان (sea, not the country)",,290,0.033
+group,state,all,انصارالله / حوثی‌ها,Houthis,638,0.074
+group,state,all,جیش‌العدل,,3,0.0
+group,state,all,افغانستان,Afghanistan,579,0.067
+group,state,all,رضا پهلوی,,113,0.013
+group,state,all,انگلیس,United Kingdom,2701,0.311
+group,state,all,حزب‌الله,Hezbollah,3918,0.452
+group,state,all,هند,India,1349,0.156
+group,state,all,اسپانیا,Spain,1160,0.134
+group,state,all,ونزوئلا,Venezuela,1596,0.184
+group,state,all,پاکستان,Pakistan,4519,0.521
+group,state,all,ایتالیا,Italy,667,0.077
+group,state,all,اوکراین,Ukraine,2049,0.236
+group,state,all,طالبان,Taliban,138,0.016
+group,state,all,فرانسه,France,1914,0.221
+group,state,all,فلسطین,Palestine,2184,0.252
+group,state,all,بحرین,Bahrain,1578,0.182
+group,state,all,سوریه,Syria,1529,0.176
+group,state,all,کومله,,20,0.002
+group,state,all,لبنان,Lebanon,10566,1.218
+group,state,all,ترکیه,Turkey,2346,0.271
+group,state,all,روسیه,Russia,5430,0.626
+group,state,all,آلمان,Germany,1296,0.149
+group,state,all,عمان,Oman,2141,0.247
+group,state,all,اردن,Jordan,1137,0.131
+group,state,all,عراق,Iraq,6238,0.719
+group,state,all,حماس,Hamas,1103,0.127
+group,state,all,کویت,Kuwait,1660,0.191
+group,state,all,داعش,ISIS,324,0.037
+group,state,all,پژاک,,18,0.002
+group,state,all,ژاپن,Japan,888,0.102
+group,state,all,یمن,Yemen,2213,0.255
+group,state,all,چین,China,3268,0.377
+group,state,all,غزه,Gaza,3161,0.365
+group,state,all,قطر,Qatar,1976,0.228
+group,irgc_affiliated,all,مقاومت عراق / حشد شعبی,Iraqi militias,360,0.076
+group,irgc_affiliated,all,مجاهدین خلق,,13,0.003
+group,irgc_affiliated,all,امارات,UAE,1905,0.402
+group,irgc_affiliated,all,جمهوری آذربایجان,Rep. of Azerbaijan,381,0.08
+group,irgc_affiliated,all,کتائب حزب‌الله,,24,0.005
+group,irgc_affiliated,all,آذربایجان شرقی/غربی (Iranian provinces),,249,0.052
+group,irgc_affiliated,all,اتحادیه اروپا,EU / Europe,1247,0.263
+group,irgc_affiliated,all,فلسطین اشغالی (Israel),,1167,0.246
+group,irgc_affiliated,all,عربستان,Saudi Arabia,2680,0.565
+group,irgc_affiliated,all,سلطنت‌طلبان,,91,0.019
+group,irgc_affiliated,all,جهاد اسلامی,,28,0.006
+group,irgc_affiliated,all,"دریای عمان (sea, not the country)",,199,0.042
+group,irgc_affiliated,all,انصارالله / حوثی‌ها,Houthis,433,0.091
+group,irgc_affiliated,all,جیش‌العدل,,3,0.001
+group,irgc_affiliated,all,افغانستان,Afghanistan,225,0.047
+group,irgc_affiliated,all,رضا پهلوی,,304,0.064
+group,irgc_affiliated,all,انگلیس,United Kingdom,1252,0.264
+group,irgc_affiliated,all,حزب‌الله,Hezbollah,4028,0.849
+group,irgc_affiliated,all,هند,India,689,0.145
+group,irgc_affiliated,all,اسپانیا,Spain,498,0.105
+group,irgc_affiliated,all,ونزوئلا,Venezuela,695,0.147
+group,irgc_affiliated,all,پاکستان,Pakistan,2004,0.422
+group,irgc_affiliated,all,ایتالیا,Italy,286,0.06
+group,irgc_affiliated,all,اوکراین,Ukraine,1026,0.216
+group,irgc_affiliated,all,طالبان,Taliban,102,0.022
+group,irgc_affiliated,all,فرانسه,France,842,0.178
+group,irgc_affiliated,all,فلسطین,Palestine,932,0.196
+group,irgc_affiliated,all,بحرین,Bahrain,1304,0.275
+group,irgc_affiliated,all,سوریه,Syria,825,0.174
+group,irgc_affiliated,all,کومله,,49,0.01
+group,irgc_affiliated,all,لبنان,Lebanon,7045,1.485
+group,irgc_affiliated,all,ترکیه,Turkey,1110,0.234
+group,irgc_affiliated,all,روسیه,Russia,2546,0.537
+group,irgc_affiliated,all,آلمان,Germany,569,0.12
+group,irgc_affiliated,all,عمان,Oman,1150,0.242
+group,irgc_affiliated,all,اردن,Jordan,804,0.169
+group,irgc_affiliated,all,عراق,Iraq,3575,0.754
+group,irgc_affiliated,all,حماس,Hamas,352,0.074
+group,irgc_affiliated,all,کویت,Kuwait,1484,0.313
+group,irgc_affiliated,all,داعش,ISIS,211,0.044
+group,irgc_affiliated,all,پژاک,,30,0.006
+group,irgc_affiliated,all,ژاپن,Japan,412,0.087
+group,irgc_affiliated,all,یمن,Yemen,1751,0.369
+group,irgc_affiliated,all,چین,China,1749,0.369
+group,irgc_affiliated,all,غزه,Gaza,1640,0.346
+group,irgc_affiliated,all,قطر,Qatar,1244,0.262
+group,reformist,all,مقاومت عراق / حشد شعبی,Iraqi militias,84,0.028
+group,reformist,all,مجاهدین خلق,,14,0.005
+group,reformist,all,امارات,UAE,1160,0.388
+group,reformist,all,جمهوری آذربایجان,Rep. of Azerbaijan,222,0.074
+group,reformist,all,کتائب حزب‌الله,,14,0.005
+group,reformist,all,آذربایجان شرقی/غربی (Iranian provinces),,88,0.029
+group,reformist,all,اتحادیه اروپا,EU / Europe,1040,0.348
+group,reformist,all,فلسطین اشغالی (Israel),,217,0.073
+group,reformist,all,عربستان,Saudi Arabia,1461,0.488
+group,reformist,all,سلطنت‌طلبان,,32,0.011
+group,reformist,all,جهاد اسلامی,,6,0.002
+group,reformist,all,"دریای عمان (sea, not the country)",,98,0.033
+group,reformist,all,انصارالله / حوثی‌ها,Houthis,218,0.073
+group,reformist,all,جیش‌العدل,,4,0.001
+group,reformist,all,افغانستان,Afghanistan,233,0.078
+group,reformist,all,رضا پهلوی,,110,0.037
+group,reformist,all,انگلیس,United Kingdom,788,0.263
+group,reformist,all,حزب‌الله,Hezbollah,1325,0.443
+group,reformist,all,هند,India,505,0.169
+group,reformist,all,اسپانیا,Spain,263,0.088
+group,reformist,all,ونزوئلا,Venezuela,695,0.232
+group,reformist,all,پاکستان,Pakistan,1743,0.583
+group,reformist,all,ایتالیا,Italy,199,0.067
+group,reformist,all,اوکراین,Ukraine,629,0.21
+group,reformist,all,طالبان,Taliban,101,0.034
+group,reformist,all,فرانسه,France,611,0.204
+group,reformist,all,فلسطین,Palestine,377,0.126
+group,reformist,all,بحرین,Bahrain,510,0.17
+group,reformist,all,سوریه,Syria,479,0.16
+group,reformist,all,کومله,,16,0.005
+group,reformist,all,لبنان,Lebanon,3148,1.052
+group,reformist,all,ترکیه,Turkey,849,0.284
+group,reformist,all,روسیه,Russia,2080,0.695
+group,reformist,all,آلمان,Germany,402,0.134
+group,reformist,all,عمان,Oman,1011,0.338
+group,reformist,all,اردن,Jordan,378,0.126
+group,reformist,all,عراق,Iraq,1842,0.616
+group,reformist,all,حماس,Hamas,193,0.065
+group,reformist,all,کویت,Kuwait,714,0.239
+group,reformist,all,داعش,ISIS,74,0.025
+group,reformist,all,پژاک,,28,0.009
+group,reformist,all,ژاپن,Japan,236,0.079
+group,reformist,all,یمن,Yemen,555,0.186
+group,reformist,all,چین,China,1524,0.509
+group,reformist,all,غزه,Gaza,676,0.226
+group,reformist,all,قطر,Qatar,906,0.303
+group,state,before_war,مقاومت عراق / حشد شعبی,Iraqi militias,9,0.007
+group,state,before_war,مجاهدین خلق,,4,0.003
+group,state,before_war,امارات,UAE,238,0.178
+group,state,before_war,جمهوری آذربایجان,Rep. of Azerbaijan,179,0.134
+group,state,before_war,کتائب حزب‌الله,,7,0.005
+group,state,before_war,آذربایجان شرقی/غربی (Iranian provinces),,128,0.095
+group,state,before_war,اتحادیه اروپا,EU / Europe,692,0.516
+group,state,before_war,فلسطین اشغالی (Israel),,32,0.024
+group,state,before_war,عربستان,Saudi Arabia,408,0.304
+group,state,before_war,سلطنت‌طلبان,,29,0.022
+group,state,before_war,جهاد اسلامی,,14,0.01
+group,state,before_war,"دریای عمان (sea, not the country)",,25,0.019
+group,state,before_war,انصارالله / حوثی‌ها,Houthis,85,0.063
+group,state,before_war,جیش‌العدل,,0,0.0
+group,state,before_war,افغانستان,Afghanistan,151,0.113
+group,state,before_war,رضا پهلوی,,53,0.04
+group,state,before_war,انگلیس,United Kingdom,286,0.213
+group,state,before_war,حزب‌الله,Hezbollah,183,0.137
+group,state,before_war,هند,India,212,0.158
+group,state,before_war,اسپانیا,Spain,68,0.051
+group,state,before_war,ونزوئلا,Venezuela,1099,0.82
+group,state,before_war,پاکستان,Pakistan,419,0.313
+group,state,before_war,ایتالیا,Italy,30,0.022
+group,state,before_war,اوکراین,Ukraine,332,0.248
+group,state,before_war,طالبان,Taliban,65,0.048
+group,state,before_war,فرانسه,France,214,0.16
+group,state,before_war,فلسطین,Palestine,293,0.219
+group,state,before_war,بحرین,Bahrain,32,0.024
+group,state,before_war,سوریه,Syria,378,0.282
+group,state,before_war,کومله,,3,0.002
+group,state,before_war,لبنان,Lebanon,589,0.439
+group,state,before_war,ترکیه,Turkey,406,0.303
+group,state,before_war,روسیه,Russia,915,0.683
+group,state,before_war,آلمان,Germany,194,0.145
+group,state,before_war,عمان,Oman,421,0.314
+group,state,before_war,اردن,Jordan,115,0.086
+group,state,before_war,عراق,Iraq,565,0.422
+group,state,before_war,حماس,Hamas,106,0.079
+group,state,before_war,کویت,Kuwait,38,0.028
+group,state,before_war,داعش,ISIS,169,0.126
+group,state,before_war,پژاک,,10,0.007
+group,state,before_war,ژاپن,Japan,58,0.043
+group,state,before_war,یمن,Yemen,202,0.151
+group,state,before_war,چین,China,372,0.278
+group,state,before_war,غزه,Gaza,599,0.447
+group,state,before_war,قطر,Qatar,237,0.177
+group,irgc_affiliated,before_war,مقاومت عراق / حشد شعبی,Iraqi militias,12,0.018
+group,irgc_affiliated,before_war,مجاهدین خلق,,6,0.009
+group,irgc_affiliated,before_war,امارات,UAE,120,0.184
+group,irgc_affiliated,before_war,جمهوری آذربایجان,Rep. of Azerbaijan,94,0.145
+group,irgc_affiliated,before_war,کتائب حزب‌الله,,4,0.006
+group,irgc_affiliated,before_war,آذربایجان شرقی/غربی (Iranian provinces),,54,0.083
+group,irgc_affiliated,before_war,اتحادیه اروپا,EU / Europe,325,0.5
+group,irgc_affiliated,before_war,فلسطین اشغالی (Israel),,35,0.054
+group,irgc_affiliated,before_war,عربستان,Saudi Arabia,197,0.303
+group,irgc_affiliated,before_war,سلطنت‌طلبان,,42,0.065
+group,irgc_affiliated,before_war,جهاد اسلامی,,6,0.009
+group,irgc_affiliated,before_war,"دریای عمان (sea, not the country)",,10,0.015
+group,irgc_affiliated,before_war,انصارالله / حوثی‌ها,Houthis,46,0.071
+group,irgc_affiliated,before_war,جیش‌العدل,,1,0.002
+group,irgc_affiliated,before_war,افغانستان,Afghanistan,47,0.072
+group,irgc_affiliated,before_war,رضا پهلوی,,109,0.168
+group,irgc_affiliated,before_war,انگلیس,United Kingdom,118,0.181
+group,irgc_affiliated,before_war,حزب‌الله,Hezbollah,108,0.166
+group,irgc_affiliated,before_war,هند,India,111,0.171
+group,irgc_affiliated,before_war,اسپانیا,Spain,47,0.072
+group,irgc_affiliated,before_war,ونزوئلا,Venezuela,427,0.656
+group,irgc_affiliated,before_war,پاکستان,Pakistan,136,0.209
+group,irgc_affiliated,before_war,ایتالیا,Italy,34,0.052
+group,irgc_affiliated,before_war,اوکراین,Ukraine,156,0.24
+group,irgc_affiliated,before_war,طالبان,Taliban,45,0.069
+group,irgc_affiliated,before_war,فرانسه,France,101,0.155
+group,irgc_affiliated,before_war,فلسطین,Palestine,87,0.134
+group,irgc_affiliated,before_war,بحرین,Bahrain,12,0.018
+group,irgc_affiliated,before_war,سوریه,Syria,219,0.337
+group,irgc_affiliated,before_war,کومله,,11,0.017
+group,irgc_affiliated,before_war,لبنان,Lebanon,338,0.52
+group,irgc_affiliated,before_war,ترکیه,Turkey,206,0.317
+group,irgc_affiliated,before_war,روسیه,Russia,459,0.706
+group,irgc_affiliated,before_war,آلمان,Germany,82,0.126
+group,irgc_affiliated,before_war,عمان,Oman,184,0.283
+group,irgc_affiliated,before_war,اردن,Jordan,46,0.071
+group,irgc_affiliated,before_war,عراق,Iraq,288,0.443
+group,irgc_affiliated,before_war,حماس,Hamas,49,0.075
+group,irgc_affiliated,before_war,کویت,Kuwait,9,0.014
+group,irgc_affiliated,before_war,داعش,ISIS,125,0.192
+group,irgc_affiliated,before_war,پژاک,,10,0.015
+group,irgc_affiliated,before_war,ژاپن,Japan,39,0.06
+group,irgc_affiliated,before_war,یمن,Yemen,115,0.177
+group,irgc_affiliated,before_war,چین,China,253,0.389
+group,irgc_affiliated,before_war,غزه,Gaza,292,0.449
+group,irgc_affiliated,before_war,قطر,Qatar,148,0.228
+group,reformist,before_war,مقاومت عراق / حشد شعبی,Iraqi militias,2,0.004
+group,reformist,before_war,مجاهدین خلق,,2,0.004
+group,reformist,before_war,امارات,UAE,69,0.147
+group,reformist,before_war,جمهوری آذربایجان,Rep. of Azerbaijan,53,0.113
+group,reformist,before_war,کتائب حزب‌الله,,2,0.004
+group,reformist,before_war,آذربایجان شرقی/غربی (Iranian provinces),,22,0.047
+group,reformist,before_war,اتحادیه اروپا,EU / Europe,237,0.506
+group,reformist,before_war,فلسطین اشغالی (Israel),,19,0.041
+group,reformist,before_war,عربستان,Saudi Arabia,150,0.32
+group,reformist,before_war,سلطنت‌طلبان,,10,0.021
+group,reformist,before_war,جهاد اسلامی,,2,0.004
+group,reformist,before_war,"دریای عمان (sea, not the country)",,8,0.017
+group,reformist,before_war,انصارالله / حوثی‌ها,Houthis,29,0.062
+group,reformist,before_war,جیش‌العدل,,1,0.002
+group,reformist,before_war,افغانستان,Afghanistan,87,0.186
+group,reformist,before_war,رضا پهلوی,,28,0.06
+group,reformist,before_war,انگلیس,United Kingdom,104,0.222
+group,reformist,before_war,حزب‌الله,Hezbollah,83,0.177
+group,reformist,before_war,هند,India,86,0.183
+group,reformist,before_war,اسپانیا,Spain,6,0.013
+group,reformist,before_war,ونزوئلا,Venezuela,498,1.063
+group,reformist,before_war,پاکستان,Pakistan,144,0.307
+group,reformist,before_war,ایتالیا,Italy,26,0.055
+group,reformist,before_war,اوکراین,Ukraine,140,0.299
+group,reformist,before_war,طالبان,Taliban,47,0.1
+group,reformist,before_war,فرانسه,France,99,0.211
+group,reformist,before_war,فلسطین,Palestine,65,0.139
+group,reformist,before_war,بحرین,Bahrain,7,0.015
+group,reformist,before_war,سوریه,Syria,125,0.267
+group,reformist,before_war,کومله,,0,0.0
+group,reformist,before_war,لبنان,Lebanon,171,0.365
+group,reformist,before_war,ترکیه,Turkey,179,0.382
+group,reformist,before_war,روسیه,Russia,461,0.984
+group,reformist,before_war,آلمان,Germany,77,0.164
+group,reformist,before_war,عمان,Oman,216,0.461
+group,reformist,before_war,اردن,Jordan,38,0.081
+group,reformist,before_war,عراق,Iraq,223,0.476
+group,reformist,before_war,حماس,Hamas,47,0.1
+group,reformist,before_war,کویت,Kuwait,21,0.045
+group,reformist,before_war,داعش,ISIS,42,0.09
+group,reformist,before_war,پژاک,,5,0.011
+group,reformist,before_war,ژاپن,Japan,31,0.066
+group,reformist,before_war,یمن,Yemen,42,0.09
+group,reformist,before_war,چین,China,196,0.418
+group,reformist,before_war,غزه,Gaza,174,0.371
+group,reformist,before_war,قطر,Qatar,132,0.282
+group,state,war,مقاومت عراق / حشد شعبی,Iraqi militias,162,0.094
+group,state,war,مجاهدین خلق,,0,0.0
+group,state,war,امارات,UAE,621,0.362
+group,state,war,جمهوری آذربایجان,Rep. of Azerbaijan,172,0.1
+group,state,war,کتائب حزب‌الله,,9,0.005
+group,state,war,آذربایجان شرقی/غربی (Iranian provinces),,113,0.066
+group,state,war,اتحادیه اروپا,EU / Europe,453,0.264
+group,state,war,فلسطین اشغالی (Israel),,489,0.285
+group,state,war,عربستان,Saudi Arabia,516,0.301
+group,state,war,سلطنت‌طلبان,,3,0.002
+group,state,war,جهاد اسلامی,,12,0.007
+group,state,war,"دریای عمان (sea, not the country)",,35,0.02
+group,state,war,انصارالله / حوثی‌ها,Houthis,100,0.058
+group,state,war,جیش‌العدل,,0,0.0
+group,state,war,افغانستان,Afghanistan,78,0.045
+group,state,war,رضا پهلوی,,24,0.014
+group,state,war,انگلیس,United Kingdom,494,0.288
+group,state,war,حزب‌الله,Hezbollah,1201,0.701
+group,state,war,هند,India,274,0.16
+group,state,war,اسپانیا,Spain,176,0.103
+group,state,war,ونزوئلا,Venezuela,55,0.032
+group,state,war,پاکستان,Pakistan,408,0.238
+group,state,war,ایتالیا,Italy,109,0.064
+group,state,war,اوکراین,Ukraine,140,0.082
+group,state,war,طالبان,Taliban,21,0.012
+group,state,war,فرانسه,France,317,0.185
+group,state,war,فلسطین,Palestine,347,0.202
+group,state,war,بحرین,Bahrain,685,0.4
+group,state,war,سوریه,Syria,93,0.054
+group,state,war,کومله,,12,0.007
+group,state,war,لبنان,Lebanon,1183,0.69
+group,state,war,ترکیه,Turkey,392,0.229
+group,state,war,روسیه,Russia,748,0.436
+group,state,war,آلمان,Germany,228,0.133
+group,state,war,عمان,Oman,248,0.145
+group,state,war,اردن,Jordan,207,0.121
+group,state,war,عراق,Iraq,1038,0.605
+group,state,war,حماس,Hamas,51,0.03
+group,state,war,کویت,Kuwait,569,0.332
+group,state,war,داعش,ISIS,17,0.01
+group,state,war,پژاک,,2,0.001
+group,state,war,ژاپن,Japan,127,0.074
+group,state,war,یمن,Yemen,275,0.16
+group,state,war,چین,China,376,0.219
+group,state,war,غزه,Gaza,181,0.106
+group,state,war,قطر,Qatar,367,0.214
+group,irgc_affiliated,war,مقاومت عراق / حشد شعبی,Iraqi militias,194,0.171
+group,irgc_affiliated,war,مجاهدین خلق,,0,0.0
+group,irgc_affiliated,war,امارات,UAE,630,0.556
+group,irgc_affiliated,war,جمهوری آذربایجان,Rep. of Azerbaijan,73,0.064
+group,irgc_affiliated,war,کتائب حزب‌الله,,8,0.007
+group,irgc_affiliated,war,آذربایجان شرقی/غربی (Iranian provinces),,76,0.067
+group,irgc_affiliated,war,اتحادیه اروپا,EU / Europe,201,0.177
+group,irgc_affiliated,war,فلسطین اشغالی (Israel),,750,0.662
+group,irgc_affiliated,war,عربستان,Saudi Arabia,502,0.443
+group,irgc_affiliated,war,سلطنت‌طلبان,,12,0.011
+group,irgc_affiliated,war,جهاد اسلامی,,1,0.001
+group,irgc_affiliated,war,"دریای عمان (sea, not the country)",,30,0.026
+group,irgc_affiliated,war,انصارالله / حوثی‌ها,Houthis,79,0.07
+group,irgc_affiliated,war,جیش‌العدل,,0,0.0
+group,irgc_affiliated,war,افغانستان,Afghanistan,31,0.027
+group,irgc_affiliated,war,رضا پهلوی,,56,0.049
+group,irgc_affiliated,war,انگلیس,United Kingdom,212,0.187
+group,irgc_affiliated,war,حزب‌الله,Hezbollah,1406,1.24
+group,irgc_affiliated,war,هند,India,164,0.145
+group,irgc_affiliated,war,اسپانیا,Spain,60,0.053
+group,irgc_affiliated,war,ونزوئلا,Venezuela,23,0.02
+group,irgc_affiliated,war,پاکستان,Pakistan,182,0.161
+group,irgc_affiliated,war,ایتالیا,Italy,47,0.041
+group,irgc_affiliated,war,اوکراین,Ukraine,63,0.056
+group,irgc_affiliated,war,طالبان,Taliban,12,0.011
+group,irgc_affiliated,war,فرانسه,France,140,0.124
+group,irgc_affiliated,war,فلسطین,Palestine,190,0.168
+group,irgc_affiliated,war,بحرین,Bahrain,526,0.464
+group,irgc_affiliated,war,سوریه,Syria,66,0.058
+group,irgc_affiliated,war,کومله,,18,0.016
+group,irgc_affiliated,war,لبنان,Lebanon,998,0.88
+group,irgc_affiliated,war,ترکیه,Turkey,166,0.146
+group,irgc_affiliated,war,روسیه,Russia,272,0.24
+group,irgc_affiliated,war,آلمان,Germany,107,0.094
+group,irgc_affiliated,war,عمان,Oman,121,0.107
+group,irgc_affiliated,war,اردن,Jordan,168,0.148
+group,irgc_affiliated,war,عراق,Iraq,753,0.664
+group,irgc_affiliated,war,حماس,Hamas,21,0.019
+group,irgc_affiliated,war,کویت,Kuwait,529,0.467
+group,irgc_affiliated,war,داعش,ISIS,11,0.01
+group,irgc_affiliated,war,پژاک,,2,0.002
+group,irgc_affiliated,war,ژاپن,Japan,66,0.058
+group,irgc_affiliated,war,یمن,Yemen,233,0.206
+group,irgc_affiliated,war,چین,China,151,0.133
+group,irgc_affiliated,war,غزه,Gaza,92,0.081
+group,irgc_affiliated,war,قطر,Qatar,279,0.246
+group,reformist,war,مقاومت عراق / حشد شعبی,Iraqi militias,41,0.064
+group,reformist,war,مجاهدین خلق,,0,0.0
+group,reformist,war,امارات,UAE,299,0.464
+group,reformist,war,جمهوری آذربایجان,Rep. of Azerbaijan,50,0.078
+group,reformist,war,کتائب حزب‌الله,,6,0.009
+group,reformist,war,آذربایجان شرقی/غربی (Iranian provinces),,23,0.036
+group,reformist,war,اتحادیه اروپا,EU / Europe,237,0.368
+group,reformist,war,فلسطین اشغالی (Israel),,129,0.2
+group,reformist,war,عربستان,Saudi Arabia,253,0.393
+group,reformist,war,سلطنت‌طلبان,,8,0.012
+group,reformist,war,جهاد اسلامی,,2,0.003
+group,reformist,war,"دریای عمان (sea, not the country)",,11,0.017
+group,reformist,war,انصارالله / حوثی‌ها,Houthis,33,0.051
+group,reformist,war,جیش‌العدل,,0,0.0
+group,reformist,war,افغانستان,Afghanistan,42,0.065
+group,reformist,war,رضا پهلوی,,25,0.039
+group,reformist,war,انگلیس,United Kingdom,202,0.314
+group,reformist,war,حزب‌الله,Hezbollah,417,0.648
+group,reformist,war,هند,India,140,0.217
+group,reformist,war,اسپانیا,Spain,59,0.092
+group,reformist,war,ونزوئلا,Venezuela,29,0.045
+group,reformist,war,پاکستان,Pakistan,170,0.264
+group,reformist,war,ایتالیا,Italy,34,0.053
+group,reformist,war,اوکراین,Ukraine,91,0.141
+group,reformist,war,طالبان,Taliban,18,0.028
+group,reformist,war,فرانسه,France,156,0.242
+group,reformist,war,فلسطین,Palestine,86,0.134
+group,reformist,war,بحرین,Bahrain,214,0.332
+group,reformist,war,سوریه,Syria,63,0.098
+group,reformist,war,کومله,,8,0.012
+group,reformist,war,لبنان,Lebanon,395,0.614
+group,reformist,war,ترکیه,Turkey,187,0.29
+group,reformist,war,روسیه,Russia,460,0.715
+group,reformist,war,آلمان,Germany,84,0.13
+group,reformist,war,عمان,Oman,119,0.185
+group,reformist,war,اردن,Jordan,58,0.09
+group,reformist,war,عراق,Iraq,424,0.659
+group,reformist,war,حماس,Hamas,6,0.009
+group,reformist,war,کویت,Kuwait,214,0.332
+group,reformist,war,داعش,ISIS,9,0.014
+group,reformist,war,پژاک,,3,0.005
+group,reformist,war,ژاپن,Japan,59,0.092
+group,reformist,war,یمن,Yemen,74,0.115
+group,reformist,war,چین,China,245,0.381
+group,reformist,war,غزه,Gaza,74,0.115
+group,reformist,war,قطر,Qatar,164,0.255
+group,state,ceasefire,مقاومت عراق / حشد شعبی,Iraqi militias,40,0.012
+group,state,ceasefire,مجاهدین خلق,,3,0.001
+group,state,ceasefire,امارات,UAE,906,0.261
+group,state,ceasefire,جمهوری آذربایجان,Rep. of Azerbaijan,378,0.109
+group,state,ceasefire,کتائب حزب‌الله,,14,0.004
+group,state,ceasefire,آذربایجان شرقی/غربی (Iranian provinces),,237,0.068
+group,state,ceasefire,اتحادیه اروپا,EU / Europe,1638,0.473
+group,state,ceasefire,فلسطین اشغالی (Israel),,264,0.076
+group,state,ceasefire,عربستان,Saudi Arabia,784,0.226
+group,state,ceasefire,سلطنت‌طلبان,,9,0.003
+group,state,ceasefire,جهاد اسلامی,,43,0.012
+group,state,ceasefire,"دریای عمان (sea, not the country)",,162,0.047
+group,state,ceasefire,انصارالله / حوثی‌ها,Houthis,163,0.047
+group,state,ceasefire,جیش‌العدل,,3,0.001
+group,state,ceasefire,افغانستان,Afghanistan,221,0.064
+group,state,ceasefire,رضا پهلوی,,25,0.007
+group,state,ceasefire,انگلیس,United Kingdom,1164,0.336
+group,state,ceasefire,حزب‌الله,Hezbollah,2195,0.633
+group,state,ceasefire,هند,India,588,0.17
+group,state,ceasefire,اسپانیا,Spain,460,0.133
+group,state,ceasefire,ونزوئلا,Venezuela,281,0.081
+group,state,ceasefire,پاکستان,Pakistan,2694,0.777
+group,state,ceasefire,ایتالیا,Italy,383,0.111
+group,state,ceasefire,اوکراین,Ukraine,700,0.202
+group,state,ceasefire,طالبان,Taliban,29,0.008
+group,state,ceasefire,فرانسه,France,867,0.25
+group,state,ceasefire,فلسطین,Palestine,908,0.262
+group,state,ceasefire,بحرین,Bahrain,379,0.109
+group,state,ceasefire,سوریه,Syria,425,0.123
+group,state,ceasefire,کومله,,5,0.001
+group,state,ceasefire,لبنان,Lebanon,7126,2.056
+group,state,ceasefire,ترکیه,Turkey,893,0.258
+group,state,ceasefire,روسیه,Russia,2313,0.667
+group,state,ceasefire,آلمان,Germany,625,0.18
+group,state,ceasefire,عمان,Oman,764,0.22
+group,state,ceasefire,اردن,Jordan,174,0.05
+group,state,ceasefire,عراق,Iraq,1864,0.538
+group,state,ceasefire,حماس,Hamas,490,0.141
+group,state,ceasefire,کویت,Kuwait,375,0.108
+group,state,ceasefire,داعش,ISIS,71,0.02
+group,state,ceasefire,پژاک,,1,0.0
+group,state,ceasefire,ژاپن,Japan,433,0.125
+group,state,ceasefire,یمن,Yemen,471,0.136
+group,state,ceasefire,چین,China,1708,0.493
+group,state,ceasefire,غزه,Gaza,1366,0.394
+group,state,ceasefire,قطر,Qatar,844,0.244
+group,irgc_affiliated,ceasefire,مقاومت عراق / حشد شعبی,Iraqi militias,53,0.028
+group,irgc_affiliated,ceasefire,مجاهدین خلق,,7,0.004
+group,irgc_affiliated,ceasefire,امارات,UAE,873,0.457
+group,irgc_affiliated,ceasefire,جمهوری آذربایجان,Rep. of Azerbaijan,154,0.081
+group,irgc_affiliated,ceasefire,کتائب حزب‌الله,,5,0.003
+group,irgc_affiliated,ceasefire,آذربایجان شرقی/غربی (Iranian provinces),,85,0.044
+group,irgc_affiliated,ceasefire,اتحادیه اروپا,EU / Europe,548,0.287
+group,irgc_affiliated,ceasefire,فلسطین اشغالی (Israel),,345,0.18
+group,irgc_affiliated,ceasefire,عربستان,Saudi Arabia,565,0.296
+group,irgc_affiliated,ceasefire,سلطنت‌طلبان,,27,0.014
+group,irgc_affiliated,ceasefire,جهاد اسلامی,,10,0.005
+group,irgc_affiliated,ceasefire,"دریای عمان (sea, not the country)",,102,0.053
+group,irgc_affiliated,ceasefire,انصارالله / حوثی‌ها,Houthis,118,0.062
+group,irgc_affiliated,ceasefire,جیش‌العدل,,2,0.001
+group,irgc_affiliated,ceasefire,افغانستان,Afghanistan,104,0.054
+group,irgc_affiliated,ceasefire,رضا پهلوی,,104,0.054
+group,irgc_affiliated,ceasefire,انگلیس,United Kingdom,528,0.276
+group,irgc_affiliated,ceasefire,حزب‌الله,Hezbollah,2288,1.197
+group,irgc_affiliated,ceasefire,هند,India,302,0.158
+group,irgc_affiliated,ceasefire,اسپانیا,Spain,204,0.107
+group,irgc_affiliated,ceasefire,ونزوئلا,Venezuela,146,0.076
+group,irgc_affiliated,ceasefire,پاکستان,Pakistan,1366,0.715
+group,irgc_affiliated,ceasefire,ایتالیا,Italy,163,0.085
+group,irgc_affiliated,ceasefire,اوکراین,Ukraine,423,0.221
+group,irgc_affiliated,ceasefire,طالبان,Taliban,36,0.019
+group,irgc_affiliated,ceasefire,فرانسه,France,380,0.199
+group,irgc_affiliated,ceasefire,فلسطین,Palestine,382,0.2
+group,irgc_affiliated,ceasefire,بحرین,Bahrain,320,0.167
+group,irgc_affiliated,ceasefire,سوریه,Syria,258,0.135
+group,irgc_affiliated,ceasefire,کومله,,14,0.007
+group,irgc_affiliated,ceasefire,لبنان,Lebanon,4682,2.449
+group,irgc_affiliated,ceasefire,ترکیه,Turkey,457,0.239
+group,irgc_affiliated,ceasefire,روسیه,Russia,1169,0.611
+group,irgc_affiliated,ceasefire,آلمان,Germany,292,0.153
+group,irgc_affiliated,ceasefire,عمان,Oman,416,0.218
+group,irgc_affiliated,ceasefire,اردن,Jordan,109,0.057
+group,irgc_affiliated,ceasefire,عراق,Iraq,1017,0.532
+group,irgc_affiliated,ceasefire,حماس,Hamas,164,0.086
+group,irgc_affiliated,ceasefire,کویت,Kuwait,328,0.172
+group,irgc_affiliated,ceasefire,داعش,ISIS,37,0.019
+group,irgc_affiliated,ceasefire,پژاک,,10,0.005
+group,irgc_affiliated,ceasefire,ژاپن,Japan,204,0.107
+group,irgc_affiliated,ceasefire,یمن,Yemen,353,0.185
+group,irgc_affiliated,ceasefire,چین,China,1014,0.53
+group,irgc_affiliated,ceasefire,غزه,Gaza,780,0.408
+group,irgc_affiliated,ceasefire,قطر,Qatar,472,0.247
+group,reformist,ceasefire,مقاومت عراق / حشد شعبی,Iraqi militias,3,0.003
+group,reformist,ceasefire,مجاهدین خلق,,9,0.008
+group,reformist,ceasefire,امارات,UAE,566,0.487
+group,reformist,ceasefire,جمهوری آذربایجان,Rep. of Azerbaijan,85,0.073
+group,reformist,ceasefire,کتائب حزب‌الله,,3,0.003
+group,reformist,ceasefire,آذربایجان شرقی/غربی (Iranian provinces),,24,0.021
+group,reformist,ceasefire,اتحادیه اروپا,EU / Europe,407,0.35
+group,reformist,ceasefire,فلسطین اشغالی (Israel),,55,0.047
+group,reformist,ceasefire,عربستان,Saudi Arabia,427,0.367
+group,reformist,ceasefire,سلطنت‌طلبان,,11,0.009
+group,reformist,ceasefire,جهاد اسلامی,,0,0.0
+group,reformist,ceasefire,"دریای عمان (sea, not the country)",,51,0.044
+group,reformist,ceasefire,انصارالله / حوثی‌ها,Houthis,50,0.043
+group,reformist,ceasefire,جیش‌العدل,,1,0.001
+group,reformist,ceasefire,افغانستان,Afghanistan,49,0.042
+group,reformist,ceasefire,رضا پهلوی,,47,0.04
+group,reformist,ceasefire,انگلیس,United Kingdom,287,0.247
+group,reformist,ceasefire,حزب‌الله,Hezbollah,685,0.589
+group,reformist,ceasefire,هند,India,222,0.191
+group,reformist,ceasefire,اسپانیا,Spain,76,0.065
+group,reformist,ceasefire,ونزوئلا,Venezuela,98,0.084
+group,reformist,ceasefire,پاکستان,Pakistan,1070,0.921
+group,reformist,ceasefire,ایتالیا,Italy,116,0.1
+group,reformist,ceasefire,اوکراین,Ukraine,170,0.146
+group,reformist,ceasefire,طالبان,Taliban,9,0.008
+group,reformist,ceasefire,فرانسه,France,240,0.207
+group,reformist,ceasefire,فلسطین,Palestine,127,0.109
+group,reformist,ceasefire,بحرین,Bahrain,138,0.119
+group,reformist,ceasefire,سوریه,Syria,127,0.109
+group,reformist,ceasefire,کومله,,6,0.005
+group,reformist,ceasefire,لبنان,Lebanon,2160,1.859
+group,reformist,ceasefire,ترکیه,Turkey,256,0.22
+group,reformist,ceasefire,روسیه,Russia,718,0.618
+group,reformist,ceasefire,آلمان,Germany,171,0.147
+group,reformist,ceasefire,عمان,Oman,310,0.267
+group,reformist,ceasefire,اردن,Jordan,39,0.034
+group,reformist,ceasefire,عراق,Iraq,460,0.396
+group,reformist,ceasefire,حماس,Hamas,54,0.046
+group,reformist,ceasefire,کویت,Kuwait,197,0.17
+group,reformist,ceasefire,داعش,ISIS,10,0.009
+group,reformist,ceasefire,پژاک,,8,0.007
+group,reformist,ceasefire,ژاپن,Japan,95,0.082
+group,reformist,ceasefire,یمن,Yemen,150,0.129
+group,reformist,ceasefire,چین,China,747,0.643
+group,reformist,ceasefire,غزه,Gaza,230,0.198
+group,reformist,ceasefire,قطر,Qatar,359,0.309
+group,state,after_truce_collapse,مقاومت عراق / حشد شعبی,Iraqi militias,144,0.067
+group,state,after_truce_collapse,مجاهدین خلق,,6,0.003
+group,state,after_truce_collapse,امارات,UAE,249,0.116
+group,state,after_truce_collapse,جمهوری آذربایجان,Rep. of Azerbaijan,188,0.087
+group,state,after_truce_collapse,کتائب حزب‌الله,,11,0.005
+group,state,after_truce_collapse,آذربایجان شرقی/غربی (Iranian provinces),,111,0.052
+group,state,after_truce_collapse,اتحادیه اروپا,EU / Europe,681,0.316
+group,state,after_truce_collapse,فلسطین اشغالی (Israel),,40,0.019
+group,state,after_truce_collapse,عربستان,Saudi Arabia,1760,0.818
+group,state,after_truce_collapse,سلطنت‌طلبان,,2,0.001
+group,state,after_truce_collapse,جهاد اسلامی,,34,0.016
+group,state,after_truce_collapse,"دریای عمان (sea, not the country)",,68,0.032
+group,state,after_truce_collapse,انصارالله / حوثی‌ها,Houthis,290,0.135
+group,state,after_truce_collapse,جیش‌العدل,,0,0.0
+group,state,after_truce_collapse,افغانستان,Afghanistan,129,0.06
+group,state,after_truce_collapse,رضا پهلوی,,11,0.005
+group,state,after_truce_collapse,انگلیس,United Kingdom,757,0.352
+group,state,after_truce_collapse,حزب‌الله,Hezbollah,339,0.158
+group,state,after_truce_collapse,هند,India,275,0.128
+group,state,after_truce_collapse,اسپانیا,Spain,456,0.212
+group,state,after_truce_collapse,ونزوئلا,Venezuela,161,0.075
+group,state,after_truce_collapse,پاکستان,Pakistan,998,0.464
+group,state,after_truce_collapse,ایتالیا,Italy,145,0.067
+group,state,after_truce_collapse,اوکراین,Ukraine,877,0.408
+group,state,after_truce_collapse,طالبان,Taliban,23,0.011
+group,state,after_truce_collapse,فرانسه,France,516,0.24
+group,state,after_truce_collapse,فلسطین,Palestine,636,0.296
+group,state,after_truce_collapse,بحرین,Bahrain,482,0.224
+group,state,after_truce_collapse,سوریه,Syria,633,0.294
+group,state,after_truce_collapse,کومله,,0,0.0
+group,state,after_truce_collapse,لبنان,Lebanon,1668,0.775
+group,state,after_truce_collapse,ترکیه,Turkey,655,0.304
+group,state,after_truce_collapse,روسیه,Russia,1454,0.676
+group,state,after_truce_collapse,آلمان,Germany,249,0.116
+group,state,after_truce_collapse,عمان,Oman,708,0.329
+group,state,after_truce_collapse,اردن,Jordan,641,0.298
+group,state,after_truce_collapse,عراق,Iraq,2771,1.288
+group,state,after_truce_collapse,حماس,Hamas,456,0.212
+group,state,after_truce_collapse,کویت,Kuwait,678,0.315
+group,state,after_truce_collapse,داعش,ISIS,67,0.031
+group,state,after_truce_collapse,پژاک,,5,0.002
+group,state,after_truce_collapse,ژاپن,Japan,270,0.125
+group,state,after_truce_collapse,یمن,Yemen,1265,0.588
+group,state,after_truce_collapse,چین,China,812,0.377
+group,state,after_truce_collapse,غزه,Gaza,1015,0.472
+group,state,after_truce_collapse,قطر,Qatar,528,0.245
+group,irgc_affiliated,after_truce_collapse,مقاومت عراق / حشد شعبی,Iraqi militias,101,0.096
+group,irgc_affiliated,after_truce_collapse,مجاهدین خلق,,0,0.0
+group,irgc_affiliated,after_truce_collapse,امارات,UAE,282,0.269
+group,irgc_affiliated,after_truce_collapse,جمهوری آذربایجان,Rep. of Azerbaijan,60,0.057
+group,irgc_affiliated,after_truce_collapse,کتائب حزب‌الله,,7,0.007
+group,irgc_affiliated,after_truce_collapse,آذربایجان شرقی/غربی (Iranian provinces),,34,0.032
+group,irgc_affiliated,after_truce_collapse,اتحادیه اروپا,EU / Europe,173,0.165
+group,irgc_affiliated,after_truce_collapse,فلسطین اشغالی (Israel),,37,0.035
+group,irgc_affiliated,after_truce_collapse,عربستان,Saudi Arabia,1416,1.351
+group,irgc_affiliated,after_truce_collapse,سلطنت‌طلبان,,10,0.01
+group,irgc_affiliated,after_truce_collapse,جهاد اسلامی,,11,0.01
+group,irgc_affiliated,after_truce_collapse,"دریای عمان (sea, not the country)",,57,0.054
+group,irgc_affiliated,after_truce_collapse,انصارالله / حوثی‌ها,Houthis,190,0.181
+group,irgc_affiliated,after_truce_collapse,جیش‌العدل,,0,0.0
+group,irgc_affiliated,after_truce_collapse,افغانستان,Afghanistan,43,0.041
+group,irgc_affiliated,after_truce_collapse,رضا پهلوی,,35,0.033
+group,irgc_affiliated,after_truce_collapse,انگلیس,United Kingdom,394,0.376
+group,irgc_affiliated,after_truce_collapse,حزب‌الله,Hezbollah,226,0.216
+group,irgc_affiliated,after_truce_collapse,هند,India,112,0.107
+group,irgc_affiliated,after_truce_collapse,اسپانیا,Spain,187,0.178
+group,irgc_affiliated,after_truce_collapse,ونزوئلا,Venezuela,99,0.094
+group,irgc_affiliated,after_truce_collapse,پاکستان,Pakistan,320,0.305
+group,irgc_affiliated,after_truce_collapse,ایتالیا,Italy,42,0.04
+group,irgc_affiliated,after_truce_collapse,اوکراین,Ukraine,384,0.366
+group,irgc_affiliated,after_truce_collapse,طالبان,Taliban,9,0.009
+group,irgc_affiliated,after_truce_collapse,فرانسه,France,221,0.211
+group,irgc_affiliated,after_truce_collapse,فلسطین,Palestine,273,0.261
+group,irgc_affiliated,after_truce_collapse,بحرین,Bahrain,446,0.426
+group,irgc_affiliated,after_truce_collapse,سوریه,Syria,282,0.269
+group,irgc_affiliated,after_truce_collapse,کومله,,6,0.006
+group,irgc_affiliated,after_truce_collapse,لبنان,Lebanon,1027,0.98
+group,irgc_affiliated,after_truce_collapse,ترکیه,Turkey,281,0.268
+group,irgc_affiliated,after_truce_collapse,روسیه,Russia,646,0.616
+group,irgc_affiliated,after_truce_collapse,آلمان,Germany,88,0.084
+group,irgc_affiliated,after_truce_collapse,عمان,Oman,429,0.409
+group,irgc_affiliated,after_truce_collapse,اردن,Jordan,481,0.459
+group,irgc_affiliated,after_truce_collapse,عراق,Iraq,1517,1.448
+group,irgc_affiliated,after_truce_collapse,حماس,Hamas,118,0.113
+group,irgc_affiliated,after_truce_collapse,کویت,Kuwait,618,0.59
+group,irgc_affiliated,after_truce_collapse,داعش,ISIS,38,0.036
+group,irgc_affiliated,after_truce_collapse,پژاک,,8,0.008
+group,irgc_affiliated,after_truce_collapse,ژاپن,Japan,103,0.098
+group,irgc_affiliated,after_truce_collapse,یمن,Yemen,1050,1.002
+group,irgc_affiliated,after_truce_collapse,چین,China,331,0.316
+group,irgc_affiliated,after_truce_collapse,غزه,Gaza,476,0.454
+group,irgc_affiliated,after_truce_collapse,قطر,Qatar,345,0.329
+group,reformist,after_truce_collapse,مقاومت عراق / حشد شعبی,Iraqi militias,38,0.053
+group,reformist,after_truce_collapse,مجاهدین خلق,,3,0.004
+group,reformist,after_truce_collapse,امارات,UAE,226,0.315
+group,reformist,after_truce_collapse,جمهوری آذربایجان,Rep. of Azerbaijan,34,0.047
+group,reformist,after_truce_collapse,کتائب حزب‌الله,,3,0.004
+group,reformist,after_truce_collapse,آذربایجان شرقی/غربی (Iranian provinces),,19,0.027
+group,reformist,after_truce_collapse,اتحادیه اروپا,EU / Europe,159,0.222
+group,reformist,after_truce_collapse,فلسطین اشغالی (Israel),,14,0.02
+group,reformist,after_truce_collapse,عربستان,Saudi Arabia,631,0.88
+group,reformist,after_truce_collapse,سلطنت‌طلبان,,3,0.004
+group,reformist,after_truce_collapse,جهاد اسلامی,,2,0.003
+group,reformist,after_truce_collapse,"دریای عمان (sea, not the country)",,28,0.039
+group,reformist,after_truce_collapse,انصارالله / حوثی‌ها,Houthis,106,0.148
+group,reformist,after_truce_collapse,جیش‌العدل,,2,0.003
+group,reformist,after_truce_collapse,افغانستان,Afghanistan,55,0.077
+group,reformist,after_truce_collapse,رضا پهلوی,,10,0.014
+group,reformist,after_truce_collapse,انگلیس,United Kingdom,195,0.272
+group,reformist,after_truce_collapse,حزب‌الله,Hezbollah,140,0.195
+group,reformist,after_truce_collapse,هند,India,57,0.08
+group,reformist,after_truce_collapse,اسپانیا,Spain,122,0.17
+group,reformist,after_truce_collapse,ونزوئلا,Venezuela,70,0.098
+group,reformist,after_truce_collapse,پاکستان,Pakistan,359,0.501
+group,reformist,after_truce_collapse,ایتالیا,Italy,23,0.032
+group,reformist,after_truce_collapse,اوکراین,Ukraine,228,0.318
+group,reformist,after_truce_collapse,طالبان,Taliban,27,0.038
+group,reformist,after_truce_collapse,فرانسه,France,116,0.162
+group,reformist,after_truce_collapse,فلسطین,Palestine,99,0.138
+group,reformist,after_truce_collapse,بحرین,Bahrain,151,0.211
+group,reformist,after_truce_collapse,سوریه,Syria,164,0.229
+group,reformist,after_truce_collapse,کومله,,2,0.003
+group,reformist,after_truce_collapse,لبنان,Lebanon,422,0.589
+group,reformist,after_truce_collapse,ترکیه,Turkey,227,0.317
+group,reformist,after_truce_collapse,روسیه,Russia,441,0.615
+group,reformist,after_truce_collapse,آلمان,Germany,70,0.098
+group,reformist,after_truce_collapse,عمان,Oman,366,0.511
+group,reformist,after_truce_collapse,اردن,Jordan,243,0.339
+group,reformist,after_truce_collapse,عراق,Iraq,735,1.025
+group,reformist,after_truce_collapse,حماس,Hamas,86,0.12
+group,reformist,after_truce_collapse,کویت,Kuwait,282,0.393
+group,reformist,after_truce_collapse,داعش,ISIS,13,0.018
+group,reformist,after_truce_collapse,پژاک,,12,0.017
+group,reformist,after_truce_collapse,ژاپن,Japan,51,0.071
+group,reformist,after_truce_collapse,یمن,Yemen,289,0.403
+group,reformist,after_truce_collapse,چین,China,336,0.469
+group,reformist,after_truce_collapse,غزه,Gaza,198,0.276
+group,reformist,after_truce_collapse,قطر,Qatar,251,0.35
+channel,IRNA,all,مقاومت عراق / حشد شعبی,Iraqi militias,123,0.029
+channel,IRNA,all,مجاهدین خلق,,7,0.002
+channel,IRNA,all,امارات,UAE,825,0.193
+channel,IRNA,all,جمهوری آذربایجان,Rep. of Azerbaijan,414,0.097
+channel,IRNA,all,کتائب حزب‌الله,,13,0.003
+channel,IRNA,all,آذربایجان شرقی/غربی (Iranian provinces),,176,0.041
+channel,IRNA,all,اتحادیه اروپا,EU / Europe,2033,0.475
+channel,IRNA,all,فلسطین اشغالی (Israel),,233,0.054
+channel,IRNA,all,عربستان,Saudi Arabia,1508,0.352
+channel,IRNA,all,سلطنت‌طلبان,,4,0.001
+channel,IRNA,all,جهاد اسلامی,,63,0.015
+channel,IRNA,all,"دریای عمان (sea, not the country)",,106,0.025
+channel,IRNA,all,انصارالله / حوثی‌ها,Houthis,242,0.057
+channel,IRNA,all,جیش‌العدل,,1,0.0
+channel,IRNA,all,افغانستان,Afghanistan,323,0.075
+channel,IRNA,all,رضا پهلوی,,9,0.002
+channel,IRNA,all,انگلیس,United Kingdom,1523,0.356
+channel,IRNA,all,حزب‌الله,Hezbollah,1221,0.285
+channel,IRNA,all,هند,India,750,0.175
+channel,IRNA,all,اسپانیا,Spain,616,0.144
+channel,IRNA,all,ونزوئلا,Venezuela,759,0.177
+channel,IRNA,all,پاکستان,Pakistan,2443,0.571
+channel,IRNA,all,ایتالیا,Italy,401,0.094
+channel,IRNA,all,اوکراین,Ukraine,1334,0.312
+channel,IRNA,all,طالبان,Taliban,89,0.021
+channel,IRNA,all,فرانسه,France,1049,0.245
+channel,IRNA,all,فلسطین,Palestine,1178,0.275
+channel,IRNA,all,بحرین,Bahrain,464,0.108
+channel,IRNA,all,سوریه,Syria,844,0.197
+channel,IRNA,all,کومله,,1,0.0
+channel,IRNA,all,لبنان,Lebanon,4338,1.014
+channel,IRNA,all,ترکیه,Turkey,1173,0.274
+channel,IRNA,all,روسیه,Russia,3164,0.739
+channel,IRNA,all,آلمان,Germany,810,0.189
+channel,IRNA,all,عمان,Oman,1036,0.242
+channel,IRNA,all,اردن,Jordan,446,0.104
+channel,IRNA,all,عراق,Iraq,3139,0.733
+channel,IRNA,all,حماس,Hamas,621,0.145
+channel,IRNA,all,کویت,Kuwait,559,0.131
+channel,IRNA,all,داعش,ISIS,142,0.033
+channel,IRNA,all,پژاک,,1,0.0
+channel,IRNA,all,ژاپن,Japan,471,0.11
+channel,IRNA,all,یمن,Yemen,887,0.207
+channel,IRNA,all,چین,China,1666,0.389
+channel,IRNA,all,غزه,Gaza,1535,0.359
+channel,IRNA,all,قطر,Qatar,921,0.215
+channel,IRIB News,all,مقاومت عراق / حشد شعبی,Iraqi militias,95,0.05
+channel,IRIB News,all,مجاهدین خلق,,0,0.0
+channel,IRIB News,all,امارات,UAE,567,0.298
+channel,IRIB News,all,جمهوری آذربایجان,Rep. of Azerbaijan,273,0.144
+channel,IRIB News,all,کتائب حزب‌الله,,9,0.005
+channel,IRIB News,all,آذربایجان شرقی/غربی (Iranian provinces),,199,0.105
+channel,IRIB News,all,اتحادیه اروپا,EU / Europe,696,0.366
+channel,IRIB News,all,فلسطین اشغالی (Israel),,278,0.146
+channel,IRIB News,all,عربستان,Saudi Arabia,818,0.43
+channel,IRIB News,all,سلطنت‌طلبان,,17,0.009
+channel,IRIB News,all,جهاد اسلامی,,6,0.003
+channel,IRIB News,all,"دریای عمان (sea, not the country)",,100,0.053
+channel,IRIB News,all,انصارالله / حوثی‌ها,Houthis,131,0.069
+channel,IRIB News,all,جیش‌العدل,,1,0.001
+channel,IRIB News,all,افغانستان,Afghanistan,96,0.05
+channel,IRIB News,all,رضا پهلوی,,28,0.015
+channel,IRIB News,all,انگلیس,United Kingdom,619,0.325
+channel,IRIB News,all,حزب‌الله,Hezbollah,1184,0.623
+channel,IRIB News,all,هند,India,295,0.155
+channel,IRIB News,all,اسپانیا,Spain,254,0.134
+channel,IRIB News,all,ونزوئلا,Venezuela,344,0.181
+channel,IRIB News,all,پاکستان,Pakistan,830,0.436
+channel,IRIB News,all,ایتالیا,Italy,128,0.067
+channel,IRIB News,all,اوکراین,Ukraine,290,0.152
+channel,IRIB News,all,طالبان,Taliban,16,0.008
+channel,IRIB News,all,فرانسه,France,405,0.213
+channel,IRIB News,all,فلسطین,Palestine,348,0.183
+channel,IRIB News,all,بحرین,Bahrain,583,0.307
+channel,IRIB News,all,سوریه,Syria,216,0.114
+channel,IRIB News,all,کومله,,9,0.005
+channel,IRIB News,all,لبنان,Lebanon,2372,1.247
+channel,IRIB News,all,ترکیه,Turkey,480,0.252
+channel,IRIB News,all,روسیه,Russia,992,0.522
+channel,IRIB News,all,آلمان,Germany,235,0.124
+channel,IRIB News,all,عمان,Oman,506,0.266
+channel,IRIB News,all,اردن,Jordan,314,0.165
+channel,IRIB News,all,عراق,Iraq,1353,0.711
+channel,IRIB News,all,حماس,Hamas,180,0.095
+channel,IRIB News,all,کویت,Kuwait,576,0.303
+channel,IRIB News,all,داعش,ISIS,74,0.039
+channel,IRIB News,all,پژاک,,10,0.005
+channel,IRIB News,all,ژاپن,Japan,232,0.122
+channel,IRIB News,all,یمن,Yemen,525,0.276
+channel,IRIB News,all,چین,China,720,0.379
+channel,IRIB News,all,غزه,Gaza,560,0.294
+channel,IRIB News,all,قطر,Qatar,422,0.222
+channel,Mehr News,all,مقاومت عراق / حشد شعبی,Iraqi militias,137,0.055
+channel,Mehr News,all,مجاهدین خلق,,6,0.002
+channel,Mehr News,all,امارات,UAE,622,0.25
+channel,Mehr News,all,جمهوری آذربایجان,Rep. of Azerbaijan,230,0.092
+channel,Mehr News,all,کتائب حزب‌الله,,19,0.008
+channel,Mehr News,all,آذربایجان شرقی/غربی (Iranian provinces),,214,0.086
+channel,Mehr News,all,اتحادیه اروپا,EU / Europe,735,0.295
+channel,Mehr News,all,فلسطین اشغالی (Israel),,314,0.126
+channel,Mehr News,all,عربستان,Saudi Arabia,1142,0.459
+channel,Mehr News,all,سلطنت‌طلبان,,22,0.009
+channel,Mehr News,all,جهاد اسلامی,,34,0.014
+channel,Mehr News,all,"دریای عمان (sea, not the country)",,84,0.034
+channel,Mehr News,all,انصارالله / حوثی‌ها,Houthis,265,0.106
+channel,Mehr News,all,جیش‌العدل,,1,0.0
+channel,Mehr News,all,افغانستان,Afghanistan,160,0.064
+channel,Mehr News,all,رضا پهلوی,,76,0.031
+channel,Mehr News,all,انگلیس,United Kingdom,559,0.224
+channel,Mehr News,all,حزب‌الله,Hezbollah,1513,0.608
+channel,Mehr News,all,هند,India,304,0.122
+channel,Mehr News,all,اسپانیا,Spain,290,0.116
+channel,Mehr News,all,ونزوئلا,Venezuela,493,0.198
+channel,Mehr News,all,پاکستان,Pakistan,1246,0.5
+channel,Mehr News,all,ایتالیا,Italy,138,0.055
+channel,Mehr News,all,اوکراین,Ukraine,425,0.171
+channel,Mehr News,all,طالبان,Taliban,33,0.013
+channel,Mehr News,all,فرانسه,France,460,0.185
+channel,Mehr News,all,فلسطین,Palestine,658,0.264
+channel,Mehr News,all,بحرین,Bahrain,531,0.213
+channel,Mehr News,all,سوریه,Syria,469,0.188
+channel,Mehr News,all,کومله,,10,0.004
+channel,Mehr News,all,لبنان,Lebanon,3856,1.549
+channel,Mehr News,all,ترکیه,Turkey,693,0.278
+channel,Mehr News,all,روسیه,Russia,1274,0.512
+channel,Mehr News,all,آلمان,Germany,251,0.101
+channel,Mehr News,all,عمان,Oman,599,0.241
+channel,Mehr News,all,اردن,Jordan,377,0.151
+channel,Mehr News,all,عراق,Iraq,1746,0.701
+channel,Mehr News,all,حماس,Hamas,302,0.121
+channel,Mehr News,all,کویت,Kuwait,525,0.211
+channel,Mehr News,all,داعش,ISIS,108,0.043
+channel,Mehr News,all,پژاک,,7,0.003
+channel,Mehr News,all,ژاپن,Japan,185,0.074
+channel,Mehr News,all,یمن,Yemen,801,0.322
+channel,Mehr News,all,چین,China,882,0.354
+channel,Mehr News,all,غزه,Gaza,1066,0.428
+channel,Mehr News,all,قطر,Qatar,633,0.254
+channel,Tasnim News,all,مقاومت عراق / حشد شعبی,Iraqi militias,263,0.086
+channel,Tasnim News,all,مجاهدین خلق,,10,0.003
+channel,Tasnim News,all,امارات,UAE,1088,0.358
+channel,Tasnim News,all,جمهوری آذربایجان,Rep. of Azerbaijan,257,0.084
+channel,Tasnim News,all,کتائب حزب‌الله,,12,0.004
+channel,Tasnim News,all,آذربایجان شرقی/غربی (Iranian provinces),,185,0.061
+channel,Tasnim News,all,اتحادیه اروپا,EU / Europe,817,0.268
+channel,Tasnim News,all,فلسطین اشغالی (Israel),,818,0.269
+channel,Tasnim News,all,عربستان,Saudi Arabia,1589,0.522
+channel,Tasnim News,all,سلطنت‌طلبان,,44,0.014
+channel,Tasnim News,all,جهاد اسلامی,,22,0.007
+channel,Tasnim News,all,"دریای عمان (sea, not the country)",,108,0.035
+channel,Tasnim News,all,انصارالله / حوثی‌ها,Houthis,298,0.098
+channel,Tasnim News,all,جیش‌العدل,,2,0.001
+channel,Tasnim News,all,افغانستان,Afghanistan,143,0.047
+channel,Tasnim News,all,رضا پهلوی,,170,0.056
+channel,Tasnim News,all,انگلیس,United Kingdom,822,0.27
+channel,Tasnim News,all,حزب‌الله,Hezbollah,2675,0.879
+channel,Tasnim News,all,هند,India,460,0.151
+channel,Tasnim News,all,اسپانیا,Spain,307,0.101
+channel,Tasnim News,all,ونزوئلا,Venezuela,420,0.138
+channel,Tasnim News,all,پاکستان,Pakistan,1418,0.466
+channel,Tasnim News,all,ایتالیا,Italy,205,0.067
+channel,Tasnim News,all,اوکراین,Ukraine,712,0.234
+channel,Tasnim News,all,طالبان,Taliban,60,0.02
+channel,Tasnim News,all,فرانسه,France,547,0.18
+channel,Tasnim News,all,فلسطین,Palestine,694,0.228
+channel,Tasnim News,all,بحرین,Bahrain,706,0.232
+channel,Tasnim News,all,سوریه,Syria,644,0.212
+channel,Tasnim News,all,کومله,,21,0.007
+channel,Tasnim News,all,لبنان,Lebanon,5088,1.672
+channel,Tasnim News,all,ترکیه,Turkey,817,0.268
+channel,Tasnim News,all,روسیه,Russia,1854,0.609
+channel,Tasnim News,all,آلمان,Germany,388,0.128
+channel,Tasnim News,all,عمان,Oman,735,0.242
+channel,Tasnim News,all,اردن,Jordan,467,0.153
+channel,Tasnim News,all,عراق,Iraq,2422,0.796
+channel,Tasnim News,all,حماس,Hamas,252,0.083
+channel,Tasnim News,all,کویت,Kuwait,795,0.261
+channel,Tasnim News,all,داعش,ISIS,162,0.053
+channel,Tasnim News,all,پژاک,,13,0.004
+channel,Tasnim News,all,ژاپن,Japan,289,0.095
+channel,Tasnim News,all,یمن,Yemen,1180,0.388
+channel,Tasnim News,all,چین,China,1196,0.393
+channel,Tasnim News,all,غزه,Gaza,1236,0.406
+channel,Tasnim News,all,قطر,Qatar,789,0.259
+channel,Fars News,all,مقاومت عراق / حشد شعبی,Iraqi militias,97,0.057
+channel,Fars News,all,مجاهدین خلق,,3,0.002
+channel,Fars News,all,امارات,UAE,817,0.48
+channel,Fars News,all,جمهوری آذربایجان,Rep. of Azerbaijan,124,0.073
+channel,Fars News,all,کتائب حزب‌الله,,12,0.007
+channel,Fars News,all,آذربایجان شرقی/غربی (Iranian provinces),,64,0.038
+channel,Fars News,all,اتحادیه اروپا,EU / Europe,430,0.253
+channel,Fars News,all,فلسطین اشغالی (Israel),,349,0.205
+channel,Fars News,all,عربستان,Saudi Arabia,1091,0.641
+channel,Fars News,all,سلطنت‌طلبان,,47,0.028
+channel,Fars News,all,جهاد اسلامی,,6,0.004
+channel,Fars News,all,"دریای عمان (sea, not the country)",,91,0.054
+channel,Fars News,all,انصارالله / حوثی‌ها,Houthis,135,0.079
+channel,Fars News,all,جیش‌العدل,,1,0.001
+channel,Fars News,all,افغانستان,Afghanistan,82,0.048
+channel,Fars News,all,رضا پهلوی,,134,0.079
+channel,Fars News,all,انگلیس,United Kingdom,430,0.253
+channel,Fars News,all,حزب‌الله,Hezbollah,1353,0.796
+channel,Fars News,all,هند,India,229,0.135
+channel,Fars News,all,اسپانیا,Spain,191,0.112
+channel,Fars News,all,ونزوئلا,Venezuela,275,0.162
+channel,Fars News,all,پاکستان,Pakistan,586,0.345
+channel,Fars News,all,ایتالیا,Italy,81,0.048
+channel,Fars News,all,اوکراین,Ukraine,314,0.185
+channel,Fars News,all,طالبان,Taliban,42,0.025
+channel,Fars News,all,فرانسه,France,295,0.173
+channel,Fars News,all,فلسطین,Palestine,238,0.14
+channel,Fars News,all,بحرین,Bahrain,598,0.352
+channel,Fars News,all,سوریه,Syria,181,0.106
+channel,Fars News,all,کومله,,28,0.016
+channel,Fars News,all,لبنان,Lebanon,1957,1.151
+channel,Fars News,all,ترکیه,Turkey,293,0.172
+channel,Fars News,all,روسیه,Russia,692,0.407
+channel,Fars News,all,آلمان,Germany,181,0.106
+channel,Fars News,all,عمان,Oman,415,0.244
+channel,Fars News,all,اردن,Jordan,337,0.198
+channel,Fars News,all,عراق,Iraq,1153,0.678
+channel,Fars News,all,حماس,Hamas,100,0.059
+channel,Fars News,all,کویت,Kuwait,689,0.405
+channel,Fars News,all,داعش,ISIS,49,0.029
+channel,Fars News,all,پژاک,,17,0.01
+channel,Fars News,all,ژاپن,Japan,123,0.072
+channel,Fars News,all,یمن,Yemen,571,0.336
+channel,Fars News,all,چین,China,553,0.325
+channel,Fars News,all,غزه,Gaza,404,0.238
+channel,Fars News,all,قطر,Qatar,455,0.268
+channel,Jamaran,all,مقاومت عراق / حشد شعبی,Iraqi militias,84,0.028
+channel,Jamaran,all,مجاهدین خلق,,14,0.005
+channel,Jamaran,all,امارات,UAE,1160,0.388
+channel,Jamaran,all,جمهوری آذربایجان,Rep. of Azerbaijan,222,0.074
+channel,Jamaran,all,کتائب حزب‌الله,,14,0.005
+channel,Jamaran,all,آذربایجان شرقی/غربی (Iranian provinces),,88,0.029
+channel,Jamaran,all,اتحادیه اروپا,EU / Europe,1040,0.348
+channel,Jamaran,all,فلسطین اشغالی (Israel),,217,0.073
+channel,Jamaran,all,عربستان,Saudi Arabia,1461,0.488
+channel,Jamaran,all,سلطنت‌طلبان,,32,0.011
+channel,Jamaran,all,جهاد اسلامی,,6,0.002
+channel,Jamaran,all,"دریای عمان (sea, not the country)",,98,0.033
+channel,Jamaran,all,انصارالله / حوثی‌ها,Houthis,218,0.073
+channel,Jamaran,all,جیش‌العدل,,4,0.001
+channel,Jamaran,all,افغانستان,Afghanistan,233,0.078
+channel,Jamaran,all,رضا پهلوی,,110,0.037
+channel,Jamaran,all,انگلیس,United Kingdom,788,0.263
+channel,Jamaran,all,حزب‌الله,Hezbollah,1325,0.443
+channel,Jamaran,all,هند,India,505,0.169
+channel,Jamaran,all,اسپانیا,Spain,263,0.088
+channel,Jamaran,all,ونزوئلا,Venezuela,695,0.232
+channel,Jamaran,all,پاکستان,Pakistan,1743,0.583
+channel,Jamaran,all,ایتالیا,Italy,199,0.067
+channel,Jamaran,all,اوکراین,Ukraine,629,0.21
+channel,Jamaran,all,طالبان,Taliban,101,0.034
+channel,Jamaran,all,فرانسه,France,611,0.204
+channel,Jamaran,all,فلسطین,Palestine,377,0.126
+channel,Jamaran,all,بحرین,Bahrain,510,0.17
+channel,Jamaran,all,سوریه,Syria,479,0.16
+channel,Jamaran,all,کومله,,16,0.005
+channel,Jamaran,all,لبنان,Lebanon,3148,1.052
+channel,Jamaran,all,ترکیه,Turkey,849,0.284
+channel,Jamaran,all,روسیه,Russia,2080,0.695
+channel,Jamaran,all,آلمان,Germany,402,0.134
+channel,Jamaran,all,عمان,Oman,1011,0.338
+channel,Jamaran,all,اردن,Jordan,378,0.126
+channel,Jamaran,all,عراق,Iraq,1842,0.616
+channel,Jamaran,all,حماس,Hamas,193,0.065
+channel,Jamaran,all,کویت,Kuwait,714,0.239
+channel,Jamaran,all,داعش,ISIS,74,0.025
+channel,Jamaran,all,پژاک,,28,0.009
+channel,Jamaran,all,ژاپن,Japan,236,0.079
+channel,Jamaran,all,یمن,Yemen,555,0.186
+channel,Jamaran,all,چین,China,1524,0.509
+channel,Jamaran,all,غزه,Gaza,676,0.226
+channel,Jamaran,all,قطر,Qatar,906,0.303
+channel,IRNA,before_war,مقاومت عراق / حشد شعبی,Iraqi militias,2,0.003
+channel,IRNA,before_war,مجاهدین خلق,,0,0.0
+channel,IRNA,before_war,امارات,UAE,134,0.193
+channel,IRNA,before_war,جمهوری آذربایجان,Rep. of Azerbaijan,80,0.115
+channel,IRNA,before_war,کتائب حزب‌الله,,0,0.0
+channel,IRNA,before_war,آذربایجان شرقی/غربی (Iranian provinces),,37,0.053
+channel,IRNA,before_war,اتحادیه اروپا,EU / Europe,315,0.454
+channel,IRNA,before_war,فلسطین اشغالی (Israel),,20,0.029
+channel,IRNA,before_war,عربستان,Saudi Arabia,227,0.327
+channel,IRNA,before_war,سلطنت‌طلبان,,1,0.001
+channel,IRNA,before_war,جهاد اسلامی,,4,0.006
+channel,IRNA,before_war,"دریای عمان (sea, not the country)",,9,0.013
+channel,IRNA,before_war,انصارالله / حوثی‌ها,Houthis,31,0.045
+channel,IRNA,before_war,جیش‌العدل,,0,0.0
+channel,IRNA,before_war,افغانستان,Afghanistan,75,0.108
+channel,IRNA,before_war,رضا پهلوی,,0,0.0
+channel,IRNA,before_war,انگلیس,United Kingdom,146,0.21
+channel,IRNA,before_war,حزب‌الله,Hezbollah,54,0.078
+channel,IRNA,before_war,هند,India,111,0.16
+channel,IRNA,before_war,اسپانیا,Spain,19,0.027
+channel,IRNA,before_war,ونزوئلا,Venezuela,512,0.738
+channel,IRNA,before_war,پاکستان,Pakistan,238,0.343
+channel,IRNA,before_war,ایتالیا,Italy,11,0.016
+channel,IRNA,before_war,اوکراین,Ukraine,182,0.262
+channel,IRNA,before_war,طالبان,Taliban,45,0.065
+channel,IRNA,before_war,فرانسه,France,93,0.134
+channel,IRNA,before_war,فلسطین,Palestine,113,0.163
+channel,IRNA,before_war,بحرین,Bahrain,15,0.022
+channel,IRNA,before_war,سوریه,Syria,149,0.215
+channel,IRNA,before_war,کومله,,0,0.0
+channel,IRNA,before_war,لبنان,Lebanon,179,0.258
+channel,IRNA,before_war,ترکیه,Turkey,201,0.29
+channel,IRNA,before_war,روسیه,Russia,456,0.657
+channel,IRNA,before_war,آلمان,Germany,99,0.143
+channel,IRNA,before_war,عمان,Oman,205,0.295
+channel,IRNA,before_war,اردن,Jordan,47,0.068
+channel,IRNA,before_war,عراق,Iraq,254,0.366
+channel,IRNA,before_war,حماس,Hamas,30,0.043
+channel,IRNA,before_war,کویت,Kuwait,29,0.042
+channel,IRNA,before_war,داعش,ISIS,52,0.075
+channel,IRNA,before_war,پژاک,,0,0.0
+channel,IRNA,before_war,ژاپن,Japan,26,0.037
+channel,IRNA,before_war,یمن,Yemen,95,0.137
+channel,IRNA,before_war,چین,China,195,0.281
+channel,IRNA,before_war,غزه,Gaza,207,0.298
+channel,IRNA,before_war,قطر,Qatar,110,0.158
+channel,IRIB News,before_war,مقاومت عراق / حشد شعبی,Iraqi militias,2,0.008
+channel,IRIB News,before_war,مجاهدین خلق,,0,0.0
+channel,IRIB News,before_war,امارات,UAE,27,0.113
+channel,IRIB News,before_war,جمهوری آذربایجان,Rep. of Azerbaijan,54,0.227
+channel,IRIB News,before_war,کتائب حزب‌الله,,0,0.0
+channel,IRIB News,before_war,آذربایجان شرقی/غربی (Iranian provinces),,47,0.197
+channel,IRIB News,before_war,اتحادیه اروپا,EU / Europe,117,0.491
+channel,IRIB News,before_war,فلسطین اشغالی (Israel),,5,0.021
+channel,IRIB News,before_war,عربستان,Saudi Arabia,49,0.206
+channel,IRIB News,before_war,سلطنت‌طلبان,,12,0.05
+channel,IRIB News,before_war,جهاد اسلامی,,1,0.004
+channel,IRIB News,before_war,"دریای عمان (sea, not the country)",,5,0.021
+channel,IRIB News,before_war,انصارالله / حوثی‌ها,Houthis,11,0.046
+channel,IRIB News,before_war,جیش‌العدل,,0,0.0
+channel,IRIB News,before_war,افغانستان,Afghanistan,26,0.109
+channel,IRIB News,before_war,رضا پهلوی,,6,0.025
+channel,IRIB News,before_war,انگلیس,United Kingdom,59,0.248
+channel,IRIB News,before_war,حزب‌الله,Hezbollah,34,0.143
+channel,IRIB News,before_war,هند,India,30,0.126
+channel,IRIB News,before_war,اسپانیا,Spain,12,0.05
+channel,IRIB News,before_war,ونزوئلا,Venezuela,219,0.919
+channel,IRIB News,before_war,پاکستان,Pakistan,58,0.243
+channel,IRIB News,before_war,ایتالیا,Italy,7,0.029
+channel,IRIB News,before_war,اوکراین,Ukraine,31,0.13
+channel,IRIB News,before_war,طالبان,Taliban,7,0.029
+channel,IRIB News,before_war,فرانسه,France,42,0.176
+channel,IRIB News,before_war,فلسطین,Palestine,31,0.13
+channel,IRIB News,before_war,بحرین,Bahrain,6,0.025
+channel,IRIB News,before_war,سوریه,Syria,38,0.159
+channel,IRIB News,before_war,کومله,,1,0.004
+channel,IRIB News,before_war,لبنان,Lebanon,122,0.512
+channel,IRIB News,before_war,ترکیه,Turkey,87,0.365
+channel,IRIB News,before_war,روسیه,Russia,147,0.617
+channel,IRIB News,before_war,آلمان,Germany,30,0.126
+channel,IRIB News,before_war,عمان,Oman,111,0.466
+channel,IRIB News,before_war,اردن,Jordan,14,0.059
+channel,IRIB News,before_war,عراق,Iraq,86,0.361
+channel,IRIB News,before_war,حماس,Hamas,12,0.05
+channel,IRIB News,before_war,کویت,Kuwait,2,0.008
+channel,IRIB News,before_war,داعش,ISIS,43,0.18
+channel,IRIB News,before_war,پژاک,,4,0.017
+channel,IRIB News,before_war,ژاپن,Japan,7,0.029
+channel,IRIB News,before_war,یمن,Yemen,16,0.067
+channel,IRIB News,before_war,چین,China,55,0.231
+channel,IRIB News,before_war,غزه,Gaza,74,0.311
+channel,IRIB News,before_war,قطر,Qatar,32,0.134
+channel,Mehr News,before_war,مقاومت عراق / حشد شعبی,Iraqi militias,5,0.012
+channel,Mehr News,before_war,مجاهدین خلق,,4,0.01
+channel,Mehr News,before_war,امارات,UAE,77,0.189
+channel,Mehr News,before_war,جمهوری آذربایجان,Rep. of Azerbaijan,45,0.11
+channel,Mehr News,before_war,کتائب حزب‌الله,,7,0.017
+channel,Mehr News,before_war,آذربایجان شرقی/غربی (Iranian provinces),,44,0.108
+channel,Mehr News,before_war,اتحادیه اروپا,EU / Europe,260,0.637
+channel,Mehr News,before_war,فلسطین اشغالی (Israel),,7,0.017
+channel,Mehr News,before_war,عربستان,Saudi Arabia,132,0.324
+channel,Mehr News,before_war,سلطنت‌طلبان,,16,0.039
+channel,Mehr News,before_war,جهاد اسلامی,,9,0.022
+channel,Mehr News,before_war,"دریای عمان (sea, not the country)",,11,0.027
+channel,Mehr News,before_war,انصارالله / حوثی‌ها,Houthis,43,0.105
+channel,Mehr News,before_war,جیش‌العدل,,0,0.0
+channel,Mehr News,before_war,افغانستان,Afghanistan,50,0.123
+channel,Mehr News,before_war,رضا پهلوی,,47,0.115
+channel,Mehr News,before_war,انگلیس,United Kingdom,81,0.199
+channel,Mehr News,before_war,حزب‌الله,Hezbollah,95,0.233
+channel,Mehr News,before_war,هند,India,71,0.174
+channel,Mehr News,before_war,اسپانیا,Spain,37,0.091
+channel,Mehr News,before_war,ونزوئلا,Venezuela,368,0.902
+channel,Mehr News,before_war,پاکستان,Pakistan,123,0.301
+channel,Mehr News,before_war,ایتالیا,Italy,12,0.029
+channel,Mehr News,before_war,اوکراین,Ukraine,119,0.292
+channel,Mehr News,before_war,طالبان,Taliban,13,0.032
+channel,Mehr News,before_war,فرانسه,France,79,0.194
+channel,Mehr News,before_war,فلسطین,Palestine,149,0.365
+channel,Mehr News,before_war,بحرین,Bahrain,11,0.027
+channel,Mehr News,before_war,سوریه,Syria,191,0.468
+channel,Mehr News,before_war,کومله,,2,0.005
+channel,Mehr News,before_war,لبنان,Lebanon,288,0.706
+channel,Mehr News,before_war,ترکیه,Turkey,118,0.289
+channel,Mehr News,before_war,روسیه,Russia,312,0.765
+channel,Mehr News,before_war,آلمان,Germany,65,0.159
+channel,Mehr News,before_war,عمان,Oman,105,0.257
+channel,Mehr News,before_war,اردن,Jordan,54,0.132
+channel,Mehr News,before_war,عراق,Iraq,225,0.551
+channel,Mehr News,before_war,حماس,Hamas,64,0.157
+channel,Mehr News,before_war,کویت,Kuwait,7,0.017
+channel,Mehr News,before_war,داعش,ISIS,74,0.181
+channel,Mehr News,before_war,پژاک,,6,0.015
+channel,Mehr News,before_war,ژاپن,Japan,25,0.061
+channel,Mehr News,before_war,یمن,Yemen,91,0.223
+channel,Mehr News,before_war,چین,China,122,0.299
+channel,Mehr News,before_war,غزه,Gaza,318,0.779
+channel,Mehr News,before_war,قطر,Qatar,95,0.233
+channel,Tasnim News,before_war,مقاومت عراق / حشد شعبی,Iraqi militias,8,0.019
+channel,Tasnim News,before_war,مجاهدین خلق,,6,0.014
+channel,Tasnim News,before_war,امارات,UAE,69,0.165
+channel,Tasnim News,before_war,جمهوری آذربایجان,Rep. of Azerbaijan,59,0.141
+channel,Tasnim News,before_war,کتائب حزب‌الله,,1,0.002
+channel,Tasnim News,before_war,آذربایجان شرقی/غربی (Iranian provinces),,41,0.098
+channel,Tasnim News,before_war,اتحادیه اروپا,EU / Europe,207,0.494
+channel,Tasnim News,before_war,فلسطین اشغالی (Israel),,31,0.074
+channel,Tasnim News,before_war,عربستان,Saudi Arabia,131,0.313
+channel,Tasnim News,before_war,سلطنت‌طلبان,,19,0.045
+channel,Tasnim News,before_war,جهاد اسلامی,,4,0.01
+channel,Tasnim News,before_war,"دریای عمان (sea, not the country)",,5,0.012
+channel,Tasnim News,before_war,انصارالله / حوثی‌ها,Houthis,34,0.081
+channel,Tasnim News,before_war,جیش‌العدل,,1,0.002
+channel,Tasnim News,before_war,افغانستان,Afghanistan,29,0.069
+channel,Tasnim News,before_war,رضا پهلوی,,56,0.134
+channel,Tasnim News,before_war,انگلیس,United Kingdom,82,0.196
+channel,Tasnim News,before_war,حزب‌الله,Hezbollah,85,0.203
+channel,Tasnim News,before_war,هند,India,70,0.167
+channel,Tasnim News,before_war,اسپانیا,Spain,27,0.064
+channel,Tasnim News,before_war,ونزوئلا,Venezuela,241,0.575
+channel,Tasnim News,before_war,پاکستان,Pakistan,91,0.217
+channel,Tasnim News,before_war,ایتالیا,Italy,22,0.052
+channel,Tasnim News,before_war,اوکراین,Ukraine,115,0.274
+channel,Tasnim News,before_war,طالبان,Taliban,23,0.055
+channel,Tasnim News,before_war,فرانسه,France,58,0.138
+channel,Tasnim News,before_war,فلسطین,Palestine,74,0.177
+channel,Tasnim News,before_war,بحرین,Bahrain,7,0.017
+channel,Tasnim News,before_war,سوریه,Syria,187,0.446
+channel,Tasnim News,before_war,کومله,,5,0.012
+channel,Tasnim News,before_war,لبنان,Lebanon,269,0.642
+channel,Tasnim News,before_war,ترکیه,Turkey,137,0.327
+channel,Tasnim News,before_war,روسیه,Russia,319,0.761
+channel,Tasnim News,before_war,آلمان,Germany,57,0.136
+channel,Tasnim News,before_war,عمان,Oman,147,0.351
+channel,Tasnim News,before_war,اردن,Jordan,31,0.074
+channel,Tasnim News,before_war,عراق,Iraq,228,0.544
+channel,Tasnim News,before_war,حماس,Hamas,34,0.081
+channel,Tasnim News,before_war,کویت,Kuwait,9,0.021
+channel,Tasnim News,before_war,داعش,ISIS,103,0.246
+channel,Tasnim News,before_war,پژاک,,4,0.01
+channel,Tasnim News,before_war,ژاپن,Japan,33,0.079
+channel,Tasnim News,before_war,یمن,Yemen,84,0.2
+channel,Tasnim News,before_war,چین,China,173,0.413
+channel,Tasnim News,before_war,غزه,Gaza,238,0.568
+channel,Tasnim News,before_war,قطر,Qatar,111,0.265
+channel,Fars News,before_war,مقاومت عراق / حشد شعبی,Iraqi militias,4,0.017
+channel,Fars News,before_war,مجاهدین خلق,,0,0.0
+channel,Fars News,before_war,امارات,UAE,51,0.22
+channel,Fars News,before_war,جمهوری آذربایجان,Rep. of Azerbaijan,35,0.151
+channel,Fars News,before_war,کتائب حزب‌الله,,3,0.013
+channel,Fars News,before_war,آذربایجان شرقی/غربی (Iranian provinces),,13,0.056
+channel,Fars News,before_war,اتحادیه اروپا,EU / Europe,118,0.51
+channel,Fars News,before_war,فلسطین اشغالی (Israel),,4,0.017
+channel,Fars News,before_war,عربستان,Saudi Arabia,66,0.285
+channel,Fars News,before_war,سلطنت‌طلبان,,23,0.099
+channel,Fars News,before_war,جهاد اسلامی,,2,0.009
+channel,Fars News,before_war,"دریای عمان (sea, not the country)",,5,0.022
+channel,Fars News,before_war,انصارالله / حوثی‌ها,Houthis,12,0.052
+channel,Fars News,before_war,جیش‌العدل,,0,0.0
+channel,Fars News,before_war,افغانستان,Afghanistan,18,0.078
+channel,Fars News,before_war,رضا پهلوی,,53,0.229
+channel,Fars News,before_war,انگلیس,United Kingdom,36,0.156
+channel,Fars News,before_war,حزب‌الله,Hezbollah,23,0.099
+channel,Fars News,before_war,هند,India,41,0.177
+channel,Fars News,before_war,اسپانیا,Spain,20,0.086
+channel,Fars News,before_war,ونزوئلا,Venezuela,186,0.804
+channel,Fars News,before_war,پاکستان,Pakistan,45,0.194
+channel,Fars News,before_war,ایتالیا,Italy,12,0.052
+channel,Fars News,before_war,اوکراین,Ukraine,41,0.177
+channel,Fars News,before_war,طالبان,Taliban,22,0.095
+channel,Fars News,before_war,فرانسه,France,43,0.186
+channel,Fars News,before_war,فلسطین,Palestine,13,0.056
+channel,Fars News,before_war,بحرین,Bahrain,5,0.022
+channel,Fars News,before_war,سوریه,Syria,32,0.138
+channel,Fars News,before_war,کومله,,6,0.026
+channel,Fars News,before_war,لبنان,Lebanon,69,0.298
+channel,Fars News,before_war,ترکیه,Turkey,69,0.298
+channel,Fars News,before_war,روسیه,Russia,140,0.605
+channel,Fars News,before_war,آلمان,Germany,25,0.108
+channel,Fars News,before_war,عمان,Oman,37,0.16
+channel,Fars News,before_war,اردن,Jordan,15,0.065
+channel,Fars News,before_war,عراق,Iraq,60,0.259
+channel,Fars News,before_war,حماس,Hamas,15,0.065
+channel,Fars News,before_war,کویت,Kuwait,0,0.0
+channel,Fars News,before_war,داعش,ISIS,22,0.095
+channel,Fars News,before_war,پژاک,,6,0.026
+channel,Fars News,before_war,ژاپن,Japan,6,0.026
+channel,Fars News,before_war,یمن,Yemen,31,0.134
+channel,Fars News,before_war,چین,China,80,0.346
+channel,Fars News,before_war,غزه,Gaza,54,0.233
+channel,Fars News,before_war,قطر,Qatar,37,0.16
+channel,Jamaran,before_war,مقاومت عراق / حشد شعبی,Iraqi militias,2,0.004
+channel,Jamaran,before_war,مجاهدین خلق,,2,0.004
+channel,Jamaran,before_war,امارات,UAE,69,0.147
+channel,Jamaran,before_war,جمهوری آذربایجان,Rep. of Azerbaijan,53,0.113
+channel,Jamaran,before_war,کتائب حزب‌الله,,2,0.004
+channel,Jamaran,before_war,آذربایجان شرقی/غربی (Iranian provinces),,22,0.047
+channel,Jamaran,before_war,اتحادیه اروپا,EU / Europe,237,0.506
+channel,Jamaran,before_war,فلسطین اشغالی (Israel),,19,0.041
+channel,Jamaran,before_war,عربستان,Saudi Arabia,150,0.32
+channel,Jamaran,before_war,سلطنت‌طلبان,,10,0.021
+channel,Jamaran,before_war,جهاد اسلامی,,2,0.004
+channel,Jamaran,before_war,"دریای عمان (sea, not the country)",,8,0.017
+channel,Jamaran,before_war,انصارالله / حوثی‌ها,Houthis,29,0.062
+channel,Jamaran,before_war,جیش‌العدل,,1,0.002
+channel,Jamaran,before_war,افغانستان,Afghanistan,87,0.186
+channel,Jamaran,before_war,رضا پهلوی,,28,0.06
+channel,Jamaran,before_war,انگلیس,United Kingdom,104,0.222
+channel,Jamaran,before_war,حزب‌الله,Hezbollah,83,0.177
+channel,Jamaran,before_war,هند,India,86,0.183
+channel,Jamaran,before_war,اسپانیا,Spain,6,0.013
+channel,Jamaran,before_war,ونزوئلا,Venezuela,498,1.063
+channel,Jamaran,before_war,پاکستان,Pakistan,144,0.307
+channel,Jamaran,before_war,ایتالیا,Italy,26,0.055
+channel,Jamaran,before_war,اوکراین,Ukraine,140,0.299
+channel,Jamaran,before_war,طالبان,Taliban,47,0.1
+channel,Jamaran,before_war,فرانسه,France,99,0.211
+channel,Jamaran,before_war,فلسطین,Palestine,65,0.139
+channel,Jamaran,before_war,بحرین,Bahrain,7,0.015
+channel,Jamaran,before_war,سوریه,Syria,125,0.267
+channel,Jamaran,before_war,کومله,,0,0.0
+channel,Jamaran,before_war,لبنان,Lebanon,171,0.365
+channel,Jamaran,before_war,ترکیه,Turkey,179,0.382
+channel,Jamaran,before_war,روسیه,Russia,461,0.984
+channel,Jamaran,before_war,آلمان,Germany,77,0.164
+channel,Jamaran,before_war,عمان,Oman,216,0.461
+channel,Jamaran,before_war,اردن,Jordan,38,0.081
+channel,Jamaran,before_war,عراق,Iraq,223,0.476
+channel,Jamaran,before_war,حماس,Hamas,47,0.1
+channel,Jamaran,before_war,کویت,Kuwait,21,0.045
+channel,Jamaran,before_war,داعش,ISIS,42,0.09
+channel,Jamaran,before_war,پژاک,,5,0.011
+channel,Jamaran,before_war,ژاپن,Japan,31,0.066
+channel,Jamaran,before_war,یمن,Yemen,42,0.09
+channel,Jamaran,before_war,چین,China,196,0.418
+channel,Jamaran,before_war,غزه,Gaza,174,0.371
+channel,Jamaran,before_war,قطر,Qatar,132,0.282
+channel,IRNA,war,مقاومت عراق / حشد شعبی,Iraqi militias,34,0.05
+channel,IRNA,war,مجاهدین خلق,,0,0.0
+channel,IRNA,war,امارات,UAE,165,0.241
+channel,IRNA,war,جمهوری آذربایجان,Rep. of Azerbaijan,81,0.118
+channel,IRNA,war,کتائب حزب‌الله,,2,0.003
+channel,IRNA,war,آذربایجان شرقی/غربی (Iranian provinces),,18,0.026
+channel,IRNA,war,اتحادیه اروپا,EU / Europe,216,0.316
+channel,IRNA,war,فلسطین اشغالی (Israel),,98,0.143
+channel,IRNA,war,عربستان,Saudi Arabia,165,0.241
+channel,IRNA,war,سلطنت‌طلبان,,1,0.001
+channel,IRNA,war,جهاد اسلامی,,3,0.004
+channel,IRNA,war,"دریای عمان (sea, not the country)",,11,0.016
+channel,IRNA,war,انصارالله / حوثی‌ها,Houthis,31,0.045
+channel,IRNA,war,جیش‌العدل,,0,0.0
+channel,IRNA,war,افغانستان,Afghanistan,35,0.051
+channel,IRNA,war,رضا پهلوی,,1,0.001
+channel,IRNA,war,انگلیس,United Kingdom,281,0.411
+channel,IRNA,war,حزب‌الله,Hezbollah,258,0.377
+channel,IRNA,war,هند,India,113,0.165
+channel,IRNA,war,اسپانیا,Spain,77,0.113
+channel,IRNA,war,ونزوئلا,Venezuela,25,0.037
+channel,IRNA,war,پاکستان,Pakistan,253,0.37
+channel,IRNA,war,ایتالیا,Italy,67,0.098
+channel,IRNA,war,اوکراین,Ukraine,86,0.126
+channel,IRNA,war,طالبان,Taliban,10,0.015
+channel,IRNA,war,فرانسه,France,165,0.241
+channel,IRNA,war,فلسطین,Palestine,174,0.254
+channel,IRNA,war,بحرین,Bahrain,122,0.178
+channel,IRNA,war,سوریه,Syria,43,0.063
+channel,IRNA,war,کومله,,1,0.001
+channel,IRNA,war,لبنان,Lebanon,436,0.637
+channel,IRNA,war,ترکیه,Turkey,189,0.276
+channel,IRNA,war,روسیه,Russia,429,0.627
+channel,IRNA,war,آلمان,Germany,135,0.197
+channel,IRNA,war,عمان,Oman,127,0.186
+channel,IRNA,war,اردن,Jordan,48,0.07
+channel,IRNA,war,عراق,Iraq,346,0.506
+channel,IRNA,war,حماس,Hamas,16,0.023
+channel,IRNA,war,کویت,Kuwait,129,0.189
+channel,IRNA,war,داعش,ISIS,2,0.003
+channel,IRNA,war,پژاک,,0,0.0
+channel,IRNA,war,ژاپن,Japan,62,0.091
+channel,IRNA,war,یمن,Yemen,78,0.114
+channel,IRNA,war,چین,China,183,0.268
+channel,IRNA,war,غزه,Gaza,73,0.107
+channel,IRNA,war,قطر,Qatar,121,0.177
+channel,IRIB News,war,مقاومت عراق / حشد شعبی,Iraqi militias,61,0.131
+channel,IRIB News,war,مجاهدین خلق,,0,0.0
+channel,IRIB News,war,امارات,UAE,256,0.548
+channel,IRIB News,war,جمهوری آذربایجان,Rep. of Azerbaijan,33,0.071
+channel,IRIB News,war,کتائب حزب‌الله,,3,0.006
+channel,IRIB News,war,آذربایجان شرقی/غربی (Iranian provinces),,28,0.06
+channel,IRIB News,war,اتحادیه اروپا,EU / Europe,145,0.311
+channel,IRIB News,war,فلسطین اشغالی (Israel),,179,0.383
+channel,IRIB News,war,عربستان,Saudi Arabia,156,0.334
+channel,IRIB News,war,سلطنت‌طلبان,,2,0.004
+channel,IRIB News,war,جهاد اسلامی,,3,0.006
+channel,IRIB News,war,"دریای عمان (sea, not the country)",,13,0.028
+channel,IRIB News,war,انصارالله / حوثی‌ها,Houthis,34,0.073
+channel,IRIB News,war,جیش‌العدل,,0,0.0
+channel,IRIB News,war,افغانستان,Afghanistan,20,0.043
+channel,IRIB News,war,رضا پهلوی,,9,0.019
+channel,IRIB News,war,انگلیس,United Kingdom,126,0.27
+channel,IRIB News,war,حزب‌الله,Hezbollah,494,1.058
+channel,IRIB News,war,هند,India,91,0.195
+channel,IRIB News,war,اسپانیا,Spain,54,0.116
+channel,IRIB News,war,ونزوئلا,Venezuela,13,0.028
+channel,IRIB News,war,پاکستان,Pakistan,69,0.148
+channel,IRIB News,war,ایتالیا,Italy,19,0.041
+channel,IRIB News,war,اوکراین,Ukraine,39,0.084
+channel,IRIB News,war,طالبان,Taliban,3,0.006
+channel,IRIB News,war,فرانسه,France,80,0.171
+channel,IRIB News,war,فلسطین,Palestine,76,0.163
+channel,IRIB News,war,بحرین,Bahrain,300,0.643
+channel,IRIB News,war,سوریه,Syria,27,0.058
+channel,IRIB News,war,کومله,,5,0.011
+channel,IRIB News,war,لبنان,Lebanon,305,0.653
+channel,IRIB News,war,ترکیه,Turkey,97,0.208
+channel,IRIB News,war,روسیه,Russia,168,0.36
+channel,IRIB News,war,آلمان,Germany,50,0.107
+channel,IRIB News,war,عمان,Oman,60,0.129
+channel,IRIB News,war,اردن,Jordan,86,0.184
+channel,IRIB News,war,عراق,Iraq,358,0.767
+channel,IRIB News,war,حماس,Hamas,17,0.036
+channel,IRIB News,war,کویت,Kuwait,242,0.518
+channel,IRIB News,war,داعش,ISIS,9,0.019
+channel,IRIB News,war,پژاک,,2,0.004
+channel,IRIB News,war,ژاپن,Japan,52,0.111
+channel,IRIB News,war,یمن,Yemen,96,0.206
+channel,IRIB News,war,چین,China,77,0.165
+channel,IRIB News,war,غزه,Gaza,58,0.124
+channel,IRIB News,war,قطر,Qatar,120,0.257
+channel,Mehr News,war,مقاومت عراق / حشد شعبی,Iraqi militias,67,0.119
+channel,Mehr News,war,مجاهدین خلق,,0,0.0
+channel,Mehr News,war,امارات,UAE,200,0.355
+channel,Mehr News,war,جمهوری آذربایجان,Rep. of Azerbaijan,58,0.103
+channel,Mehr News,war,کتائب حزب‌الله,,4,0.007
+channel,Mehr News,war,آذربایجان شرقی/غربی (Iranian provinces),,67,0.119
+channel,Mehr News,war,اتحادیه اروپا,EU / Europe,92,0.163
+channel,Mehr News,war,فلسطین اشغالی (Israel),,212,0.376
+channel,Mehr News,war,عربستان,Saudi Arabia,195,0.346
+channel,Mehr News,war,سلطنت‌طلبان,,0,0.0
+channel,Mehr News,war,جهاد اسلامی,,6,0.011
+channel,Mehr News,war,"دریای عمان (sea, not the country)",,11,0.02
+channel,Mehr News,war,انصارالله / حوثی‌ها,Houthis,35,0.062
+channel,Mehr News,war,جیش‌العدل,,0,0.0
+channel,Mehr News,war,افغانستان,Afghanistan,23,0.041
+channel,Mehr News,war,رضا پهلوی,,14,0.025
+channel,Mehr News,war,انگلیس,United Kingdom,87,0.154
+channel,Mehr News,war,حزب‌الله,Hezbollah,449,0.797
+channel,Mehr News,war,هند,India,70,0.124
+channel,Mehr News,war,اسپانیا,Spain,45,0.08
+channel,Mehr News,war,ونزوئلا,Venezuela,17,0.03
+channel,Mehr News,war,پاکستان,Pakistan,86,0.153
+channel,Mehr News,war,ایتالیا,Italy,23,0.041
+channel,Mehr News,war,اوکراین,Ukraine,15,0.027
+channel,Mehr News,war,طالبان,Taliban,8,0.014
+channel,Mehr News,war,فرانسه,France,72,0.128
+channel,Mehr News,war,فلسطین,Palestine,97,0.172
+channel,Mehr News,war,بحرین,Bahrain,263,0.467
+channel,Mehr News,war,سوریه,Syria,23,0.041
+channel,Mehr News,war,کومله,,6,0.011
+channel,Mehr News,war,لبنان,Lebanon,442,0.784
+channel,Mehr News,war,ترکیه,Turkey,106,0.188
+channel,Mehr News,war,روسیه,Russia,151,0.268
+channel,Mehr News,war,آلمان,Germany,43,0.076
+channel,Mehr News,war,عمان,Oman,61,0.108
+channel,Mehr News,war,اردن,Jordan,73,0.13
+channel,Mehr News,war,عراق,Iraq,334,0.593
+channel,Mehr News,war,حماس,Hamas,18,0.032
+channel,Mehr News,war,کویت,Kuwait,198,0.351
+channel,Mehr News,war,داعش,ISIS,6,0.011
+channel,Mehr News,war,پژاک,,0,0.0
+channel,Mehr News,war,ژاپن,Japan,13,0.023
+channel,Mehr News,war,یمن,Yemen,101,0.179
+channel,Mehr News,war,چین,China,116,0.206
+channel,Mehr News,war,غزه,Gaza,50,0.089
+channel,Mehr News,war,قطر,Qatar,126,0.224
+channel,Tasnim News,war,مقاومت عراق / حشد شعبی,Iraqi militias,129,0.181
+channel,Tasnim News,war,مجاهدین خلق,,0,0.0
+channel,Tasnim News,war,امارات,UAE,337,0.473
+channel,Tasnim News,war,جمهوری آذربایجان,Rep. of Azerbaijan,53,0.074
+channel,Tasnim News,war,کتائب حزب‌الله,,6,0.008
+channel,Tasnim News,war,آذربایجان شرقی/غربی (Iranian provinces),,55,0.077
+channel,Tasnim News,war,اتحادیه اروپا,EU / Europe,130,0.183
+channel,Tasnim News,war,فلسطین اشغالی (Israel),,479,0.673
+channel,Tasnim News,war,عربستان,Saudi Arabia,250,0.351
+channel,Tasnim News,war,سلطنت‌طلبان,,6,0.008
+channel,Tasnim News,war,جهاد اسلامی,,1,0.001
+channel,Tasnim News,war,"دریای عمان (sea, not the country)",,17,0.024
+channel,Tasnim News,war,انصارالله / حوثی‌ها,Houthis,47,0.066
+channel,Tasnim News,war,جیش‌العدل,,0,0.0
+channel,Tasnim News,war,افغانستان,Afghanistan,21,0.029
+channel,Tasnim News,war,رضا پهلوی,,33,0.046
+channel,Tasnim News,war,انگلیس,United Kingdom,122,0.171
+channel,Tasnim News,war,حزب‌الله,Hezbollah,966,1.356
+channel,Tasnim News,war,هند,India,107,0.15
+channel,Tasnim News,war,اسپانیا,Spain,37,0.052
+channel,Tasnim News,war,ونزوئلا,Venezuela,12,0.017
+channel,Tasnim News,war,پاکستان,Pakistan,140,0.197
+channel,Tasnim News,war,ایتالیا,Italy,29,0.041
+channel,Tasnim News,war,اوکراین,Ukraine,37,0.052
+channel,Tasnim News,war,طالبان,Taliban,8,0.011
+channel,Tasnim News,war,فرانسه,France,87,0.122
+channel,Tasnim News,war,فلسطین,Palestine,124,0.174
+channel,Tasnim News,war,بحرین,Bahrain,252,0.354
+channel,Tasnim News,war,سوریه,Syria,43,0.06
+channel,Tasnim News,war,کومله,,10,0.014
+channel,Tasnim News,war,لبنان,Lebanon,728,1.022
+channel,Tasnim News,war,ترکیه,Turkey,132,0.185
+channel,Tasnim News,war,روسیه,Russia,185,0.26
+channel,Tasnim News,war,آلمان,Germany,58,0.081
+channel,Tasnim News,war,عمان,Oman,56,0.079
+channel,Tasnim News,war,اردن,Jordan,92,0.129
+channel,Tasnim News,war,عراق,Iraq,484,0.68
+channel,Tasnim News,war,حماس,Hamas,17,0.024
+channel,Tasnim News,war,کویت,Kuwait,267,0.375
+channel,Tasnim News,war,داعش,ISIS,4,0.006
+channel,Tasnim News,war,پژاک,,1,0.001
+channel,Tasnim News,war,ژاپن,Japan,49,0.069
+channel,Tasnim News,war,یمن,Yemen,135,0.19
+channel,Tasnim News,war,چین,China,91,0.128
+channel,Tasnim News,war,غزه,Gaza,59,0.083
+channel,Tasnim News,war,قطر,Qatar,162,0.227
+channel,Fars News,war,مقاومت عراق / حشد شعبی,Iraqi militias,65,0.154
+channel,Fars News,war,مجاهدین خلق,,0,0.0
+channel,Fars News,war,امارات,UAE,293,0.695
+channel,Fars News,war,جمهوری آذربایجان,Rep. of Azerbaijan,20,0.047
+channel,Fars News,war,کتائب حزب‌الله,,2,0.005
+channel,Fars News,war,آذربایجان شرقی/غربی (Iranian provinces),,21,0.05
+channel,Fars News,war,اتحادیه اروپا,EU / Europe,71,0.169
+channel,Fars News,war,فلسطین اشغالی (Israel),,271,0.643
+channel,Fars News,war,عربستان,Saudi Arabia,252,0.598
+channel,Fars News,war,سلطنت‌طلبان,,6,0.014
+channel,Fars News,war,جهاد اسلامی,,0,0.0
+channel,Fars News,war,"دریای عمان (sea, not the country)",,13,0.031
+channel,Fars News,war,انصارالله / حوثی‌ها,Houthis,32,0.076
+channel,Fars News,war,جیش‌العدل,,0,0.0
+channel,Fars News,war,افغانستان,Afghanistan,10,0.024
+channel,Fars News,war,رضا پهلوی,,23,0.055
+channel,Fars News,war,انگلیس,United Kingdom,90,0.214
+channel,Fars News,war,حزب‌الله,Hezbollah,440,1.044
+channel,Fars News,war,هند,India,57,0.135
+channel,Fars News,war,اسپانیا,Spain,23,0.055
+channel,Fars News,war,ونزوئلا,Venezuela,11,0.026
+channel,Fars News,war,پاکستان,Pakistan,42,0.1
+channel,Fars News,war,ایتالیا,Italy,18,0.043
+channel,Fars News,war,اوکراین,Ukraine,26,0.062
+channel,Fars News,war,طالبان,Taliban,4,0.009
+channel,Fars News,war,فرانسه,France,53,0.126
+channel,Fars News,war,فلسطین,Palestine,66,0.157
+channel,Fars News,war,بحرین,Bahrain,274,0.65
+channel,Fars News,war,سوریه,Syria,23,0.055
+channel,Fars News,war,کومله,,8,0.019
+channel,Fars News,war,لبنان,Lebanon,270,0.641
+channel,Fars News,war,ترکیه,Turkey,34,0.081
+channel,Fars News,war,روسیه,Russia,87,0.206
+channel,Fars News,war,آلمان,Germany,49,0.116
+channel,Fars News,war,عمان,Oman,65,0.154
+channel,Fars News,war,اردن,Jordan,76,0.18
+channel,Fars News,war,عراق,Iraq,269,0.638
+channel,Fars News,war,حماس,Hamas,4,0.009
+channel,Fars News,war,کویت,Kuwait,262,0.622
+channel,Fars News,war,داعش,ISIS,7,0.017
+channel,Fars News,war,پژاک,,1,0.002
+channel,Fars News,war,ژاپن,Japan,17,0.04
+channel,Fars News,war,یمن,Yemen,98,0.233
+channel,Fars News,war,چین,China,60,0.142
+channel,Fars News,war,غزه,Gaza,33,0.078
+channel,Fars News,war,قطر,Qatar,117,0.278
+channel,Jamaran,war,مقاومت عراق / حشد شعبی,Iraqi militias,41,0.064
+channel,Jamaran,war,مجاهدین خلق,,0,0.0
+channel,Jamaran,war,امارات,UAE,299,0.464
+channel,Jamaran,war,جمهوری آذربایجان,Rep. of Azerbaijan,50,0.078
+channel,Jamaran,war,کتائب حزب‌الله,,6,0.009
+channel,Jamaran,war,آذربایجان شرقی/غربی (Iranian provinces),,23,0.036
+channel,Jamaran,war,اتحادیه اروپا,EU / Europe,237,0.368
+channel,Jamaran,war,فلسطین اشغالی (Israel),,129,0.2
+channel,Jamaran,war,عربستان,Saudi Arabia,253,0.393
+channel,Jamaran,war,سلطنت‌طلبان,,8,0.012
+channel,Jamaran,war,جهاد اسلامی,,2,0.003
+channel,Jamaran,war,"دریای عمان (sea, not the country)",,11,0.017
+channel,Jamaran,war,انصارالله / حوثی‌ها,Houthis,33,0.051
+channel,Jamaran,war,جیش‌العدل,,0,0.0
+channel,Jamaran,war,افغانستان,Afghanistan,42,0.065
+channel,Jamaran,war,رضا پهلوی,,25,0.039
+channel,Jamaran,war,انگلیس,United Kingdom,202,0.314
+channel,Jamaran,war,حزب‌الله,Hezbollah,417,0.648
+channel,Jamaran,war,هند,India,140,0.217
+channel,Jamaran,war,اسپانیا,Spain,59,0.092
+channel,Jamaran,war,ونزوئلا,Venezuela,29,0.045
+channel,Jamaran,war,پاکستان,Pakistan,170,0.264
+channel,Jamaran,war,ایتالیا,Italy,34,0.053
+channel,Jamaran,war,اوکراین,Ukraine,91,0.141
+channel,Jamaran,war,طالبان,Taliban,18,0.028
+channel,Jamaran,war,فرانسه,France,156,0.242
+channel,Jamaran,war,فلسطین,Palestine,86,0.134
+channel,Jamaran,war,بحرین,Bahrain,214,0.332
+channel,Jamaran,war,سوریه,Syria,63,0.098
+channel,Jamaran,war,کومله,,8,0.012
+channel,Jamaran,war,لبنان,Lebanon,395,0.614
+channel,Jamaran,war,ترکیه,Turkey,187,0.29
+channel,Jamaran,war,روسیه,Russia,460,0.715
+channel,Jamaran,war,آلمان,Germany,84,0.13
+channel,Jamaran,war,عمان,Oman,119,0.185
+channel,Jamaran,war,اردن,Jordan,58,0.09
+channel,Jamaran,war,عراق,Iraq,424,0.659
+channel,Jamaran,war,حماس,Hamas,6,0.009
+channel,Jamaran,war,کویت,Kuwait,214,0.332
+channel,Jamaran,war,داعش,ISIS,9,0.014
+channel,Jamaran,war,پژاک,,3,0.005
+channel,Jamaran,war,ژاپن,Japan,59,0.092
+channel,Jamaran,war,یمن,Yemen,74,0.115
+channel,Jamaran,war,چین,China,245,0.381
+channel,Jamaran,war,غزه,Gaza,74,0.115
+channel,Jamaran,war,قطر,Qatar,164,0.255
+channel,IRNA,ceasefire,مقاومت عراق / حشد شعبی,Iraqi militias,17,0.01
+channel,IRNA,ceasefire,مجاهدین خلق,,3,0.002
+channel,IRNA,ceasefire,امارات,UAE,433,0.259
+channel,IRNA,ceasefire,جمهوری آذربایجان,Rep. of Azerbaijan,153,0.091
+channel,IRNA,ceasefire,کتائب حزب‌الله,,6,0.004
+channel,IRNA,ceasefire,آذربایجان شرقی/غربی (Iranian provinces),,63,0.038
+channel,IRNA,ceasefire,اتحادیه اروپا,EU / Europe,1039,0.62
+channel,IRNA,ceasefire,فلسطین اشغالی (Israel),,91,0.054
+channel,IRNA,ceasefire,عربستان,Saudi Arabia,391,0.233
+channel,IRNA,ceasefire,سلطنت‌طلبان,,1,0.001
+channel,IRNA,ceasefire,جهاد اسلامی,,34,0.02
+channel,IRNA,ceasefire,"دریای عمان (sea, not the country)",,69,0.041
+channel,IRNA,ceasefire,انصارالله / حوثی‌ها,Houthis,63,0.038
+channel,IRNA,ceasefire,جیش‌العدل,,1,0.001
+channel,IRNA,ceasefire,افغانستان,Afghanistan,125,0.075
+channel,IRNA,ceasefire,رضا پهلوی,,5,0.003
+channel,IRNA,ceasefire,انگلیس,United Kingdom,673,0.402
+channel,IRNA,ceasefire,حزب‌الله,Hezbollah,753,0.45
+channel,IRNA,ceasefire,هند,India,348,0.208
+channel,IRNA,ceasefire,اسپانیا,Spain,250,0.149
+channel,IRNA,ceasefire,ونزوئلا,Venezuela,146,0.087
+channel,IRNA,ceasefire,پاکستان,Pakistan,1349,0.805
+channel,IRNA,ceasefire,ایتالیا,Italy,220,0.131
+channel,IRNA,ceasefire,اوکراین,Ukraine,480,0.287
+channel,IRNA,ceasefire,طالبان,Taliban,21,0.013
+channel,IRNA,ceasefire,فرانسه,France,498,0.297
+channel,IRNA,ceasefire,فلسطین,Palestine,530,0.316
+channel,IRNA,ceasefire,بحرین,Bahrain,156,0.093
+channel,IRNA,ceasefire,سوریه,Syria,279,0.167
+channel,IRNA,ceasefire,کومله,,0,0.0
+channel,IRNA,ceasefire,لبنان,Lebanon,2927,1.748
+channel,IRNA,ceasefire,ترکیه,Turkey,451,0.269
+channel,IRNA,ceasefire,روسیه,Russia,1344,0.802
+channel,IRNA,ceasefire,آلمان,Germany,413,0.247
+channel,IRNA,ceasefire,عمان,Oman,354,0.211
+channel,IRNA,ceasefire,اردن,Jordan,85,0.051
+channel,IRNA,ceasefire,عراق,Iraq,1038,0.62
+channel,IRNA,ceasefire,حماس,Hamas,308,0.184
+channel,IRNA,ceasefire,کویت,Kuwait,146,0.087
+channel,IRNA,ceasefire,داعش,ISIS,51,0.03
+channel,IRNA,ceasefire,پژاک,,0,0.0
+channel,IRNA,ceasefire,ژاپن,Japan,201,0.12
+channel,IRNA,ceasefire,یمن,Yemen,197,0.118
+channel,IRNA,ceasefire,چین,China,815,0.487
+channel,IRNA,ceasefire,غزه,Gaza,747,0.446
+channel,IRNA,ceasefire,قطر,Qatar,451,0.269
+channel,IRIB News,ceasefire,مقاومت عراق / حشد شعبی,Iraqi militias,8,0.01
+channel,IRIB News,ceasefire,مجاهدین خلق,,0,0.0
+channel,IRIB News,ceasefire,امارات,UAE,217,0.263
+channel,IRIB News,ceasefire,جمهوری آذربایجان,Rep. of Azerbaijan,133,0.161
+channel,IRIB News,ceasefire,کتائب حزب‌الله,,4,0.005
+channel,IRIB News,ceasefire,آذربایجان شرقی/غربی (Iranian provinces),,96,0.116
+channel,IRIB News,ceasefire,اتحادیه اروپا,EU / Europe,355,0.43
+channel,IRIB News,ceasefire,فلسطین اشغالی (Israel),,87,0.105
+channel,IRIB News,ceasefire,عربستان,Saudi Arabia,198,0.24
+channel,IRIB News,ceasefire,سلطنت‌طلبان,,3,0.004
+channel,IRIB News,ceasefire,جهاد اسلامی,,2,0.002
+channel,IRIB News,ceasefire,"دریای عمان (sea, not the country)",,46,0.056
+channel,IRIB News,ceasefire,انصارالله / حوثی‌ها,Houthis,35,0.042
+channel,IRIB News,ceasefire,جیش‌العدل,,1,0.001
+channel,IRIB News,ceasefire,افغانستان,Afghanistan,35,0.042
+channel,IRIB News,ceasefire,رضا پهلوی,,9,0.011
+channel,IRIB News,ceasefire,انگلیس,United Kingdom,285,0.346
+channel,IRIB News,ceasefire,حزب‌الله,Hezbollah,585,0.709
+channel,IRIB News,ceasefire,هند,India,125,0.152
+channel,IRIB News,ceasefire,اسپانیا,Spain,125,0.152
+channel,IRIB News,ceasefire,ونزوئلا,Venezuela,69,0.084
+channel,IRIB News,ceasefire,پاکستان,Pakistan,562,0.681
+channel,IRIB News,ceasefire,ایتالیا,Italy,86,0.104
+channel,IRIB News,ceasefire,اوکراین,Ukraine,106,0.129
+channel,IRIB News,ceasefire,طالبان,Taliban,4,0.005
+channel,IRIB News,ceasefire,فرانسه,France,199,0.241
+channel,IRIB News,ceasefire,فلسطین,Palestine,154,0.187
+channel,IRIB News,ceasefire,بحرین,Bahrain,111,0.135
+channel,IRIB News,ceasefire,سوریه,Syria,56,0.068
+channel,IRIB News,ceasefire,کومله,,3,0.004
+channel,IRIB News,ceasefire,لبنان,Lebanon,1597,1.936
+channel,IRIB News,ceasefire,ترکیه,Turkey,192,0.233
+channel,IRIB News,ceasefire,روسیه,Russia,480,0.582
+channel,IRIB News,ceasefire,آلمان,Germany,121,0.147
+channel,IRIB News,ceasefire,عمان,Oman,190,0.23
+channel,IRIB News,ceasefire,اردن,Jordan,42,0.051
+channel,IRIB News,ceasefire,عراق,Iraq,365,0.443
+channel,IRIB News,ceasefire,حماس,Hamas,78,0.095
+channel,IRIB News,ceasefire,کویت,Kuwait,139,0.169
+channel,IRIB News,ceasefire,داعش,ISIS,8,0.01
+channel,IRIB News,ceasefire,پژاک,,1,0.001
+channel,IRIB News,ceasefire,ژاپن,Japan,142,0.172
+channel,IRIB News,ceasefire,یمن,Yemen,105,0.127
+channel,IRIB News,ceasefire,چین,China,441,0.535
+channel,IRIB News,ceasefire,غزه,Gaza,254,0.308
+channel,IRIB News,ceasefire,قطر,Qatar,150,0.182
+channel,Mehr News,ceasefire,مقاومت عراق / حشد شعبی,Iraqi militias,15,0.016
+channel,Mehr News,ceasefire,مجاهدین خلق,,0,0.0
+channel,Mehr News,ceasefire,امارات,UAE,256,0.265
+channel,Mehr News,ceasefire,جمهوری آذربایجان,Rep. of Azerbaijan,92,0.095
+channel,Mehr News,ceasefire,کتائب حزب‌الله,,4,0.004
+channel,Mehr News,ceasefire,آذربایجان شرقی/غربی (Iranian provinces),,78,0.081
+channel,Mehr News,ceasefire,اتحادیه اروپا,EU / Europe,244,0.253
+channel,Mehr News,ceasefire,فلسطین اشغالی (Israel),,86,0.089
+channel,Mehr News,ceasefire,عربستان,Saudi Arabia,195,0.202
+channel,Mehr News,ceasefire,سلطنت‌طلبان,,5,0.005
+channel,Mehr News,ceasefire,جهاد اسلامی,,7,0.007
+channel,Mehr News,ceasefire,"دریای عمان (sea, not the country)",,47,0.049
+channel,Mehr News,ceasefire,انصارالله / حوثی‌ها,Houthis,65,0.067
+channel,Mehr News,ceasefire,جیش‌العدل,,1,0.001
+channel,Mehr News,ceasefire,افغانستان,Afghanistan,61,0.063
+channel,Mehr News,ceasefire,رضا پهلوی,,11,0.011
+channel,Mehr News,ceasefire,انگلیس,United Kingdom,206,0.213
+channel,Mehr News,ceasefire,حزب‌الله,Hezbollah,857,0.888
+channel,Mehr News,ceasefire,هند,India,115,0.119
+channel,Mehr News,ceasefire,اسپانیا,Spain,85,0.088
+channel,Mehr News,ceasefire,ونزوئلا,Venezuela,66,0.068
+channel,Mehr News,ceasefire,پاکستان,Pakistan,783,0.811
+channel,Mehr News,ceasefire,ایتالیا,Italy,77,0.08
+channel,Mehr News,ceasefire,اوکراین,Ukraine,114,0.118
+channel,Mehr News,ceasefire,طالبان,Taliban,4,0.004
+channel,Mehr News,ceasefire,فرانسه,France,170,0.176
+channel,Mehr News,ceasefire,فلسطین,Palestine,224,0.232
+channel,Mehr News,ceasefire,بحرین,Bahrain,112,0.116
+channel,Mehr News,ceasefire,سوریه,Syria,90,0.093
+channel,Mehr News,ceasefire,کومله,,2,0.002
+channel,Mehr News,ceasefire,لبنان,Lebanon,2602,2.695
+channel,Mehr News,ceasefire,ترکیه,Turkey,250,0.259
+channel,Mehr News,ceasefire,روسیه,Russia,489,0.506
+channel,Mehr News,ceasefire,آلمان,Germany,91,0.094
+channel,Mehr News,ceasefire,عمان,Oman,220,0.228
+channel,Mehr News,ceasefire,اردن,Jordan,47,0.049
+channel,Mehr News,ceasefire,عراق,Iraq,461,0.477
+channel,Mehr News,ceasefire,حماس,Hamas,104,0.108
+channel,Mehr News,ceasefire,کویت,Kuwait,90,0.093
+channel,Mehr News,ceasefire,داعش,ISIS,12,0.012
+channel,Mehr News,ceasefire,پژاک,,0,0.0
+channel,Mehr News,ceasefire,ژاپن,Japan,90,0.093
+channel,Mehr News,ceasefire,یمن,Yemen,169,0.175
+channel,Mehr News,ceasefire,چین,China,452,0.468
+channel,Mehr News,ceasefire,غزه,Gaza,365,0.378
+channel,Mehr News,ceasefire,قطر,Qatar,243,0.252
+channel,Tasnim News,ceasefire,مقاومت عراق / حشد شعبی,Iraqi militias,42,0.033
+channel,Tasnim News,ceasefire,مجاهدین خلق,,4,0.003
+channel,Tasnim News,ceasefire,امارات,UAE,543,0.433
+channel,Tasnim News,ceasefire,جمهوری آذربایجان,Rep. of Azerbaijan,102,0.081
+channel,Tasnim News,ceasefire,کتائب حزب‌الله,,2,0.002
+channel,Tasnim News,ceasefire,آذربایجان شرقی/غربی (Iranian provinces),,66,0.053
+channel,Tasnim News,ceasefire,اتحادیه اروپا,EU / Europe,384,0.306
+channel,Tasnim News,ceasefire,فلسطین اشغالی (Israel),,279,0.222
+channel,Tasnim News,ceasefire,عربستان,Saudi Arabia,342,0.273
+channel,Tasnim News,ceasefire,سلطنت‌طلبان,,17,0.014
+channel,Tasnim News,ceasefire,جهاد اسلامی,,7,0.006
+channel,Tasnim News,ceasefire,"دریای عمان (sea, not the country)",,55,0.044
+channel,Tasnim News,ceasefire,انصارالله / حوثی‌ها,Houthis,88,0.07
+channel,Tasnim News,ceasefire,جیش‌العدل,,1,0.001
+channel,Tasnim News,ceasefire,افغانستان,Afghanistan,70,0.056
+channel,Tasnim News,ceasefire,رضا پهلوی,,70,0.056
+channel,Tasnim News,ceasefire,انگلیس,United Kingdom,383,0.305
+channel,Tasnim News,ceasefire,حزب‌الله,Hezbollah,1478,1.178
+channel,Tasnim News,ceasefire,هند,India,203,0.162
+channel,Tasnim News,ceasefire,اسپانیا,Spain,132,0.105
+channel,Tasnim News,ceasefire,ونزوئلا,Venezuela,112,0.089
+channel,Tasnim News,ceasefire,پاکستان,Pakistan,954,0.76
+channel,Tasnim News,ceasefire,ایتالیا,Italy,121,0.096
+channel,Tasnim News,ceasefire,اوکراین,Ukraine,315,0.251
+channel,Tasnim News,ceasefire,طالبان,Taliban,26,0.021
+channel,Tasnim News,ceasefire,فرانسه,France,261,0.208
+channel,Tasnim News,ceasefire,فلسطین,Palestine,300,0.239
+channel,Tasnim News,ceasefire,بحرین,Bahrain,207,0.165
+channel,Tasnim News,ceasefire,سوریه,Syria,190,0.151
+channel,Tasnim News,ceasefire,کومله,,5,0.004
+channel,Tasnim News,ceasefire,لبنان,Lebanon,3343,2.664
+channel,Tasnim News,ceasefire,ترکیه,Turkey,363,0.289
+channel,Tasnim News,ceasefire,روسیه,Russia,910,0.725
+channel,Tasnim News,ceasefire,آلمان,Germany,213,0.17
+channel,Tasnim News,ceasefire,عمان,Oman,265,0.211
+channel,Tasnim News,ceasefire,اردن,Jordan,63,0.05
+channel,Tasnim News,ceasefire,عراق,Iraq,717,0.571
+channel,Tasnim News,ceasefire,حماس,Hamas,122,0.097
+channel,Tasnim News,ceasefire,کویت,Kuwait,191,0.152
+channel,Tasnim News,ceasefire,داعش,ISIS,28,0.022
+channel,Tasnim News,ceasefire,پژاک,,5,0.004
+channel,Tasnim News,ceasefire,ژاپن,Japan,148,0.118
+channel,Tasnim News,ceasefire,یمن,Yemen,264,0.21
+channel,Tasnim News,ceasefire,چین,China,704,0.561
+channel,Tasnim News,ceasefire,غزه,Gaza,593,0.473
+channel,Tasnim News,ceasefire,قطر,Qatar,314,0.25
+channel,Fars News,ceasefire,مقاومت عراق / حشد شعبی,Iraqi militias,11,0.017
+channel,Fars News,ceasefire,مجاهدین خلق,,3,0.005
+channel,Fars News,ceasefire,امارات,UAE,330,0.502
+channel,Fars News,ceasefire,جمهوری آذربایجان,Rep. of Azerbaijan,52,0.079
+channel,Fars News,ceasefire,کتائب حزب‌الله,,3,0.005
+channel,Fars News,ceasefire,آذربایجان شرقی/غربی (Iranian provinces),,19,0.029
+channel,Fars News,ceasefire,اتحادیه اروپا,EU / Europe,164,0.25
+channel,Fars News,ceasefire,فلسطین اشغالی (Israel),,66,0.1
+channel,Fars News,ceasefire,عربستان,Saudi Arabia,223,0.339
+channel,Fars News,ceasefire,سلطنت‌طلبان,,10,0.015
+channel,Fars News,ceasefire,جهاد اسلامی,,3,0.005
+channel,Fars News,ceasefire,"دریای عمان (sea, not the country)",,47,0.072
+channel,Fars News,ceasefire,انصارالله / حوثی‌ها,Houthis,30,0.046
+channel,Fars News,ceasefire,جیش‌العدل,,1,0.002
+channel,Fars News,ceasefire,افغانستان,Afghanistan,34,0.052
+channel,Fars News,ceasefire,رضا پهلوی,,34,0.052
+channel,Fars News,ceasefire,انگلیس,United Kingdom,145,0.221
+channel,Fars News,ceasefire,حزب‌الله,Hezbollah,810,1.233
+channel,Fars News,ceasefire,هند,India,99,0.151
+channel,Fars News,ceasefire,اسپانیا,Spain,72,0.11
+channel,Fars News,ceasefire,ونزوئلا,Venezuela,34,0.052
+channel,Fars News,ceasefire,پاکستان,Pakistan,412,0.627
+channel,Fars News,ceasefire,ایتالیا,Italy,42,0.064
+channel,Fars News,ceasefire,اوکراین,Ukraine,108,0.164
+channel,Fars News,ceasefire,طالبان,Taliban,10,0.015
+channel,Fars News,ceasefire,فرانسه,France,119,0.181
+channel,Fars News,ceasefire,فلسطین,Palestine,82,0.125
+channel,Fars News,ceasefire,بحرین,Bahrain,113,0.172
+channel,Fars News,ceasefire,سوریه,Syria,68,0.104
+channel,Fars News,ceasefire,کومله,,9,0.014
+channel,Fars News,ceasefire,لبنان,Lebanon,1339,2.038
+channel,Fars News,ceasefire,ترکیه,Turkey,94,0.143
+channel,Fars News,ceasefire,روسیه,Russia,259,0.394
+channel,Fars News,ceasefire,آلمان,Germany,79,0.12
+channel,Fars News,ceasefire,عمان,Oman,151,0.23
+channel,Fars News,ceasefire,اردن,Jordan,46,0.07
+channel,Fars News,ceasefire,عراق,Iraq,300,0.457
+channel,Fars News,ceasefire,حماس,Hamas,42,0.064
+channel,Fars News,ceasefire,کویت,Kuwait,137,0.209
+channel,Fars News,ceasefire,داعش,ISIS,9,0.014
+channel,Fars News,ceasefire,پژاک,,5,0.008
+channel,Fars News,ceasefire,ژاپن,Japan,56,0.085
+channel,Fars News,ceasefire,یمن,Yemen,89,0.135
+channel,Fars News,ceasefire,چین,China,310,0.472
+channel,Fars News,ceasefire,غزه,Gaza,187,0.285
+channel,Fars News,ceasefire,قطر,Qatar,158,0.241
+channel,Jamaran,ceasefire,مقاومت عراق / حشد شعبی,Iraqi militias,3,0.003
+channel,Jamaran,ceasefire,مجاهدین خلق,,9,0.008
+channel,Jamaran,ceasefire,امارات,UAE,566,0.487
+channel,Jamaran,ceasefire,جمهوری آذربایجان,Rep. of Azerbaijan,85,0.073
+channel,Jamaran,ceasefire,کتائب حزب‌الله,,3,0.003
+channel,Jamaran,ceasefire,آذربایجان شرقی/غربی (Iranian provinces),,24,0.021
+channel,Jamaran,ceasefire,اتحادیه اروپا,EU / Europe,407,0.35
+channel,Jamaran,ceasefire,فلسطین اشغالی (Israel),,55,0.047
+channel,Jamaran,ceasefire,عربستان,Saudi Arabia,427,0.367
+channel,Jamaran,ceasefire,سلطنت‌طلبان,,11,0.009
+channel,Jamaran,ceasefire,جهاد اسلامی,,0,0.0
+channel,Jamaran,ceasefire,"دریای عمان (sea, not the country)",,51,0.044
+channel,Jamaran,ceasefire,انصارالله / حوثی‌ها,Houthis,50,0.043
+channel,Jamaran,ceasefire,جیش‌العدل,,1,0.001
+channel,Jamaran,ceasefire,افغانستان,Afghanistan,49,0.042
+channel,Jamaran,ceasefire,رضا پهلوی,,47,0.04
+channel,Jamaran,ceasefire,انگلیس,United Kingdom,287,0.247
+channel,Jamaran,ceasefire,حزب‌الله,Hezbollah,685,0.589
+channel,Jamaran,ceasefire,هند,India,222,0.191
+channel,Jamaran,ceasefire,اسپانیا,Spain,76,0.065
+channel,Jamaran,ceasefire,ونزوئلا,Venezuela,98,0.084
+channel,Jamaran,ceasefire,پاکستان,Pakistan,1070,0.921
+channel,Jamaran,ceasefire,ایتالیا,Italy,116,0.1
+channel,Jamaran,ceasefire,اوکراین,Ukraine,170,0.146
+channel,Jamaran,ceasefire,طالبان,Taliban,9,0.008
+channel,Jamaran,ceasefire,فرانسه,France,240,0.207
+channel,Jamaran,ceasefire,فلسطین,Palestine,127,0.109
+channel,Jamaran,ceasefire,بحرین,Bahrain,138,0.119
+channel,Jamaran,ceasefire,سوریه,Syria,127,0.109
+channel,Jamaran,ceasefire,کومله,,6,0.005
+channel,Jamaran,ceasefire,لبنان,Lebanon,2160,1.859
+channel,Jamaran,ceasefire,ترکیه,Turkey,256,0.22
+channel,Jamaran,ceasefire,روسیه,Russia,718,0.618
+channel,Jamaran,ceasefire,آلمان,Germany,171,0.147
+channel,Jamaran,ceasefire,عمان,Oman,310,0.267
+channel,Jamaran,ceasefire,اردن,Jordan,39,0.034
+channel,Jamaran,ceasefire,عراق,Iraq,460,0.396
+channel,Jamaran,ceasefire,حماس,Hamas,54,0.046
+channel,Jamaran,ceasefire,کویت,Kuwait,197,0.17
+channel,Jamaran,ceasefire,داعش,ISIS,10,0.009
+channel,Jamaran,ceasefire,پژاک,,8,0.007
+channel,Jamaran,ceasefire,ژاپن,Japan,95,0.082
+channel,Jamaran,ceasefire,یمن,Yemen,150,0.129
+channel,Jamaran,ceasefire,چین,China,747,0.643
+channel,Jamaran,ceasefire,غزه,Gaza,230,0.198
+channel,Jamaran,ceasefire,قطر,Qatar,359,0.309
+channel,IRNA,after_truce_collapse,مقاومت عراق / حشد شعبی,Iraqi militias,70,0.057
+channel,IRNA,after_truce_collapse,مجاهدین خلق,,4,0.003
+channel,IRNA,after_truce_collapse,امارات,UAE,93,0.076
+channel,IRNA,after_truce_collapse,جمهوری آذربایجان,Rep. of Azerbaijan,100,0.082
+channel,IRNA,after_truce_collapse,کتائب حزب‌الله,,5,0.004
+channel,IRNA,after_truce_collapse,آذربایجان شرقی/غربی (Iranian provinces),,58,0.047
+channel,IRNA,after_truce_collapse,اتحادیه اروپا,EU / Europe,463,0.377
+channel,IRNA,after_truce_collapse,فلسطین اشغالی (Israel),,24,0.02
+channel,IRNA,after_truce_collapse,عربستان,Saudi Arabia,725,0.591
+channel,IRNA,after_truce_collapse,سلطنت‌طلبان,,1,0.001
+channel,IRNA,after_truce_collapse,جهاد اسلامی,,22,0.018
+channel,IRNA,after_truce_collapse,"دریای عمان (sea, not the country)",,17,0.014
+channel,IRNA,after_truce_collapse,انصارالله / حوثی‌ها,Houthis,117,0.095
+channel,IRNA,after_truce_collapse,جیش‌العدل,,0,0.0
+channel,IRNA,after_truce_collapse,افغانستان,Afghanistan,88,0.072
+channel,IRNA,after_truce_collapse,رضا پهلوی,,3,0.002
+channel,IRNA,after_truce_collapse,انگلیس,United Kingdom,423,0.345
+channel,IRNA,after_truce_collapse,حزب‌الله,Hezbollah,156,0.127
+channel,IRNA,after_truce_collapse,هند,India,178,0.145
+channel,IRNA,after_truce_collapse,اسپانیا,Spain,270,0.22
+channel,IRNA,after_truce_collapse,ونزوئلا,Venezuela,76,0.062
+channel,IRNA,after_truce_collapse,پاکستان,Pakistan,603,0.492
+channel,IRNA,after_truce_collapse,ایتالیا,Italy,103,0.084
+channel,IRNA,after_truce_collapse,اوکراین,Ukraine,586,0.478
+channel,IRNA,after_truce_collapse,طالبان,Taliban,13,0.011
+channel,IRNA,after_truce_collapse,فرانسه,France,293,0.239
+channel,IRNA,after_truce_collapse,فلسطین,Palestine,361,0.294
+channel,IRNA,after_truce_collapse,بحرین,Bahrain,171,0.139
+channel,IRNA,after_truce_collapse,سوریه,Syria,373,0.304
+channel,IRNA,after_truce_collapse,کومله,,0,0.0
+channel,IRNA,after_truce_collapse,لبنان,Lebanon,796,0.649
+channel,IRNA,after_truce_collapse,ترکیه,Turkey,332,0.271
+channel,IRNA,after_truce_collapse,روسیه,Russia,935,0.762
+channel,IRNA,after_truce_collapse,آلمان,Germany,163,0.133
+channel,IRNA,after_truce_collapse,عمان,Oman,350,0.285
+channel,IRNA,after_truce_collapse,اردن,Jordan,266,0.217
+channel,IRNA,after_truce_collapse,عراق,Iraq,1501,1.224
+channel,IRNA,after_truce_collapse,حماس,Hamas,267,0.218
+channel,IRNA,after_truce_collapse,کویت,Kuwait,255,0.208
+channel,IRNA,after_truce_collapse,داعش,ISIS,37,0.03
+channel,IRNA,after_truce_collapse,پژاک,,1,0.001
+channel,IRNA,after_truce_collapse,ژاپن,Japan,182,0.148
+channel,IRNA,after_truce_collapse,یمن,Yemen,517,0.421
+channel,IRNA,after_truce_collapse,چین,China,473,0.386
+channel,IRNA,after_truce_collapse,غزه,Gaza,508,0.414
+channel,IRNA,after_truce_collapse,قطر,Qatar,239,0.195
+channel,IRIB News,after_truce_collapse,مقاومت عراق / حشد شعبی,Iraqi militias,24,0.065
+channel,IRIB News,after_truce_collapse,مجاهدین خلق,,0,0.0
+channel,IRIB News,after_truce_collapse,امارات,UAE,67,0.18
+channel,IRIB News,after_truce_collapse,جمهوری آذربایجان,Rep. of Azerbaijan,53,0.142
+channel,IRIB News,after_truce_collapse,کتائب حزب‌الله,,2,0.005
+channel,IRIB News,after_truce_collapse,آذربایجان شرقی/غربی (Iranian provinces),,28,0.075
+channel,IRIB News,after_truce_collapse,اتحادیه اروپا,EU / Europe,79,0.212
+channel,IRIB News,after_truce_collapse,فلسطین اشغالی (Israel),,7,0.019
+channel,IRIB News,after_truce_collapse,عربستان,Saudi Arabia,415,1.115
+channel,IRIB News,after_truce_collapse,سلطنت‌طلبان,,0,0.0
+channel,IRIB News,after_truce_collapse,جهاد اسلامی,,0,0.0
+channel,IRIB News,after_truce_collapse,"دریای عمان (sea, not the country)",,36,0.097
+channel,IRIB News,after_truce_collapse,انصارالله / حوثی‌ها,Houthis,51,0.137
+channel,IRIB News,after_truce_collapse,جیش‌العدل,,0,0.0
+channel,IRIB News,after_truce_collapse,افغانستان,Afghanistan,15,0.04
+channel,IRIB News,after_truce_collapse,رضا پهلوی,,4,0.011
+channel,IRIB News,after_truce_collapse,انگلیس,United Kingdom,149,0.4
+channel,IRIB News,after_truce_collapse,حزب‌الله,Hezbollah,71,0.191
+channel,IRIB News,after_truce_collapse,هند,India,49,0.132
+channel,IRIB News,after_truce_collapse,اسپانیا,Spain,63,0.169
+channel,IRIB News,after_truce_collapse,ونزوئلا,Venezuela,43,0.116
+channel,IRIB News,after_truce_collapse,پاکستان,Pakistan,141,0.379
+channel,IRIB News,after_truce_collapse,ایتالیا,Italy,16,0.043
+channel,IRIB News,after_truce_collapse,اوکراین,Ukraine,114,0.306
+channel,IRIB News,after_truce_collapse,طالبان,Taliban,2,0.005
+channel,IRIB News,after_truce_collapse,فرانسه,France,84,0.226
+channel,IRIB News,after_truce_collapse,فلسطین,Palestine,87,0.234
+channel,IRIB News,after_truce_collapse,بحرین,Bahrain,166,0.446
+channel,IRIB News,after_truce_collapse,سوریه,Syria,95,0.255
+channel,IRIB News,after_truce_collapse,کومله,,0,0.0
+channel,IRIB News,after_truce_collapse,لبنان,Lebanon,348,0.935
+channel,IRIB News,after_truce_collapse,ترکیه,Turkey,104,0.28
+channel,IRIB News,after_truce_collapse,روسیه,Russia,197,0.529
+channel,IRIB News,after_truce_collapse,آلمان,Germany,34,0.091
+channel,IRIB News,after_truce_collapse,عمان,Oman,145,0.39
+channel,IRIB News,after_truce_collapse,اردن,Jordan,172,0.462
+channel,IRIB News,after_truce_collapse,عراق,Iraq,544,1.462
+channel,IRIB News,after_truce_collapse,حماس,Hamas,73,0.196
+channel,IRIB News,after_truce_collapse,کویت,Kuwait,193,0.519
+channel,IRIB News,after_truce_collapse,داعش,ISIS,14,0.038
+channel,IRIB News,after_truce_collapse,پژاک,,3,0.008
+channel,IRIB News,after_truce_collapse,ژاپن,Japan,31,0.083
+channel,IRIB News,after_truce_collapse,یمن,Yemen,308,0.828
+channel,IRIB News,after_truce_collapse,چین,China,147,0.395
+channel,IRIB News,after_truce_collapse,غزه,Gaza,174,0.468
+channel,IRIB News,after_truce_collapse,قطر,Qatar,120,0.323
+channel,Mehr News,after_truce_collapse,مقاومت عراق / حشد شعبی,Iraqi militias,50,0.09
+channel,Mehr News,after_truce_collapse,مجاهدین خلق,,2,0.004
+channel,Mehr News,after_truce_collapse,امارات,UAE,89,0.161
+channel,Mehr News,after_truce_collapse,جمهوری آذربایجان,Rep. of Azerbaijan,35,0.063
+channel,Mehr News,after_truce_collapse,کتائب حزب‌الله,,4,0.007
+channel,Mehr News,after_truce_collapse,آذربایجان شرقی/غربی (Iranian provinces),,25,0.045
+channel,Mehr News,after_truce_collapse,اتحادیه اروپا,EU / Europe,139,0.251
+channel,Mehr News,after_truce_collapse,فلسطین اشغالی (Israel),,9,0.016
+channel,Mehr News,after_truce_collapse,عربستان,Saudi Arabia,620,1.121
+channel,Mehr News,after_truce_collapse,سلطنت‌طلبان,,1,0.002
+channel,Mehr News,after_truce_collapse,جهاد اسلامی,,12,0.022
+channel,Mehr News,after_truce_collapse,"دریای عمان (sea, not the country)",,15,0.027
+channel,Mehr News,after_truce_collapse,انصارالله / حوثی‌ها,Houthis,122,0.221
+channel,Mehr News,after_truce_collapse,جیش‌العدل,,0,0.0
+channel,Mehr News,after_truce_collapse,افغانستان,Afghanistan,26,0.047
+channel,Mehr News,after_truce_collapse,رضا پهلوی,,4,0.007
+channel,Mehr News,after_truce_collapse,انگلیس,United Kingdom,185,0.335
+channel,Mehr News,after_truce_collapse,حزب‌الله,Hezbollah,112,0.203
+channel,Mehr News,after_truce_collapse,هند,India,48,0.087
+channel,Mehr News,after_truce_collapse,اسپانیا,Spain,123,0.222
+channel,Mehr News,after_truce_collapse,ونزوئلا,Venezuela,42,0.076
+channel,Mehr News,after_truce_collapse,پاکستان,Pakistan,254,0.459
+channel,Mehr News,after_truce_collapse,ایتالیا,Italy,26,0.047
+channel,Mehr News,after_truce_collapse,اوکراین,Ukraine,177,0.32
+channel,Mehr News,after_truce_collapse,طالبان,Taliban,8,0.014
+channel,Mehr News,after_truce_collapse,فرانسه,France,139,0.251
+channel,Mehr News,after_truce_collapse,فلسطین,Palestine,188,0.34
+channel,Mehr News,after_truce_collapse,بحرین,Bahrain,145,0.262
+channel,Mehr News,after_truce_collapse,سوریه,Syria,165,0.298
+channel,Mehr News,after_truce_collapse,کومله,,0,0.0
+channel,Mehr News,after_truce_collapse,لبنان,Lebanon,524,0.948
+channel,Mehr News,after_truce_collapse,ترکیه,Turkey,219,0.396
+channel,Mehr News,after_truce_collapse,روسیه,Russia,322,0.582
+channel,Mehr News,after_truce_collapse,آلمان,Germany,52,0.094
+channel,Mehr News,after_truce_collapse,عمان,Oman,213,0.385
+channel,Mehr News,after_truce_collapse,اردن,Jordan,203,0.367
+channel,Mehr News,after_truce_collapse,عراق,Iraq,726,1.313
+channel,Mehr News,after_truce_collapse,حماس,Hamas,116,0.21
+channel,Mehr News,after_truce_collapse,کویت,Kuwait,230,0.416
+channel,Mehr News,after_truce_collapse,داعش,ISIS,16,0.029
+channel,Mehr News,after_truce_collapse,پژاک,,1,0.002
+channel,Mehr News,after_truce_collapse,ژاپن,Japan,57,0.103
+channel,Mehr News,after_truce_collapse,یمن,Yemen,440,0.796
+channel,Mehr News,after_truce_collapse,چین,China,192,0.347
+channel,Mehr News,after_truce_collapse,غزه,Gaza,333,0.602
+channel,Mehr News,after_truce_collapse,قطر,Qatar,169,0.306
+channel,Tasnim News,after_truce_collapse,مقاومت عراق / حشد شعبی,Iraqi militias,84,0.128
+channel,Tasnim News,after_truce_collapse,مجاهدین خلق,,0,0.0
+channel,Tasnim News,after_truce_collapse,امارات,UAE,139,0.212
+channel,Tasnim News,after_truce_collapse,جمهوری آذربایجان,Rep. of Azerbaijan,43,0.065
+channel,Tasnim News,after_truce_collapse,کتائب حزب‌الله,,3,0.005
+channel,Tasnim News,after_truce_collapse,آذربایجان شرقی/غربی (Iranian provinces),,23,0.035
+channel,Tasnim News,after_truce_collapse,اتحادیه اروپا,EU / Europe,96,0.146
+channel,Tasnim News,after_truce_collapse,فلسطین اشغالی (Israel),,29,0.044
+channel,Tasnim News,after_truce_collapse,عربستان,Saudi Arabia,866,1.319
+channel,Tasnim News,after_truce_collapse,سلطنت‌طلبان,,2,0.003
+channel,Tasnim News,after_truce_collapse,جهاد اسلامی,,10,0.015
+channel,Tasnim News,after_truce_collapse,"دریای عمان (sea, not the country)",,31,0.047
+channel,Tasnim News,after_truce_collapse,انصارالله / حوثی‌ها,Houthis,129,0.196
+channel,Tasnim News,after_truce_collapse,جیش‌العدل,,0,0.0
+channel,Tasnim News,after_truce_collapse,افغانستان,Afghanistan,23,0.035
+channel,Tasnim News,after_truce_collapse,رضا پهلوی,,11,0.017
+channel,Tasnim News,after_truce_collapse,انگلیس,United Kingdom,235,0.358
+channel,Tasnim News,after_truce_collapse,حزب‌الله,Hezbollah,146,0.222
+channel,Tasnim News,after_truce_collapse,هند,India,80,0.122
+channel,Tasnim News,after_truce_collapse,اسپانیا,Spain,111,0.169
+channel,Tasnim News,after_truce_collapse,ونزوئلا,Venezuela,55,0.084
+channel,Tasnim News,after_truce_collapse,پاکستان,Pakistan,233,0.355
+channel,Tasnim News,after_truce_collapse,ایتالیا,Italy,33,0.05
+channel,Tasnim News,after_truce_collapse,اوکراین,Ukraine,245,0.373
+channel,Tasnim News,after_truce_collapse,طالبان,Taliban,3,0.005
+channel,Tasnim News,after_truce_collapse,فرانسه,France,141,0.215
+channel,Tasnim News,after_truce_collapse,فلسطین,Palestine,196,0.298
+channel,Tasnim News,after_truce_collapse,بحرین,Bahrain,240,0.365
+channel,Tasnim News,after_truce_collapse,سوریه,Syria,224,0.341
+channel,Tasnim News,after_truce_collapse,کومله,,1,0.002
+channel,Tasnim News,after_truce_collapse,لبنان,Lebanon,748,1.139
+channel,Tasnim News,after_truce_collapse,ترکیه,Turkey,185,0.282
+channel,Tasnim News,after_truce_collapse,روسیه,Russia,440,0.67
+channel,Tasnim News,after_truce_collapse,آلمان,Germany,60,0.091
+channel,Tasnim News,after_truce_collapse,عمان,Oman,267,0.407
+channel,Tasnim News,after_truce_collapse,اردن,Jordan,281,0.428
+channel,Tasnim News,after_truce_collapse,عراق,Iraq,993,1.512
+channel,Tasnim News,after_truce_collapse,حماس,Hamas,79,0.12
+channel,Tasnim News,after_truce_collapse,کویت,Kuwait,328,0.499
+channel,Tasnim News,after_truce_collapse,داعش,ISIS,27,0.041
+channel,Tasnim News,after_truce_collapse,پژاک,,3,0.005
+channel,Tasnim News,after_truce_collapse,ژاپن,Japan,59,0.09
+channel,Tasnim News,after_truce_collapse,یمن,Yemen,697,1.061
+channel,Tasnim News,after_truce_collapse,چین,China,228,0.347
+channel,Tasnim News,after_truce_collapse,غزه,Gaza,346,0.527
+channel,Tasnim News,after_truce_collapse,قطر,Qatar,202,0.308
+channel,Fars News,after_truce_collapse,مقاومت عراق / حشد شعبی,Iraqi militias,17,0.043
+channel,Fars News,after_truce_collapse,مجاهدین خلق,,0,0.0
+channel,Fars News,after_truce_collapse,امارات,UAE,143,0.366
+channel,Fars News,after_truce_collapse,جمهوری آذربایجان,Rep. of Azerbaijan,17,0.043
+channel,Fars News,after_truce_collapse,کتائب حزب‌الله,,4,0.01
+channel,Fars News,after_truce_collapse,آذربایجان شرقی/غربی (Iranian provinces),,11,0.028
+channel,Fars News,after_truce_collapse,اتحادیه اروپا,EU / Europe,77,0.197
+channel,Fars News,after_truce_collapse,فلسطین اشغالی (Israel),,8,0.02
+channel,Fars News,after_truce_collapse,عربستان,Saudi Arabia,550,1.406
+channel,Fars News,after_truce_collapse,سلطنت‌طلبان,,8,0.02
+channel,Fars News,after_truce_collapse,جهاد اسلامی,,1,0.003
+channel,Fars News,after_truce_collapse,"دریای عمان (sea, not the country)",,26,0.066
+channel,Fars News,after_truce_collapse,انصارالله / حوثی‌ها,Houthis,61,0.156
+channel,Fars News,after_truce_collapse,جیش‌العدل,,0,0.0
+channel,Fars News,after_truce_collapse,افغانستان,Afghanistan,20,0.051
+channel,Fars News,after_truce_collapse,رضا پهلوی,,24,0.061
+channel,Fars News,after_truce_collapse,انگلیس,United Kingdom,159,0.407
+channel,Fars News,after_truce_collapse,حزب‌الله,Hezbollah,80,0.205
+channel,Fars News,after_truce_collapse,هند,India,32,0.082
+channel,Fars News,after_truce_collapse,اسپانیا,Spain,76,0.194
+channel,Fars News,after_truce_collapse,ونزوئلا,Venezuela,44,0.112
+channel,Fars News,after_truce_collapse,پاکستان,Pakistan,87,0.222
+channel,Fars News,after_truce_collapse,ایتالیا,Italy,9,0.023
+channel,Fars News,after_truce_collapse,اوکراین,Ukraine,139,0.355
+channel,Fars News,after_truce_collapse,طالبان,Taliban,6,0.015
+channel,Fars News,after_truce_collapse,فرانسه,France,80,0.205
+channel,Fars News,after_truce_collapse,فلسطین,Palestine,77,0.197
+channel,Fars News,after_truce_collapse,بحرین,Bahrain,206,0.527
+channel,Fars News,after_truce_collapse,سوریه,Syria,58,0.148
+channel,Fars News,after_truce_collapse,کومله,,5,0.013
+channel,Fars News,after_truce_collapse,لبنان,Lebanon,279,0.713
+channel,Fars News,after_truce_collapse,ترکیه,Turkey,96,0.245
+channel,Fars News,after_truce_collapse,روسیه,Russia,206,0.527
+channel,Fars News,after_truce_collapse,آلمان,Germany,28,0.072
+channel,Fars News,after_truce_collapse,عمان,Oman,162,0.414
+channel,Fars News,after_truce_collapse,اردن,Jordan,200,0.511
+channel,Fars News,after_truce_collapse,عراق,Iraq,524,1.34
+channel,Fars News,after_truce_collapse,حماس,Hamas,39,0.1
+channel,Fars News,after_truce_collapse,کویت,Kuwait,290,0.741
+channel,Fars News,after_truce_collapse,داعش,ISIS,11,0.028
+channel,Fars News,after_truce_collapse,پژاک,,5,0.013
+channel,Fars News,after_truce_collapse,ژاپن,Japan,44,0.112
+channel,Fars News,after_truce_collapse,یمن,Yemen,353,0.903
+channel,Fars News,after_truce_collapse,چین,China,103,0.263
+channel,Fars News,after_truce_collapse,غزه,Gaza,130,0.332
+channel,Fars News,after_truce_collapse,قطر,Qatar,143,0.366
+channel,Jamaran,after_truce_collapse,مقاومت عراق / حشد شعبی,Iraqi militias,38,0.053
+channel,Jamaran,after_truce_collapse,مجاهدین خلق,,3,0.004
+channel,Jamaran,after_truce_collapse,امارات,UAE,226,0.315
+channel,Jamaran,after_truce_collapse,جمهوری آذربایجان,Rep. of Azerbaijan,34,0.047
+channel,Jamaran,after_truce_collapse,کتائب حزب‌الله,,3,0.004
+channel,Jamaran,after_truce_collapse,آذربایجان شرقی/غربی (Iranian provinces),,19,0.027
+channel,Jamaran,after_truce_collapse,اتحادیه اروپا,EU / Europe,159,0.222
+channel,Jamaran,after_truce_collapse,فلسطین اشغالی (Israel),,14,0.02
+channel,Jamaran,after_truce_collapse,عربستان,Saudi Arabia,631,0.88
+channel,Jamaran,after_truce_collapse,سلطنت‌طلبان,,3,0.004
+channel,Jamaran,after_truce_collapse,جهاد اسلامی,,2,0.003
+channel,Jamaran,after_truce_collapse,"دریای عمان (sea, not the country)",,28,0.039
+channel,Jamaran,after_truce_collapse,انصارالله / حوثی‌ها,Houthis,106,0.148
+channel,Jamaran,after_truce_collapse,جیش‌العدل,,2,0.003
+channel,Jamaran,after_truce_collapse,افغانستان,Afghanistan,55,0.077
+channel,Jamaran,after_truce_collapse,رضا پهلوی,,10,0.014
+channel,Jamaran,after_truce_collapse,انگلیس,United Kingdom,195,0.272
+channel,Jamaran,after_truce_collapse,حزب‌الله,Hezbollah,140,0.195
+channel,Jamaran,after_truce_collapse,هند,India,57,0.08
+channel,Jamaran,after_truce_collapse,اسپانیا,Spain,122,0.17
+channel,Jamaran,after_truce_collapse,ونزوئلا,Venezuela,70,0.098
+channel,Jamaran,after_truce_collapse,پاکستان,Pakistan,359,0.501
+channel,Jamaran,after_truce_collapse,ایتالیا,Italy,23,0.032
+channel,Jamaran,after_truce_collapse,اوکراین,Ukraine,228,0.318
+channel,Jamaran,after_truce_collapse,طالبان,Taliban,27,0.038
+channel,Jamaran,after_truce_collapse,فرانسه,France,116,0.162
+channel,Jamaran,after_truce_collapse,فلسطین,Palestine,99,0.138
+channel,Jamaran,after_truce_collapse,بحرین,Bahrain,151,0.211
+channel,Jamaran,after_truce_collapse,سوریه,Syria,164,0.229
+channel,Jamaran,after_truce_collapse,کومله,,2,0.003
+channel,Jamaran,after_truce_collapse,لبنان,Lebanon,422,0.589
+channel,Jamaran,after_truce_collapse,ترکیه,Turkey,227,0.317
+channel,Jamaran,after_truce_collapse,روسیه,Russia,441,0.615
+channel,Jamaran,after_truce_collapse,آلمان,Germany,70,0.098
+channel,Jamaran,after_truce_collapse,عمان,Oman,366,0.511
+channel,Jamaran,after_truce_collapse,اردن,Jordan,243,0.339
+channel,Jamaran,after_truce_collapse,عراق,Iraq,735,1.025
+channel,Jamaran,after_truce_collapse,حماس,Hamas,86,0.12
+channel,Jamaran,after_truce_collapse,کویت,Kuwait,282,0.393
+channel,Jamaran,after_truce_collapse,داعش,ISIS,13,0.018
+channel,Jamaran,after_truce_collapse,پژاک,,12,0.017
+channel,Jamaran,after_truce_collapse,ژاپن,Japan,51,0.071
+channel,Jamaran,after_truce_collapse,یمن,Yemen,289,0.403
+channel,Jamaran,after_truce_collapse,چین,China,336,0.469
+channel,Jamaran,after_truce_collapse,غزه,Gaza,198,0.276
+channel,Jamaran,after_truce_collapse,قطر,Qatar,251,0.35

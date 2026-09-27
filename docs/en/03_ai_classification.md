@@ -93,6 +93,9 @@ In the "with context" setting the AI therefore also receives:
 
 Rule: the context serves **only to understand** references; it must not decide topic or tone on its own.
 
+The model comparison and the first ~2,800 posts of the main run used an earlier version of `background.txt`; afterwards
+six dates and price figures were corrected, without any effect on categories or rules.
+
 ---
 
 ## 4. How it was tested

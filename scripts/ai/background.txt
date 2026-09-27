@@ -4,7 +4,7 @@ EVENTS
   Iranian authorities described violent participants as "rioters" and accused the USA and Israel of interference.
 - 27 Jan: the rial reached about 1.5 million per US dollar; official year-on-year inflation about 60%.
 - 6 Feb (Muscat), 17 Feb and 26 Feb (Geneva): Oman-mediated US–Iran nuclear talks; no agreement.
-- 20 Feb: Trump set a 10-day deadline for a deal.
+- 19 Feb: Trump set a 10-day deadline for a deal.
 - 21–22 Feb: student protests at several universities, with some clashes with pro-government groups.
 - 28 Feb: the USA and Israel launched large-scale strikes on Iran, killing Supreme Leader Ali Khamenei and
   several senior officials and commanders. Iran retaliated against Israel and targets in Gulf states, including US bases,
@@ -16,7 +16,7 @@ EVENTS
   attribute it to a US missile strike; preliminary Pentagon findings pointed to outdated targeting data.
 - 2 Mar: Hezbollah entered the war by firing on Israel; Israel intensified strikes in Lebanon and began ground operations on 16 Mar.
 - 8 Mar: Iran's Assembly of Experts selected Mojtaba Khamenei as Supreme Leader.
-- 18 Mar: Israeli strikes hit Iran's South Pars gas field, the first strike on Iran's upstream energy infrastructure.
+- 18 Mar: Israeli strikes hit Iran's South Pars gas field, the first strike on Iran's upstream energy infrastructure in this war.
 - 31 Mar: Syrian President Ahmed al-Sharaa said Syria would stay out of the conflict unless attacked.
 - 8 Apr: a Pakistan-mediated two-week US–Iran ceasefire took effect; 11–12 Apr Islamabad talks ended without agreement.
 - 13 Apr: the USA imposed a naval blockade on Iranian shipping.
@@ -30,10 +30,12 @@ EVENTS
 - 20–22 Jul: Yemen's Houthis declared a maritime blockade on Saudi Arabia and claimed attacks on Saudi oil tankers.
 - 20 Jul: Hamas named Khalil al-Hayya as its overall leader.
 - 10 Aug: Mojtaba Khamenei reshuffled the military leadership (see KEY LIVING ACTORS).
-- 24 Aug: Iran's new Persian Gulf Strait Authority blacklisted 45 tankers; the USA launched
-  "Operation Economic Outcast" with new and secondary sanctions; the rial hit a record low of about 2 million per US dollar.
+- 23 Aug: Iran's new Persian Gulf Strait Authority blacklisted 45 tankers.
+- 24 Aug: the USA launched "Operation Economic Outcast" with new and secondary sanctions; the rial hit a record low
+  of about 2 million per US dollar.
 - Economy: official annual inflation stayed above 60% through the summer.
-- Brent crude: about $71 before the war; futures high about $126 on 30 Apr; about $100 in late July; about $90 end of August.
+- Brent crude: about $72 before the war; futures high about $126 on 30 Apr; about $100 on 23 Jul, about $91 at the end of July;
+  about $93 at the end of August.
 
 KILLED IRANIAN OFFICIALS (all deceased)
 - 28 Feb: Supreme Leader Ali Khamenei; IRGC commander Mohammad Pakpour; armed-forces chief Abdolrahim Mousavi;
@@ -62,11 +64,11 @@ KEY LIVING ACTORS
 - Syria: President Ahmed al-Sharaa. Houthis: leader Abdul-Malik al-Houthi; military spokesman Yahya Saree.
 
 INTERNATIONAL RELATIONS AND MEDIATORS
-- Russia: Comprehensive Strategic Partnership treaty with Iran (signed 17 Jan 2025, in force 3 Oct 2025); no mutual
+- Russia: Comprehensive Strategic Partnership treaty with Iran (signed 17 Jan 2025, in force 2 Oct 2025); no mutual
   defence clause, but neither side may support an aggressor against the other. In the 2026 war Russia condemned the
   US–Israeli strikes as violations of Iran's sovereignty and did not fight; US and European officials reported Russian
   intelligence and drone support. Russia profited from higher oil prices.
-- Russia–Ukraine: the war continued throughout 2026 (short truces, e.g. 11–13 Apr); US-mediated talks produced no ceasefire.
+- Russia–Ukraine: the war continued throughout 2026 (short truces, e.g. 11–12 Apr); US-mediated talks produced no ceasefire.
   US–Russia relations were shaped by these talks, sanctions and US accusations of Russian support for Iran.
 - China: Iran's largest oil buyer (imports fell sharply during the war); called for an immediate end of military
   operations, respect for Iran's sovereignty and reopening of Hormuz; Wang Yi met Araghchi in Beijing on 6 May.

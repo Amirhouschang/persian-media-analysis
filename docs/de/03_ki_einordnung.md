@@ -94,6 +94,9 @@ Deshalb erhält die KI in der Variante „mit Kontext“ zusätzlich:
 
 Regel: Der Kontext dient **nur dem Verständnis** von Bezügen; er darf Thema oder Ton nicht allein bestimmen.
 
+Der Modellvergleich und die ersten rund 2.800 Beiträge des Hauptlaufs liefen mit einer früheren Fassung von
+`background.txt`; danach wurden sechs Daten- und Preisangaben korrigiert, ohne Einfluss auf Kategorien oder Regeln.
+
 ---
 
 ## 4. Wie geprüft wurde
