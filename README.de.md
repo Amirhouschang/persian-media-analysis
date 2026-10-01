@@ -35,8 +35,8 @@ systematisch, überprüfbar und reproduzierbar auswerten?
 > ausgeführt. Sie und die zugehörigen Daten sind nicht auf GitHub: Das Projekt ist schon sehr umfangreich, und mehr
 > Material würde Leser ohne Vorkenntnis eher verwirren als ihnen helfen.
 
-> **Kurz gelesen:** Die Ergebnisse als zweiseitiger Text ohne Diagramme und Tabellen:
-> [Drei Stimmen, ein Krieg](docs/de/bericht.md)
+> **Ergebnisbericht:** Die Ergebnisse zusammengefasst, mit den wichtigsten Zahlen:
+> [Wortwahl, Themen und Reichweite iranischer Nachrichtenkanäle auf Telegram](docs/de/bericht.md)
 
 ---
 

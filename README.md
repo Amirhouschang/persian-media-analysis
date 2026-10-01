@@ -33,8 +33,8 @@ and reproducibly?
 > the data belonging to them are not on GitHub: the project is already very extensive, and more material would
 > confuse readers without prior knowledge rather than help them.
 
-> **Short read:** the results as a two-page text without charts and tables:
-> [Three Voices, One War](docs/en/report.md)
+> **Results report:** the findings in brief, with the key figures:
+> [Wording, Topics and Reach of Iranian News Channels on Telegram](docs/en/report.md)
 
 ---
 
