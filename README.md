@@ -35,6 +35,8 @@ and reproducibly?
 
 > **Results report:** the findings in brief, with the key figures:
 > [Wording, Topics and Reach of Iranian News Channels on Telegram](docs/en/report.md)
+>
+> **Interactive dashboard:** the results as charts, in German and English: [open the dashboard](https://persian-media-analysis-ijvfxggccjhs6zroefhwcc.streamlit.app/?lang=en)
 
 ---
 
@@ -73,7 +75,7 @@ tone and reach** – and how do these patterns change around key events?
 | 2. Processing | PostgreSQL database, cleaning Persian text | ✅ done | [02 – Processing](docs/en/02_processing.md) |
 | 3. AI classification | Codebook, model comparison, main run, validation | ✅ done | [03 – AI classification](docs/en/03_ai_classification.md) |
 | 4. Analysis | Word choice, naming, change over time, countries, reach | ✅ done | [04 – Analysis](docs/en/04_analysis.md) |
-| 5. Dashboard | local interactive dashboard | ⬜ planned | 05 – Dashboard |
+| 5. Dashboard | interactive dashboard (Streamlit), German and English | ✅ done | [Open the dashboard](https://persian-media-analysis-ijvfxggccjhs6zroefhwcc.streamlit.app/?lang=en) |
 | 6. Methodology & limits | Limitations, data protection, security | ⬜ planned | 06 – Methodology |
 
 ### 1. Data collection
@@ -122,8 +124,9 @@ Selected findings:
 
 Details, all charts and limitations: [04 – Analysis](docs/en/04_analysis.md)
 
-### 5. Dashboard *(planned)*
-- Interactive charts with `Plotly`, local dashboard with `Streamlit`
+### 5. Dashboard
+- Interactive charts with `Plotly` in a `Streamlit` app, in German and English: [open the dashboard](https://persian-media-analysis-ijvfxggccjhs6zroefhwcc.streamlit.app/?lang=en)
+- Reads only the finished result tables from `results/` (numbers, no post texts); locally: `streamlit run dashboard/app.py`
 
 ---
 
@@ -137,7 +140,7 @@ Details, all charts and limitations: [04 – Analysis](docs/en/04_analysis.md)
 | Database & SQL | PostgreSQL, DBeaver |
 | Analysis | pandas, numpy (log-odds) |
 | Local AI | Ollama (Gemma 4, Qwen, Aya Expanse) |
-| Visualisation | matplotlib; Plotly, Streamlit (planned) |
+| Visualisation | matplotlib; Plotly, Streamlit |
 
 ---
 

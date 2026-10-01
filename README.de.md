@@ -37,6 +37,8 @@ systematisch, überprüfbar und reproduzierbar auswerten?
 
 > **Ergebnisbericht:** Die Ergebnisse zusammengefasst, mit den wichtigsten Zahlen:
 > [Wortwahl, Themen und Reichweite iranischer Nachrichtenkanäle auf Telegram](docs/de/bericht.md)
+>
+> **Interaktives Dashboard:** die Ergebnisse als Diagramme, auf Deutsch und Englisch: [Dashboard öffnen](https://persian-media-analysis-ijvfxggccjhs6zroefhwcc.streamlit.app/?lang=de)
 
 ---
 
@@ -76,7 +78,7 @@ Ereignisse?
 | 2. Aufbereitung | PostgreSQL-Datenbank, Bereinigung persischer Texte | ✅ abgeschlossen | [02 – Aufbereitung](docs/de/02_aufbereitung.md) |
 | 3. KI-Einordnung | Codebuch, Modellvergleich, Hauptlauf, Validierung | ✅ abgeschlossen | [03 – KI-Einordnung](docs/de/03_ki_einordnung.md) |
 | 4. Analyse | Wortwahl, Benennungen, Zeitverlauf, Länder, Reichweite | ✅ abgeschlossen | [04 – Analyse](docs/de/04_analyse.md) |
-| 5. Dashboard | lokales interaktives Dashboard | ⬜ geplant | 05 – Dashboard |
+| 5. Dashboard | interaktives Dashboard (Streamlit), Deutsch und Englisch | ✅ abgeschlossen | [Dashboard öffnen](https://persian-media-analysis-ijvfxggccjhs6zroefhwcc.streamlit.app/?lang=de) |
 | 6. Methodik & Grenzen | Einschränkungen, Datenschutz, Sicherheit | ⬜ geplant | 06 – Methodik |
 
 ### 1. Datenerhebung
@@ -125,8 +127,9 @@ Ausgewählte Ergebnisse:
 
 Details, alle Diagramme und Grenzen: [04 – Analyse](docs/de/04_analyse.md)
 
-### 5. Dashboard *(geplant)*
-- Interaktive Grafiken mit `Plotly`, lokales Dashboard mit `Streamlit`
+### 5. Dashboard
+- Interaktive Grafiken mit `Plotly` in einer `Streamlit`-App, auf Deutsch und Englisch: [Dashboard öffnen](https://persian-media-analysis-ijvfxggccjhs6zroefhwcc.streamlit.app/?lang=de)
+- Liest nur die fertigen Ergebnistabellen aus `results/` (Zahlen, keine Beitragstexte); lokal: `streamlit run dashboard/app.py`
 
 ---
 
@@ -140,7 +143,7 @@ Details, alle Diagramme und Grenzen: [04 – Analyse](docs/de/04_analyse.md)
 | Datenbank & SQL | PostgreSQL, DBeaver |
 | Analyse | pandas, numpy (Log-Odds) |
 | Lokale KI | Ollama (Gemma 4, Qwen, Aya Expanse) |
-| Visualisierung | matplotlib; Plotly, Streamlit (geplant) |
+| Visualisierung | matplotlib; Plotly, Streamlit |
 
 ---
 
