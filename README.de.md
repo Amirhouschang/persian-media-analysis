@@ -15,6 +15,9 @@ systematisch, überprüfbar und reproduzierbar auswerten?
 > urheberrechtlichen Gründen nicht Teil des Repositorys; jeder Beitrag ist über Kanal und ID
 > (`t.me/<kanal>/<id>`) öffentlich auffindbar.
 
+> **Kurz gelesen:** Die Ergebnisse als zweiseitiger Text ohne Diagramme und Tabellen:
+> [Drei Stimmen, ein Krieg](docs/de/bericht.md)
+
 ---
 
 ## Fragestellung

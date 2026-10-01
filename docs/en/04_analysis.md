@@ -559,7 +559,7 @@ weeks. The tables show the most typical terms. All values: `results/countries/pe
 
 | Country | week from (value) | typical terms of the posts in that week | event |
 |---|---|---|---|
-| EU / Europe | 26 Jan (1.22) | `سپاه پاسداران` (Revolutionary Guards) · `تروریستی` (terrorist) · `خصمانه` (hostile) · `غیرمسئولانه` (irresponsible) | the EU lists the Revolutionary Guards as a terrorist organisation – and Iran's reaction |
+| EU / Europe | 26 Jan (1.22) | `سپاه پاسداران` (Revolutionary Guards) · `تروریستی` (terrorist) · `خصمانه` (hostile) · `غیرمسئولانه` (irresponsible) | the EU agrees politically (29 Jan) to list the Revolutionary Guards as a terrorist organisation – and Iran's reaction |
 | EU / Europe, Germany | 20 Apr (0.69 / 0.26) | `رضا پهلوی` (Reza Pahlavi) · `انرژی` (energy) · `قیمت بنزین` (petrol price) | Reza Pahlavi in Europe; energy prices |
 | Germany | 27 Apr (0.38) | `صدراعظم آلمان` (German Chancellor) · `تحقیر` (humiliation) · `پنتاگون` (Pentagon) · `خروج` (withdrawal) · `ترامپ` | the Chancellor's remark ("humiliation") and the reaction from Washington |
 | Italy | 22 Jun (0.28) | `ناتو` (NATO) · `پایگاه‌های` (bases) · `رومانی` (Romania) | NATO bases in Europe |

@@ -558,7 +558,7 @@ anderen Wochen. Die Tabellen zeigen die typischsten Begriffe. Alle Werte: `resul
 
 | Land | Woche ab (Wert) | typische Begriffe der Beiträge in dieser Woche | Ereignis |
 |---|---|---|---|
-| EU / Europa | 26.01. (1,22) | `سپاه پاسداران` (Revolutionsgarde) · `تروریستی` (terroristisch) · `خصمانه` (feindselig) · `غیرمسئولانه` (unverantwortlich) | Einstufung der Revolutionsgarde als Terrororganisation durch die EU – und Irans Reaktion |
+| EU / Europa | 26.01. (1,22) | `سپاه پاسداران` (Revolutionsgarde) · `تروریستی` (terroristisch) · `خصمانه` (feindselig) · `غیرمسئولانه` (unverantwortlich) | politische Einigung der EU (29.01.), die Revolutionsgarde als Terrororganisation einzustufen – und Irans Reaktion |
 | EU / Europa, Deutschland | 20.04. (0,69 / 0,26) | `رضا پهلوی` (Reza Pahlavi) · `انرژی` (Energie) · `قیمت بنزین` (Benzinpreis) | Reza Pahlavi in Europa; Energiepreise |
 | Deutschland | 27.04. (0,38) | `صدراعظم آلمان` (Bundeskanzler) · `تحقیر` (Demütigung) · `پنتاگون` (Pentagon) · `خروج` (Abzug) · `ترامپ` | Äußerung des Bundeskanzlers („Demütigung“) und Reaktion aus Washington |
 | Italien | 22.06. (0,28) | `ناتو` (NATO) · `پایگاه‌های` (Stützpunkte) · `رومانی` (Rumänien) | NATO-Stützpunkte in Europa |

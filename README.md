@@ -15,6 +15,9 @@ and reproducibly?
 > **Note:** Code, methodology and results are public. The raw post texts are not part of this repository
 > for copyright reasons; every post can be found publicly via channel and ID (`t.me/<channel>/<id>`).
 
+> **Short read:** the results as a two-page text without charts and tables:
+> [Three Voices, One War](docs/en/report.md)
+
 ---
 
 ## Research question
