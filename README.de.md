@@ -79,7 +79,7 @@ Ereignisse?
 | 3. KI-Einordnung | Codebuch, Modellvergleich, Hauptlauf, Validierung | ✅ abgeschlossen | [03 – KI-Einordnung](docs/de/03_ki_einordnung.md) |
 | 4. Analyse | Wortwahl, Benennungen, Zeitverlauf, Länder, Reichweite | ✅ abgeschlossen | [04 – Analyse](docs/de/04_analyse.md) |
 | 5. Dashboard | interaktives Dashboard (Streamlit), Deutsch und Englisch | ✅ abgeschlossen | [Dashboard öffnen](https://persian-media-analysis-ijvfxggccjhs6zroefhwcc.streamlit.app/?lang=de) |
-| 6. Methodik & Grenzen | Einschränkungen, Datenschutz, Sicherheit | ⬜ geplant | 06 – Methodik |
+| 6. Methodik & Grenzen | Einschränkungen, Datenschutz, Sicherheit | ✅ abgeschlossen | [06 – Methodik](docs/de/06_methodik.md) |
 
 ### 1. Datenerhebung
 - Abruf öffentlicher Kanäle über die offizielle Telegram-API (`Telethon`)
@@ -153,6 +153,7 @@ Details, alle Diagramme und Grenzen: [04 – Analyse](docs/de/04_analyse.md)
 telegram-iran/
 ├── README.md            ← englische Version
 ├── README.de.md         ← deutsche Version
+├── dashboard/           ← Streamlit-App (liest nur die Ergebnistabellen)
 ├── docs/
 │   ├── en/              ← ausführliche Seiten auf Englisch
 │   └── de/              ← ausführliche Seiten auf Deutsch
@@ -181,6 +182,7 @@ telegram-iran/
 - Verarbeitung vollständig **lokal**, auch die KI-Einordnung
 - Zugangsdaten nur als Umgebungsvariablen; Rohdaten und Sitzungsdateien vom Repository ausgeschlossen
 - KI-Ergebnisse werden nicht ungeprüft übernommen, sondern an neuen, blind kodierten Beiträgen validiert – mit Konfidenzintervall
+- Setzungen des Autors, Grenzen der Aussagen und Nachvollziehbarkeit: [06 – Methodik](docs/de/06_methodik.md)
 
 ## Kompetenzen, die das Projekt zeigt
 
@@ -194,7 +196,7 @@ telegram-iran/
 
 ## Status
 
-In Bearbeitung – die Seiten unter `docs/` werden nach jedem abgeschlossenen Schritt ergänzt.
+Alle sechs Schritte sind dokumentiert. Die Seiten unter `docs/` werden bei Bedarf ergänzt und korrigiert.
 
 ---
 

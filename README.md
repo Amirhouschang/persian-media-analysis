@@ -76,7 +76,7 @@ tone and reach** – and how do these patterns change around key events?
 | 3. AI classification | Codebook, model comparison, main run, validation | ✅ done | [03 – AI classification](docs/en/03_ai_classification.md) |
 | 4. Analysis | Word choice, naming, change over time, countries, reach | ✅ done | [04 – Analysis](docs/en/04_analysis.md) |
 | 5. Dashboard | interactive dashboard (Streamlit), German and English | ✅ done | [Open the dashboard](https://persian-media-analysis-ijvfxggccjhs6zroefhwcc.streamlit.app/?lang=en) |
-| 6. Methodology & limits | Limitations, data protection, security | ⬜ planned | 06 – Methodology |
+| 6. Methodology & limits | Limitations, data protection, security | ✅ done | [06 – Methodology](docs/en/06_methodology.md) |
 
 ### 1. Data collection
 - Public channels retrieved via the official Telegram API (`Telethon`)
@@ -150,6 +150,7 @@ Details, all charts and limitations: [04 – Analysis](docs/en/04_analysis.md)
 telegram-iran/
 ├── README.md            ← English version
 ├── README.de.md         ← German version
+├── dashboard/           ← Streamlit app (reads only the result tables)
 ├── docs/
 │   ├── en/              ← detailed pages in English
 │   └── de/              ← detailed pages in German
@@ -178,6 +179,7 @@ telegram-iran/
 - processing entirely **local**, including the AI classification
 - credentials only as environment variables; raw data and session files excluded from the repository
 - AI results are not taken over unchecked but validated on new posts coded blind – with confidence intervals
+- Settings of the author, limits of the statements and reproducibility: [06 – Methodology](docs/en/06_methodology.md)
 
 ## Skills demonstrated
 
@@ -191,7 +193,7 @@ telegram-iran/
 
 ## Status
 
-Work in progress – the pages under `docs/` are extended after each completed step.
+All six steps are documented. The pages under `docs/` are extended and corrected as needed.
 
 ---
 
