@@ -15,6 +15,24 @@ and reproducibly?
 > **Note:** Code, methodology and results are public. The raw post texts are not part of this repository
 > for copyright reasons; every post can be found publicly via channel and ID (`t.me/<channel>/<id>`).
 
+> **Scope:** The project is primarily technical: data collection, processing, counting and a reliable overview of
+> wording, countries, topics and activity in six channels. It is not an in-depth scholarly analysis; such a study
+> would have to read and interpret the posts individually and would run to 100 pages or more.
+> It works best as group work: the reference for checking the AI and the codebook come from **one** person and
+> reflect his view. For firmer results, two or three native Persian speakers (e.g. Iranists) should code the posts
+> independently, measure their agreement with each other and with the AI, and discuss the categories of the codebook
+> together. The codebook can be adapted to other questions and institutions (e.g. security, political science,
+> political interests and ideology).
+
+> **Wording and neutrality:** The analysis makes no moral or political judgement. Terms – including derogatory or
+> hostile ones – appear as they appear in the sources and are counted and reported. They are the wording of the
+> channels, not the opinion of the author, who harbours no hostility towards Jews or Americans. The texts stay
+> scholarly and technical and follow the sources.
+
+> **Further queries:** To understand the material for himself, the author ran several further SQL queries. They and
+> the data belonging to them are not on GitHub: the project is already very extensive, and more material would
+> confuse readers without prior knowledge rather than help them.
+
 > **Short read:** the results as a two-page text without charts and tables:
 > [Three Voices, One War](docs/en/report.md)
 

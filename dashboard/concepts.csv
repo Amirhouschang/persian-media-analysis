@@ -1,0 +1,105 @@
+category,concept,en,de
+israel_naming,اسرائیل,Israel,Israel
+israel_naming,رژیم صهیونیستی,Zionist regime,zionistisches Regime
+israel_naming,رژیم اشغالگر,occupying regime,Besatzungsregime
+israel_naming,رژیم غاصب,usurping regime,usurpatorisches Regime
+israel_naming,صهیونیست‌ها,Zionists,Zionisten
+israel_naming,دشمن صهیونیستی,Zionist enemy,zionistischer Feind
+israel_naming,رژیم کودک‌کش,child-killing regime,kindermordendes Regime
+israel_naming,صهیونیست‌های کودک‌کش,child-killing Zionists,kindermordende Zionisten
+israel_territory,اسرائیل,Israel,Israel
+israel_territory,فلسطین اشغالی,occupied Palestine,besetztes Palästina
+israel_territory,سرزمین‌های اشغالی,occupied territories,besetzte Gebiete
+israel_territory,اراضی اشغالی,occupied lands,besetztes Land
+israel_army,ارتش اسرائیل,army of Israel,Armee Israels
+israel_army,ارتش رژیم صهیونیستی,army of the Zionist regime,Armee des zionistischen Regimes
+israel_army,ارتش صهیونیستی,Zionist army,zionistische Armee
+israel_army,ارتش اشغالگر,occupying army,Besatzungsarmee
+israel_army,ارتش کودک‌کش آمریکا (USA – not counted as Israel),child-killing army of America (USA – not counted as Israel),kindermordende Armee Amerikas (USA – nicht als Israel gezählt)
+israel_army,ارتش کودک‌کش (Israel),child-killing army (Israel),kindermordende Armee (Israel)
+usa_naming,رئیس دولت تروریستی آمریکا,head of America's terrorist government,Chef der terroristischen Regierung Amerikas
+usa_naming,ارتش تروریستی آمریکا,terrorist army of America,terroristische Armee Amerikas
+usa_naming,ارتش کودک‌کش آمریکا,child-killing army of America,kindermordende Armee Amerikas
+usa_naming,ارتش متجاوز آمریکا,aggressor army of America,Aggressor-Armee Amerikas
+usa_naming,شیطان بزرگ,Great Satan,Großer Satan
+usa_naming,استکبار,"""arrogance"" (global arrogance)","„Arroganz“ (Weltarroganz)"
+usa_naming,ایالات متحده,United States,Vereinigte Staaten
+usa_naming,آمریکا,America,Amerika
+usa_naming,کاخ سفید,White House,Weißes Haus
+usa_naming,واشنگتن,Washington,Washington
+labels_opponents,خائن / خیانت,traitor / treason,Verräter / Verrat
+labels_opponents,وطن‌فروش,traitor to the homeland,Landesverräter
+labels_opponents,مزدور,mercenary,Söldner
+labels_opponents,منافقین,"""hypocrites"" (People's Mojahedin)","„Heuchler“ (Volksmudschahedin)"
+labels_opponents,اغتشاشگر,rioter,Randalierer
+labels_opponents,ضدانقلاب,counter-revolution,Konterrevolution
+crimes,نسل‌کشی,genocide,Völkermord
+crimes,کودک‌کش / کودک‌کشی,child-killer / child-killing,Kindermörder / Kindermord
+crimes,جنایت جنگی,war crimes,Kriegsverbrechen
+crimes,جنایت,crime,Verbrechen
+crimes,کشتار,massacre,Massaker
+crimes,میناب (school attack),Minab (school attack),Minab (Schulangriff)
+revenge,انتقام سخت,harsh revenge,harte Rache
+revenge,انتقام,revenge,Rache
+revenge,خونخواهی,blood revenge,Blutrache
+revenge,قصاص,retribution,Vergeltung
+revenge,پاسخ پشیمان‌کننده / کوبنده,regret-inducing / crushing response,reueerzeugende / vernichtende Antwort
+diplomacy,مذاکره / مذاکرات,negotiation(s),Verhandlung(en)
+diplomacy,گفت‌وگو,dialogue / talks,Gespräch(e)
+diplomacy,توافق,agreement,Abkommen / Einigung
+diplomacy,برجام,JCPOA (nuclear deal),JCPOA (Atomabkommen)
+diplomacy,دیپلماسی,diplomacy,Diplomatie
+diplomacy,آتش‌بس,ceasefire,Waffenruhe
+diplomacy,صلح,peace,Frieden
+diplomacy,تفاهم‌نامه,memorandum,Memorandum
+persons,ترامپ,Trump,Trump
+persons,نتانیاهو,Netanyahu,Netanjahu
+persons,پزشکیان,Pezeshkian,Pezeshkian
+persons,عراقچی,Araghchi,Araghchi
+persons,بقائی,Baghaei,Baghaei
+persons,ظریف,Zarif,Zarif
+persons,خاتمی,Khatami,Khatami
+persons,حسن روحانی,Hassan Rouhani,Hassan Rouhani
+persons,احمدی‌نژاد,Ahmadinejad,Ahmadinedschad
+persons,قالیباف,Ghalibaf,Ghalibaf
+persons,سخنگوی وزارت امور خارجه,foreign ministry spokesman,Sprecher des Außenministeriums
+persons,وزیر امور خارجه,foreign minister,Außenminister
+persons,رئیس‌جمهور آمریکا (US president),US president,US-Präsident
+persons,"رئیس‌جمهور (other, mostly Iran)",president (other; mostly Iran),Präsident (andere; meist Iran)
+extra_terms,شهید,martyr,Märtyrer
+extra_terms,اینترنت,internet,Internet
+countries_actors,امارات,UAE,Vereinigte Arabische Emirate
+countries_actors,عربستان,Saudi Arabia,Saudi-Arabien
+countries_actors,قطر,Qatar,Katar
+countries_actors,کویت,Kuwait,Kuwait
+countries_actors,بحرین,Bahrain,Bahrain
+countries_actors,عمان,Oman,Oman
+countries_actors,اردن,Jordan,Jordanien
+countries_actors,لبنان,Lebanon,Libanon
+countries_actors,حزب‌الله,Hezbollah,Hisbollah
+countries_actors,غزه,Gaza,Gaza
+countries_actors,حماس,Hamas,Hamas
+countries_actors,فلسطین,Palestine,Palästina
+countries_actors,عراق,Iraq,Irak
+countries_actors,مقاومت عراق / حشد شعبی,Iraqi militias,Irakische Milizen
+countries_actors,یمن,Yemen,Jemen
+countries_actors,انصارالله / حوثی‌ها,Houthis,Huthis
+countries_actors,سوریه,Syria,Syrien
+countries_actors,داعش,ISIS,Islamischer Staat (IS)
+countries_actors,روسیه,Russia,Russland
+countries_actors,چین,China,China
+countries_actors,پاکستان,Pakistan,Pakistan
+countries_actors,ترکیه,Turkey,Türkei
+countries_actors,هند,India,Indien
+countries_actors,ژاپن,Japan,Japan
+countries_actors,افغانستان,Afghanistan,Afghanistan
+countries_actors,جمهوری آذربایجان,Rep. of Azerbaijan,Rep. Aserbaidschan
+countries_actors,اوکراین,Ukraine,Ukraine
+countries_actors,ونزوئلا,Venezuela,Venezuela
+countries_actors,طالبان,Taliban,Taliban
+countries_actors,اتحادیه اروپا,EU / Europe,EU / Europa
+countries_actors,انگلیس,United Kingdom,Großbritannien
+countries_actors,فرانسه,France,Frankreich
+countries_actors,آلمان,Germany,Deutschland
+countries_actors,ایتالیا,Italy,Italien
+countries_actors,اسپانیا,Spain,Spanien

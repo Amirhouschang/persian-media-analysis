@@ -15,6 +15,26 @@ systematisch, überprüfbar und reproduzierbar auswerten?
 > urheberrechtlichen Gründen nicht Teil des Repositorys; jeder Beitrag ist über Kanal und ID
 > (`t.me/<kanal>/<id>`) öffentlich auffindbar.
 
+> **Einordnung:** Das Projekt ist vor allem technisch: Datenerhebung, Aufbereitung, Auszählung und ein belastbarer
+> Überblick über Wortwahl, Länder, Themen und Aktivität in sechs Kanälen. Es ist keine wissenschaftliche
+> Tiefenanalyse; eine solche Studie müsste die Beiträge einzeln lesen und einordnen und würde 100 Seiten und mehr
+> umfassen.
+> Am besten funktioniert das Projekt als Gruppenarbeit: Die Referenz für die Prüfung der KI und das Codebuch stammen
+> von **einer** Person und spiegeln ihre Sicht. Für belastbarere Ergebnisse sollten zwei bis drei persische
+> Muttersprachler (z. B. Iranisten) die Beiträge unabhängig voneinander kodieren, ihre Übereinstimmung untereinander
+> und mit der KI messen und die Kategorien des Codebuchs gemeinsam diskutieren. Das Codebuch lässt sich für andere
+> Fragestellungen und Institutionen anpassen (z. B. Sicherheit, Politikwissenschaft, politische Interessen und
+> Ideologie).
+
+> **Wortwahl und Neutralität:** Die Auswertung bewertet nichts moralisch oder politisch. Begriffe – auch abwertende
+> oder feindselige – stehen so da, wie sie in den Quellen stehen, und werden gezählt und berichtet. Sie sind die
+> Wortwahl der Kanäle, nicht die Meinung des Autors; er hegt keine Feindseligkeit gegenüber Juden oder Amerikanern.
+> Die Texte bleiben wissenschaftlich und technisch und folgen den Quellen.
+
+> **Weitere Abfragen:** Um das Material für sich selbst zu verstehen, hat der Autor weitere SQL-Abfragen
+> ausgeführt. Sie und die zugehörigen Daten sind nicht auf GitHub: Das Projekt ist schon sehr umfangreich, und mehr
+> Material würde Leser ohne Vorkenntnis eher verwirren als ihnen helfen.
+
 > **Kurz gelesen:** Die Ergebnisse als zweiseitiger Text ohne Diagramme und Tabellen:
 > [Drei Stimmen, ein Krieg](docs/de/bericht.md)
 
