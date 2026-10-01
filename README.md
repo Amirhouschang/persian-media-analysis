@@ -109,14 +109,14 @@ tone and reach** – and how do these patterns change around key events?
 - **Topics according to the AI:** weighted shares per group and phase, with measured accuracy
 
 Selected findings:
-- **Three voices:** state channels speak as government and administration (spokespeople, ministers, the language of international law – "aggression", "condemnation"); IRGC-affiliated channels report on missiles, drones, arrests and "riots"; Jamaran on negotiations, US politics, the nuclear issue and the internet.
-- After the collapse of the ceasefire, state and IRGC-affiliated channels call Israel the "Zionist regime" (*rezhim-e sahyunisti*) in 57% and 53% of mentions; Jamaran writes "Israel" in 70%.
-- No channel calls Mojtaba Khamenei the Leader before his selection on 8 March; even afterwards about three quarters of mentions of the Leader concern Ali Khamenei.
+- **Three groups:** state channels speak as government and administration (spokespeople, ministers, the language of international law – "aggression", "condemnation"); IRGC-affiliated channels report on missiles, drones, arrests and "riots"; Jamaran on negotiations, US politics, the nuclear issue and the internet.
+- After the collapse of the ceasefire, state and IRGC-affiliated channels call Israel the "Zionist regime" (*rezhim-e sahyunisti*) in 57% and 53% of mentions; at Jamaran it is 26%, and "Israel" is its most frequent designation over the whole period (65%).
+- No channel calls Mojtaba Khamenei the Leader before his selection on 8 March; even afterwards 74% (ceasefire) and 79% (after the collapse) of the posts that name one of the two Khameneis concern Ali Khamenei.
 - The highest values for "martyr" and "revenge" are not at the start of the war but in the weeks of the farewell ceremony and funeral processions for Ali Khamenei (3–10 July).
-- Former presidents and ministers of the reformist camp – Mohammad Khatami, Hassan Rouhani, Mohammad Javad Zarif – appear almost only at Jamaran; President Masoud Pezeshkian almost disappears from the news during the war.
-- With the start of the war the world shrinks to the region: Russia and China fall to a third in the IRGC-affiliated channels; Bahrain and Kuwait, hardly named before, become scenes of action. The same country looks different in each group – the UAE are a currency hub for the state media, a target (port of Fujairah) for the IRGC-affiliated channels and an actor of US politics for Jamaran.
+- Former presidents and ministers of the reformist camp – Mohammad Khatami, Hassan Rouhani, Mohammad Javad Zarif – appear much more often at Jamaran than in the other groups; President Masoud Pezeshkian is named much less often during the war.
+- With the start of the war the focus shifts to the region: Russia and China fall to a third in the IRGC-affiliated channels; Bahrain and Kuwait, hardly named before, become scenes of action. The same country looks different in each group – the UAE are a currency hub for the state media, a target (port of Fujairah) for the IRGC-affiliated channels and an actor of US politics for Jamaran.
 - Topics according to the AI: during the war 36–45% of posts are military (before: 4–5%); Jamaran has the highest share of diplomacy in every phase.
-- IRGC-affiliated channels reach about ten times as many views per post, but are forwarded less often relative to their views.
+- IRGC-affiliated channels reach a median of 11,858 views per post (state channels 1,259, Jamaran 1,593), but are forwarded less often relative to their views.
 
 ![Share of "Zionist regime" among all names for Israel](results/timeline/charts/israel_zionist_regime_share.png)
 

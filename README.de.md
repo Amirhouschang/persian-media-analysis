@@ -112,14 +112,14 @@ Ereignisse?
 - **Themen laut KI:** gewichtete Anteile pro Gruppe und Phase, mit gemessener Trefferquote
 
 Ausgewählte Ergebnisse:
-- **Drei Stimmen:** Staatliche Kanäle sprechen als Regierung und Verwaltung (Sprecher, Minister, Sprache des Völkerrechts – „Aggression“, „Verurteilung“); IRGC-nahe Kanäle berichten über Raketen, Drohnen, Festnahmen und „Unruhen“; Jamaran über Verhandlungen, US-Politik, Atomfrage und Internet.
-- Nach dem Zusammenbruch der Waffenruhe nennen staatliche und IRGC-nahe Kanäle Israel in 57 % bzw. 53 % der Nennungen „zionistisches Regime“ (*rezhim-e sahyunisti*); Jamaran schreibt zu 70 % „Israel“.
-- Kein Kanal nennt Mojtaba Khamenei vor seiner Wahl am 08.03. Führer; auch danach betreffen rund drei Viertel der Erwähnungen des Führers Ali Khamenei.
+- **Drei Gruppen:** Staatliche Kanäle sprechen als Regierung und Verwaltung (Sprecher, Minister, Sprache des Völkerrechts – „Aggression“, „Verurteilung“); IRGC-nahe Kanäle berichten über Raketen, Drohnen, Festnahmen und „Unruhen“; Jamaran über Verhandlungen, US-Politik, Atomfrage und Internet.
+- Nach dem Zusammenbruch der Waffenruhe nennen staatliche und IRGC-nahe Kanäle Israel in 57 % bzw. 53 % der Nennungen „zionistisches Regime“ (*rezhim-e sahyunisti*); bei Jamaran sind es 26 %, und „Israel“ ist dort über den ganzen Zeitraum mit 65 % die häufigste Bezeichnung.
+- Kein Kanal nennt Mojtaba Khamenei vor seiner Wahl am 08.03. Führer; auch danach betreffen 74 % (Waffenruhe) bzw. 79 % (nach dem Zusammenbruch) der Beiträge, die einen der beiden Khamenei nennen, den getöteten Ali Khamenei.
 - Die höchsten Werte für „Märtyrer“ und „Rache“ liegen nicht beim Kriegsbeginn, sondern in den Wochen der Trauerfeier und der Trauerzüge für Ali Khamenei (03.–10.07.).
-- Frühere Präsidenten und Minister des Reformlagers – Mohammad Khatami, Hassan Rouhani, Mohammad Javad Zarif – kommen fast nur bei Jamaran vor; Präsident Masoud Pezeshkian verschwindet im Krieg fast aus den Nachrichten.
-- Mit Kriegsbeginn schrumpft die Welt auf die Region: Russland und China fallen in den IRGC-nahen Kanälen auf ein Drittel; Bahrain und Kuwait, vorher kaum genannt, werden zu Schauplätzen. Dasselbe Land sieht in jeder Gruppe anders aus – die VAE sind für die Staatsmedien ein Devisenplatz, für die IRGC-nahen Kanäle ein Angriffsziel (Hafen Fudschaira), für Jamaran ein Akteur der US-Politik.
+- Frühere Präsidenten und Minister des Reformlagers – Mohammad Khatami, Hassan Rouhani, Mohammad Javad Zarif – kommen bei Jamaran deutlich häufiger vor als in den anderen Gruppen; Präsident Masoud Pezeshkian wird im Krieg deutlich seltener genannt.
+- Mit Kriegsbeginn verschiebt sich der Blick auf die Region: Russland und China fallen in den IRGC-nahen Kanälen auf ein Drittel; Bahrain und Kuwait, vorher kaum genannt, werden zu Schauplätzen. Dasselbe Land sieht in jeder Gruppe anders aus – die VAE sind für die Staatsmedien ein Devisenplatz, für die IRGC-nahen Kanäle ein Angriffsziel (Hafen Fudschaira), für Jamaran ein Akteur der US-Politik.
 - Themen laut KI: Im Krieg sind 36–45 % der Beiträge militärisch (vorher 4–5 %); Jamaran hat in jeder Phase den höchsten Anteil an Diplomatie.
-- IRGC-nahe Kanäle erreichen pro Beitrag rund zehnmal so viele Aufrufe, werden im Verhältnis zu ihren Aufrufen aber seltener weitergeleitet.
+- IRGC-nahe Kanäle erreichen im Median 11.858 Aufrufe pro Beitrag (staatliche Kanäle 1.259, Jamaran 1.593), werden im Verhältnis zu ihren Aufrufen aber seltener weitergeleitet.
 
 ![Anteil „zionistisches Regime“ an allen Bezeichnungen für Israel](results/timeline/charts/israel_zionist_regime_share.png)
 
