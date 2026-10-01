@@ -51,26 +51,28 @@ die Daten der Trauerfeier aus Berichten von Al Jazeera.
 
 ## Die wichtigsten Ergebnisse
 
-- **Drei verschiedene Stimmen.** Die staatlichen Kanäle sprechen als **Regierung und Verwaltung**: Außenamtssprecher,
+- **Drei Gruppen mit verschiedener Wortwahl.** Die staatlichen Kanäle sprechen als **Regierung und Verwaltung**: Außenamtssprecher,
   Minister, Provinzbehörden – und die Sprache des Völkerrechts („Aggression“, „Verurteilung“, „UN-Menschenrechte“).
   Die IRGC-nahen Kanäle berichten über **Raketen, Drohnen, Festnahmen und „Unruhen“** und mobilisieren („Treueeid“,
   „Blutrache“). Jamaran berichtet über **Verhandlungen, US-Politik, Atomfrage, Internet** – und zitiert internationale
   Medien und Reformpolitiker.
 - **Israel heißt immer öfter „zionistisches Regime“** – bei staatlichen und IRGC-nahen Kanälen nach dem Zusammenbruch
-  der Waffenruhe in 57 % bzw. 53 % der Nennungen (vorher 42–48 % bzw. 35–40 %). Jamaran schreibt zu 70 % „Israel“.
+  der Waffenruhe in 57 % bzw. 53 % der Nennungen (vorher 42–48 % bzw. 35–40 %). Bei Jamaran liegt der Wert bei 26 %; „Israel“ ist dort über den ganzen Zeitraum mit 65 % die häufigste Bezeichnung.
 - **Jamaran nennt Trump am häufigsten und schreibt am häufigsten „Trump behauptet“** (8,2 % aller Wörter direkt nach
   „Trump“, bei den anderen 3 %). IRGC-nahe Kanäle nennen ihn häufiger „Verbrecher“ und „Glücksspieler“.
-- **Mojtaba Khamenei wird von keinem Kanal vor seiner Wahl am 08.03. „Führer“ genannt.** Trotzdem betreffen danach
-  rund **drei Viertel** aller Erwähnungen des Führers den getöteten Ali Khamenei.
-- **Personen:** Präsident Pezeshkian verschwindet im Krieg fast aus den Nachrichten (IRGC-nah von 0,60 auf 0,17 pro
+- **Mojtaba Khamenei wird von keinem Kanal vor seiner Wahl am 08.03. „Führer“ genannt.** Trotzdem betreffen von den
+  Beiträgen, die einen der beiden Khamenei nennen, in der Waffenruhe **74 %** und nach dem Zusammenbruch **79 %** den
+  getöteten Ali Khamenei (im Krieg 55 %).
+- **Personen:** Präsident Pezeshkian wird im Krieg deutlich seltener genannt (IRGC-nah von 0,60 auf 0,17 pro
   1.000 Wörter). Parlamentspräsident **Ghalibaf** gewinnt in der Waffenruhe an Gewicht. Frühere Präsidenten und
-  Minister des Reformlagers – **Khatami, Rouhani, Zarif** – kommen fast nur bei Jamaran vor.
+  Minister des Reformlagers – **Khatami, Rouhani, Zarif** – kommen bei Jamaran deutlich häufiger vor (Khatami 0,12 pro 1.000 Wörter gegenüber 0,01 und 0,02).
 - **Die größten Ausschläge liegen nicht beim Kriegsbeginn**, sondern Anfang Juli: In den Wochen der
   Trauerfeier für Ali Khamenei erreichen „Märtyrer“ und „Rache“ ihre höchsten Werte – IRGC-nah 21,6 Mal „Märtyrer“
-  pro 1.000 Wörter, zehnmal so viel wie sonst.
-- **Jede Spitze lässt sich datieren:** „Verhandlungen“ steigt in den Wochen von Maskat (06.02.), Islamabad (08.–12.04.)
-  und dem Memorandum (17.–18.06.); Gegnerbegriffe in den Wochen der Proteste und der Internetsperre im Januar.
-- **Länder:** Mit Kriegsbeginn schrumpft die Welt auf die Region – Russland und China fallen in den IRGC-nahen Kanälen
+  pro 1.000 Wörter, rund zehnmal so viel wie in einer üblichen Woche (Median 2,1).
+- **Die meisten Spitzen lassen sich einem Ereignis zuordnen:** „Verhandlungen“ steigt in den Wochen von Maskat (06.02.), Islamabad (08.–12.04.)
+  und dem Memorandum (17.–18.06.); Gegnerbegriffe in den Wochen der Proteste und der Internetsperre im Januar. Eine Ausnahme: Die Verbrechensbegriffe der
+  IRGC-nahen Kanäle erreichen ihren Höchstwert in der Woche ab 20.07., ohne dass ein einzelnes Ereignis erkennbar ist.
+- **Länder:** Mit Kriegsbeginn verschiebt sich der Blick auf die Region – Russland und China fallen in den IRGC-nahen Kanälen
   auf ein Drittel, Gaza in allen Gruppen auf ein Fünftel bis ein Drittel. Bahrain und Kuwait, vorher kaum genannt, werden zu
   Schauplätzen. Jede Phase hat ihr Land: Libanon und Pakistan in der Waffenruhe, Saudi-Arabien, Jemen und Irak danach.
 - **Dasselbe Land, drei Bilder:** Die VAE sind für die Staatsmedien ein Devisenplatz, für die IRGC-nahen Kanäle ein
@@ -79,7 +81,8 @@ die Daten der Trauerfeier aus Berichten von Al Jazeera.
 - **Themen laut KI:** Im Krieg sind 36–45 % der Beiträge militärisch (vorher 4–5 %). Jamaran hat in jeder Phase den
   höchsten Anteil an Diplomatie. Trefferquote der KI beim Thema: 72,5 %; den Ton misst die KI nicht verlässlich genug
   für Vergleiche zwischen Gruppen.
-- **Reichweite:** Tasnim und Fars erreichen pro Beitrag rund **zehnmal so viele Aufrufe** wie die anderen Kanäle.
+- **Reichweite:** Die IRGC-nahen Kanäle (Tasnim, Fars) erreichen im Median **11.858 Aufrufe pro Beitrag**, die staatlichen
+  Kanäle 1.259 und Jamaran 1.593.
 
 ---
 
@@ -165,8 +168,8 @@ Nennungen pro 1.000 Wörter, ganzer Zeitraum. Gezählt werden Name und Namensvar
 | `حسن روحانی` | Hassan Rouhani | Präsident 2013–2021 | 0,00 | 0,00 | **0,03** |
 | `احمدی‌نژاد` | Mahmoud Ahmadinejad | Präsident 2005–2013 | 0,00 | 0,00 | **0,02** |
 
-In absoluten Zahlen: Khatami 366-mal bei Jamaran gegenüber 122-mal in allen drei staatlichen Kanälen zusammen;
-Rouhani 78 gegenüber 30 und 16. Rouhani wird nur mit vollem Namen gezählt, weil `روحانی` allein auch „Geistlicher“
+In absoluten Zahlen: Khatami 366-mal bei Jamaran gegenüber 122-mal in allen drei staatlichen und 87-mal in beiden IRGC-nahen Kanälen;
+Rouhani 78 gegenüber 30 (staatlich) und 16 (IRGC-nah). Rouhani wird nur mit vollem Namen gezählt, weil `روحانی` allein auch „Geistlicher“
 heißt.
 
 **Wer wann wichtig ist** (pro 1.000 Wörter nach Phase, `naming.xlsx`, Blatt `persons_phases`):
@@ -296,7 +299,7 @@ die letzte Woche sind unvollständig und fehlen in den Diagrammen.
 
 **Warum gibt es eine Spitze?** `11_peak_weeks.py` vergleicht jede Spitzenwoche mit allen anderen Wochen derselben
 Gruppe und listet die Begriffe, die **in genau dieser Woche** typisch waren (gleiche Methode wie Abschnitt 1). So lässt
-sich jede Spitze mit den Daten selbst einem Ereignis zuordnen. Die Begriffe beschreiben die ganze Woche, nicht nur die
+sich eine Spitze meist mit den Daten selbst einem Ereignis zuordnen (eine Ausnahme: Verbrechensbegriffe, IRGC-nah, Woche ab 20.07.). Die Begriffe beschreiben die ganze Woche, nicht nur die
 Beiträge mit dem gezählten Wort. Alle Wochen und Begriffe: `results/timeline/peak_weeks.csv`.
 
 ### Verhandlungen
@@ -337,16 +340,14 @@ Kanälen in der Woche ab 29.06. – der Woche der Trauerfeier für Ali Khamenei 
 |---|---|---|---|
 | 02.03. | Rache: IRGC-nah 0,89 | `موشک‌های` (Raketen) · `خامنه‌ای` (Khamenei) · `سوگ` *sug* (Trauer) · `مجلس خبرگان` (Expertenversammlung) · `عملیات وعده صادق` („Operation Wahres Versprechen“) | Tötung Ali Khameneis (28.02.), Wahl des Nachfolgers |
 | 29.06. | Märtyrer: IRGC-nah 19,1 · staatlich 14,1 · Jamaran 7,6 | `مراسم وداع` *marasem-e veda'* (Abschiedsfeier) · `مصلی تهران` *mosalla-ye Tehran* (Gebetsstätte Teheran) · `ادای احترام` (Ehrerweisung) · `بدرقه` *badragheh* (Geleit) | Trauerfeier für Ali Khamenei in Teheran |
-| 06.07. | Märtyrer: IRGC-nah **21,6** · staatlich 17,5 · Rache: IRGC-nah **1,48** | `تشییع` *tashyi'* (Trauerzug) · `پیکر مطهر` (der heilige Leichnam) · `مشهد` (Maschhad) · `نجف` (Nadschaf) | Trauerzüge in Maschhad und Nadschaf |
-| 13.07. | Rache: staatlich 0,58 · Jamaran 0,41 | `بندرعباس` (Bandar Abbas) · `هرمزگان` (Provinz Hormozgan) · `بوشهر` (Buschehr) · `اهواز` (Ahvaz) · `انفجار` (Explosion) · `کویت` (Kuwait) · `اردن` (Jordanien) | Angriffe nach dem Zusammenbruch der Waffenruhe (07.–08.07.) |
+| 06.07. | Märtyrer: IRGC-nah **21,6** · staatlich 17,5 · Rache: IRGC-nah **1,48** · staatlich 0,84 · Jamaran 0,54 | `تشییع` *tashyi'* (Trauerzug) · `پیکر مطهر` (der heilige Leichnam) · `مشهد` (Maschhad) · `نجف` (Nadschaf) | Trauerzüge in Maschhad und Nadschaf |
+| 13.07. (zweite Spitze) | Rache: staatlich 0,58 · Jamaran 0,41 | `بندرعباس` (Bandar Abbas) · `هرمزگان` (Provinz Hormozgan) · `بوشهر` (Buschehr) · `اهواز` (Ahvaz) · `انفجار` (Explosion) · `کویت` (Kuwait) · `اردن` (Jordanien) | Angriffe nach dem Zusammenbruch der Waffenruhe (07.–08.07.) |
 
 - Die **höchsten Werte** für „Märtyrer“ und „Rache“ im ganzen Zeitraum liegen **nicht** beim Kriegsbeginn, sondern in
   den Wochen der Trauerfeier (03.–05.07.) und der Trauerzüge (06.–09.07.) für Ali Khamenei – vier Monate nach
   seinem Tod.
-- In der Woche der Trauerzüge schreiben IRGC-nahe Kanäle `خونخواهی` *khunkhahi* (Blutrache) häufiger als in der
-  ersten Kriegswoche (0,58 gegenüber 0,41 pro 1.000 Wörter).
-- Jamaran schreibt in dieser Woche zu 44 % „zionistisches Regime“ – der höchste Wert des Kanals im ganzen Zeitraum
-  (sonst 19–39 %). Die Berichte über die Trauerfeier übernehmen die Sprache der offiziellen Erklärungen.
+- Jamaran schreibt in der Woche ab 29.06. (Trauerfeier) zu 44 % „zionistisches Regime“ – der höchste Wert des Kanals im
+  ganzen Zeitraum (zweithöchster: 39 %, Woche ab 20.04.).
 
 ### Gegnerbegriffe und Internet – die Proteste im Januar
 
@@ -375,7 +376,7 @@ Kanäle nennen das Internet vor allem im Januar, im Zusammenhang mit den „Unru
 
 | Woche ab | Spitze | typische Begriffe dieser Woche | Ereignis |
 |---|---|---|---|
-| 02.03. | staatlich **2,08** · IRGC-nah 1,60 · Jamaran 1,56 | `حمله` (Angriff) · `اصابت` (Einschlag) · `تجاوز` (Aggression) · `سرزمین‌های اشغالی` („besetzte Gebiete“) · `سوگ` (Trauer) | erste Kriegswoche, Angriff auf die Schule in Minab (28.02.) |
+| 02.03. | staatlich **2,08** · Jamaran 1,56 · IRGC-nah 1,60 (zweite Spitze) | `حمله` (Angriff) · `اصابت` (Einschlag) · `تجاوز` (Aggression) · `سرزمین‌های اشغالی` („besetzte Gebiete“) · `سوگ` (Trauer) | erste Kriegswoche, Angriff auf die Schule in Minab (28.02.) |
 | 06.04. | staatlich 1,90 · Jamaran 1,44 | Waffenruhe · Islamabad · 40. Tag nach dem Tod Ali Khameneis | Waffenruhe; Bilanz der ersten Kriegswochen |
 | 20.07. | IRGC-nah **1,79** | `اربعین` (Arbain) · `زائران` (Pilger) · `عربستان` (Saudi-Arabien) · `یمن` (Jemen) · `کویت` (Kuwait) · `اردن` (Jordanien) | kein einzelnes Ereignis erkennbar; in dieser Woche erklärten die Huthis eine Seeblockade gegen Saudi-Arabien (20.–22.07.) |
 
@@ -394,7 +395,7 @@ IRGC-nahen Kanälen auf 15 % bzw. 10 % (Memorandum). Bei IRGC-nahen Kanälen sin
 
 Welche Länder und Gruppen nennen die Kanäle – wie oft, wann und in welchem Zusammenhang? Gezählt wird mit denselben
 Regeln wie in Abschnitt 3 (`12_countries.py`, Liste in `naming_terms.csv`). Rund ein Viertel aller Beiträge mit Text
-(67.669) nennt mindestens ein Land oder eine Gruppe der Liste. Dieser Abschnitt zeigt 35 davon, in vier Regionen.
+(67.669) nennt mindestens ein Land oder eine Gruppe der Liste. Dieser Abschnitt zeigt davon die 33 mit den meisten Nennungen (alle 35: `results/countries/countries.xlsx`), in vier Regionen.
 
 ### Wer am häufigsten genannt wird
 
@@ -468,7 +469,7 @@ Pro 1.000 Wörter nach Phase; eine Spanne heißt: niedrigster bis höchster Wert
 | Irak, IRGC-nah | 0,44 | 0,66 | 0,53 | **1,45** |
 | Jordanien, alle Gruppen | 0,07–0,09 | 0,09–0,15 | 0,03–0,06 | **0,30–0,46** |
 
-- **Mit Kriegsbeginn verschwinden ferne Länder fast aus den Nachrichten** – am stärksten in den IRGC-nahen Kanälen:
+- **Mit Kriegsbeginn gehen ferne Länder deutlich zurück** – am stärksten in den IRGC-nahen Kanälen:
   Russland und China werden dort nur noch ein Drittel so oft genannt wie vor dem Krieg. Bei Jamaran sinkt Russland
   nur um ein Viertel (0,98 → 0,72) und ist im Krieg dreimal so häufig wie in den IRGC-nahen Kanälen.
 - **Bahrain und Kuwait** kommen vor dem Krieg praktisch nicht vor. Mit Kriegsbeginn werden sie zu Schauplätzen: Iran
@@ -623,7 +624,7 @@ Pakistan erreicht in allen sechs Kanälen seinen höchsten Wert in der Waffenruh
 - **Syriens Präsident** heißt in den IRGC-nahen Kanälen `جولانی` (Jolani) – sein früherer Kampfname als Dschihadist.
 - **Jemens Huthis** heißen bei Jamaran `حوثی‌ها` (Huthis), bei den Staatsmedien `انصارالله` (Ansarallah) – der Name,
   den die Bewegung selbst verwendet.
-- **Gaza** verschwindet im Krieg fast aus den Nachrichten (von 0,37–0,45 auf 0,08–0,12) und kommt erst mit der
+- **Gaza** geht im Krieg stark zurück (von 0,37–0,45 auf 0,08–0,12) und kommt erst mit der
   Waffenruhe zurück.
 
 ---
@@ -666,7 +667,7 @@ Anteile in %, ganzer Zeitraum. Pro Kanal: `results/ai/topics/topic_shares.xlsx`.
 Anteile in %; eine Spanne heißt: niedrigster bis höchster Wert der drei Gruppen.
 
 - **Der Krieg verdrängt alles:** In der Kriegsphase sind 36–45 % der Beiträge militärisch, vorher 4–5 %. Innenpolitik
-  fällt von 24–31 % auf 6–10 %, Service, Sport und Kultur verschwinden fast.
+  fällt von 24–31 % auf 6–10 %, „Sonstiges“ (Service, Sport, Kultur) fällt bei den staatlichen Kanälen von 20,5 % auf 5,2 %.
 - **Jamaran ist der Kanal der Diplomatie** – in jeder Phase mit dem höchsten Anteil, in der Waffenruhe ein Viertel aller
   Beiträge. Das passt zur Wortanalyse (Verhandlungen, Trump, Atomfrage, Abschnitt 1). Nach dem Zusammenbruch der
   Waffenruhe fällt Diplomatie in allen Gruppen auf 9–12 %.
@@ -676,7 +677,7 @@ Anteile in %; eine Spanne heißt: niedrigster bis höchster Wert der drei Gruppe
   niedrig (4–5 %).
 - **Trauer und Gedenken** steigen nach dem Krieg auf 9–12 % – die Zeit der Gedenkfeiern und der Trauerfeier für
   Ali Khamenei (03.–10.07.).
-- **Staatliche Kanäle** veröffentlichen außerhalb des Krieges viele Service-Meldungen (Sonstiges 18–21 %) und berichten
+- **Staatliche Kanäle** veröffentlichen außerhalb des Krieges viele Service-Meldungen (Sonstiges 17,9–20,5 %) und berichten
   nach dem Zusammenbruch der Waffenruhe weniger über Militär (14 %) als IRGC-nahe Kanäle (23 %) und Jamaran (28 %).
 
 **Vorsicht beim Lesen:** In der Endvalidierung vergab die KI *military* zu oft und *diplomacy* zu selten – vor allem
@@ -703,7 +704,8 @@ aus Analysen des Krieges stammen.
   Zusammenbruchs der Waffenruhe (ab 29.06./06.07.).
 - **Januar:** In der Woche ab 12.01. postet Jamaran nur 20 Beiträge am Tag, IRNA in dieser Woche gar nichts –
   die Zeit der Internetsperre.
-- **Reichweite:** Tasnim und Fars erreichen rund zehnmal so viele Aufrufe pro Beitrag. Das hängt vor allem an der Zahl
+- **Reichweite:** Die IRGC-nahen Kanäle erreichen im Median das Sieben- bis Neunfache der Aufrufe pro Beitrag (11.858
+  gegenüber 1.259 und 1.593). Das hängt vermutlich vor allem an der Zahl
   der Abonnenten, die nicht erhoben wurde – es beschreibt Reichweite, nicht Qualität.
 - **Weniger Aufrufe im Krieg:** Mit Kriegsbeginn sinken die Aufrufe pro Beitrag in allen Gruppen, bei Jamaran von
   3.329 auf 969 (Median), obwohl mehr gepostet wird. Mögliche Gründe – mehr Beiträge für dieselben Leser,
