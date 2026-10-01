@@ -86,18 +86,18 @@ tone and reach** – and how do these patterns change around key events?
 ### 2. Processing
 - Relational database in **PostgreSQL** (snowflake schema): posts, channels, source groups, dates, phases – queries in **DBeaver**
 - Four phases of the period (before the war, war, ceasefire, after the ceasefire collapsed) as a separate table
-- Cleaning of all 328,330 texts: normalising Persian script (Arabic vs. Persian characters, digits, half-spaces), removing links, emojis and channel advertising, removing stop words – with checks in SQL
+- Cleaning of the texts of all 328,330 posts (267,548 contain text): normalising Persian script (Arabic vs. Persian characters, digits, half-spaces), removing links, emojis and channel advertising, removing stop words – with checks in SQL
 
 ![Database schema](images/database_schema.png)
 
 ### 3. AI classification *(complete)*
-- Classification by **topic** (9 categories) and **tone** (6 categories) with **locally run language models** (`Ollama`) – no cloud
+- Classification by **topic** (9 categories) and **tone** (6 categories) with **locally run language models** (`Ollama`) – the posts are not sent to a cloud (exception: the 150 posts of test set 2 were pre-coded with an AI assistant, see [06 – Methodology](docs/en/06_methodology.md))
 - **Codebook** with operational definitions, developed over eight versions
 - **Context:** neutral background on events, actors, international law and a glossary of Persian terms
 - **Model comparison** on 150 manually checked posts: Gemma 4 (26B, 31B), Qwen 3.6 (27B, 35B), Qwen 2.5 (32B), Aya Expanse (32B)
 - **Selected model: Gemma 4 31B** – on the test set 80.7% exact agreement on topic and tone; Cohen's kappa topic 0.85, tone 0.79
 - **Main run:** stratified sample of 10,750 posts (50 per channel and week), weighted
-- **Final validation on 200 new posts coded blind:** topic **72.5%** correct (95% interval 65.9–78.2%), topic and tone 62.5% – clearly below the test set, because the codebook was developed on it
+- **Final validation on 200 new posts coded blind:** topic **72.5%** correct (95% interval 65.9–78.2%), topic and tone 62.5% – clearly below the test set, probably because the codebook was developed on it
 - **Honest result:** topics are usable (military rather over-, diplomacy rather underestimated); the AI often misses the tone, and to a different degree for each group – tone is therefore not used for comparisons between groups
 - The full process, including dead ends: [03 – AI classification](docs/en/03_ai_classification.md)
 
@@ -134,7 +134,7 @@ Details, all charts and limitations: [04 – Analysis](docs/en/04_analysis.md)
 
 | Area | Tools |
 |---|---|
-| Language & environment | Python 3.11, conda, Linux |
+| Language & environment | Python 3.11, conda, Linux; packages of the scripts: [requirements-scripts.txt](requirements-scripts.txt) |
 | Data collection | Telethon |
 | Text processing | own normaliser (regex), stop words from hazm |
 | Database & SQL | PostgreSQL, DBeaver |
@@ -147,9 +147,12 @@ Details, all charts and limitations: [04 – Analysis](docs/en/04_analysis.md)
 ## Project structure
 
 ```
-telegram-iran/
+persian-media-analysis/
 ├── README.md            ← English version
 ├── README.de.md         ← German version
+├── requirements-scripts.txt  ← packages of the scripts (the dashboard has its own list)
+├── .gitignore           ← session files, raw data and credentials stay out of the repository
+├── images/              ← database schema
 ├── dashboard/           ← Streamlit app (reads only the result tables)
 ├── docs/
 │   ├── en/              ← detailed pages in English
@@ -159,14 +162,14 @@ telegram-iran/
 │   ├── database/        ← PostgreSQL: schema, loading, example queries, text cleaning, checks
 │   ├── ai/              ← AI classification: config, codebook, background, model comparison, main run, validation, topics
 │   └── analysis/        ← word analysis, naming, leader, time series, peak weeks, activity, countries + two lists of the author
-├── results/             ← published results, numbers only (no post texts) – see results/README.md
+├── results/             ← published results: numbers, terms and links, no post texts (the AI files contain short AI reasons) – see results/README.md
 │   ├── words/           ← word frequencies, fixed terms, typical terms
 │   ├── leader/          ← Ali or Mojtaba Khamenei
 │   ├── naming/          ← naming, neighbouring words
 │   ├── timeline/        ← weekly values, peak weeks and charts
 │   ├── activity/        ← posts, views, forwards and charts
 │   ├── countries/       ← countries and allies: frequency, peak weeks, presentation, charts
-│   └── ai/              ← AI: model comparison, main run, final validation, topics (no texts)
+│   └── ai/              ← AI: model comparison, main run, final validation, topics (no post texts; with short AI reasons)
 └── data/                ← raw data (not in the repository)
 ```
 
@@ -176,7 +179,7 @@ telegram-iran/
 
 - only **publicly available** editorial publications
 - **no personal data** of users, no private groups or comments
-- processing entirely **local**, including the AI classification
+- processing and AI classification run **locally** (exception: the 150 posts of test set 2 were pre-coded with an AI assistant, see [06 – Methodology](docs/en/06_methodology.md))
 - credentials only as environment variables; raw data and session files excluded from the repository
 - AI results are not taken over unchecked but validated on new posts coded blind – with confidence intervals
 - Settings of the author, limits of the statements and reproducibility: [06 – Methodology](docs/en/06_methodology.md)

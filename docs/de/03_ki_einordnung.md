@@ -16,7 +16,7 @@ Modellauswahl wurden über acht Versionen weiterentwickelt. Auch Irrwege sind do
 | | |
 |---|---|
 | Aufgabe | Jeder Beitrag erhält **ein Thema** (9 Kategorien) und **einen Ton** (6 Kategorien) |
-| Technik | [Ollama](https://ollama.com) auf dem eigenen Rechner – keine Cloud, keine Daten verlassen den Laptop |
+| Technik | [Ollama](https://ollama.com) auf dem eigenen Rechner – die Einordnung läuft lokal; Ausnahme: Die Referenz von Testset 2 wurde mit einem KI-Assistenten vorkodiert (Abschnitt 5, Phase A) |
 | Gewähltes Modell | **Gemma 4 31B** mit Hintergrundwissen |
 | Codebuch | Version **v8** (eingefroren) |
 | Testset (150 Beiträge, zur Entwicklung genutzt) | 80,7 % Thema und Ton exakt · 86,7 % mit Grenzfällen · Kappa Thema 0,85 / Ton 0,79 |
@@ -29,7 +29,7 @@ Modellauswahl wurden über acht Versionen weiterentwickelt. Auch Irrwege sind do
 
 ## 1. Warum lokale KI?
 
-- **Datenschutz und Unabhängigkeit:** Die Texte werden nicht an Cloud-Anbieter übertragen.
+- **Datenschutz und Unabhängigkeit:** Für die Einordnung werden die Texte nicht an Cloud-Anbieter übertragen (Ausnahme: die Vorkodierung der Referenz von Testset 2 mit einem KI-Assistenten, Abschnitt 5, Phase A).
 - **Reproduzierbarkeit:** Feste Modellversion, `temperature = 0`, `seed = 42` – gleiche Eingabe ergibt gleiche Ausgabe.
   Das wurde geprüft: Zwei Läufe desselben Modells mit gleichem Codebuch ergaben exakt dasselbe Ergebnis.
 - **Kosten:** keine laufenden Kosten, nur Rechenzeit.

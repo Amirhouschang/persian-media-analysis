@@ -22,7 +22,7 @@ KI-Einordnung einer gewichteten Stichprobe ([03](03_ki_einordnung.md)) – mit g
 | Gruppen | **staatlich**: IRNA, IRIB News, Mehr News · **IRGC-nah**: Tasnim News, Fars News · **reformorientiert**: Jamaran |
 | Einheit | Häufigkeit **pro 1.000 Wörter** – so sind Gruppen unterschiedlicher Größe vergleichbar |
 | Schreibweise | persische Begriffe mit Umschrift und Übersetzung: `رژیم صهیونیستی` *rezhim-e sahyunisti* („zionistisches Regime“) |
-| Ergebnisdateien | nur Zahlen, in `results/` – keine Beitragstexte ([Beschreibung](../../results/README.md)) |
+| Ergebnisdateien | Zahlen, Begriffe und Links, in `results/` – keine Beitragstexte; die KI-Dateien enthalten kurze KI-Begründungen ([Beschreibung](../../results/README.md)) |
 
 ### Zeitleiste
 
@@ -214,7 +214,8 @@ einzelne Aussage über ihn; den genauen Inhalt zeigt `04_context.py قالیبا
 
 Anteil an allen Wörtern direkt nach „Trump“; „–“ = nicht unter den 20 häufigsten. Vor „Trump“ steht bei allen am
 häufigsten `دونالد` (Donald), danach `دولت` (Regierung) und `ادعای` („die Behauptung von“) – bei Jamaran 5,2 %, bei den
-anderen 3,2–3,3 %. Vor „Netanjahu“ steht in allen Gruppen `توهمات` (*tavahhomat*, „Wahnvorstellungen“).
+anderen 3,2–3,3 %. Vor „Netanjahu“ steht am häufigsten `بنیامین` (Benjamin; 25–40 %); `توهمات` (*tavahhomat*, „Wahnvorstellungen“) gehört in
+allen Gruppen zu den 20 häufigsten Wörtern davor (0,5–1,1 %).
 Vollständige Listen: `results/naming/neighbours.csv`.
 
 ---
@@ -707,8 +708,10 @@ aus Analysen des Krieges stammen.
 - **Reichweite:** Die IRGC-nahen Kanäle erreichen im Median das Sieben- bis Neunfache der Aufrufe pro Beitrag (11.858
   gegenüber 1.259 und 1.593). Das hängt vermutlich vor allem an der Zahl
   der Abonnenten, die nicht erhoben wurde – es beschreibt Reichweite, nicht Qualität.
-- **Weniger Aufrufe im Krieg:** Mit Kriegsbeginn sinken die Aufrufe pro Beitrag in allen Gruppen, bei Jamaran von
-  3.329 auf 969 (Median), obwohl mehr gepostet wird. Mögliche Gründe – mehr Beiträge für dieselben Leser,
+- **Weniger Aufrufe im Krieg:** Mit Kriegsbeginn sinken die Aufrufe pro Beitrag bei Jamaran (Median von 3.329 auf 969)
+  und in den IRGC-nahen Kanälen (von 18.586 auf 12.309), obwohl mehr gepostet wird. Bei den staatlichen Kanälen bleibt
+  der Gruppenmedian gleich (1.803 vor, 1.802 im Krieg); die Einzelkanäle sinken nur leicht (IRNA 1.643 auf 1.510,
+  IRIB News 3.322 auf 2.742, Mehr News 1.466 auf 1.408). Mögliche Gründe – mehr Beiträge für dieselben Leser,
   eingeschränkter Internetzugang – lassen sich mit diesen Daten nicht trennen.
 - **Weiterleitungen:** Beiträge staatlicher Kanäle und Jamarans werden pro Aufruf etwa doppelt so oft weitergeleitet
   wie die der IRGC-nahen Kanäle.

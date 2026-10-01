@@ -6,7 +6,7 @@ Output: seven checks in the terminal + weekly table pruefung_reform_pro_woche.cs
 from pathlib import Path
 import pandas as pd
 
-PROJECT = Path(__file__).resolve().parents[2]          # telegram-iran/
+PROJECT = Path(__file__).resolve().parents[2]          # persian-media-analysis/
 DATA_DIR = PROJECT / "data" / "row"
 INPUT_FILE = "telegram_reform_jan_aug_2026.csv"
 WEEKLY_FILE = "pruefung_reform_pro_woche.csv"

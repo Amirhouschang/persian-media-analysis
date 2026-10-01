@@ -39,7 +39,7 @@ GROUPS = {"irna_1313": "state", "iribnews": "state", "mehrnews": "state",
           "Tasnimnews": "irgc_affiliated", "farsna": "irgc_affiliated", "jamarannews": "reformist"}
 CHANNELS = {"irna_1313": "IRNA", "iribnews": "IRIB News", "mehrnews": "Mehr News",
             "Tasnimnews": "Tasnim News", "farsna": "Fars News", "jamarannews": "Jamaran"}
-# phases as in the database (dates in Tehran time)
+# phase boundaries as in the database; the database assigns days by UTC date, here the date is converted to Tehran time
 PHASES = [("before_war", None, "2026-02-27"), ("war", "2026-02-28", "2026-04-07"),
           ("ceasefire", "2026-04-08", "2026-07-07"), ("after_truce_collapse", "2026-07-08", None)]
 PHASE_LABELS = {"before_war": "before war", "war": "war", "ceasefire": "ceasefire",

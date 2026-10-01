@@ -118,7 +118,7 @@ und zeigt einen zweiten Anstieg im Juli. IRNA folgt diesem Muster kaum. Details 
 
 ### Projektstruktur (Ausschnitt)
 ```
-telegram-iran/
+persian-media-analysis/
 ├── data/
 │   ├── row/        ← Rohdaten + Prüfberichte (nicht im Repo)
 │   └── ki/         ← Ergebnisse der KI-Einordnung

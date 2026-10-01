@@ -146,7 +146,7 @@ Diese Entscheidungen liegen offen in Dateien. Andere Setzungen ergäben leicht a
   verschiedener Versionen sich nicht überschreiben. Der Modellvergleich und die ersten rund 2.800 Beiträge des Hauptlaufs
   liefen mit einer früheren Fassung von `background.txt`; danach wurden sechs Daten- und Preisangaben korrigiert, ohne
   Einfluss auf Kategorien oder Regeln. Der Hauptlauf brauchte 67 Stunden.
-- **Umgebung:** Linux, Python 3.11, PostgreSQL 18, Ollama.
+- **Umgebung:** Linux, Python 3.11, PostgreSQL 18, Ollama; Pakete der Skripte: [requirements-scripts.txt](../../requirements-scripts.txt), des Dashboards: `dashboard/requirements.txt`.
 - **Grenze:** Die Rohdaten sind nicht veröffentlicht. Wer die Auswertung wiederholen will, muss die Beiträge mit den
   Skripten neu sammeln; Aufrufe und Weiterleitungen sowie später gelöschte Beiträge können dann abweichen.
 - **Unveröffentlicht:** Der Autor hat zum eigenen Verständnis weitere SQL-Abfragen ausgeführt. Sie und die zugehörigen Daten

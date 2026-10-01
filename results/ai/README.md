@@ -1,6 +1,6 @@
 # AI classification – published results
 
-No post texts are included (copyright). Every post can be opened via the `url` column (`t.me/<channel>/<id>`).
+No post texts are included (copyright). The AI reasons (columns `reason` and `reason_ai`) are short and may repeat single phrases of a post. Every post can be opened via the `url` column (`t.me/<channel>/<id>`).
 All files are produced by `scripts/ai/03d_export_results.py`, except `topics/` (`scripts/ai/03e_topics.py`).
 
 **Confidence intervals:** agreement measured on a sample is an estimate. `*_ci95_low` / `*_ci95_high` give the

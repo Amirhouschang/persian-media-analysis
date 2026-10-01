@@ -1,6 +1,6 @@
 # Results
 
-Only numbers – no post texts (copyright). Every file is produced by a script in `scripts/analysis/` (or `scripts/ai/`)
+Numbers, terms and links – no post texts (copyright). The AI result files in `ai/` contain short AI reasons that may repeat single phrases of a post. Every file is produced by a script in `scripts/analysis/` (or `scripts/ai/`)
 and can be recreated from the database. CSV files are UTF-8 with BOM, so Persian shows correctly in Excel and
 LibreOffice (in LibreOffice choose the language "English (USA)" when opening, otherwise decimal numbers are misread).
 

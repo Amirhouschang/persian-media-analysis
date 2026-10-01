@@ -289,8 +289,9 @@ Dasselbe Land erscheint in den Gruppen mit verschiedenen Begriffen (typische Beg
 | Weiterleitungen pro Beitrag (Median) | 5 | 18 | 5 |
 | Weiterleitungen pro 1.000 Aufrufe | 5,1 | 2,1 | 4,2 |
 
-Mit Kriegsbeginn sinken die Aufrufe pro Beitrag in allen Gruppen (bei Jamaran von 3.329 auf 969), obwohl mehr gepostet
-wird; mögliche Gründe lassen sich mit diesen Daten nicht trennen. Die Reichweite hängt vermutlich vor allem an der Zahl der
+Mit Kriegsbeginn sinken die Aufrufe pro Beitrag bei Jamaran (von 3.329 auf 969) und in den IRGC-nahen Kanälen (von
+18.586 auf 12.309), obwohl mehr gepostet wird; bei den staatlichen Kanälen bleibt der Gruppenmedian gleich (1.803 und
+1.802). Mögliche Gründe lassen sich mit diesen Daten nicht trennen. Die Reichweite hängt vermutlich vor allem an der Zahl der
 Abonnenten, die nicht erhoben wurde.
 
 ---

@@ -1,0 +1,11 @@
+# Packages for the scripts in scripts/ (Python 3.11). The dashboard has its own list: dashboard/requirements.txt
+# Also needed: PostgreSQL (database iran_media_2026) and Ollama (local AI, scripts/ai).
+pandas
+numpy
+matplotlib
+openpyxl            # writes the .xlsx files in results/
+sqlalchemy
+psycopg[binary]     # PostgreSQL driver for SQLAlchemy ("postgresql+psycopg://")
+telethon            # scripts/telegram
+qrcode              # scripts/telegram/00_login_qr.py
+requests            # scripts/ai (talks to Ollama)

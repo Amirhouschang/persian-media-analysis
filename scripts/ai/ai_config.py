@@ -13,8 +13,8 @@ Which file does what?
 from pathlib import Path
 
 # ---------------------------------------------------------------
-# PATHS – this script lives in telegram-iran/scripts/ai/
-# parents[2] goes up two folders -> telegram-iran/
+# PATHS – this script lives in persian-media-analysis/scripts/ai/
+# parents[2] goes up two folders -> persian-media-analysis/
 # ---------------------------------------------------------------
 PROJECT = Path(__file__).resolve().parents[2]
 

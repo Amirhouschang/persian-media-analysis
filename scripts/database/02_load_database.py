@@ -22,7 +22,7 @@ from pathlib import Path
 import pandas as pd
 from sqlalchemy import create_engine, text
 
-PROJECT = Path(__file__).resolve().parents[2]            # telegram-iran/
+PROJECT = Path(__file__).resolve().parents[2]            # persian-media-analysis/
 RAW_FILES = [
     PROJECT / "data" / "row" / "telegram_jan_aug_2026.csv",
     PROJECT / "data" / "row" / "telegram_reform_jan_aug_2026.csv",

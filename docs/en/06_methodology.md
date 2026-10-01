@@ -141,7 +141,7 @@ These decisions are open in files. Other settings would give slightly different 
   versions do not overwrite each other. The model comparison and the first about 2,800 posts of the main run used an
   earlier version of `background.txt`; afterwards six date and price details were corrected, without effect on categories
   or rules. The main run took 67 hours.
-- **Environment:** Linux, Python 3.11, PostgreSQL 18, Ollama.
+- **Environment:** Linux, Python 3.11, PostgreSQL 18, Ollama; packages of the scripts: [requirements-scripts.txt](../../requirements-scripts.txt), of the dashboard: `dashboard/requirements.txt`.
 - **Limit:** The raw data are not published. Anyone who wants to repeat the analysis has to collect the posts again with
   the scripts; views and forwards as well as posts deleted later may then differ.
 - **Unpublished:** To understand the material for himself, the author ran several further SQL queries. They and the data

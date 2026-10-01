@@ -141,7 +141,7 @@ UI = {
         # activity
         "act_metric": "Kennzahl", "m_posts": "Beiträge pro Tag und Kanal", "m_views": "Aufrufe pro Beitrag (Median)",
         "m_forwards": "Weiterleitungen pro Beitrag (Median)", "m_fw1000": "Weiterleitungen pro 1.000 Aufrufe",
-        "act_note": "Aufrufe hängen vor allem an der Zahl der Abonnenten (nicht erhoben): Sie beschreiben "
+        "act_note": "Aufrufe hängen vermutlich vor allem an der Zahl der Abonnenten (nicht erhoben): Sie beschreiben "
                     "Reichweite, nicht Qualität.",
         # about
         "about": """
@@ -177,9 +177,9 @@ und **reformorientiert** (Jamaran).
 - Der Ton der KI ist nicht verlässlich genug für Gruppenvergleiche und wird nicht gezeigt.
 
 ### Mehr
-[Ergebnisbericht](https://github.com/Amirhouschang/telegram-iran/blob/main/docs/de/bericht.md) ·
-[Analyse mit allen Diagrammen](https://github.com/Amirhouschang/telegram-iran/blob/main/docs/de/04_analyse.md) ·
-[Code und Methode auf GitHub](https://github.com/Amirhouschang/telegram-iran)
+[Ergebnisbericht](https://github.com/Amirhouschang/persian-media-analysis/blob/main/docs/de/bericht.md) ·
+[Analyse mit allen Diagrammen](https://github.com/Amirhouschang/persian-media-analysis/blob/main/docs/de/04_analyse.md) ·
+[Code und Methode auf GitHub](https://github.com/Amirhouschang/persian-media-analysis)
 """,
     },
     "en": {
@@ -223,7 +223,7 @@ und **reformorientiert** (Jamaran).
         "topic": "Topic", "share": "Share of posts (%)", "topic_level": "Sources",
         "act_metric": "Measure", "m_posts": "Posts per day and channel", "m_views": "Views per post (median)",
         "m_forwards": "Forwards per post (median)", "m_fw1000": "Forwards per 1,000 views",
-        "act_note": "Views depend mostly on the number of subscribers (not collected): they describe reach, "
+        "act_note": "Views probably depend mostly on the number of subscribers (not collected): they describe reach, "
                     "not quality.",
         "about": """
 ### What this is about
@@ -257,9 +257,9 @@ Three groups are compared: **state** (IRNA, IRIB News, Mehr News), **IRGC-affili
 - The AI's tone is not reliable enough for group comparisons and is not shown.
 
 ### More
-[Results report](https://github.com/Amirhouschang/telegram-iran/blob/main/docs/en/report.md) ·
-[Analysis with all charts](https://github.com/Amirhouschang/telegram-iran/blob/main/docs/en/04_analysis.md) ·
-[Code and method on GitHub](https://github.com/Amirhouschang/telegram-iran)
+[Results report](https://github.com/Amirhouschang/persian-media-analysis/blob/main/docs/en/report.md) ·
+[Analysis with all charts](https://github.com/Amirhouschang/persian-media-analysis/blob/main/docs/en/04_analysis.md) ·
+[Code and method on GitHub](https://github.com/Amirhouschang/persian-media-analysis)
 """,
     },
 }

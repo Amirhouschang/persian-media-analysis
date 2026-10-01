@@ -89,18 +89,18 @@ Ereignisse?
 ### 2. Aufbereitung
 - Relationale Datenbank in **PostgreSQL** (Snowflake-Schema): Beiträge, Kanäle, Quellengruppen, Tage, Phasen – Abfragen in **DBeaver**
 - Vier Phasen des Zeitraums (vor dem Krieg, Krieg, Waffenruhe, nach dem Zusammenbruch der Waffenruhe) als eigene Tabelle
-- Bereinigung aller 328.330 Texte: Vereinheitlichung persischer Schrift (arabische vs. persische Zeichen, Ziffern, Halbleerzeichen), Entfernen von Links, Emojis und Kanalwerbung, Entfernen von Füllwörtern – mit Prüfung in SQL
+- Bereinigung der Texte aller 328.330 Beiträge (267.548 enthalten Text): Vereinheitlichung persischer Schrift (arabische vs. persische Zeichen, Ziffern, Halbleerzeichen), Entfernen von Links, Emojis und Kanalwerbung, Entfernen von Füllwörtern – mit Prüfung in SQL
 
 ![Datenbankschema](images/database_schema.png)
 
 ### 3. KI-Einordnung *(abgeschlossen)*
-- Einordnung nach **Thema** (9 Kategorien) und **Ton** (6 Kategorien) mit **lokal betriebenen Sprachmodellen** (`Ollama`) – keine Cloud
+- Einordnung nach **Thema** (9 Kategorien) und **Ton** (6 Kategorien) mit **lokal betriebenen Sprachmodellen** (`Ollama`) – die Beiträge werden nicht an eine Cloud gesendet (Ausnahme: Die 150 Beiträge von Testset 2 wurden mit einem KI-Assistenten vorkodiert, siehe [06 – Methodik](docs/de/06_methodik.md))
 - **Codebuch** mit operationalen Definitionen, weiterentwickelt über acht Versionen
 - **Kontext:** neutrales Hintergrundwissen zu Ereignissen, Akteuren, Völkerrecht und ein Glossar persischer Begriffe
 - **Modellvergleich** an 150 manuell geprüften Beiträgen: Gemma 4 (26B, 31B), Qwen 3.6 (27B, 35B), Qwen 2.5 (32B), Aya Expanse (32B)
 - **Gewähltes Modell: Gemma 4 31B** – am Testset 80,7 % exakte Übereinstimmung bei Thema und Ton; Cohens Kappa Thema 0,85, Ton 0,79
 - **Hauptlauf:** geschichtete Stichprobe von 10.750 Beiträgen (50 pro Kanal und Woche), gewichtet hochgerechnet
-- **Endvalidierung an 200 neuen, blind kodierten Beiträgen:** Thema **72,5 %** richtig (95-%-Intervall 65,9–78,2 %), Thema und Ton 62,5 % – deutlich unter dem Testset, weil das Codebuch dort entwickelt wurde
+- **Endvalidierung an 200 neuen, blind kodierten Beiträgen:** Thema **72,5 %** richtig (95-%-Intervall 65,9–78,2 %), Thema und Ton 62,5 % – deutlich unter dem Testset, vermutlich weil das Codebuch dort entwickelt wurde
 - **Ehrliches Ergebnis:** Themen sind brauchbar (Militär eher über-, Diplomatie eher unterschätzt); den Ton übersieht die KI oft und je Gruppe verschieden stark – er wird deshalb nicht für Gruppenvergleiche verwendet
 - Der ganze Weg inklusive Irrwege: [03 – KI-Einordnung](docs/de/03_ki_einordnung.md)
 
@@ -137,7 +137,7 @@ Details, alle Diagramme und Grenzen: [04 – Analyse](docs/de/04_analyse.md)
 
 | Bereich | Werkzeuge |
 |---|---|
-| Sprache & Umgebung | Python 3.11, conda, Linux |
+| Sprache & Umgebung | Python 3.11, conda, Linux; Pakete der Skripte: [requirements-scripts.txt](requirements-scripts.txt) |
 | Datenerhebung | Telethon |
 | Textverarbeitung | eigener Normalisierer (Regex), Füllwörter aus hazm |
 | Datenbank & SQL | PostgreSQL, DBeaver |
@@ -150,9 +150,12 @@ Details, alle Diagramme und Grenzen: [04 – Analyse](docs/de/04_analyse.md)
 ## Projektstruktur
 
 ```
-telegram-iran/
+persian-media-analysis/
 ├── README.md            ← englische Version
 ├── README.de.md         ← deutsche Version
+├── requirements-scripts.txt  ← Pakete der Skripte (das Dashboard hat eine eigene Liste)
+├── .gitignore           ← Sitzungsdateien, Rohdaten und Zugangsdaten bleiben außerhalb des Repositorys
+├── images/              ← Datenbankschema
 ├── dashboard/           ← Streamlit-App (liest nur die Ergebnistabellen)
 ├── docs/
 │   ├── en/              ← ausführliche Seiten auf Englisch
@@ -162,14 +165,14 @@ telegram-iran/
 │   ├── database/        ← PostgreSQL: Schema, Laden, Beispielabfragen, Textbereinigung, Prüfung
 │   ├── ai/              ← KI-Einordnung: Konfiguration, Codebuch, Hintergrund, Modellvergleich, Hauptlauf, Validierung, Themen
 │   └── analysis/        ← Wortanalyse, Benennungen, Führer, Zeitreihen, Spitzenwochen, Aktivität, Länder + zwei Listen des Autors
-├── results/             ← veröffentlichte Ergebnisse, nur Zahlen (ohne Beitragstexte) – siehe results/README.md
+├── results/             ← veröffentlichte Ergebnisse: Zahlen, Begriffe und Links, keine Beitragstexte (die KI-Dateien enthalten kurze KI-Begründungen) – siehe results/README.md
 │   ├── words/           ← Worthäufigkeiten, feste Begriffe, typische Begriffe
 │   ├── leader/          ← Ali oder Mojtaba Khamenei
 │   ├── naming/          ← Benennungen, Nachbarwörter
 │   ├── timeline/        ← Werte pro Woche, Spitzenwochen und Diagramme
 │   ├── activity/        ← Beiträge, Aufrufe, Weiterleitungen und Diagramme
 │   ├── countries/       ← Länder und Verbündete: Häufigkeit, Spitzenwochen, Darstellung, Diagramme
-│   └── ai/              ← KI: Modellvergleich, Hauptlauf, Endvalidierung, Themen (ohne Texte)
+│   └── ai/              ← KI: Modellvergleich, Hauptlauf, Endvalidierung, Themen (ohne Beitragstexte; mit kurzen KI-Begründungen)
 └── data/                ← Rohdaten (nicht im Repository)
 ```
 
@@ -179,7 +182,7 @@ telegram-iran/
 
 - ausschließlich **öffentlich zugängliche** redaktionelle Veröffentlichungen
 - **keine personenbezogenen Daten** von Nutzern, keine privaten Gruppen oder Kommentare
-- Verarbeitung vollständig **lokal**, auch die KI-Einordnung
+- Verarbeitung und KI-Einordnung laufen **lokal** (Ausnahme: Die 150 Beiträge von Testset 2 wurden mit einem KI-Assistenten vorkodiert, siehe [06 – Methodik](docs/de/06_methodik.md))
 - Zugangsdaten nur als Umgebungsvariablen; Rohdaten und Sitzungsdateien vom Repository ausgeschlossen
 - KI-Ergebnisse werden nicht ungeprüft übernommen, sondern an neuen, blind kodierten Beiträgen validiert – mit Konfidenzintervall
 - Setzungen des Autors, Grenzen der Aussagen und Nachvollziehbarkeit: [06 – Methodik](docs/de/06_methodik.md)

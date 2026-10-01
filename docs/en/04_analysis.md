@@ -22,7 +22,7 @@ classification of a weighted sample ([03](03_ai_classification.md)) – with mea
 | Groups | **state**: IRNA, IRIB News, Mehr News · **IRGC-affiliated**: Tasnim News, Fars News · **reformist**: Jamaran |
 | Unit | frequency **per 1,000 words** – so groups of different size can be compared |
 | Notation | Persian terms with transliteration and translation: `رژیم صهیونیستی` *rezhim-e sahyunisti* ("Zionist regime") |
-| Result files | numbers only, in `results/` – no post texts ([description](../../results/README.md)) |
+| Result files | numbers, terms and links, in `results/` – no post texts; the AI files contain short AI reasons ([description](../../results/README.md)) |
 
 ### Timeline
 
@@ -214,7 +214,8 @@ shown by `04_context.py قالیباف`.
 
 Share of all words directly after "Trump"; "–" = not among the 20 most frequent. Before "Trump", all groups most often
 write `دونالد` (Donald), then `دولت` (administration) and `ادعای` ("the claim of") – 5.2% at Jamaran, 3.2–3.3% in the
-others. Before "Netanyahu", all groups write `توهمات` (*tavahhomat*, "delusions"). Full lists:
+others. Before "Netanyahu", the most frequent word is `بنیامین` (Benjamin; 25–40%); `توهمات` (*tavahhomat*, "delusions") is among the
+20 most frequent words before him in all groups (0.5–1.1%). Full lists:
 `results/naming/neighbours.csv`.
 
 ---
@@ -709,9 +710,11 @@ analyses of the war.
 - **Reach:** the IRGC-affiliated channels reach seven to nine times as many views per post (median 11,858 against
   1,259 and 1,593). This probably depends mainly on the number of
   subscribers, which was not collected – it describes reach, not quality.
-- **Fewer views during the war:** With the start of the war, views per post fall in all groups, at Jamaran from 3,329
-  to 969 (median), although more is posted. Possible reasons – more posts for the same readers, restricted internet
-  access – cannot be separated with these data.
+- **Fewer views during the war:** With the start of the war, views per post fall at Jamaran (median from 3,329 to 969)
+  and in the IRGC-affiliated channels (from 18,586 to 12,309), although more is posted. In the state channels the group
+  median stays the same (1,803 before, 1,802 during the war); the single channels fall only slightly (IRNA 1,643 to
+  1,510, IRIB News 3,322 to 2,742, Mehr News 1,466 to 1,408). Possible reasons – more posts for the same readers,
+  restricted internet access – cannot be separated with these data.
 - **Forwards:** Posts of state channels and Jamaran are forwarded about twice as often per view as those of
   IRGC-affiliated channels.
 

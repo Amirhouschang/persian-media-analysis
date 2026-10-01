@@ -282,8 +282,9 @@ The same country appears in the groups with different terms (typical terms of th
 | Forwards per post (median) | 5 | 18 | 5 |
 | Forwards per 1,000 views | 5.1 | 2.1 | 4.2 |
 
-With the start of the war the views per post fall in all groups (at Jamaran from 3,329 to 969), although more is posted;
-possible reasons cannot be separated with these data. Reach probably depends mostly on the number of subscribers, which was not
+With the start of the war the views per post fall at Jamaran (from 3,329 to 969) and in the IRGC-affiliated channels
+(from 18,586 to 12,309), although more is posted; in the state channels the group median stays the same (1,803 and
+1,802). Possible reasons cannot be separated with these data. Reach probably depends mostly on the number of subscribers, which was not
 collected.
 
 ---

@@ -16,7 +16,7 @@ eight versions. Dead ends are documented as well.
 | | |
 |---|---|
 | Task | Each post receives **one topic** (9 categories) and **one tone** (6 categories) |
-| Technology | [Ollama](https://ollama.com) on the author's own computer – no cloud, no data leaves the laptop |
+| Technology | [Ollama](https://ollama.com) on the author's own computer – the classification runs locally; exception: the reference of test set 2 was pre-coded with an AI assistant (section 5, phase A) |
 | Selected model | **Gemma 4 31B** with background knowledge |
 | Codebook | version **v8** (frozen) |
 | Test set (150 posts, used for development) | 80.7% topic and tone exact · 86.7% with borderline cases · kappa topic 0.85 / tone 0.79 |
@@ -29,7 +29,7 @@ eight versions. Dead ends are documented as well.
 
 ## 1. Why local AI?
 
-- **Data protection and independence:** texts are not sent to cloud providers.
+- **Data protection and independence:** for the classification the texts are not sent to cloud providers (exception: the pre-coding of the reference of test set 2 with an AI assistant, section 5, phase A).
 - **Reproducibility:** fixed model version, `temperature = 0`, `seed = 42` – the same input gives the same output.
   This was tested: two runs of the same model with the same codebook produced exactly the same result.
 - **Cost:** no running costs, only computing time.
