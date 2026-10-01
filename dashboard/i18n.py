@@ -30,7 +30,7 @@ CHANNELS = {
 # colours for several terms of one source (Okabe-Ito, colour-blind safe)
 TERM_COLORS = ["#0072B2", "#D55E00", "#009E73", "#CC79A7", "#E69F00", "#56B4E9", "#7a7a7a", "#000000"]
 
-PHASES = {   # (first day, last day) – dates in Tehran time, as in the database
+PHASES = {   # (first day, last day) – days by UTC date, as in the database
     "before_war": ("2026-01-01", "2026-02-27"),
     "war": ("2026-02-28", "2026-04-07"),
     "ceasefire": ("2026-04-08", "2026-07-07"),

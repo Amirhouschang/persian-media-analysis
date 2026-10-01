@@ -53,7 +53,7 @@ reach – and how do these patterns change around key events? (Tone is not evalu
 | IRGC-affiliated | Fars News | 49,925 |
 | reformist | Jamaran | 47,273 |
 
-**Phases** (dates in Tehran time, set by the author):
+**Phases** (days by UTC date, boundaries set by the author):
 
 | Phase | Period |
 |---|---|
@@ -303,6 +303,7 @@ collected.
 - **Countries:** `عمان` means Oman and Amman; `آذربایجان` alone counts as the Republic of Azerbaijan but sometimes means
   Iranian provinces (value too high); Egypt is missing; part of the mentions of European countries concerns sport.
 - **January:** IRNA and Jamaran published hardly any posts in mid-January (internet blackout).
+- **Time zone:** days, weeks and phases are based on the UTC date of the posts (Tehran: UTC+3:30); only the AI topic shares use the Tehran date.
 - **Scope of the project:** it is primarily technical and gives a reliable overview, not an in-depth scholarly analysis;
   such a study would read the posts individually and run to 100 pages or more. For firmer results, several native Persian
   speakers should code independently and discuss the codebook together.
@@ -311,5 +312,6 @@ collected.
 
 - [04 – Analysis](04_analysis.md): all results with charts, method and limitations
 - [03 – AI classification](03_ai_classification.md): codebook, model comparison, final validation
+- [06 – Methodology](06_methodology.md): settings, limitations, data protection, security, reproducibility
 - [02 – Processing](02_processing.md) and [01 – Data collection](01_data_collection.md)
 - Result files: [results/README.md](../../results/README.md)

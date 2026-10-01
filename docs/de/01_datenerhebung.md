@@ -105,7 +105,7 @@ und zeigt einen zweiten Anstieg im Juli. IRNA folgt diesem Muster kaum. Details 
 ## 4. Sicherheit und Datenschutz
 
 - API-Zugangsdaten nur als **Umgebungsvariablen**, nie im Code
-- Sitzungsdatei, Rohdaten und CSV-Dateien per `.gitignore` vom Repository ausgeschlossen
+- Sitzungsdatei und Rohdaten (die CSV-Dateien der Sammlung) per `.gitignore` vom Repository ausgeschlossen
 - Nur redaktionelle Veröffentlichungen, **keine personenbezogenen Daten** von Nutzern
 - Alle Daten werden ausschließlich lokal gespeichert und verarbeitet
 

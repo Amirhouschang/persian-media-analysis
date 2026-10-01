@@ -57,7 +57,7 @@ Text.
 | IRGC-nah | Fars News | 49.925 |
 | reformorientiert | Jamaran | 47.273 |
 
-**Phasen** (Datum in Teheraner Zeit, vom Autor gesetzt):
+**Phasen** (Tage nach UTC-Datum, Grenzen vom Autor gesetzt):
 
 | Phase | Zeitraum |
 |---|---|
@@ -310,6 +310,7 @@ Abonnenten, die nicht erhoben wurde.
 - **Länder:** `عمان` meint Oman und Amman; `آذربایجان` allein zählt als Republik Aserbaidschan, meint aber manchmal iranische
   Provinzen (Wert zu hoch); Ägypten fehlt; ein Teil der Nennungen europäischer Länder betrifft Sport.
 - **Januar:** IRNA und Jamaran veröffentlichten Mitte Januar kaum Beiträge (Internetsperre).
+- **Zeitzone:** Tage, Wochen und Phasen beruhen auf dem UTC-Datum der Beiträge (Teheran: UTC+3:30); nur die KI-Themenanteile verwenden das Teheraner Datum.
 - **Einordnung des Projekts:** Es ist vor allem technisch und liefert einen belastbaren Überblick, keine wissenschaftliche
   Tiefenanalyse; eine solche Studie würde die Beiträge einzeln lesen und 100 Seiten und mehr umfassen. Für belastbarere
   Ergebnisse sollten mehrere persische Muttersprachler unabhängig kodieren und das Codebuch gemeinsam diskutieren.
@@ -318,5 +319,6 @@ Abonnenten, die nicht erhoben wurde.
 
 - [04 – Analyse](04_analyse.md): alle Ergebnisse mit Diagrammen, Methode und Grenzen
 - [03 – KI-Einordnung](03_ki_einordnung.md): Codebuch, Modellvergleich, Endvalidierung
+- [06 – Methodik](06_methodik.md): Setzungen, Grenzen, Datenschutz, Sicherheit, Nachvollziehbarkeit
 - [02 – Aufbereitung](02_aufbereitung.md) und [01 – Datenerhebung](01_datenerhebung.md)
 - Ergebnisdateien: [results/README.md](../../results/README.md)

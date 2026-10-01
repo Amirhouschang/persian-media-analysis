@@ -733,6 +733,7 @@ Weitere Diagramme: [Aufrufe](../../results/activity/charts/views_median.png) ·
 - **Keine Netzwerkanalyse:** Bei der Sammlung wurde für weitergeleitete Beiträge nur der Absendername gespeichert, der bei
   Kanälen meist leer ist (96 von 328.330 Beiträgen). Wer wen weiterleitet, lässt sich deshalb nicht auswerten.
 - **Lücken im Januar:** IRNA und Jamaran posteten Mitte Januar kaum (Internetsperre, siehe [01](01_datenerhebung.md)).
+- **Zeitzone:** Tage, Wochen und Phasen der Wort-, Zeitverlaufs- und Aktivitätsauswertung beruhen auf dem UTC-Datum der Beiträge (Teheran: UTC+3:30). Nur die KI-Themenanteile pro Phase verwenden das Teheraner Datum.
 - **Länder:** `عمان` heißt Oman, aber auch Amman (Hauptstadt Jordaniens); der Golf von Oman (`دریای عمان`) wird
   vorher entfernt. `آذربایجان` allein zählt als Republik Aserbaidschan, meint aber manchmal die iranischen Provinzen
   Ost- und West-Aserbaidschan – in den staatlichen Beiträgen darüber sind Wetterbegriffe typisch; der Wert ist deshalb
@@ -829,7 +830,7 @@ Kanal (bei Gruppen geteilt durch die Zahl der Kanäle), Aufrufe und Weiterleitun
 ### KI-Themen (`scripts/ai/03e_topics.py`)
 
 Gewichteter Anteil jedes Themas pro Gruppe, Kanal und Phase: Jeder Beitrag zählt mit seinem Gewicht (Beiträge seiner
-Kanal-Woche / gezogene Beiträge). Phasen nach Datum in Teheraner Zeit, wie in der Datenbank. Einordnung und Prüfung
+Kanal-Woche / gezogene Beiträge). Phasen hier nach Datum in Teheraner Zeit (die Datenbank und alle anderen Auswertungen verwenden UTC-Tage, siehe [06](06_methodik.md#3-datenqualität-und-lücken)). Einordnung und Prüfung
 der KI: [03](03_ki_einordnung.md).
 
 ### Irrwege und Hilfsskripte

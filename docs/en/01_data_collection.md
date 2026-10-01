@@ -105,7 +105,7 @@ and shows a second increase in July. IRNA hardly follows this pattern. Details w
 ## 4. Security and data protection
 
 - API credentials only as **environment variables**, never in the code
-- Session file, raw data and CSV files excluded from the repository via `.gitignore`
+- Session file and raw data (the CSV files of the collection) excluded from the repository via `.gitignore`
 - Only editorial publications, **no personal data** of users
 - All data is stored and processed locally only
 

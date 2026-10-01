@@ -735,6 +735,7 @@ More charts: [views](../../results/activity/charts/views_median.png) ·
 - **No network analysis:** for forwarded posts only the sender name was saved during collection, which is usually empty
   for channels (96 of 328,330 posts). Who forwards whom can therefore not be analysed.
 - **Gaps in January:** IRNA and Jamaran hardly posted in mid-January (internet blackout, see [01](01_data_collection.md)).
+- **Time zone:** days, weeks and phases of the word, timeline and activity analyses are based on the UTC date of the posts (Tehran: UTC+3:30). Only the AI topic shares per phase use the Tehran date.
 - **Countries:** `عمان` means Oman, but also Amman (capital of Jordan); the Gulf of Oman (`دریای عمان`) is removed
   first. `آذربایجان` alone counts as the Republic of Azerbaijan but sometimes means the Iranian provinces of East and
   West Azerbaijan – weather terms are typical of the state posts about it; the value is therefore too high. Egypt is
@@ -830,7 +831,7 @@ IRGC-affiliated red, Jamaran green – checked for colour-vision deficiency.
 ### AI topics (`scripts/ai/03e_topics.py`)
 
 Weighted share of every topic per group, channel and phase: each post counts with its weight (posts of its
-channel-week / posts drawn). Phases by date in Tehran time, as in the database. Classification and testing of the
+channel-week / posts drawn). Phases here by date in Tehran time (the database and all other analyses use UTC days, see [06](06_methodology.md#3-data-quality-and-gaps)). Classification and testing of the
 AI: [03](03_ai_classification.md).
 
 ### Detours and helper scripts
