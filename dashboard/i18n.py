@@ -177,7 +177,7 @@ und **reformorientiert** (Jamaran).
 - Der Ton der KI ist nicht verlässlich genug für Gruppenvergleiche und wird nicht gezeigt.
 
 ### Mehr
-[Kurzer Artikel](https://github.com/Amirhouschang/telegram-iran/blob/main/docs/de/bericht.md) ·
+[Ergebnisbericht](https://github.com/Amirhouschang/telegram-iran/blob/main/docs/de/bericht.md) ·
 [Analyse mit allen Diagrammen](https://github.com/Amirhouschang/telegram-iran/blob/main/docs/de/04_analyse.md) ·
 [Code und Methode auf GitHub](https://github.com/Amirhouschang/telegram-iran)
 """,
@@ -257,7 +257,7 @@ Three groups are compared: **state** (IRNA, IRIB News, Mehr News), **IRGC-affili
 - The AI's tone is not reliable enough for group comparisons and is not shown.
 
 ### More
-[Short article](https://github.com/Amirhouschang/telegram-iran/blob/main/docs/en/report.md) ·
+[Results report](https://github.com/Amirhouschang/telegram-iran/blob/main/docs/en/report.md) ·
 [Analysis with all charts](https://github.com/Amirhouschang/telegram-iran/blob/main/docs/en/04_analysis.md) ·
 [Code and method on GitHub](https://github.com/Amirhouschang/telegram-iran)
 """,
