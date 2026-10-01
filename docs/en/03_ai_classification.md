@@ -19,9 +19,11 @@ eight versions. Dead ends are documented as well.
 | Technology | [Ollama](https://ollama.com) on the author's own computer – no cloud, no data leaves the laptop |
 | Selected model | **Gemma 4 31B** with background knowledge |
 | Codebook | version **v8** (frozen) |
-| Agreement with manual coding | **80.7%** topic and tone exact · **86.7%** taking borderline cases into account · kappa topic 0.85 / tone 0.79 |
-| Main run | stratified sample, about 10,500 posts (50 per channel and week) |
-| Status | main run ⏳ · final validation (phase C) ⬜ |
+| Test set (150 posts, used for development) | 80.7% topic and tone exact · 86.7% with borderline cases · kappa topic 0.85 / tone 0.79 |
+| **Final validation (200 new posts)** | **topic 72.5%** (95% interval 65.9–78.2%) · tone 84.5% · both 62.5% (55.6–68.9%) · kappa topic 0.68 / tone 0.46 |
+| Main run | 10,750 posts, stratified sample (50 per channel and week), weighted |
+| Use | **topics**: shares per group and phase ([04, section 7](04_analysis.md#7-topics-according-to-the-ai)) · **tone**: not for comparisons between groups (section 8) |
+| Status | main run ✅ · final validation (phase C) ✅ |
 
 ---
 
@@ -198,6 +200,7 @@ six dates and price figures were corrected, without any effect on categories or 
 
 - On topics the three best models are level; on **tone** Gemma 4 31B is clearly better
   (93% agreement, kappa 0.79 vs. 0.64 for Gemma 4 26B). Tone is a core variable of the framing analysis.
+  The final validation later showed that Gemma 4 31B, too, often misses non-neutral tones (section 8).
 - Drawback: about four times slower. Therefore a **stratified sample** is classified instead of the whole corpus.
 
 ---
@@ -205,22 +208,90 @@ six dates and price figures were corrected, without any effect on categories or 
 ## 7. Main run
 
 - **Sample:** 50 posts per channel and week (weeks with fewer posts: all), only posts with more than 80 characters.
-  In total about **10,500 posts** from 36 weeks and 6 channels.
+  In total **10,750 posts** from 36 weeks and 6 channels (1,800 each; IRNA 1,750, because IRNA published nothing in
+  one week of the internet blackout).
 - **Weighting:** each post gets a weight = posts in its channel-week / posts drawn. Shares per channel are
-  weighted so that busy weeks are not under-represented.
+  weighted so that busy weeks are not under-represented. Together the 10,750 posts stand for 231,406 posts with
+  more than 80 characters.
 - **Precision:** about ±2.5 percentage points per channel, about ±6 points per channel and month.
 - **Same settings as in the test** (prompt, model, parameters) – only then do the measured values apply.
-- Runtime about 2 days; resumes after interruption, random order.
+- Computing time 67 hours (median 21 seconds per post); resumes after interruption, random order.
 - All other measures (volume, reach, term density, time series) are based on the **full corpus**.
 
 ---
 
-## 8. Final validation (phase C) – planned
+## 8. Final validation (phase C) – result
 
-- 200 new posts from the main run that were neither in a test set nor seen before.
-- Manual coding **without knowing the AI's answer**, comparison only afterwards.
-- **After phase C nothing will be changed.** The result will be reported as it comes out – also per channel,
-  to check whether errors affect one source group more than another.
+**Procedure:** 200 new posts from the main run (33–34 per channel) that were neither in a test set nor seen before.
+Manual coding **without knowing the AI's answer**, comparison only afterwards (`03c_validation.py`).
+Nothing was changed after phase C.
+
+**95% confidence interval:** 200 posts are a sample. The interval (Wilson) gives the range in which the true
+agreement in the whole main run lies with 95% certainty.
+
+| | Test set (150) | **Final validation (200)** | 95% interval |
+|---|---|---|---|
+| Topic | 86.7% | **72.5%** | 65.9–78.2% |
+| Topic with borderline cases | 93.3% | 77.0% | 70.7–82.3% |
+| Tone | 93.3% | **84.5%** | 78.8–88.9% |
+| Topic and tone | 80.7% | **62.5%** | 55.6–68.9% |
+| Topic and tone with borderline cases | 86.7% | 66.5% | 59.7–72.7% |
+| Kappa topic / tone | 0.85 / 0.79 | **0.68 / 0.46** | |
+
+- **The gap is real:** the intervals of the test set (73.6–86.2%) and the final validation do not overlap.
+  The codebook was improved on the test set over eight versions and therefore fits exactly these posts.
+  The final validation shows the value for unseen posts – which is what it was planned for.
+
+**Per channel** (topic and tone; 33–34 posts each, hence wide intervals):
+
+| IRIB News | Fars News | IRNA | Mehr News | Jamaran | Tasnim News |
+|---|---|---|---|---|---|
+| 82.4% | 72.7% | 69.7% | 51.5% | 50.0% | 48.5% |
+
+On topic alone Jamaran is lowest (55.9%, interval 39.5–71.1%).
+
+### Where the AI deviates on topic
+
+| Category | correctly recognised by the AI | direction of the errors |
+|---|---|---|
+| mourning_commemoration | 12 of 12 | – |
+| military | 19 of 21 | the AI assigns *military* too often: 32 times instead of 21 |
+| foreign_affairs | 16 of 18 | – |
+| economy | 10 of 13 | – |
+| domestic_politics | 26 of 37 | – |
+| other | 31 of 49 | the AI prefers a substantive topic (*mourning*, *domestic_politics*) |
+| **diplomacy** | **17 of 31** | 10 times *military* |
+
+- **Diplomacy → military:** almost all are analyses of the war ("US expert: Iran has the upper hand", analyses by CNN
+  or the Financial Times). The reference saw diplomacy, the AI military; for 4 of the 10, military or other was noted
+  as secondary topic – genuine borderline cases.
+- **Consequence:** the share of *military* is overestimated, *diplomacy* underestimated. As this happens similarly in
+  all phases, changes over time are more reliable than absolute shares.
+
+### Tone: the AI is too cautious – and differently for each group
+
+- Of 40 posts with a non-neutral tone the AI recognises only **18 (45%)**; most often missed: *accusatory*
+  (10 times *neutral*). When the AI does assign a tone, it is mostly right (18 of 23).
+- The high tone agreement (84.5%) comes mainly from the fact that 80% of posts are neutral. Kappa 0.46 shows that
+  the rarer tones are recognised only moderately.
+
+| Share non-neutral | manual | AI |
+|---|---|---|
+| state (100 posts) | 20% | **8%** |
+| IRGC-affiliated (66) | 21% | 18% |
+| Jamaran (34) | 18% | 9% |
+
+According to the manual coding all three groups have a non-neutral tone equally often. The AI would show
+IRGC-affiliated channels as non-neutral twice as often as state channels – **a difference that does not exist in the
+reference.**
+
+### Decision
+
+- **Topics are used:** weighted shares per group and phase, with the accuracy and the known direction of the errors
+  ([04, section 7](04_analysis.md#7-topics-according-to-the-ai)).
+- **Tone is not used for comparisons between groups.** The language of the groups (revenge, crimes, opponent labels,
+  naming) is measured by the word analysis in [04](04_analysis.md) on the full corpus.
+- The result is reported as it came out; codebook and model were left unchanged.
 
 ---
 
@@ -235,6 +306,8 @@ six dates and price figures were corrected, without any effect on categories or 
   optimistic; phase C is what counts.
 - **Hardware** limits model size and sample size.
 - **Choice regarding legal terms** (rule 8) affects how often *accusatory* occurs; it is documented openly.
+  Together with "if unsure, *neutral*" it probably contributes to the AI missing non-neutral tones.
+- **Validation per channel** rests on 33–34 posts each; differences between channels are therefore uncertain.
 
 ---
 
@@ -245,6 +318,8 @@ six dates and price figures were corrected, without any effect on categories or 
 3. **Agreement is not truth.** When AI and human disagree, the error is not always the AI's.
 4. **Every adjustment on the same test set inflates the figure.** Hence: freeze, then measure on unseen data.
 5. **Hardware is part of the method.** Runtime, memory and sleep mode have to be planned for.
+6. **The honest figure comes last.** 80.7% on the test set became 62.5% on 200 new posts – and only the final
+   validation showed that the tone errors are not random but differ by group.
 
 ---
 
@@ -258,6 +333,9 @@ six dates and price figures were corrected, without any effect on categories or 
 | `scripts/ai/ai_core.py` | builds the prompt, queries Ollama, checks the answer |
 | `scripts/ai/03a_model_comparison.py` | draws test sets, compares models, Excel evaluation |
 | `scripts/ai/03_ai_classify.py` | main run with stratified sample and weights |
+| `scripts/ai/03c_validation.py` | final validation: draw 200 posts, compare with the AI, confidence intervals |
+| `scripts/ai/03d_export_results.py` | export results without post texts to `results/ai/` |
+| `scripts/ai/03e_topics.py` | weighted topic shares per group, channel and phase, chart |
 
 **Settings:** `temperature 0`, `seed 42`, `num_ctx 8192`, JSON output enforced, thinking mode off,
 at most 2,000 characters per post, one retry on invalid answers.

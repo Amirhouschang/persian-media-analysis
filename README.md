@@ -5,8 +5,9 @@
 **Python · SQL · NLP · local AI**
 
 End-to-end project collecting, processing and analysing more than **328,000 Persian-language Telegram
-posts** from six Iranian news channels between 1 January and 31 August 2026 – the period of the protests that began in late December 2025, 
-the war between Israel/the US and Iran from 28 February, and the ceasefires that followed.
+posts** from six Iranian news channels between 1 January and 31 August 2026 – the period of the protests
+that began in late December 2025, the war between Israel/the US and Iran from 28 February, and the ceasefires
+that followed.
 It covers automated data collection, a relational database and classification with locally run language
 models. The focus is on method: how can foreign-language media be analysed systematically, verifiably
 and reproducibly?
@@ -49,8 +50,8 @@ tone and reach** – and how do these patterns change around key events?
 |---|---|---|---|
 | 1. Data collection | Telegram API, quality checks | ✅ done | [01 – Data collection](docs/en/01_data_collection.md) |
 | 2. Processing | PostgreSQL database, cleaning Persian text | ✅ done | [02 – Processing](docs/en/02_processing.md) |
-| 3. AI classification | Codebook, model comparison, main run, validation | ⏳ main run | [03 – AI classification](docs/en/03_ai_classification.md) |
-| 4. Analysis | Word choice, naming, change over time, countries, reach | ✅ word analysis · ⏳ AI results | [04 – Analysis](docs/en/04_analysis.md) |
+| 3. AI classification | Codebook, model comparison, main run, validation | ✅ done | [03 – AI classification](docs/en/03_ai_classification.md) |
+| 4. Analysis | Word choice, naming, change over time, countries, reach | ✅ done | [04 – Analysis](docs/en/04_analysis.md) |
 | 5. Dashboard | local interactive dashboard | ⬜ planned | 05 – Dashboard |
 | 6. Methodology & limits | Limitations, data protection, security | ⬜ planned | 06 – Methodology |
 
@@ -66,31 +67,34 @@ tone and reach** – and how do these patterns change around key events?
 
 ![Database schema](images/database_schema.png)
 
-### 3. AI classification *(main run)*
+### 3. AI classification *(complete)*
 - Classification by **topic** (9 categories) and **tone** (6 categories) with **locally run language models** (`Ollama`) – no cloud
 - **Codebook** with operational definitions, developed over eight versions
 - **Context:** neutral background on events, actors, international law and a glossary of Persian terms
 - **Model comparison** on 150 manually checked posts: Gemma 4 (26B, 31B), Qwen 3.6 (27B, 35B), Qwen 2.5 (32B), Aya Expanse (32B)
-- **Selected model: Gemma 4 31B** – 80.7% exact agreement on topic and tone, 86.7% when borderline cases are taken into account; Cohen's kappa topic 0.85, tone 0.79
-- **Main run:** stratified sample of about 10,500 posts (50 per channel and week), weighted
-- **Final validation:** 200 new posts coded blind – no changes afterwards
+- **Selected model: Gemma 4 31B** – on the test set 80.7% exact agreement on topic and tone; Cohen's kappa topic 0.85, tone 0.79
+- **Main run:** stratified sample of 10,750 posts (50 per channel and week), weighted
+- **Final validation on 200 new posts coded blind:** topic **72.5%** correct (95% interval 65.9–78.2%), topic and tone 62.5% – clearly below the test set, because the codebook was developed on it
+- **Honest result:** topics are usable (military rather over-, diplomacy rather underestimated); the AI often misses the tone, and to a different degree for each group – tone is therefore not used for comparisons between groups
 - The full process, including dead ends: [03 – AI classification](docs/en/03_ai_classification.md)
 
-### 4. Analysis *(word analysis complete)*
+### 4. Analysis *(complete)*
 - Complete corpus, counted per 1,000 words; fixed terms found **without a predefined word list**, author's corrections kept openly in one file
 - **Typical terms** per source group with the weighted log-odds ratio (Monroe et al. 2008) – a term only counts if it is typical for every channel of the group
 - **Naming:** how each group names Israel, the USA, opponents and persons; words next to Trump and Netanyahu
 - **Which Khamenei?** Rule-based assignment of every mention of the Leader to Ali or Mojtaba Khamenei, checked with samples
 - **Weekly time series** around key events – every peak explained with the terms typical of that week – and **activity and reach** (posts, views, forwards)
 - **Countries and allies:** 35 countries and groups (Gulf states, Lebanon and Hezbollah, Iraq, Yemen, Russia, China, Pakistan, Europe …) – how often, in which weeks, and how each group presents them
+- **Topics according to the AI:** weighted shares per group and phase, with measured accuracy
 
 Selected findings:
 - **Three voices:** state channels speak as government and administration (spokespeople, ministers, the language of international law – "aggression", "condemnation"); IRGC-affiliated channels report on missiles, drones, arrests and "riots"; Jamaran on negotiations, US politics, the nuclear issue and the internet.
 - After the collapse of the ceasefire, state and IRGC-affiliated channels call Israel the "Zionist regime" (*rezhim-e sahyunisti*) in 57% and 53% of mentions; Jamaran writes "Israel" in 70%.
 - No channel calls Mojtaba Khamenei the Leader before his selection on 8 March; even afterwards about three quarters of mentions of the Leader concern Ali Khamenei.
-- The highest values for "martyr" and "revenge" are not at the start of the war but in the weeks of the farewell ceremony and funeral processions for Ali Khamenei (late June / early July).
+- The highest values for "martyr" and "revenge" are not at the start of the war but in the weeks of the farewell ceremony and funeral processions for Ali Khamenei (3–10 July).
 - Former presidents and ministers of the reformist camp – Mohammad Khatami, Hassan Rouhani, Mohammad Javad Zarif – appear almost only at Jamaran; President Masoud Pezeshkian almost disappears from the news during the war.
 - With the start of the war the world shrinks to the region: Russia and China fall to a third in the IRGC-affiliated channels; Bahrain and Kuwait, hardly named before, become scenes of action. The same country looks different in each group – the UAE are a currency hub for the state media, a target (port of Fujairah) for the IRGC-affiliated channels and an actor of US politics for Jamaran.
+- Topics according to the AI: during the war 36–45% of posts are military (before: 4–5%); Jamaran has the highest share of diplomacy in every phase.
 - IRGC-affiliated channels reach about ten times as many views per post, but are forwarded less often relative to their views.
 
 ![Share of "Zionist regime" among all names for Israel](results/timeline/charts/israel_zionist_regime_share.png)
@@ -128,7 +132,7 @@ telegram-iran/
 ├── scripts/
 │   ├── telegram/        ← login, collection, re-collection, checks
 │   ├── database/        ← PostgreSQL: schema, loading, example queries, text cleaning, checks
-│   ├── ai/              ← AI classification: config, codebook, background, model comparison, main run
+│   ├── ai/              ← AI classification: config, codebook, background, model comparison, main run, validation, topics
 │   └── analysis/        ← word analysis, naming, leader, time series, peak weeks, activity, countries + two lists of the author
 ├── results/             ← published results, numbers only (no post texts) – see results/README.md
 │   ├── words/           ← word frequencies, fixed terms, typical terms
@@ -137,7 +141,7 @@ telegram-iran/
 │   ├── timeline/        ← weekly values, peak weeks and charts
 │   ├── activity/        ← posts, views, forwards and charts
 │   ├── countries/       ← countries and allies: frequency, peak weeks, presentation, charts
-│   └── ai/              ← AI model comparison
+│   └── ai/              ← AI: model comparison, main run, final validation, topics (no texts)
 └── data/                ← raw data (not in the repository)
 ```
 
@@ -149,7 +153,7 @@ telegram-iran/
 - **no personal data** of users, no private groups or comments
 - processing entirely **local**, including the AI classification
 - credentials only as environment variables; raw data and session files excluded from the repository
-- AI results are not taken over unchecked but validated against manual coding
+- AI results are not taken over unchecked but validated on new posts coded blind – with confidence intervals
 
 ## Skills demonstrated
 

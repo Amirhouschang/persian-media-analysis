@@ -4,7 +4,7 @@
 
 [← zurück zur Übersicht](../../README.de.md)
 
-Diese Seite zeigt die Ergebnisse der Auswertung des **vollständigen Korpus** – ohne KI, mit Zählungen und Statistik
+Diese Seite zeigt die Ergebnisse der Auswertung des **vollständigen Korpus** – mit Zählungen und Statistik
 in Python. Sie beantwortet fünf Fragen:
 
 1. **Worüber** schreibt jede Quellengruppe deutlich mehr als die anderen?
@@ -13,8 +13,8 @@ in Python. Sie beantwortet fünf Fragen:
 4. **Wann** ändert sich das – und welches Ereignis steckt hinter jeder Spitze?
 5. **Welche Länder und Verbündeten** nennen sie – wann und in welchem Zusammenhang?
 
-Die Methode steht am Ende der Seite ([Abschnitt 9](#9-methode)). Die Einordnung nach Thema und Ton durch die KI
-([03](03_ki_einordnung.md)) ist ein eigener Schritt und folgt nach dem Hauptlauf.
+Die Methode steht am Ende der Seite ([Abschnitt 10](#10-methode)). Abschnitt 7 ergänzt die Themen laut
+KI-Einordnung einer gewichteten Stichprobe ([03](03_ki_einordnung.md)) – mit gemessener Trefferquote.
 
 | | |
 |---|---|
@@ -26,7 +26,8 @@ Die Methode steht am Ende der Seite ([Abschnitt 9](#9-methode)). Die Einordnung 
 
 ### Zeitleiste
 
-Die Daten der Ereignisse stammen aus dem recherchierten Hintergrund des Projekts (`scripts/ai/background.txt`).
+Die Daten der Ereignisse stammen aus dem recherchierten Hintergrund des Projekts (`scripts/ai/background.txt`);
+die Daten der Trauerfeier aus Berichten von Al Jazeera.
 
 | Datum | Ereignis |
 |---|---|
@@ -40,7 +41,7 @@ Die Daten der Ereignisse stammen aus dem recherchierten Hintergrund des Projekts
 | **08.04.** | **Waffenruhe** USA–Iran, vermittelt von Pakistan; 11.–12.04. Gespräche in **Islamabad** ohne Einigung |
 | 13.04. | US-Seeblockade gegen iranische Schiffe |
 | 17.–18.06. | **„Islamabad-Memorandum“**: 60 Tage Verhandlungen, Durchfahrt durch Hormus, Zeitplan für das Ende der Blockade |
-| Ende Juni – Anfang Juli | **Trauerfeier und Trauerzüge für Ali Khamenei** (Teheran, Maschhad, Nadschaf) – aus den Daten ermittelt, siehe [Abschnitt 5](#5-zeitverlauf-was-wann-geschah) |
+| **03.–10.07.** | **Trauerfeier und Trauerzüge für Ali Khamenei**: Staatsakt 03.07., Gebetsstätte (Mosalla) Teheran ab 04.07., Trauerzug Teheran 06.07., Ghom 07.07., Nadschaf und Kerbela 08.07., Maschhad 09.07., Beisetzung 10.07. – in den Daten deutlich sichtbar, siehe [Abschnitt 5](#5-zeitverlauf-was-wann-geschah) |
 | **07.–08.07.** | Angriffe auf Handelsschiffe bei Hormus, erneute US-Angriffe – **Zusammenbruch der Waffenruhe** |
 | 13.–14.07. | Seeblockade wieder in Kraft |
 | 10.08. | Mojtaba Khamenei baut die Militärführung um |
@@ -64,7 +65,7 @@ Die Daten der Ereignisse stammen aus dem recherchierten Hintergrund des Projekts
 - **Personen:** Präsident Pezeshkian verschwindet im Krieg fast aus den Nachrichten (IRGC-nah von 0,60 auf 0,17 pro
   1.000 Wörter). Parlamentspräsident **Ghalibaf** gewinnt in der Waffenruhe an Gewicht. Frühere Präsidenten und
   Minister des Reformlagers – **Khatami, Rouhani, Zarif** – kommen fast nur bei Jamaran vor.
-- **Die größten Ausschläge liegen nicht beim Kriegsbeginn**, sondern Ende Juni / Anfang Juli: In den Wochen der
+- **Die größten Ausschläge liegen nicht beim Kriegsbeginn**, sondern Anfang Juli: In den Wochen der
   Trauerfeier für Ali Khamenei erreichen „Märtyrer“ und „Rache“ ihre höchsten Werte – IRGC-nah 21,6 Mal „Märtyrer“
   pro 1.000 Wörter, zehnmal so viel wie sonst.
 - **Jede Spitze lässt sich datieren:** „Verhandlungen“ steigt in den Wochen von Maskat (06.02.), Islamabad (08.–12.04.)
@@ -75,6 +76,9 @@ Die Daten der Ereignisse stammen aus dem recherchierten Hintergrund des Projekts
 - **Dasselbe Land, drei Bilder:** Die VAE sind für die Staatsmedien ein Devisenplatz, für die IRGC-nahen Kanäle ein
   Angriffsziel (Hafen Fudschaira), für Jamaran ein Akteur der US-Politik. Saudi-Arabien ist für die Staatsmedien
   Gesprächspartner, für die IRGC-nahen Kanäle der Gegner im Jemen.
+- **Themen laut KI:** Im Krieg sind 36–45 % der Beiträge militärisch (vorher 4–5 %). Jamaran hat in jeder Phase den
+  höchsten Anteil an Diplomatie. Trefferquote der KI beim Thema: 72,5 %; den Ton misst die KI nicht verlässlich genug
+  für Vergleiche zwischen Gruppen.
 - **Reichweite:** Tasnim und Fars erreichen pro Beitrag rund **zehnmal so viele Aufrufe** wie die anderen Kanäle.
 
 ---
@@ -83,7 +87,7 @@ Die Daten der Ereignisse stammen aus dem recherchierten Hintergrund des Projekts
 
 Welche Begriffe verwendet eine Gruppe **deutlich häufiger** als die beiden anderen? Gemessen mit dem gewichteten
 Log-Odds-Verhältnis; ein Begriff zählt nur, wenn **jeder** Kanal der Gruppe ihn häufiger verwendet
-(Methode: [Abschnitt 9](#9-methode)). Die Stärke des Unterschieds ist der z-Wert – ab 2 ist er statistisch deutlich,
+(Methode: [Abschnitt 10](#10-methode)). Die Stärke des Unterschieds ist der z-Wert – ab 2 ist er statistisch deutlich,
 über 10 sehr stark. Die folgenden Tabellen ordnen die 200 typischsten Begriffe jeder Gruppe nach Themen; vollständige
 Listen in `results/words/typical_terms.xlsx`.
 
@@ -236,11 +240,13 @@ Anteil an allen Bezeichnungen für Israel:
 
 ### USA
 
-- *Amrika* `آمریکا` („Amerika“) ist überall die Hauptbezeichnung (76–84 %).
-- Jamaran schreibt öfter die formale Bezeichnung `ایالات متحده` *Eyalat-e Mottahedeh* („Vereinigte Staaten“): 11 % gegenüber 7 % (staatlich) und 5 % (IRGC-nah).
-- Abwertende Bezeichnungen wie `ارتش تروریستی آمریکا` („terroristische Armee Amerikas“) und `ارتش کودک‌کش آمریکا` („kindermordende Armee Amerikas“) nehmen nach dem Zusammenbruch der Waffenruhe deutlich zu: zusammen 3–5 % aller Bezeichnungen für die USA, im Krieg 1–2 %, vor dem Krieg 0 %.
-- „Chef der terroristischen Regierung Amerikas“ für Trump `رئیس دولت تروریستی آمریکا` verwendet vor allem Tasnim.
-verwendet vor allem Tasnim.
+- `آمریکا` *Amrika* („Amerika“) ist überall die Hauptbezeichnung (76–84 %).
+- Jamaran schreibt öfter die formale Bezeichnung `ایالات متحده` *Eyalat-e Mottahedeh* („Vereinigte Staaten“):
+  11 % gegenüber 7 % (staatlich) und 5 % (IRGC-nah).
+- Abwertende Bezeichnungen wie `ارتش تروریستی آمریکا` („terroristische Armee Amerikas“) und `ارتش کودک‌کش آمریکا`
+  („kindermordende Armee Amerikas“) nehmen nach dem Zusammenbruch der Waffenruhe deutlich zu: zusammen 3–5 % aller
+  Bezeichnungen für die USA, im Krieg 1–2 %, vor dem Krieg 0 %.
+- `رئیس دولت تروریستی آمریکا` („Chef der terroristischen Regierung Amerikas“ – für Trump) verwendet vor allem Tasnim.
 
 ### Rache, Gegner, Verbrechen, Diplomatie
 
@@ -260,7 +266,10 @@ Pro 1.000 Wörter, ganzer Zeitraum:
 
 ## 4. Welcher Khamenei ist gemeint?
 
-- *Khamenei* `خامنه‌ای` und  *rahbar* `رهبر` („der Führer“) können Ali Khamenei (getötet am 28.02.) oder seinen Sohn und Nachfolger Mojtaba Khamenei meinen. Jede Erwähnung wurde mit Regeln zugeordnet und mit    Stichproben geprüft (Methode: [Abschnitt 9](#9-methode)).
+`خامنه‌ای` *Khamenei* und `رهبر` *rahbar* („der Führer“) können Ali Khamenei (getötet am 28.02.) oder seinen Sohn
+und Nachfolger Mojtaba Khamenei meinen. Jede Erwähnung wurde mit Regeln zugeordnet und mit Stichproben geprüft
+(Methode: [Abschnitt 10](#10-methode)).
+
 - Alle sechs Kanäle schreiben zum ersten Mal am **01.03.** `رهبر شهید` *rahbar-e shahid* („der Märtyrer-Führer“) –
   dem Tag, an dem der Tod offiziell bestätigt wurde.
 - Alle sechs Kanäle nennen Mojtaba Khamenei zum ersten Mal am **08.03.** in einem Satz mit „Führer“ – am Tag seiner
@@ -315,8 +324,8 @@ der Wert bei Jamaran mehr als doppelt so hoch wie bei den anderen Gruppen (1,39 
 
 ![Trump](../../results/timeline/charts/trump.png)
 
-Trump wird bei Jamaran fast jede Woche am häufigsten genannt. Der Tiefpunkt aller Gruppen liegt Ende Juni – in den
-Wochen der Trauerfeier für Ali Khamenei.
+Trump wird bei Jamaran fast jede Woche am häufigsten genannt. Der Tiefpunkt liegt bei staatlichen und IRGC-nahen
+Kanälen in der Woche ab 29.06. – der Woche der Trauerfeier für Ali Khamenei (03.–05.07.); bei Jamaran eine Woche früher.
 
 ### Märtyrer und Rache – die Trauerfeier für Ali Khamenei
 
@@ -332,8 +341,8 @@ Wochen der Trauerfeier für Ali Khamenei.
 | 13.07. | Rache: staatlich 0,58 · Jamaran 0,41 | `بندرعباس` (Bandar Abbas) · `هرمزگان` (Provinz Hormozgan) · `بوشهر` (Buschehr) · `اهواز` (Ahvaz) · `انفجار` (Explosion) · `کویت` (Kuwait) · `اردن` (Jordanien) | Angriffe nach dem Zusammenbruch der Waffenruhe (07.–08.07.) |
 
 - Die **höchsten Werte** für „Märtyrer“ und „Rache“ im ganzen Zeitraum liegen **nicht** beim Kriegsbeginn, sondern in
-  den Wochen der Trauerfeier und der Trauerzüge für Ali Khamenei – vier Monate nach seinem Tod. Das Datum dieser
-  Feiern steht nicht in der Zeitleiste; es ergibt sich aus den Daten.
+  den Wochen der Trauerfeier (03.–05.07.) und der Trauerzüge (06.–09.07.) für Ali Khamenei – vier Monate nach
+  seinem Tod.
 - In der Woche der Trauerzüge schreiben IRGC-nahe Kanäle `خونخواهی` *khunkhahi* (Blutrache) häufiger als in der
   ersten Kriegswoche (0,58 gegenüber 0,41 pro 1.000 Wörter).
 - Jamaran schreibt in dieser Woche zu 44 % „zionistisches Regime“ – der höchste Wert des Kanals im ganzen Zeitraum
@@ -427,7 +436,7 @@ Pro 1.000 Wörter, ganzer Zeitraum; fett = höchster Wert. Vollständige Liste: 
 | `افغانستان` *Afghanestan* – Afghanistan | 0,07 | 0,05 | **0,08** | 1.037 |
 | `حشد شعبی` *Hashd-e Sha'bi* / `مقاومت عراق` – irakische Milizen | 0,04 | **0,08** | 0,03 | 799 |
 
-¹ Zu hoch: `آذربایجان` allein meint manchmal die iranischen Provinzen (siehe [Grenzen](#8-grenzen)).
+¹ Zu hoch: `آذربایجان` allein meint manchmal die iranischen Provinzen (siehe [Grenzen](#9-grenzen)).
 
 - **IRGC-nahe Kanäle** nennen die **Hisbollah fast doppelt so oft** wie die anderen. Sie nennen auch Saudi-Arabien,
   die VAE, Kuwait, Bahrain, Jordanien, Jemen und die irakischen Milizen am häufigsten – die Orte, aus denen sie über
@@ -619,7 +628,66 @@ Pakistan erreicht in allen sechs Kanälen seinen höchsten Wert in der Waffenruh
 
 ---
 
-## 7. Aktivität und Reichweite
+## 7. Themen laut KI
+
+Grundlage ist die KI-Einordnung von 10.750 Beiträgen (Gemma 4 31B, Codebuch v8), gewichtet auf alle 231.406 Beiträge
+mit mehr als 80 Zeichen ([03](03_ki_einordnung.md), `03e_topics.py`). Angegeben ist der Anteil der Beiträge in Prozent.
+In der Endvalidierung an 200 neuen Beiträgen stimmte das Thema in **72,5 %** der Fälle (95-%-Intervall 65,9–78,2 %).
+Der **Ton** wird nicht ausgewertet: Die KI übersieht nicht-neutrale Töne, und zwar je Gruppe verschieden stark
+([03, Abschnitt 8](03_ki_einordnung.md#8-endvalidierung-phase-c--ergebnis)).
+
+| Thema | staatlich | IRGC-nah | Jamaran |
+|---|---|---|---|
+| `military` – Militär | 16,6 | **22,5** | 22,2 |
+| `diplomacy` – Diplomatie | 12,9 | 12,0 | **20,0** |
+| `domestic_politics` – Innenpolitik | **14,8** | 13,6 | 14,5 |
+| `other` – Sonstiges (Service, Wetter, Sport, Kultur) | **16,2** | 9,8 | 6,3 |
+| `economy` – Wirtschaft | 8,0 | 8,1 | **9,7** |
+| `foreign_affairs` – Ausland ohne Iran | 8,5 | 7,9 | **10,4** |
+| `mourning_commemoration` – Trauer und Gedenken | **9,7** | 9,4 | 6,8 |
+| `resistance_axis` – Achse des Widerstands | 6,5 | **9,1** | 5,8 |
+| `ideology_propaganda` – Ideologie | 6,9 | **7,6** | 4,3 |
+
+Anteile in %, ganzer Zeitraum. Pro Kanal: `results/ai/topics/topic_shares.xlsx`.
+
+![Themen nach Phase](../../results/ai/topics/charts/topics_by_phase.png)
+
+| | vor dem Krieg | Krieg | Waffenruhe | nach dem Zusammenbruch |
+|---|---|---|---|---|
+| Militär, alle Gruppen | 4–5 | **36–45** | 13–15 | 14–28 |
+| Innenpolitik, alle Gruppen | **24–31** | 6–10 | 11–13 | 15–19 |
+| Diplomatie, Jamaran | 23,2 | 18,2 | **25,1** | 11,5 |
+| Diplomatie, IRGC-nah | 11,6 | **6,7** | 16,8 | 8,8 |
+| Trauer und Gedenken, alle Gruppen | 3–5 | 6–8 | **9–12** | 6–10 |
+| Achse des Widerstands, IRGC-nah | 4,5 | 7,9 | 10,3 | **11,0** |
+| Ideologie, staatlich / IRGC-nah | 7,3 / 7,2 | **11,4 / 12,4** | 6,5 / 6,8 | 4,1 / 4,1 |
+| Sonstiges, staatlich | 20,5 | **5,2** | 18,5 | 17,9 |
+
+Anteile in %; eine Spanne heißt: niedrigster bis höchster Wert der drei Gruppen.
+
+- **Der Krieg verdrängt alles:** In der Kriegsphase sind 36–45 % der Beiträge militärisch, vorher 4–5 %. Innenpolitik
+  fällt von 24–31 % auf 6–10 %, Service, Sport und Kultur verschwinden fast.
+- **Jamaran ist der Kanal der Diplomatie** – in jeder Phase mit dem höchsten Anteil, in der Waffenruhe ein Viertel aller
+  Beiträge. Das passt zur Wortanalyse (Verhandlungen, Trump, Atomfrage, Abschnitt 1). Nach dem Zusammenbruch der
+  Waffenruhe fällt Diplomatie in allen Gruppen auf 9–12 %.
+- **IRGC-nahe Kanäle** berichten im Krieg am wenigsten über Diplomatie (6,7 %) und am meisten über die Achse des
+  Widerstands, deren Anteil bis August stetig steigt.
+- **Ideologie** ist bei staatlichen und IRGC-nahen Kanälen im Krieg am höchsten (11–12 %), bei Jamaran in allen Phasen
+  niedrig (4–5 %).
+- **Trauer und Gedenken** steigen nach dem Krieg auf 9–12 % – die Zeit der Gedenkfeiern und der Trauerfeier für
+  Ali Khamenei (03.–10.07.).
+- **Staatliche Kanäle** veröffentlichen außerhalb des Krieges viele Service-Meldungen (Sonstiges 18–21 %) und berichten
+  nach dem Zusammenbruch der Waffenruhe weniger über Militär (14 %) als IRGC-nahe Kanäle (23 %) und Jamaran (28 %).
+
+**Vorsicht beim Lesen:** In der Endvalidierung vergab die KI *military* zu oft und *diplomacy* zu selten – vor allem
+bei Analysen des Krieges. Militär ist deshalb eher überschätzt, Diplomatie eher unterschätzt; das betrifft alle
+Phasen ähnlich, Veränderungen über die Zeit sind verlässlicher als die Höhe. Bei Jamaran war die Themenzuordnung am
+unsichersten (55,9 % richtig, nur 34 Beiträge geprüft); der hohe Militäranteil nach dem Zusammenbruch kann teilweise
+aus Analysen des Krieges stammen.
+
+---
+
+## 8. Aktivität und Reichweite
 
 | | staatlich | IRGC-nah | Jamaran |
 |---|---|---|---|
@@ -648,7 +716,7 @@ Weitere Diagramme: [Aufrufe](../../results/activity/charts/views_median.png) ·
 
 ---
 
-## 8. Grenzen
+## 9. Grenzen
 
 - **Zählen ist nicht Verstehen.** Die Zählung erkennt keinen Zusammenhang: Verneinung, Zitat oder Ironie zählen gleich.
   Ob ein Begriff zustimmend oder distanziert verwendet wird, zeigt erst die KI-Einordnung oder das Lesen.
@@ -670,11 +738,13 @@ Weitere Diagramme: [Aufrufe](../../results/activity/charts/views_median.png) ·
   der Türkei und Katars betrifft Sport.
 - **Darstellung eines Landes:** Die typischen Begriffe beschreiben die Beiträge, die ein Land nennen – nicht jede
   Aussage über das Land. Ein Beitrag mit mehreren Ländern zählt für jedes davon.
+- **KI-Themen:** beruhen auf einer gewichteten Stichprobe von 10.750 Beiträgen; das Thema stimmt in 72,5 % der Fälle
+  (Endvalidierung). Militär ist eher überschätzt, Diplomatie unterschätzt; der Ton wird nicht ausgewertet (siehe 03).
 - Die Gruppe „reformorientiert“ besteht aus **einem Kanal**.
 
 ---
 
-## 9. Methode
+## 10. Methode
 
 ### Von Wörtern zu festen Begriffen (`01_word_frequency.py`, `03_terms.py`)
 
@@ -754,6 +824,12 @@ Dieselben Zählungen pro Kalenderwoche; nur vollständige Wochen in den Diagramm
 Kanal (bei Gruppen geteilt durch die Zahl der Kanäle), Aufrufe und Weiterleitungen als Median, Weiterleitungen pro
 1.000 Aufrufe. Farben: staatlich blau, IRGC-nah rot, Jamaran grün – auf Unterscheidbarkeit bei Farbsehschwäche geprüft.
 
+### KI-Themen (`scripts/ai/03e_topics.py`)
+
+Gewichteter Anteil jedes Themas pro Gruppe, Kanal und Phase: Jeder Beitrag zählt mit seinem Gewicht (Beiträge seiner
+Kanal-Woche / gezogene Beiträge). Phasen nach Datum in Teheraner Zeit, wie in der Datenbank. Einordnung und Prüfung
+der KI: [03](03_ki_einordnung.md).
+
 ### Irrwege und Hilfsskripte
 
 | Skript | Was es zeigte |
@@ -766,7 +842,7 @@ Kanal (bei Gruppen geteilt durch die Zahl der Kanäle), Aufrufe und Weiterleitun
 
 ---
 
-## 10. Dateien
+## 11. Dateien
 
 | Skript | Aufgabe | Ergebnis (`results/`) |
 |---|---|---|
@@ -779,6 +855,7 @@ Kanal (bei Gruppen geteilt durch die Zahl der Kanäle), Aufrufe und Weiterleitun
 | `scripts/analysis/10_activity.py` | Aktivität und Reichweite | `activity/*`, `activity/charts/` |
 | `scripts/analysis/11_peak_weeks.py` | typische Begriffe der Spitzenwochen | `timeline/peak_weeks.csv` |
 | `scripts/analysis/12_countries.py` | Länder und Gruppen: Häufigkeit, Spitzenwochen, Darstellung je Gruppe | `countries/*`, `countries/charts/` |
+| `scripts/ai/03e_topics.py` | Themen laut KI pro Gruppe, Kanal und Phase | `ai/topics/*`, `ai/topics/charts/` |
 | `scripts/analysis/phrase_corrections.csv` | Korrekturliste des Autors | – |
 | `scripts/analysis/naming_terms.csv` | Liste der Benennungen und Personen | – |
 | `02`, `03b`, `04`, `05` | Zwischenschritte und Hilfsskripte (siehe oben) | – |

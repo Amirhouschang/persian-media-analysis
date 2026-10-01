@@ -19,9 +19,11 @@ Modellauswahl wurden über acht Versionen weiterentwickelt. Auch Irrwege sind do
 | Technik | [Ollama](https://ollama.com) auf dem eigenen Rechner – keine Cloud, keine Daten verlassen den Laptop |
 | Gewähltes Modell | **Gemma 4 31B** mit Hintergrundwissen |
 | Codebuch | Version **v8** (eingefroren) |
-| Übereinstimmung mit manueller Kodierung | **80,7 %** Thema und Ton exakt · **86,7 %** unter Berücksichtigung von Grenzfällen · Kappa Thema 0,85 / Ton 0,79 |
-| Hauptlauf | geschichtete Stichprobe, ca. 10.500 Beiträge (50 pro Kanal und Woche) |
-| Status | Hauptlauf ⏳ · Endvalidierung (Phase C) ⬜ |
+| Testset (150 Beiträge, zur Entwicklung genutzt) | 80,7 % Thema und Ton exakt · 86,7 % mit Grenzfällen · Kappa Thema 0,85 / Ton 0,79 |
+| **Endvalidierung (200 neue Beiträge)** | **Thema 72,5 %** (95-%-Intervall 65,9–78,2 %) · Ton 84,5 % · beides 62,5 % (55,6–68,9 %) · Kappa Thema 0,68 / Ton 0,46 |
+| Hauptlauf | 10.750 Beiträge, geschichtete Stichprobe (50 pro Kanal und Woche), gewichtet |
+| Verwendung | **Themen**: Anteile pro Gruppe und Phase ([04, Abschnitt 7](04_analyse.md#7-themen-laut-ki)) · **Ton**: nicht für Vergleiche zwischen Gruppen (Abschnitt 8) |
+| Status | Hauptlauf ✅ · Endvalidierung (Phase C) ✅ |
 
 ---
 
@@ -199,6 +201,7 @@ Der Modellvergleich und die ersten rund 2.800 Beiträge des Hauptlaufs liefen mi
 
 - Bei den Themen liegen die drei besten Modelle gleichauf; beim **Ton** ist Gemma 4 31B deutlich besser
   (93 % Übereinstimmung, Kappa 0,79 gegenüber 0,64 bei Gemma 4 26B). Der Ton ist eine Kernvariable der Framing-Analyse.
+  Die Endvalidierung zeigte später, dass auch Gemma 4 31B nicht-neutrale Töne oft übersieht (Abschnitt 8).
 - Nachteil: etwa viermal langsamer. Deshalb wird nicht das ganze Korpus, sondern eine **geschichtete Stichprobe** eingeordnet.
 
 ---
@@ -206,22 +209,89 @@ Der Modellvergleich und die ersten rund 2.800 Beiträge des Hauptlaufs liefen mi
 ## 7. Hauptlauf
 
 - **Stichprobe:** 50 Beiträge pro Kanal und Woche (Wochen mit weniger Beiträgen: alle), nur Beiträge mit mehr als 80 Zeichen.
-  Insgesamt ca. **10.500 Beiträge** aus 36 Wochen und 6 Kanälen.
+  Insgesamt **10.750 Beiträge** aus 36 Wochen und 6 Kanälen (je 1.800; IRNA 1.750, weil IRNA in einer Woche
+  der Internetsperre nichts veröffentlichte).
 - **Gewichtung:** Jeder Beitrag erhält ein Gewicht = Beiträge der Kanal-Woche / gezogene Beiträge. Anteile pro Kanal
-  werden gewichtet hochgerechnet, damit aktive Wochen nicht unterrepräsentiert sind.
+  werden gewichtet hochgerechnet, damit aktive Wochen nicht unterrepräsentiert sind. Zusammen stehen die 10.750
+  Beiträge für 231.406 Beiträge mit mehr als 80 Zeichen.
 - **Genauigkeit:** pro Kanal etwa ±2,5 Prozentpunkte, pro Kanal und Monat etwa ±6 Punkte.
 - **Gleiche Einstellungen wie im Test** (Prompt, Modell, Parameter) – nur so gelten die gemessenen Werte.
-- Laufzeit ca. 2 Tage; Fortsetzung nach Abbruch, zufällige Reihenfolge.
+- Rechenzeit 67 Stunden (Median 21 Sekunden pro Beitrag); Fortsetzung nach Abbruch, zufällige Reihenfolge.
 - Alle übrigen Kennzahlen (Umfang, Reichweite, Begriffsdichte, Zeitreihen) beruhen auf dem **vollständigen Korpus**.
 
 ---
 
-## 8. Endvalidierung (Phase C) – geplant
+## 8. Endvalidierung (Phase C) – Ergebnis
 
-- 200 neue Beiträge aus dem Hauptlauf, die weder im Testset waren noch vorher angesehen wurden.
-- Manuelle Kodierung **ohne Kenntnis der KI-Antwort**, erst danach Vergleich.
-- **Nach Phase C wird nichts mehr geändert.** Das Ergebnis wird so berichtet, wie es ausfällt – auch pro Kanal,
-  um zu prüfen, ob Fehler eine Quellengruppe stärker treffen als eine andere.
+**Vorgehen:** 200 neue Beiträge aus dem Hauptlauf (je Kanal 33–34), die weder im Testset waren noch vorher angesehen
+wurden. Manuelle Kodierung **ohne Kenntnis der KI-Antwort**, erst danach Vergleich (`03c_validation.py`).
+Nach Phase C wurde nichts mehr geändert.
+
+**95-%-Konfidenzintervall:** 200 Beiträge sind eine Stichprobe. Das Intervall (nach Wilson) gibt an, in welchem
+Bereich die wahre Übereinstimmung im ganzen Hauptlauf mit 95 % Sicherheit liegt.
+
+| | Testset (150) | **Endvalidierung (200)** | 95-%-Intervall |
+|---|---|---|---|
+| Thema | 86,7 % | **72,5 %** | 65,9–78,2 % |
+| Thema mit Grenzfällen | 93,3 % | 77,0 % | 70,7–82,3 % |
+| Ton | 93,3 % | **84,5 %** | 78,8–88,9 % |
+| Thema und Ton | 80,7 % | **62,5 %** | 55,6–68,9 % |
+| Thema und Ton mit Grenzfällen | 86,7 % | 66,5 % | 59,7–72,7 % |
+| Kappa Thema / Ton | 0,85 / 0,79 | **0,68 / 0,46** | |
+
+- **Der Abstand ist echt:** Die Intervalle von Testset (73,6–86,2 %) und Endvalidierung überschneiden sich nicht.
+  Das Codebuch wurde über acht Versionen am Testset verbessert und passt deshalb zu genau diesen Beiträgen.
+  Die Endvalidierung zeigt den Wert für unbekannte Beiträge – dafür war sie geplant.
+
+**Pro Kanal** (Thema und Ton; je 33–34 Beiträge, deshalb breite Intervalle):
+
+| IRIB News | Fars News | IRNA | Mehr News | Jamaran | Tasnim News |
+|---|---|---|---|---|---|
+| 82,4 % | 72,7 % | 69,7 % | 51,5 % | 50,0 % | 48,5 % |
+
+Beim Thema allein liegt Jamaran am niedrigsten (55,9 %, Intervall 39,5–71,1 %).
+
+### Wo die KI beim Thema abweicht
+
+| Kategorie | von der KI richtig erkannt | Richtung der Fehler |
+|---|---|---|
+| mourning_commemoration | 12 von 12 | – |
+| military | 19 von 21 | die KI vergibt *military* zu oft: 32-mal statt 21-mal |
+| foreign_affairs | 16 von 18 | – |
+| economy | 10 von 13 | – |
+| domestic_politics | 26 von 37 | – |
+| other | 31 von 49 | die KI wählt lieber ein Sachthema (*mourning*, *domestic_politics*) |
+| **diplomacy** | **17 von 31** | 10-mal *military* |
+
+- **Diplomatie → Militär:** Fast alles Analysen des Krieges („US-Experte: Iran im Vorteil“, Analysen von CNN oder der
+  Financial Times). Die Referenz sah Diplomatie, die KI Militär; bei 4 der 10 war Militär oder Sonstiges als Nebenthema
+  vermerkt – echte Grenzfälle.
+- **Folge:** Der Anteil *military* wird überschätzt, *diplomacy* unterschätzt. Da das in allen Phasen ähnlich
+  geschieht, sind Veränderungen über die Zeit verlässlicher als die absoluten Anteile.
+
+### Ton: die KI ist zu vorsichtig – und das je Gruppe verschieden
+
+- Von 40 Beiträgen mit nicht-neutralem Ton erkennt die KI nur **18 (45 %)**; am häufigsten übersehen: *accusatory*
+  (10-mal *neutral*). Wenn die KI einen Ton vergibt, stimmt er meist (18 von 23).
+- Die hohe Übereinstimmung beim Ton (84,5 %) kommt vor allem daher, dass 80 % der Beiträge neutral sind. Kappa 0,46
+  zeigt, dass die seltenen Töne nur mäßig erkannt werden.
+
+| Anteil nicht-neutral | manuell | KI |
+|---|---|---|
+| staatlich (100 Beiträge) | 20 % | **8 %** |
+| IRGC-nah (66) | 21 % | 18 % |
+| Jamaran (34) | 18 % | 9 % |
+
+Nach der manuellen Kodierung haben alle drei Gruppen gleich oft einen nicht-neutralen Ton. Die KI würde IRGC-nahe
+Kanäle doppelt so oft als nicht neutral zeigen wie staatliche – **ein Unterschied, den es in der Referenz nicht gibt.**
+
+### Entscheidung
+
+- **Themen werden verwendet:** gewichtete Anteile pro Gruppe und Phase, mit Trefferquote und der bekannten Richtung der
+  Fehler ([04, Abschnitt 7](04_analyse.md#7-themen-laut-ki)).
+- **Der Ton wird nicht für Vergleiche zwischen Gruppen verwendet.** Die Sprache der Gruppen (Rache, Verbrechen,
+  Gegnerbegriffe, Benennungen) misst die Wortanalyse in [04](04_analyse.md) am vollständigen Korpus.
+- Das Ergebnis wird so berichtet, wie es ausfiel; Codebuch und Modell blieben unverändert.
 
 ---
 
@@ -236,6 +306,8 @@ Der Modellvergleich und die ersten rund 2.800 Beiträge des Hauptlaufs liefen mi
   optimistisch; maßgeblich ist Phase C.
 - **Hardware** begrenzt Modellgröße und Stichprobe.
 - **Setzung zu rechtlichen Begriffen** (Regel 8) beeinflusst die Häufigkeit von *accusatory*; sie ist offen dokumentiert.
+  Zusammen mit „im Zweifel *neutral*“ trägt sie vermutlich dazu bei, dass die KI nicht-neutrale Töne übersieht.
+- **Validierung pro Kanal** beruht auf je 33–34 Beiträgen; Unterschiede zwischen Kanälen sind deshalb unsicher.
 
 ---
 
@@ -246,6 +318,8 @@ Der Modellvergleich und die ersten rund 2.800 Beiträge des Hauptlaufs liefen mi
 3. **Übereinstimmung ist nicht Wahrheit.** Wenn KI und Mensch abweichen, liegt der Fehler nicht immer bei der KI.
 4. **Jede Anpassung am selben Testset schönt die Zahl.** Deshalb: einfrieren, dann an unbekannten Daten messen.
 5. **Hardware ist Teil der Methode.** Laufzeit, Arbeitsspeicher und Ruhezustand müssen eingeplant werden.
+6. **Die ehrliche Zahl kommt zuletzt.** 80,7 % am Testset wurden an 200 neuen Beiträgen zu 62,5 % – und erst die
+   Endvalidierung zeigte, dass die Fehler beim Ton nicht zufällig, sondern je Gruppe verschieden sind.
 
 ---
 
@@ -259,6 +333,9 @@ Der Modellvergleich und die ersten rund 2.800 Beiträge des Hauptlaufs liefen mi
 | `scripts/ai/ai_core.py` | Prompt bauen, Anfrage an Ollama, Antwort prüfen |
 | `scripts/ai/03a_model_comparison.py` | Testset ziehen, Modelle vergleichen, Excel-Auswertung |
 | `scripts/ai/03_ai_classify.py` | Hauptlauf mit geschichteter Stichprobe und Gewichten |
+| `scripts/ai/03c_validation.py` | Endvalidierung: 200 Beiträge ziehen, mit der KI vergleichen, Konfidenzintervalle |
+| `scripts/ai/03d_export_results.py` | Ergebnisse ohne Beitragstexte nach `results/ai/` exportieren |
+| `scripts/ai/03e_topics.py` | gewichtete Themenanteile pro Gruppe, Kanal und Phase, Diagramm |
 
 **Einstellungen:** `temperature 0`, `seed 42`, `num_ctx 8192`, JSON-Ausgabe erzwungen, Denkmodus aus,
 maximal 2.000 Zeichen pro Beitrag, ein Wiederholungsversuch bei ungültiger Antwort.

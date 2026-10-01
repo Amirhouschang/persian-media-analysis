@@ -21,7 +21,9 @@ DRAW
 
 EVALUATE
   Joins your coding with the main-run results and writes data/ki/validation_phase_c_results.xlsx:
-    summary     – agreement (exact and including your secondary topic), Cohen's kappa
+    summary     – agreement (exact and including your secondary topic), Cohen's kappa,
+                  95% confidence interval (Wilson) for every agreement: with 200 posts the measured share is
+                  an estimate – the true agreement in the whole main run lies with 95% certainty in this range
     per_channel – agreement per channel (are some sources classified worse than others?)
     confusion   – which categories are confused
     details     – every post with your coding, the AI coding and the AI's reasoning
@@ -86,6 +88,17 @@ def draw():
 # ---------------------------------------------------------------
 # STEP 2 – EVALUATE (after the main run)
 # ---------------------------------------------------------------
+def wilson(hits, n, z=1.96):
+    """95% confidence interval (Wilson) for a share: where the true agreement lies with 95% certainty."""
+    if n == 0:
+        return float("nan"), float("nan")
+    p = hits / n
+    d = 1 + z * z / n
+    centre = (p + z * z / (2 * n)) / d
+    half = z * (p * (1 - p) / n + z * z / (4 * n * n)) ** 0.5 / d
+    return round((centre - half) * 100, 1), round((centre + half) * 100, 1)
+
+
 def kappa(a, b):
     """Cohen's kappa: agreement corrected for chance."""
     n = len(a)
@@ -99,14 +112,14 @@ def agreement(d):
     t_ok = d.topic_manual == d.topic
     o_ok = d.tone_manual == d.tone
     t_ok2 = t_ok | ((d.topic2_manual != "") & (d.topic == d.topic2_manual))
-    return {
-        "posts": len(d),
-        "topic_match_%": round(t_ok.mean() * 100, 1),
-        "tone_match_%": round(o_ok.mean() * 100, 1),
-        "both_match_%": round((t_ok & o_ok).mean() * 100, 1),
-        "topic_match_incl_2_%": round(t_ok2.mean() * 100, 1),
-        "both_match_incl_2_%": round((t_ok2 & o_ok).mean() * 100, 1),
-    }
+    result = {"posts": len(d)}
+    for name, ok in [("topic_match", t_ok), ("tone_match", o_ok), ("both_match", t_ok & o_ok),
+                     ("topic_match_incl_2", t_ok2), ("both_match_incl_2", t_ok2 & o_ok)]:
+        low, high = wilson(int(ok.sum()), len(d))
+        result[f"{name}_%"] = round(ok.mean() * 100, 1)
+        result[f"{name}_ci95_low"] = low
+        result[f"{name}_ci95_high"] = high
+    return result
 
 
 def evaluate():

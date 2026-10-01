@@ -80,9 +80,19 @@ Aufrufe pro Kanal, fehlende Tage, Beiträge pro Phase und Tag sowie die Woche vo
 | Arabische und lateinische Ziffern → persisch | `2026` → `۲۰۲۶` |
 | Vokalzeichen und Dehnungszeichen entfernen | `شَهید` → `شهید`, `ســـلام` → `سلام` |
 | Halbleerzeichen statt Leerzeichen nach der Vorsilbe می / نمی | `می گوید` → `می‌گوید` |
+| Halbleerzeichen vor der Pluralendung ها / های und vor ترین | `کشور های` → `کشورهای`, `برنامه ها` → `برنامه‌ها`, `بزرگ ترین` → `بزرگ‌ترین` |
+| Halbleerzeichen vor ای nach einem Wort auf ه | `منطقه ای` → `منطقه‌ای` |
+| Alef mit Hamza → Alef, beide Schreibweisen zählen als ein Wort | `تأکید` → `تاکید` |
+| He mit Hamza → He (schreibt nur ein Kanal) | `تنگۀ هرمز` → `تنگه هرمز` |
+| Zusammengesetzte Wörter mit Leerzeichen verbinden | `بین المللی` → `بین‌المللی`, `گفت و گو` → `گفت‌وگو`, `آموزش و پرورش`, `سیستان و بلوچستان` … |
+| Kein Halbleerzeichen nach Buchstaben, die nicht nach links verbinden (ا د ذ ر ز ژ و) | `کشور‌های` → `کشورهای` |
 | Füllwörter entfernen (nur in `tokens`) | `از`, `به`, `که`, `این` … |
 
 Die persischen Buchstaben پ چ ژ گ und das Halbleerzeichen bleiben erhalten.
+
+Die Regeln ab der Pluralendung kamen in einer zweiten Runde hinzu: Die Wortanalyse (Seite 04) zeigte, dass dasselbe
+Wort in mehreren Schreibweisen gezählt wurde (`کشورهای` und `کشور های`, `تأکید` und `تاکید`) und dass bei
+`بین المللی` nach dem Entfernen der Füllwörter nur `المللی` übrig blieb. Danach wurde die Bereinigung erneut ausgeführt.
 
 **Warum nicht `hazm`?** Die Bibliothek `hazm` erzwingt eine alte `numpy`-Version, mit der `pandas` in dieser Umgebung
 nicht mehr läuft. Die Regeln sind deshalb direkt im Skript umgesetzt; nur die Füllwortliste stammt aus `hazm`
@@ -112,6 +122,7 @@ nicht mehr läuft. Die Regeln sind deshalb direkt im Skript umgesetzt; nur die F
 | Beiträge mit persischem Text, die nach der Bereinigung leer sind | 22 – geprüft: nur Werbezeilen |
 | 20 Beiträge mit den meisten entfernten Wörtern | ✅ geprüft: nur Werbung, Links, `@Erwähnungen` entfernt |
 | Zufallsstichprobe von 20 Beiträgen, vollständig gelesen | ✅ korrekt |
+| Allein stehendes ها / های nach der zweiten Runde | 37 von 328.330 Beiträgen – vernachlässigbar |
 
 Der erste Lauf trennte Wörter, die mit می beginnen (`میدان` → `می‌دان`). Die Regel wurde auf `می` mit
 folgendem Leerzeichen beschränkt und die Bereinigung erneut ausgeführt.

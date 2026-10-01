@@ -79,9 +79,19 @@ missing days, posts per phase and day, and the week before and after 28 February
 | Arabic and Latin digits → Persian | `2026` → `۲۰۲۶` |
 | Remove diacritics and the stretching character | `شَهید` → `شهید`, `ســـلام` → `سلام` |
 | Half-space instead of a space after the prefix می / نمی | `می گوید` → `می‌گوید` |
+| Half-space before the plural ending ها / های and before ترین | `کشور های` → `کشورهای`, `برنامه ها` → `برنامه‌ها`, `بزرگ ترین` → `بزرگ‌ترین` |
+| Half-space before ای after a word ending in ه | `منطقه ای` → `منطقه‌ای` |
+| Alef with hamza → alef, both spellings count as one word | `تأکید` → `تاکید` |
+| Heh with hamza → heh (used by only one channel) | `تنگۀ هرمز` → `تنگه هرمز` |
+| Join compounds written with spaces | `بین المللی` → `بین‌المللی`, `گفت و گو` → `گفت‌وگو`, `آموزش و پرورش`, `سیستان و بلوچستان` … |
+| No half-space after letters that never join to the left (ا د ذ ر ز ژ و) | `کشور‌های` → `کشورهای` |
 | Remove stop words (only in `tokens`) | `از`, `به`, `که`, `این` … |
 
 The Persian letters پ چ ژ گ and the half-space (zero-width non-joiner) are kept.
+
+The rules from the plural ending onwards were added in a second round: the word analysis (page 04) showed that the
+same word was counted in several spellings (`کشورهای` and `کشور های`, `تأکید` and `تاکید`) and that only `المللی`
+was left of `بین المللی` after removing stop words. The cleaning was then run again.
 
 **Why not `hazm`?** The library `hazm` forces an old `numpy` version that breaks `pandas` in this environment.
 The rules are therefore implemented directly in the script; only hazm's stop word list is used (`stopwords_fa.txt`, MIT licence).
@@ -110,6 +120,7 @@ The rules are therefore implemented directly in the script; only hazm's stop wor
 | Posts with Persian text that are empty after cleaning | 22 – checked: only advertising lines |
 | 20 posts with the most removed words | ✅ checked: only advertising, links, `@mentions` removed |
 | Random sample of 20 posts, read in full | ✅ correct |
+| Stand-alone ها / های after the second round | 37 of 328,330 posts – negligible |
 
 The first run split words beginning with می (`میدان` → `می‌دان`). The rule was restricted to
 `می` followed by a space, and the cleaning was run again.

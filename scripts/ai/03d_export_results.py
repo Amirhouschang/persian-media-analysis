@@ -17,6 +17,11 @@ WHAT IT DOES
   data/ki/classification_<model>_..._<version>.csv  -> main_run_<version>.csv (AI results of the main run)
   data/ki/validation_phase_c.csv                    -> validation_phase_c_labels.csv
   data/ki/validation_phase_c_results.xlsx           -> validation_phase_c_summary.csv / _per_channel.csv
+
+CONFIDENCE INTERVALS
+  Agreement measured on a sample (150 test posts, 200 validation posts) is an estimate. For every agreement
+  the 95% confidence interval (Wilson) is given: *_ci95_low / *_ci95_high = the range in which the true
+  agreement lies with 95% certainty. Model comparison: computed here; Phase C: computed in 03c_validation.py.
 """
 
 from collections import Counter
@@ -34,6 +39,17 @@ def add_url(df):
     df = df.copy()
     df.insert(df.columns.get_loc("id") + 1, "url", "https://t.me/" + df["kanal"] + "/" + df["id"].astype(str))
     return df
+
+
+def wilson(hits, n, z=1.96):
+    """95% confidence interval (Wilson) for a share: where the true agreement lies with 95% certainty."""
+    if n == 0:
+        return float("nan"), float("nan")
+    p = hits / n
+    d = 1 + z * z / n
+    centre = (p + z * z / (2 * n)) / d
+    half = z * (p * (1 - p) / n + z * z / (4 * n * n)) ** 0.5 / d
+    return round((centre - half) * 100, 1), round((centre + half) * 100, 1)
 
 
 def kappa(a, b):
@@ -63,12 +79,23 @@ for path in sorted(SOURCE.glob("model_comparison_*.xlsx")):
     det["topic2_manual"] = det["topic2_manual"].fillna("")
 
     summary = pd.read_excel(path, sheet_name="summary").drop(columns=["run", "sec_per_post"], errors="ignore")
-    extra = det.groupby("model").apply(lambda g: pd.Series({
-        "kappa_topic": kappa(g.topic_manual.values, g.topic_ai.values),
-        "kappa_tone": kappa(g.tone_manual.values, g.tone_ai.values),
-        "sec_per_post_median": round(g.seconds.median(), 1),
-        "n_posts": len(g),
-    }))
+    def model_stats(g):
+        t_ok = g.topic_manual == g.topic_ai
+        o_ok = g.tone_manual == g.tone_ai
+        t_ok2 = t_ok | ((g.topic2_manual != "") & (g.topic_ai == g.topic2_manual))
+        stats = {}
+        for name, ok in [("topic_match", t_ok), ("tone_match", o_ok), ("both_match", t_ok & o_ok),
+                         ("both_match_incl_2", t_ok2 & o_ok)]:
+            stats[f"{name}_ci95_low"], stats[f"{name}_ci95_high"] = wilson(int(ok.sum()), len(g))
+        return pd.Series({
+            "kappa_topic": kappa(g.topic_manual.values, g.topic_ai.values),
+            "kappa_tone": kappa(g.tone_manual.values, g.tone_ai.values),
+            **stats,
+            "sec_per_post_median": round(g.seconds.median(), 1),
+            "n_posts": len(g),
+        })
+
+    extra = det.groupby("model").apply(model_stats)
     extra["n_posts"] = extra["n_posts"].astype(int)
     save(summary.merge(extra, left_on="model", right_index=True), f"model_comparison_{version}_summary.csv")
 
