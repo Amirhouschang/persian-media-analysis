@@ -1,0 +1,406 @@
+﻿level,name,phase,topic,posts_drawn,share_pct
+group,state,all,military,847,16.6
+group,state,all,diplomacy,698,12.9
+group,state,all,domestic_politics,861,14.8
+group,state,all,economy,472,8.0
+group,state,all,ideology_propaganda,358,6.9
+group,state,all,mourning_commemoration,454,9.7
+group,state,all,resistance_axis,333,6.5
+group,state,all,foreign_affairs,478,8.5
+group,state,all,other,849,16.2
+group,irgc_affiliated,all,military,724,22.5
+group,irgc_affiliated,all,diplomacy,436,12.0
+group,irgc_affiliated,all,domestic_politics,587,13.6
+group,irgc_affiliated,all,economy,335,8.1
+group,irgc_affiliated,all,ideology_propaganda,249,7.6
+group,irgc_affiliated,all,mourning_commemoration,272,9.4
+group,irgc_affiliated,all,resistance_axis,304,9.1
+group,irgc_affiliated,all,foreign_affairs,306,7.9
+group,irgc_affiliated,all,other,387,9.8
+group,reformist,all,military,339,22.2
+group,reformist,all,diplomacy,354,20.0
+group,reformist,all,domestic_politics,310,14.5
+group,reformist,all,economy,186,9.7
+group,reformist,all,ideology_propaganda,74,4.3
+group,reformist,all,mourning_commemoration,117,6.8
+group,reformist,all,resistance_axis,102,5.8
+group,reformist,all,foreign_affairs,201,10.4
+group,reformist,all,other,117,6.3
+group,state,before_war,military,53,4.2
+group,state,before_war,diplomacy,162,13.8
+group,state,before_war,domestic_politics,305,23.9
+group,state,before_war,economy,145,10.8
+group,state,before_war,ideology_propaganda,80,7.3
+group,state,before_war,mourning_commemoration,52,4.5
+group,state,before_war,resistance_axis,44,3.8
+group,state,before_war,foreign_affairs,142,11.1
+group,state,before_war,other,241,20.5
+group,irgc_affiliated,before_war,military,45,5.4
+group,irgc_affiliated,before_war,diplomacy,90,11.6
+group,irgc_affiliated,before_war,domestic_politics,239,26.1
+group,irgc_affiliated,before_war,economy,108,12.2
+group,irgc_affiliated,before_war,ideology_propaganda,59,7.2
+group,irgc_affiliated,before_war,mourning_commemoration,36,4.2
+group,irgc_affiliated,before_war,resistance_axis,32,4.5
+group,irgc_affiliated,before_war,foreign_affairs,108,13.2
+group,irgc_affiliated,before_war,other,129,15.7
+group,reformist,before_war,military,22,4.9
+group,reformist,before_war,diplomacy,87,23.2
+group,reformist,before_war,domestic_politics,141,30.6
+group,reformist,before_war,economy,45,10.3
+group,reformist,before_war,ideology_propaganda,19,5.3
+group,reformist,before_war,mourning_commemoration,15,2.9
+group,reformist,before_war,resistance_axis,17,3.7
+group,reformist,before_war,foreign_affairs,61,12.7
+group,reformist,before_war,other,26,6.4
+group,state,war,military,310,36.1
+group,state,war,diplomacy,119,12.5
+group,state,war,domestic_politics,87,10.0
+group,state,war,economy,52,6.3
+group,state,war,ideology_propaganda,91,11.4
+group,state,war,mourning_commemoration,68,8.0
+group,state,war,resistance_axis,39,4.8
+group,state,war,foreign_affairs,49,5.7
+group,state,war,other,48,5.2
+group,irgc_affiliated,war,military,271,45.2
+group,irgc_affiliated,war,diplomacy,38,6.7
+group,irgc_affiliated,war,domestic_politics,53,8.7
+group,irgc_affiliated,war,economy,34,5.8
+group,irgc_affiliated,war,ideology_propaganda,69,12.4
+group,irgc_affiliated,war,mourning_commemoration,41,7.3
+group,irgc_affiliated,war,resistance_axis,44,7.9
+group,irgc_affiliated,war,foreign_affairs,19,3.2
+group,irgc_affiliated,war,other,15,2.7
+group,reformist,war,military,119,41.7
+group,reformist,war,diplomacy,52,18.2
+group,reformist,war,domestic_politics,17,6.0
+group,reformist,war,economy,30,10.1
+group,reformist,war,ideology_propaganda,14,5.1
+group,reformist,war,mourning_commemoration,17,5.7
+group,reformist,war,resistance_axis,12,4.5
+group,reformist,war,foreign_affairs,15,5.4
+group,reformist,war,other,9,3.2
+group,state,ceasefire,military,274,13.4
+group,state,ceasefire,diplomacy,281,14.7
+group,state,ceasefire,domestic_politics,235,11.8
+group,state,ceasefire,economy,163,7.7
+group,state,ceasefire,ideology_propaganda,133,6.5
+group,state,ceasefire,mourning_commemoration,225,11.8
+group,state,ceasefire,resistance_axis,151,7.6
+group,state,ceasefire,foreign_affairs,156,8.0
+group,state,ceasefire,other,337,18.5
+group,irgc_affiliated,ceasefire,military,204,14.8
+group,irgc_affiliated,ceasefire,diplomacy,225,16.8
+group,irgc_affiliated,ceasefire,domestic_politics,155,11.2
+group,irgc_affiliated,ceasefire,economy,102,7.5
+group,irgc_affiliated,ceasefire,ideology_propaganda,86,6.8
+group,irgc_affiliated,ceasefire,mourning_commemoration,131,12.1
+group,irgc_affiliated,ceasefire,resistance_axis,135,10.3
+group,irgc_affiliated,ceasefire,foreign_affairs,118,9.7
+group,irgc_affiliated,ceasefire,other,140,10.8
+group,reformist,ceasefire,military,85,13.6
+group,reformist,ceasefire,diplomacy,160,25.1
+group,reformist,ceasefire,domestic_politics,83,12.6
+group,reformist,ceasefire,economy,60,9.1
+group,reformist,ceasefire,ideology_propaganda,22,3.6
+group,reformist,ceasefire,mourning_commemoration,59,9.1
+group,reformist,ceasefire,resistance_axis,49,7.7
+group,reformist,ceasefire,foreign_affairs,81,12.5
+group,reformist,ceasefire,other,44,6.7
+group,state,after_truce_collapse,military,210,14.3
+group,state,after_truce_collapse,diplomacy,136,9.6
+group,state,after_truce_collapse,domestic_politics,234,18.5
+group,state,after_truce_collapse,economy,112,8.1
+group,state,after_truce_collapse,ideology_propaganda,54,4.1
+group,state,after_truce_collapse,mourning_commemoration,109,10.2
+group,state,after_truce_collapse,resistance_axis,99,7.4
+group,state,after_truce_collapse,foreign_affairs,131,9.9
+group,state,after_truce_collapse,other,223,17.9
+group,irgc_affiliated,after_truce_collapse,military,204,23.2
+group,irgc_affiliated,after_truce_collapse,diplomacy,83,8.8
+group,irgc_affiliated,after_truce_collapse,domestic_politics,140,15.4
+group,irgc_affiliated,after_truce_collapse,economy,91,9.3
+group,irgc_affiliated,after_truce_collapse,ideology_propaganda,35,4.1
+group,irgc_affiliated,after_truce_collapse,mourning_commemoration,64,10.1
+group,irgc_affiliated,after_truce_collapse,resistance_axis,93,11.0
+group,irgc_affiliated,after_truce_collapse,foreign_affairs,61,6.4
+group,irgc_affiliated,after_truce_collapse,other,103,11.7
+group,reformist,after_truce_collapse,military,113,27.8
+group,reformist,after_truce_collapse,diplomacy,55,11.5
+group,reformist,after_truce_collapse,domestic_politics,69,15.6
+group,reformist,after_truce_collapse,economy,51,10.0
+group,reformist,after_truce_collapse,ideology_propaganda,19,4.1
+group,reformist,after_truce_collapse,mourning_commemoration,26,6.4
+group,reformist,after_truce_collapse,resistance_axis,24,5.4
+group,reformist,after_truce_collapse,foreign_affairs,44,10.5
+group,reformist,after_truce_collapse,other,38,8.7
+channel,IRNA,all,military,200,11.1
+channel,IRNA,all,diplomacy,290,15.7
+channel,IRNA,all,domestic_politics,270,15.6
+channel,IRNA,all,economy,153,7.7
+channel,IRNA,all,ideology_propaganda,71,3.9
+channel,IRNA,all,mourning_commemoration,116,7.8
+channel,IRNA,all,resistance_axis,100,6.0
+channel,IRNA,all,foreign_affairs,185,10.1
+channel,IRNA,all,other,365,22.1
+channel,IRIB News,all,military,365,23.6
+channel,IRIB News,all,diplomacy,212,11.7
+channel,IRIB News,all,domestic_politics,304,14.7
+channel,IRIB News,all,economy,202,10.9
+channel,IRIB News,all,ideology_propaganda,125,7.3
+channel,IRIB News,all,mourning_commemoration,125,7.5
+channel,IRIB News,all,resistance_axis,101,6.1
+channel,IRIB News,all,foreign_affairs,158,8.5
+channel,IRIB News,all,other,208,9.6
+channel,Mehr News,all,military,282,17.2
+channel,Mehr News,all,diplomacy,196,10.7
+channel,Mehr News,all,domestic_politics,287,14.1
+channel,Mehr News,all,economy,117,5.9
+channel,Mehr News,all,ideology_propaganda,162,9.8
+channel,Mehr News,all,mourning_commemoration,213,13.6
+channel,Mehr News,all,resistance_axis,132,7.3
+channel,Mehr News,all,foreign_affairs,135,6.6
+channel,Mehr News,all,other,276,14.8
+channel,Tasnim News,all,military,323,20.0
+channel,Tasnim News,all,diplomacy,224,12.2
+channel,Tasnim News,all,domestic_politics,263,12.6
+channel,Tasnim News,all,economy,143,7.1
+channel,Tasnim News,all,ideology_propaganda,136,8.1
+channel,Tasnim News,all,mourning_commemoration,163,11.1
+channel,Tasnim News,all,resistance_axis,175,9.9
+channel,Tasnim News,all,foreign_affairs,179,9.1
+channel,Tasnim News,all,other,194,10.0
+channel,Fars News,all,military,401,26.6
+channel,Fars News,all,diplomacy,212,11.6
+channel,Fars News,all,domestic_politics,324,15.4
+channel,Fars News,all,economy,192,9.8
+channel,Fars News,all,ideology_propaganda,113,6.7
+channel,Fars News,all,mourning_commemoration,109,6.8
+channel,Fars News,all,resistance_axis,129,7.9
+channel,Fars News,all,foreign_affairs,127,6.0
+channel,Fars News,all,other,193,9.3
+channel,Jamaran,all,military,339,22.2
+channel,Jamaran,all,diplomacy,354,20.0
+channel,Jamaran,all,domestic_politics,310,14.5
+channel,Jamaran,all,economy,186,9.7
+channel,Jamaran,all,ideology_propaganda,74,4.3
+channel,Jamaran,all,mourning_commemoration,117,6.8
+channel,Jamaran,all,resistance_axis,102,5.8
+channel,Jamaran,all,foreign_affairs,201,10.4
+channel,Jamaran,all,other,117,6.3
+channel,IRNA,before_war,military,9,2.6
+channel,IRNA,before_war,diplomacy,63,18.9
+channel,IRNA,before_war,domestic_politics,70,18.5
+channel,IRNA,before_war,economy,53,13.1
+channel,IRNA,before_war,ideology_propaganda,11,3.3
+channel,IRNA,before_war,mourning_commemoration,12,3.5
+channel,IRNA,before_war,resistance_axis,11,3.0
+channel,IRNA,before_war,foreign_affairs,52,12.9
+channel,IRNA,before_war,other,96,24.2
+channel,IRIB News,before_war,military,23,5.3
+channel,IRIB News,before_war,diplomacy,55,13.5
+channel,IRIB News,before_war,domestic_politics,124,29.6
+channel,IRIB News,before_war,economy,55,12.7
+channel,IRIB News,before_war,ideology_propaganda,31,7.6
+channel,IRIB News,before_war,mourning_commemoration,19,4.5
+channel,IRIB News,before_war,resistance_axis,9,2.3
+channel,IRIB News,before_war,foreign_affairs,36,7.5
+channel,IRIB News,before_war,other,73,16.9
+channel,Mehr News,before_war,military,21,4.7
+channel,Mehr News,before_war,diplomacy,44,10.4
+channel,Mehr News,before_war,domestic_politics,111,24.1
+channel,Mehr News,before_war,economy,37,8.0
+channel,Mehr News,before_war,ideology_propaganda,38,10.0
+channel,Mehr News,before_war,mourning_commemoration,21,5.2
+channel,Mehr News,before_war,resistance_axis,24,5.4
+channel,Mehr News,before_war,foreign_affairs,54,12.1
+channel,Mehr News,before_war,other,72,20.1
+channel,Tasnim News,before_war,military,22,5.2
+channel,Tasnim News,before_war,diplomacy,50,12.5
+channel,Tasnim News,before_war,domestic_politics,114,25.6
+channel,Tasnim News,before_war,economy,46,10.6
+channel,Tasnim News,before_war,ideology_propaganda,32,7.8
+channel,Tasnim News,before_war,mourning_commemoration,23,4.7
+channel,Tasnim News,before_war,resistance_axis,23,5.7
+channel,Tasnim News,before_war,foreign_affairs,57,13.8
+channel,Tasnim News,before_war,other,55,14.0
+channel,Fars News,before_war,military,23,5.7
+channel,Fars News,before_war,diplomacy,40,9.9
+channel,Fars News,before_war,domestic_politics,125,27.0
+channel,Fars News,before_war,economy,62,15.1
+channel,Fars News,before_war,ideology_propaganda,27,6.1
+channel,Fars News,before_war,mourning_commemoration,13,3.3
+channel,Fars News,before_war,resistance_axis,9,2.1
+channel,Fars News,before_war,foreign_affairs,51,11.9
+channel,Fars News,before_war,other,74,18.8
+channel,Jamaran,before_war,military,22,4.9
+channel,Jamaran,before_war,diplomacy,87,23.2
+channel,Jamaran,before_war,domestic_politics,141,30.6
+channel,Jamaran,before_war,economy,45,10.3
+channel,Jamaran,before_war,ideology_propaganda,19,5.3
+channel,Jamaran,before_war,mourning_commemoration,15,2.9
+channel,Jamaran,before_war,resistance_axis,17,3.7
+channel,Jamaran,before_war,foreign_affairs,61,12.7
+channel,Jamaran,before_war,other,26,6.4
+channel,IRNA,war,military,83,28.4
+channel,IRNA,war,diplomacy,62,21.5
+channel,IRNA,war,domestic_politics,32,11.3
+channel,IRNA,war,economy,15,5.0
+channel,IRNA,war,ideology_propaganda,23,8.2
+channel,IRNA,war,mourning_commemoration,20,7.2
+channel,IRNA,war,resistance_axis,12,4.3
+channel,IRNA,war,foreign_affairs,16,5.7
+channel,IRNA,war,other,25,8.3
+channel,IRIB News,war,military,129,44.6
+channel,IRIB News,war,diplomacy,26,9.1
+channel,IRIB News,war,domestic_politics,24,8.4
+channel,IRIB News,war,economy,21,7.9
+channel,IRIB News,war,ideology_propaganda,28,9.8
+channel,IRIB News,war,mourning_commemoration,17,5.3
+channel,IRIB News,war,resistance_axis,16,6.1
+channel,IRIB News,war,foreign_affairs,20,7.3
+channel,IRIB News,war,other,4,1.5
+channel,Mehr News,war,military,98,33.4
+channel,Mehr News,war,diplomacy,31,10.2
+channel,Mehr News,war,domestic_politics,31,10.6
+channel,Mehr News,war,economy,16,5.6
+channel,Mehr News,war,ideology_propaganda,40,14.7
+channel,Mehr News,war,mourning_commemoration,31,10.7
+channel,Mehr News,war,resistance_axis,11,3.9
+channel,Mehr News,war,foreign_affairs,13,4.4
+channel,Mehr News,war,other,19,6.5
+channel,Tasnim News,war,military,127,42.2
+channel,Tasnim News,war,diplomacy,25,8.3
+channel,Tasnim News,war,domestic_politics,23,7.6
+channel,Tasnim News,war,economy,15,4.8
+channel,Tasnim News,war,ideology_propaganda,40,13.8
+channel,Tasnim News,war,mourning_commemoration,26,9.0
+channel,Tasnim News,war,resistance_axis,23,8.0
+channel,Tasnim News,war,foreign_affairs,8,2.8
+channel,Tasnim News,war,other,10,3.5
+channel,Fars News,war,military,144,49.8
+channel,Fars News,war,diplomacy,13,4.3
+channel,Fars News,war,domestic_politics,30,10.3
+channel,Fars News,war,economy,19,7.3
+channel,Fars News,war,ideology_propaganda,29,10.3
+channel,Fars News,war,mourning_commemoration,15,4.6
+channel,Fars News,war,resistance_axis,21,7.8
+channel,Fars News,war,foreign_affairs,11,4.0
+channel,Fars News,war,other,5,1.6
+channel,Jamaran,war,military,119,41.7
+channel,Jamaran,war,diplomacy,52,18.2
+channel,Jamaran,war,domestic_politics,17,6.0
+channel,Jamaran,war,economy,30,10.1
+channel,Jamaran,war,ideology_propaganda,14,5.1
+channel,Jamaran,war,mourning_commemoration,17,5.7
+channel,Jamaran,war,resistance_axis,12,4.5
+channel,Jamaran,war,foreign_affairs,15,5.4
+channel,Jamaran,war,other,9,3.2
+channel,IRNA,ceasefire,military,65,9.7
+channel,IRNA,ceasefire,diplomacy,118,17.9
+channel,IRNA,ceasefire,domestic_politics,71,11.2
+channel,IRNA,ceasefire,economy,48,6.8
+channel,IRNA,ceasefire,ideology_propaganda,24,3.6
+channel,IRNA,ceasefire,mourning_commemoration,50,8.0
+channel,IRNA,ceasefire,resistance_axis,46,6.5
+channel,IRNA,ceasefire,foreign_affairs,67,9.9
+channel,IRNA,ceasefire,other,158,26.4
+channel,IRIB News,ceasefire,military,117,18.1
+channel,IRIB News,ceasefire,diplomacy,80,12.6
+channel,IRIB News,ceasefire,domestic_politics,89,13.4
+channel,IRIB News,ceasefire,economy,79,12.3
+channel,IRIB News,ceasefire,ideology_propaganda,50,7.7
+channel,IRIB News,ceasefire,mourning_commemoration,66,9.9
+channel,IRIB News,ceasefire,resistance_axis,45,6.9
+channel,IRIB News,ceasefire,foreign_affairs,57,9.1
+channel,IRIB News,ceasefire,other,70,10.0
+channel,Mehr News,ceasefire,military,92,13.9
+channel,Mehr News,ceasefire,diplomacy,83,12.5
+channel,Mehr News,ceasefire,domestic_politics,75,11.3
+channel,Mehr News,ceasefire,economy,36,5.2
+channel,Mehr News,ceasefire,ideology_propaganda,59,9.1
+channel,Mehr News,ceasefire,mourning_commemoration,109,18.0
+channel,Mehr News,ceasefire,resistance_axis,60,9.4
+channel,Mehr News,ceasefire,foreign_affairs,32,4.6
+channel,Mehr News,ceasefire,other,109,16.0
+channel,Tasnim News,ceasefire,military,88,13.1
+channel,Tasnim News,ceasefire,diplomacy,102,15.4
+channel,Tasnim News,ceasefire,domestic_politics,62,9.6
+channel,Tasnim News,ceasefire,economy,43,6.6
+channel,Tasnim News,ceasefire,ideology_propaganda,48,7.3
+channel,Tasnim News,ceasefire,mourning_commemoration,77,14.0
+channel,Tasnim News,ceasefire,resistance_axis,72,10.7
+channel,Tasnim News,ceasefire,foreign_affairs,79,11.8
+channel,Tasnim News,ceasefire,other,77,11.4
+channel,Fars News,ceasefire,military,116,17.7
+channel,Fars News,ceasefire,diplomacy,123,19.3
+channel,Fars News,ceasefire,domestic_politics,93,14.1
+channel,Fars News,ceasefire,economy,59,9.0
+channel,Fars News,ceasefire,ideology_propaganda,38,5.8
+channel,Fars News,ceasefire,mourning_commemoration,54,8.9
+channel,Fars News,ceasefire,resistance_axis,63,9.6
+channel,Fars News,ceasefire,foreign_affairs,39,5.9
+channel,Fars News,ceasefire,other,63,9.7
+channel,Jamaran,ceasefire,military,85,13.6
+channel,Jamaran,ceasefire,diplomacy,160,25.1
+channel,Jamaran,ceasefire,domestic_politics,83,12.6
+channel,Jamaran,ceasefire,economy,60,9.1
+channel,Jamaran,ceasefire,ideology_propaganda,22,3.6
+channel,Jamaran,ceasefire,mourning_commemoration,59,9.1
+channel,Jamaran,ceasefire,resistance_axis,49,7.7
+channel,Jamaran,ceasefire,foreign_affairs,81,12.5
+channel,Jamaran,ceasefire,other,44,6.7
+channel,IRNA,after_truce_collapse,military,43,9.5
+channel,IRNA,after_truce_collapse,diplomacy,47,9.7
+channel,IRNA,after_truce_collapse,domestic_politics,97,22.1
+channel,IRNA,after_truce_collapse,economy,37,8.3
+channel,IRNA,after_truce_collapse,ideology_propaganda,13,3.0
+channel,IRNA,after_truce_collapse,mourning_commemoration,34,9.0
+channel,IRNA,after_truce_collapse,resistance_axis,31,6.9
+channel,IRNA,after_truce_collapse,foreign_affairs,50,11.1
+channel,IRNA,after_truce_collapse,other,86,20.5
+channel,IRIB News,after_truce_collapse,military,96,22.5
+channel,IRIB News,after_truce_collapse,diplomacy,51,11.7
+channel,IRIB News,after_truce_collapse,domestic_politics,67,14.9
+channel,IRIB News,after_truce_collapse,economy,47,10.3
+channel,IRIB News,after_truce_collapse,ideology_propaganda,16,3.6
+channel,IRIB News,after_truce_collapse,mourning_commemoration,23,6.9
+channel,IRIB News,after_truce_collapse,resistance_axis,31,7.1
+channel,IRIB News,after_truce_collapse,foreign_affairs,45,9.4
+channel,IRIB News,after_truce_collapse,other,61,13.5
+channel,Mehr News,after_truce_collapse,military,71,16.4
+channel,Mehr News,after_truce_collapse,diplomacy,38,8.0
+channel,Mehr News,after_truce_collapse,domestic_politics,70,15.0
+channel,Mehr News,after_truce_collapse,economy,28,6.1
+channel,Mehr News,after_truce_collapse,ideology_propaganda,25,6.2
+channel,Mehr News,after_truce_collapse,mourning_commemoration,52,14.7
+channel,Mehr News,after_truce_collapse,resistance_axis,37,8.5
+channel,Mehr News,after_truce_collapse,foreign_affairs,36,8.2
+channel,Mehr News,after_truce_collapse,other,76,16.7
+channel,Tasnim News,after_truce_collapse,military,86,19.4
+channel,Tasnim News,after_truce_collapse,diplomacy,47,9.8
+channel,Tasnim News,after_truce_collapse,domestic_politics,64,14.8
+channel,Tasnim News,after_truce_collapse,economy,39,8.3
+channel,Tasnim News,after_truce_collapse,ideology_propaganda,16,3.7
+channel,Tasnim News,after_truce_collapse,mourning_commemoration,37,12.0
+channel,Tasnim News,after_truce_collapse,resistance_axis,57,13.0
+channel,Tasnim News,after_truce_collapse,foreign_affairs,35,7.3
+channel,Tasnim News,after_truce_collapse,other,52,11.7
+channel,Fars News,after_truce_collapse,military,118,28.5
+channel,Fars News,after_truce_collapse,diplomacy,36,7.4
+channel,Fars News,after_truce_collapse,domestic_politics,76,16.3
+channel,Fars News,after_truce_collapse,economy,52,10.8
+channel,Fars News,after_truce_collapse,ideology_propaganda,19,4.6
+channel,Fars News,after_truce_collapse,mourning_commemoration,27,7.4
+channel,Fars News,after_truce_collapse,resistance_axis,36,8.2
+channel,Fars News,after_truce_collapse,foreign_affairs,26,5.1
+channel,Fars News,after_truce_collapse,other,51,11.7
+channel,Jamaran,after_truce_collapse,military,113,27.8
+channel,Jamaran,after_truce_collapse,diplomacy,55,11.5
+channel,Jamaran,after_truce_collapse,domestic_politics,69,15.6
+channel,Jamaran,after_truce_collapse,economy,51,10.0
+channel,Jamaran,after_truce_collapse,ideology_propaganda,19,4.1
+channel,Jamaran,after_truce_collapse,mourning_commemoration,26,6.4
+channel,Jamaran,after_truce_collapse,resistance_axis,24,5.4
+channel,Jamaran,after_truce_collapse,foreign_affairs,44,10.5
+channel,Jamaran,after_truce_collapse,other,38,8.7

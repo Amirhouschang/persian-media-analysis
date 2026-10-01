@@ -1,0 +1,2 @@
+model,context,topic_match_%,tone_match_%,both_match_%,invalid_or_error,codebook,kappa_topic,kappa_tone,topic_match_ci95_low,topic_match_ci95_high,tone_match_ci95_low,tone_match_ci95_high,both_match_ci95_low,both_match_ci95_high,both_match_incl_2_ci95_low,both_match_incl_2_ci95_high,sec_per_post_median,n_posts
+gemma4:26b,True,84.7,89.3,78,0,v6,0.82,0.64,78.0,89.6,83.4,93.3,70.7,83.9,70.7,83.9,2.7,150

@@ -1,0 +1,2 @@
+posts,topic_match_%,topic_match_ci95_low,topic_match_ci95_high,tone_match_%,tone_match_ci95_low,tone_match_ci95_high,both_match_%,both_match_ci95_low,both_match_ci95_high,topic_match_incl_2_%,topic_match_incl_2_ci95_low,topic_match_incl_2_ci95_high,both_match_incl_2_%,both_match_incl_2_ci95_low,both_match_incl_2_ci95_high,kappa_topic,kappa_tone,model,codebook
+200,72.5,65.9,78.2,84.5,78.8,88.9,62.5,55.6,68.9,77,70.7,82.3,66.5,59.7,72.7,0.68,0.46,gemma4:31b,v8

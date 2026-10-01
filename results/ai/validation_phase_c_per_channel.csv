@@ -1,0 +1,7 @@
+kanal,posts,topic_match_%,topic_match_ci95_low,topic_match_ci95_high,tone_match_%,tone_match_ci95_low,tone_match_ci95_high,both_match_%,both_match_ci95_low,both_match_ci95_high,topic_match_incl_2_%,topic_match_incl_2_ci95_low,topic_match_incl_2_ci95_high,both_match_incl_2_%,both_match_incl_2_ci95_low,both_match_incl_2_ci95_high
+Tasnimnews,33,69.7,52.7,82.6,72.7,55.8,84.9,48.5,32.5,64.8,78.8,62.2,89.3,54.5,38.0,70.2
+farsna,33,75.8,59.0,87.2,93.9,80.4,98.3,72.7,55.8,84.9,75.8,59.0,87.2,72.7,55.8,84.9
+iribnews,34,88.2,73.4,95.3,88.2,73.4,95.3,82.4,66.5,91.7,88.2,73.4,95.3,82.4,66.5,91.7
+irna_1313,33,75.8,59.0,87.2,84.8,69.1,93.3,69.7,52.7,82.6,78.8,62.2,89.3,72.7,55.8,84.9
+jamarannews,34,55.9,39.5,71.1,91.2,77.0,97.0,50.0,34.1,65.9,64.7,47.9,78.5,58.8,42.2,73.6
+mehrnews,33,69.7,52.7,82.6,75.8,59.0,87.2,51.5,35.2,67.5,75.8,59.0,87.2,57.6,40.8,72.8
