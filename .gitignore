@@ -1,0 +1,29 @@
+# Telegram login and credentials – never publish
+*.session
+*.session-journal
+.env
+.env.*
+secrets.toml
+
+# Raw data and AI output (stay local)
+data/
+telegram_*.csv
+irna_gap.csv
+pruefung_*.csv
+
+# Database dumps
+*.dump
+*.backup
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# System and editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
