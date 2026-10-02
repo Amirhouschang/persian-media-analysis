@@ -215,3 +215,9 @@ Kein Mensch darf getötet werden – auch nicht hochrangige Politiker und Gener�
 schon gar nicht in ihren Wohnhäusern, gemeinsam mit ihren Familien. Dieses Projekt ist
 deshalb kein Ort für Sprache, die solche Tötungen verharmlost oder rechtfertigt, auch nicht durch Begriffe wie
 „Eliminierung“.
+
+---
+
+## Rechte
+
+© 2026 Amirhoushang Rahmannejad. Alle Rechte vorbehalten. Ansehen und Prüfen ist ausdrücklich erwünscht. Kopieren, Ändern oder Weiterverbreiten nur mit meiner schriftlichen Erlaubnis.
