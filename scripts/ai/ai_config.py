@@ -56,7 +56,7 @@ PER_CHANNEL_TESTSET = 25             # when drawing a new test set: 25 x 6 chann
 # ---------------------------------------------------------------
 CLASSIFICATION_MODEL = "gemma4:31b"
 CLASSIFICATION_CONTEXT = True
-PER_CHANNEL_WEEK = 50                # stratified sample: 50 per channel and week (~10,500 posts)
+PER_CHANNEL_WEEK = 50                # stratified sample: 50 per channel and week (~10,750 posts)
                                      # weeks with fewer posts: take all of them
 PER_CHANNEL_TEST_RUN = 4             # test run with --test (4 per channel)
 SAMPLE_SEED = 42                     # same number = same sample on every start

@@ -107,7 +107,7 @@ die drei staatlichen Kanäle täglich Service-Meldungen veröffentlichen. Darunt
 | Justiz | `محسنی اژه‌ای` *Mohseni-Ejei* (Gholam-Hossein Mohseni-Ejei, Chef der Justiz) | 3,5 |
 | Militärische Erklärungen | `بسم الله قاصم الجبارین` *besmellah qasem al-jabbarin* („im Namen Gottes, der die Tyrannen zerschmettert“ – Überschrift militärischer Erklärungen) · `قاتلوهم` *qatiluhum* („kämpft gegen sie“, Koranvers) | 3–5 |
 | Bildung | `دانش آموزان` *daneshamuzan* (Schüler) · `سازمان سنجش آموزش کشور` (Prüfungsbehörde) · `آزمون` (Prüfung) · `رشته` (Studienfach) · `کلاس درس` (Schulklasse) | 3–6 |
-| Verwaltung und Service | `استان` *ostan* (Provinz) · `مدیرکل` *modir-kol* (Generaldirektor) · `راهداری` (Straßenbehörde) · `سازمان هواشناسی` (Wetterdienst) · `زلزله` (Erdbeben) · `جمعیت هلال احمر` (Roter Halbmond) | 4–11 |
+| Verwaltung und Service | `استان` *ostan* (Provinz) · `مدیرکل` *modir-kol* (Generaldirektor) · `راهداری` (Straßenbehörde) · `سازمان هواشناسی` (Wetterdienst) · `زلزله` (Erdbeben) · `جمعیت هلال احمر` (Roter Halbmond) | 3–11 |
 | Kalender | Monatsnamen `اردیبهشت` *ordibehesht*, `خرداد` *khordad*, `تیر` *tir*, `مرداد` *mordad*, `شهریور` *shahrivar* · Wochentage | 4–11 |
 | Kultur, Sport, Religion | `جشنواره فیلم فجر` (Fadschr-Filmfestival) · Taekwondo, Ringen · `اربعین` *arbain* (Pilgerfahrt nach Kerbela) | 4–5 |
 
@@ -127,7 +127,7 @@ Mehr News ist der Kanal der Trauer und Mobilisierung: `سوگ` (Trauer), `مرا
 | Verbündete | `حزب‌الله` *Hezbollah* (Hisbollah) – der typischste Begriff der Gruppe (z 20,8) · `یمن` (Jemen) · `النبطیه` (Nabatieh, Südlibanon) | 5–21 |
 | Proteste als „Unruhen“ | `اغتشاشات` *eghteshashat* („Unruhen“) · `اغتشاشگران` („Randalierer“) · `آشوبگران` („Aufrührer“) · `ضدانقلاب` („Konterrevolution“) · `منافقین` („Heuchler“ = Volksmudschahedin) · `کشته‌سازی` *koshteh-sazi* („inszenierte Todesfälle“) | 6–14 |
 | Sicherheit und Festnahmen | `دستگیر` (festgenommen) · `بازداشت` (Haft) · `کشف` (entdeckt) · `عناصر` („Elemente“) · `تروریست` (Terrorist) · `سازمان اطلاعات سپاه` (Geheimdienst der Revolutionsgarde) | 5–12 |
-| Opposition im Ausland | `اینترنشنال` (Iran International, persischsprachiger Sender im Ausland) · `رضا پهلوی` *Reza Pahlavi* (Sohn des letzten Schahs) | 10–12 |
+| Opposition im Ausland | `اینترنشنال` (Iran International, persischsprachiger Sender im Ausland) · `رضا پهلوی` *Reza Pahlavi* (Sohn des letzten Schahs) | 11–12 |
 | Mobilisierung und Religion | `بیعت` *bey'at* (Treueeid – vor allem im Krieg, nach der Wahl des neuen Führers) · `خونخواهی` *khunkhahi* (Blutrache) · `انتقام` *enteqam* (Rache) · `لبیک` („zu Diensten“) · `مداحی` (religiöser Trauergesang) · `حرم حضرت معصومه` (Schrein in Qom) · `خیابان`, `تجمع` (Straße, Kundgebung) | 5–13 |
 | Getötete Kommandeure | `شهید پاکپور` (Mohammad Pakpour, Kommandeur der Revolutionsgarde, getötet 28.02.) · `شهید سلامی` (Hossein Salami, getötet 2025) · `غلامرضا سلیمانی` (Basij-Kommandeur, getötet 17.03.) · `شهید رئیسی` (Ebrahim Raisi, Präsident, 2024 verunglückt) | 5–7 |
 | Fußball | `پرسپولیس` (Persepolis) · `استقلال` (Esteghlal) · `تراکتور` (Tractor) | 6–9 |
@@ -153,7 +153,8 @@ Justiz und Banken.
 ## 2. Wen die Kanäle nennen
 
 Nennungen pro 1.000 Wörter, ganzer Zeitraum. Gezählt werden Name und Namensvarianten
-(`naming_terms.csv`, z. B. `محمدباقر قالیباف` *Mohammad-Bagher Ghalibaf* und `قالیباف` *Ghalibaf*).
+(`naming_terms.csv`, z. B. bei Ghalibaf die Schreibweisen `قالیباف`, `قالی‌باف` und `قالی باف`; der volle Name
+`محمدباقر قالیباف` *Mohammad-Bagher Ghalibaf* wird über den Nachnamen mitgezählt).
 
 | Persisch | Person | Rolle | staatlich | IRGC-nah | Jamaran |
 |---|---|---|---|---|---|
@@ -231,12 +232,12 @@ Anteil an allen Bezeichnungen für Israel:
 | `رژیم صهیونیستی` *rezhim-e sahyunisti* („zionistisches Regime“), ganzer Zeitraum | 48 % | 40 % | 29 % |
 | – vor dem Krieg (bis 27.02.) | 46 % | 40 % | 28 % |
 | – Krieg (28.02.–07.04.) | 42 % | 35 % | 31 % |
-| – Waffenruhe (08.04.–07.07.) | 48 % | 40 % | 29 % |
-| – nach dem Zusammenbruch (ab 08.07.) | **57 %** | **53 %** | 26 % |
+| – Waffenruhe (08.04.–06.07.) | 48 % | 40 % | 29 % |
+| – nach dem Zusammenbruch (ab 07.07.) | **57 %** | **53 %** | 26 % |
 | `اسرائیل` *Esra'il* („Israel“), ganzer Zeitraum | 45 % | 50 % | **65 %** |
 | `صهیونیست‌ها` *sahyunist-ha* („die Zionisten“) | 4 % | **6 %** | 3 % |
 
-- Nach dem 08.07. verwenden staatliche und IRGC-nahe Kanäle „zionistisches Regime“ deutlich häufiger; Jamaran nicht.
+- Nach dem Zusammenbruch der Waffenruhe (ab 07.07.) verwenden staatliche und IRGC-nahe Kanäle „zionistisches Regime“ deutlich häufiger; Jamaran nicht.
 - Für israelisches Staatsgebiet schreiben IRGC-nahe Kanäle öfter `فلسطین اشغالی` *felestin-e eshghali*
   („besetztes Palästina“, 10 % gegenüber 3 % bei Jamaran).
 
@@ -314,7 +315,7 @@ Beiträge mit dem gezählten Wort. Alle Wochen und Begriffe: `results/timeline/p
 | 15.06. | Jamaran 4,1 · IRGC-nah 2,9 | `تفاهم‌نامه` *tafahom-nameh* (Memorandum) · `امضای` (Unterzeichnung) · `محرم` (Monat Muharram) | „Islamabad-Memorandum“ (17.–18.06.) |
 
 Jamaran schreibt in jeder dieser Wochen am meisten über Verhandlungen. Nach dem Zusammenbruch der Waffenruhe bleibt
-der Wert bei Jamaran mehr als doppelt so hoch wie bei den anderen Gruppen (1,39 gegenüber 0,59 und 0,62).
+der Wert bei Jamaran mehr als doppelt so hoch wie bei den anderen Gruppen (1,39 gegenüber 0,58 und 0,60).
 
 ### Waffenruhe und Trump
 
@@ -363,7 +364,7 @@ Kanälen in der Woche ab 29.06. – der Woche der Trauerfeier für Ali Khamenei 
 
 | Woche ab | Spitze | typische Begriffe dieser Woche | Ereignis |
 |---|---|---|---|
-| 12.01. | alle Gruppen | Unruhen, Terroristen (siehe oben) | Internetsperre ab 08.01. |
+| 12.01. | IRGC-nah 0,66 · staatlich 0,49 | Unruhen, Terroristen (siehe oben) | Internetsperre ab 08.01. |
 | 11.05. | Jamaran 1,74 · staatlich 0,56 | `اینترنت پرو` („Internet Pro“) · `چین` (China) · `شی جین‌پینگ` (Xi Jinping) · `بریکس` (BRICS) · `دهلی‌نو` (Neu-Delhi) | Debatte über „Internet Pro“; Außenpolitik mit China und BRICS |
 | 25.05. | Jamaran **1,76** | `اتصال` *ettesal* (Anschluss) · `بازگشایی` (Wiederöffnung) · `فضای مجازی` (Internet, wörtl. „virtueller Raum“) · `خاتمی` (Mohammad Khatami) | Debatte über die Wiederöffnung des Internets |
 
@@ -700,9 +701,10 @@ aus Analysen des Krieges stammen.
 
 ![Beiträge pro Tag](../../results/activity/charts/posts_per_day.png)
 
-- **Aktivität:** Vor dem Krieg veröffentlicht ein Kanal im Schnitt 120–135 Beiträge am Tag. In der ersten Kriegswoche
-  (ab 02.03.) sind es 320–420 – bei Mehr News sogar 505. Die zweite Spitze liegt in der Woche der Trauerfeier und des
-  Zusammenbruchs der Waffenruhe (ab 29.06./06.07.).
+- **Aktivität:** Vor dem Krieg veröffentlicht ein Kanal im Mittel der Gruppen 122–134 Beiträge am Tag (Einzelkanäle
+  109–178). In der ersten Kriegswoche (ab 02.03.) sind es 321–423 – bei den Einzelkanälen von 227 (IRNA) bis 505 (Mehr News).
+  Die zweite Spitze liegt bei den staatlichen und IRGC-nahen Kanälen in der Woche der Trauerfeier und des Zusammenbruchs der
+  Waffenruhe (ab 29.06./06.07.), bei Jamaran in der Woche ab 13.07.
 - **Januar:** In der Woche ab 12.01. postet Jamaran nur 20 Beiträge am Tag, IRNA in dieser Woche gar nichts –
   die Zeit der Internetsperre.
 - **Reichweite:** Die IRGC-nahen Kanäle erreichen im Median das Sieben- bis Neunfache der Aufrufe pro Beitrag (11.858
@@ -713,8 +715,8 @@ aus Analysen des Krieges stammen.
   der Gruppenmedian gleich (1.803 vor, 1.802 im Krieg); die Einzelkanäle sinken nur leicht (IRNA 1.643 auf 1.510,
   IRIB News 3.322 auf 2.742, Mehr News 1.466 auf 1.408). Mögliche Gründe – mehr Beiträge für dieselben Leser,
   eingeschränkter Internetzugang – lassen sich mit diesen Daten nicht trennen.
-- **Weiterleitungen:** Beiträge staatlicher Kanäle und Jamarans werden pro Aufruf etwa doppelt so oft weitergeleitet
-  wie die der IRGC-nahen Kanäle.
+- **Weiterleitungen:** Beiträge staatlicher Kanäle und Jamarans werden pro Aufruf 2,0- bis 2,4-mal so oft weitergeleitet
+  wie die der IRGC-nahen Kanäle (pro 1.000 Aufrufe: staatlich 5,1, Jamaran 4,2, IRGC-nah 2,1).
 
 Weitere Diagramme: [Aufrufe](../../results/activity/charts/views_median.png) ·
 [Weiterleitungen pro 1.000 Aufrufe](../../results/activity/charts/forwards_per_1000_views.png)
@@ -736,7 +738,7 @@ Weitere Diagramme: [Aufrufe](../../results/activity/charts/views_median.png) ·
 - **Keine Netzwerkanalyse:** Bei der Sammlung wurde für weitergeleitete Beiträge nur der Absendername gespeichert, der bei
   Kanälen meist leer ist (96 von 328.330 Beiträgen). Wer wen weiterleitet, lässt sich deshalb nicht auswerten.
 - **Lücken im Januar:** IRNA und Jamaran posteten Mitte Januar kaum (Internetsperre, siehe [01](01_datenerhebung.md)).
-- **Zeitzone:** Tage, Wochen und Phasen der Wort-, Zeitverlaufs- und Aktivitätsauswertung beruhen auf dem UTC-Datum der Beiträge (Teheran: UTC+3:30). Nur die KI-Themenanteile pro Phase verwenden das Teheraner Datum.
+- **Zeitzone:** Tage, Wochen und Phasen der Wort-, Zeitverlaufs- und Aktivitätsauswertung beruhen auf dem UTC-Datum der Beiträge (Teheran: UTC+3:30). Nur die KI-Themenanteile pro Phase verwenden das Teheraner Datum; dort endet die Waffenruhe am 07.07. (Datenbank: 06.07.). Nach dem UTC-Datum fielen 48 von 10.750 KI-Beiträgen in eine andere Phase, die Gruppenanteile änderten sich um höchstens 1,5 Prozentpunkte (Details: [06](06_methodik.md#3-datenqualität-und-lücken)).
 - **Länder:** `عمان` heißt Oman, aber auch Amman (Hauptstadt Jordaniens); der Golf von Oman (`دریای عمان`) wird
   vorher entfernt. `آذربایجان` allein zählt als Republik Aserbaidschan, meint aber manchmal die iranischen Provinzen
   Ost- und West-Aserbaidschan – in den staatlichen Beiträgen darüber sind Wetterbegriffe typisch; der Wert ist deshalb
@@ -767,7 +769,12 @@ Text genau einmal.
 | Im Text gewinnt der längere Begriff; bei gleicher Länge der häufigere | `رهبر شهید انقلاب` („Märtyrer-Führer der Revolution“) zählt einmal, nicht zusätzlich als `رهبر شهید` |
 
 Ergebnis: **1.501 feste Begriffe** (1.490 automatisch, 11 vom Autor ergänzt). `phrases.csv` zeigt, wie oft eine
-Wortfolge insgesamt vorkommt (`count`) und wie oft sie als eigener Begriff gezählt wurde (`count_used`).
+Wortfolge vorkommt (`count`, auch innerhalb längerer Begriffe) und wie oft sie als eigener Begriff gezählt wurde (`count_used`,
+vor dem Zusammenführen von Schreibvarianten). `count` ist eine Untergrenze: Vorkommen in Kanal-Phasen-Teilen, in denen die Folge weniger als 5-mal
+steht, werden nicht mitgezählt (höchstens 4 je Teil, über die 24 Teile höchstens 96); `count_used` ist exakt und kann deshalb
+bei einer Folge, die selten in längeren Begriffen steht, größer sein als `count`. Die Auswahl der festen Begriffe stützt sich auf
+`count`; bei Wortfolgen nahe den Schwellen (100 Vorkommen, 25 %) kann sie von einer exakten Zählung abweichen (nicht
+nachgerechnet – dafür fehlen die unveröffentlichten Rohtexte).
 
 **Korrekturliste** (`phrase_corrections.csv`) – die Entscheidungen des Autors, offen in einer Datei:
 
@@ -833,7 +840,7 @@ Kanal (bei Gruppen geteilt durch die Zahl der Kanäle), Aufrufe und Weiterleitun
 ### KI-Themen (`scripts/ai/03e_topics.py`)
 
 Gewichteter Anteil jedes Themas pro Gruppe, Kanal und Phase: Jeder Beitrag zählt mit seinem Gewicht (Beiträge seiner
-Kanal-Woche / gezogene Beiträge). Phasen hier nach Datum in Teheraner Zeit (die Datenbank und alle anderen Auswertungen verwenden UTC-Tage, siehe [06](06_methodik.md#3-datenqualität-und-lücken)). Einordnung und Prüfung
+Kanal-Woche / gezogene Beiträge). Phasen hier nach Datum in Teheraner Zeit (Waffenruhe bis 07.07., danach ab 08.07.; die Datenbank und alle anderen Auswertungen verwenden UTC-Tage mit der Grenze 06.07./07.07., siehe [06](06_methodik.md#3-datenqualität-und-lücken)). Einordnung und Prüfung
 der KI: [03](03_ki_einordnung.md).
 
 ### Irrwege und Hilfsskripte

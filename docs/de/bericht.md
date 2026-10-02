@@ -22,8 +22,8 @@ Israel, den USA und Iran ab dem 28.02.2026, die Waffenruhe ab dem 08.04. und ihr
 Die Beiträge wurden vollständig ausgezählt; zusätzlich ordnete ein lokal betriebenes Sprachmodell 10.750 Beiträge nach
 Thema ein.
 
-1. **Umfang und Themen** ändern sich mit dem Krieg stark. Ein Kanal veröffentlicht vor dem Krieg 120–135 Beiträge pro Tag,
-   in der ersten vollen Kriegswoche (ab 02.03.) meist 320–420 (Mehr News: 505). Der Anteil militärischer Beiträge steigt von 4–5 % auf 36–45 %, der Anteil
+1. **Umfang und Themen** ändern sich mit dem Krieg stark. Im Mittel der Gruppen veröffentlicht ein Kanal vor dem Krieg 122–134 Beiträge pro Tag,
+   in der ersten vollen Kriegswoche (ab 02.03.) 321–423 (Einzelkanäle: 227 bei IRNA bis 505 bei Mehr News). Der Anteil militärischer Beiträge steigt von 4–5 % auf 36–45 %, der Anteil
    innenpolitischer fällt von 24–31 % auf 6–10 % (KI-Einordnung).
 2. **Die höchsten Werte für „Märtyrer“ und „Rache“** liegen nicht beim Kriegsbeginn, sondern in den Wochen der Trauerfeier
    und der Trauerzüge für Ali Khamenei (03.–10.07.).
@@ -63,8 +63,8 @@ Text.
 |---|---|
 | vor dem Krieg | 01.01.–27.02. |
 | Krieg | 28.02.–07.04. |
-| Waffenruhe | 08.04.–07.07. |
-| nach dem Zusammenbruch der Waffenruhe | 08.07.–31.08. |
+| Waffenruhe | 08.04.–06.07. |
+| nach dem Zusammenbruch der Waffenruhe | 07.07.–31.08. |
 
 **Ereignisse zur Einordnung** (aus dem Hintergrundmaterial des Projekts, `scripts/ai/background.txt`; der 01.03. als
 Tag der offiziellen Bestätigung ist vom Autor gesetzt, die Daten der Trauerfeier stammen aus Berichten von Al Jazeera):
@@ -116,9 +116,10 @@ drei Gruppen ([04, Abschnitt 7](04_analyse.md#7-themen-laut-ki)).
 | Sonstiges (Service, Wetter, Sport, Kultur), staatlich | 20,5 | 5,2 | 18,5 | 17,9 |
 
 - Jamaran hat in jeder Phase den höchsten Anteil an Diplomatie.
-- **Aktivität:** Vor dem Krieg veröffentlicht ein Kanal 120–135 Beiträge pro Tag; in der ersten Kriegswoche (ab 02.03.)
-  meist 320–420, bei Mehr News 505. Eine zweite Spitze liegt in den Wochen ab 29.06. und 06.07. (Trauerfeier, Zusammenbruch der
-  Waffenruhe).
+- **Aktivität:** Im Mittel der Gruppen veröffentlicht ein Kanal vor dem Krieg 122–134 Beiträge pro Tag (Einzelkanäle 109–178);
+  in der ersten Kriegswoche (ab 02.03.) 321–423 (IRNA 227, Mehr News 505). Eine zweite Spitze liegt bei den staatlichen und
+  IRGC-nahen Kanälen in den Wochen ab 29.06. und 06.07. (Trauerfeier, Zusammenbruch der Waffenruhe), bei Jamaran in der Woche
+  ab 13.07.
 - **Vorsicht:** Die KI vergab *Militär* zu oft und *Diplomatie* zu selten; Veränderungen über die Zeit sind verlässlicher
   als die Höhe der Werte. Bei Jamaran war die Zuordnung am unsichersten (55,9 % richtig, 34 geprüfte Beiträge).
 
@@ -164,7 +165,7 @@ drei Gruppen ([04, Abschnitt 7](04_analyse.md#7-themen-laut-ki)).
 - **Präsident Pezeshkian** wird im Krieg seltener genannt: IRGC-nah 0,17 pro 1.000 Wörter (vor dem Krieg 0,60, in der
   Waffenruhe und danach 0,37), staatlich 0,26 (vorher 0,55).
 
-### 2.4 Waffenruhe und Verhandlungen (08.04.–07.07.)
+### 2.4 Waffenruhe und Verhandlungen (08.04.–06.07.)
 
 ([04, Abschnitt 5](04_analyse.md#5-zeitverlauf-was-wann-geschah) und [6](04_analyse.md#6-länder-und-verbündete)). Werte für einzelne Länder: alle Gruppen zusammen.
 
@@ -311,7 +312,7 @@ Abonnenten, die nicht erhoben wurde.
 - **Länder:** `عمان` meint Oman und Amman; `آذربایجان` allein zählt als Republik Aserbaidschan, meint aber manchmal iranische
   Provinzen (Wert zu hoch); Ägypten fehlt; ein Teil der Nennungen europäischer Länder betrifft Sport.
 - **Januar:** IRNA und Jamaran veröffentlichten Mitte Januar kaum Beiträge (Internetsperre).
-- **Zeitzone:** Tage, Wochen und Phasen beruhen auf dem UTC-Datum der Beiträge (Teheran: UTC+3:30); nur die KI-Themenanteile verwenden das Teheraner Datum.
+- **Zeitzone:** Tage, Wochen und Phasen beruhen auf dem UTC-Datum der Beiträge (Teheran: UTC+3:30); nur die KI-Themenanteile verwenden das Teheraner Datum (dort endet die Waffenruhe am 07.07. statt am 06.07.). Nach dem UTC-Datum fielen 48 von 10.750 KI-Beiträgen in eine andere Phase (37 davon an dieser Grenze), die Gruppenanteile änderten sich um höchstens 1,5 Prozentpunkte.
 - **Einordnung des Projekts:** Es ist vor allem technisch und liefert einen belastbaren Überblick, keine wissenschaftliche
   Tiefenanalyse; eine solche Studie würde die Beiträge einzeln lesen und 100 Seiten und mehr umfassen. Für belastbarere
   Ergebnisse sollten mehrere persische Muttersprachler unabhängig kodieren und das Codebuch gemeinsam diskutieren.

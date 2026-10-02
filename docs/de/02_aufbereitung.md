@@ -37,8 +37,8 @@ Die Beiträge stehen in der Mitte, beschreibende Tabellen sind über Schlüssel 
 |---|---|---|
 | `before_war` | 01.01.–27.02. | Proteste und Internetsperre im Januar, Verhandlungen |
 | `war` | 28.02.–07.04. | von den Angriffen der USA und Israels bis zur Waffenruhe |
-| `ceasefire` | 08.04.–07.07. | Waffenruhe, Seeblockade, Islamabad-Memorandum; brüchig, mit Zusammenstößen |
-| `after_truce_collapse` | 08.07.–31.08. | nach dem Zusammenbruch der Waffenruhe am 08.07. |
+| `ceasefire` | 08.04.–06.07. | Waffenruhe, Seeblockade, Islamabad-Memorandum; brüchig, mit Zusammenstößen |
+| `after_truce_collapse` | 07.07.–31.08. | nach dem Zusammenbruch der Waffenruhe (7./8.07.) |
 
 Die Grenzen sind eine Setzung des Autors auf Basis zentraler Ereignisse und in `02_load_database.py` festgelegt.
 

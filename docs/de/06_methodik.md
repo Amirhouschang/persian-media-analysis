@@ -35,7 +35,7 @@ Diese Entscheidungen liegen offen in Dateien. Andere Setzungen ergäben leicht a
 | Setzung | Inhalt | Datei |
 |---|---|---|
 | Quellenauswahl und Gruppen | 6 Kanäle in 3 Gruppen; Kanalbeschreibungen neutral formuliert („weithin als IRGC-nah beschrieben“) | `README.de.md`, `02_load_database.py` |
-| Phasen | vor dem Krieg 01.01.–27.02. · Krieg 28.02.–07.04. · Waffenruhe 08.04.–07.07. · nach dem Zusammenbruch 08.07.–31.08. | `02_load_database.py` |
+| Phasen | vor dem Krieg 01.01.–27.02. · Krieg 28.02.–07.04. · Waffenruhe 08.04.–06.07. · nach dem Zusammenbruch 07.07.–31.08. | `02_load_database.py` |
 | Ereignisdaten | Tod Ali Khameneis offiziell bestätigt 01.03.; Wahl Mojtaba Khameneis 08.03. | `06_leader_mentions.py` |
 | Korrekturliste | 347 Einträge: 12 Amtsbezeichnungen, 11 lange Namen, 5 Entfernungen, 56 Zusammenführungen, 263 ignorierte Begriffe | `phrase_corrections.csv` |
 | Benennungsliste | 113 Begriffe, 188 Schreibweisen, 10 Kategorien | `naming_terms.csv` |
@@ -59,8 +59,13 @@ Diese Entscheidungen liegen offen in Dateien. Andere Setzungen ergäben leicht a
 - **Zeitzone:** Telegram liefert UTC. Tage, Wochen und Phasen der Datenbank und aller darauf beruhenden Auswertungen
   (Begriffe, Zeitverlauf, Aktivität) bilden das UTC-Datum; auch die Gewichte der KI-Stichprobe beruhen auf UTC-Wochen. Iran
   liegt bei UTC+3:30; Beiträge zwischen 20:30 und 24:00 UTC gehören nach Teheraner Zeit zum Folgetag. Nur die KI-Themenanteile
-  pro Phase (`03e_topics.py`) verwenden das Teheraner Datum. Betroffen sind nur Beiträge an Tages-, Wochen- und
-  Phasengrenzen; das Ausmaß wurde nicht beziffert.
+  pro Phase (`03e_topics.py`) verwenden das Teheraner Datum; dort endet die Waffenruhe am 07.07. und die Folgephase beginnt am 08.07.
+  (Datenbank: 06.07. und 07.07.). Betroffen sind nur Beiträge an Tages-, Wochen- und Phasengrenzen. Für die KI-Themenanteile
+  nachgerechnet: Nach dem UTC-Datum der Datenbank statt nach dem Teheraner Datum fielen 48 von 10.750 Beiträgen (davon 37 an der
+  Grenze Waffenruhe/Zusammenbruch) in eine andere Phase; die Themenanteile der Gruppen änderten sich um höchstens 1,5
+  Prozentpunkte (2 von 108 Werten über 1 Punkt), die der Einzelkanäle um höchstens 2,1 (4 von 216 Werten über 1 Punkt).
+  Für die übrigen Auswertungen wurde das Ausmaß nicht beziffert. Die Ereignislinie „Zusammenbruch der Waffenruhe“ in den
+  Diagrammen steht am 08.07.
 - **Stand der Daten:** Texte, Aufrufe und Weiterleitungen entsprechen dem Zeitpunkt der Sammlung; was vorher gelöscht
   wurde, fehlt. Beiträge aus den letzten Tagen vor der Sammlung hatten weniger Zeit, Aufrufe zu sammeln. Die erste (ab
   01.01.) und die letzte Woche (nur 31.08.) sind unvollständig und fehlen in den Wochendiagrammen.
@@ -85,7 +90,7 @@ Diese Entscheidungen liegen offen in Dateien. Andere Setzungen ergäben leicht a
 | **Reichweite** | Aufrufe zählen Leser des Kanals, nicht eindeutige Personen; sie beschreiben Reichweite, nicht Qualität. Abonnentenzahlen fehlen; die Unterschiede bei den Aufrufen hängen vermutlich vor allem an der Zahl der Abonnenten. |
 | **Länder** | `عمان` heißt Oman und Amman; `آذربایجان` allein zählt als Republik Aserbaidschan, meint aber manchmal iranische Provinzen (Wert zu hoch); Ägypten fehlt, weil `مصر` auch „beharrlich“ heißt; ein Teil der Nennungen europäischer Länder, der Türkei und Katars betrifft Sport. |
 | **KI-Themen** | Thema in 72,5 % der Fälle richtig (95-%-Intervall 65,9–78,2 %). Militär wird eher überschätzt, Diplomatie eher unterschätzt; Veränderungen über die Zeit sind verlässlicher als die Höhe der Anteile. Bei Jamaran war die Zuordnung am unsichersten (55,9 % richtig, 34 geprüfte Beiträge). Der Stichprobenfehler der Anteile (ohne Fehler der KI-Zuordnung) beträgt pro Kanal etwa ±2,5 Prozentpunkte, pro Kanal und Monat etwa ±6. |
-| **KI-Ton** | Die KI erkannte 18 von 40 nicht-neutralen Beiträgen und übersah sie je Gruppe verschieden oft (nicht-neutral manuell/KI: staatlich 20 %/8 %, IRGC-nah 21 %/18 %, Jamaran 18 %/9 %). Der Ton wird deshalb nicht verglichen. |
+| **KI-Ton** | Die KI stufte nur 18 von 40 nicht-neutralen Beiträgen als nicht-neutral ein (genau derselbe Ton bei 14) und übersah sie je Gruppe verschieden oft (nicht-neutral manuell/KI: staatlich 20 %/8 %, IRGC-nah 21 %/18 %, Jamaran 18 %/9 %). Der Ton wird deshalb nicht verglichen. |
 | **Referenz der KI-Prüfung** | Sie stammt von einer Person. In Phase A wurde sie mit Unterstützung eines KI-Assistenten (Claude) vorkodiert, vom Autor geprüft und nach Ansicht der KI-Ergebnisse angepasst; sie ist nicht vollständig blind entstanden. Die Werte des Testsets sind deshalb eher optimistisch, maßgeblich ist die Endvalidierung (200 neue, blind kodierte Beiträge). |
 | **Hardware** | Ein Laptop ohne separate Grafikkarte begrenzt Modellgröße und Stichprobe; deshalb wird eine geschichtete Stichprobe eingeordnet, nicht das ganze Korpus. |
 

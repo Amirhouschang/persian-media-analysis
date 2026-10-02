@@ -15,7 +15,7 @@ Common columns: `level` = `group` (source group) or `channel` · `name` = group 
 | File | Script | Content |
 |---|---|---|
 | `word_frequency.csv` / `.xlsx` | `01_word_frequency.py` | most frequent single words per channel, group and phase |
-| `phrases.csv` | `03_terms.py` | all 1,501 fixed terms: `count` = all places of the word sequence, `count_used` = places counted as this term, `share_pct`, `source` (auto / added) |
+| `phrases.csv` | `03_terms.py` | all 1,501 fixed terms: `count` = places of the word sequence, also inside longer terms (lower bound: channel/phase parts with fewer than 5 places are not summed, at most 96 too low; basis of the term selection), `count_used` = places counted as this term (exact), `share_pct`, `source` (auto / added) |
 | `terms.csv` / `.xlsx` | `03_terms.py` | top 1,000 terms (single words and fixed terms) per channel, group and phase; every place counted once |
 | `typical_terms.csv` / `.xlsx` | `07_typical_terms.py` | terms a group or channel uses clearly more often than the others: `z` (log-odds z-score), `z_by_channel`, `per_1000`, `per_1000_rest` |
 

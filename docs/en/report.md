@@ -20,8 +20,8 @@ one reformist channel (Jamaran). The period includes the protests at the turn of
 and Iran from 28 Feb 2026, the ceasefire from 8 April and its collapse on 7/8 July. All posts were counted in full; in
 addition, a locally run language model assigned a topic to 10,750 posts.
 
-1. **Volume and topics** change strongly with the war. Before the war a channel publishes 120–135 posts per day, in the
-   first full week of the war (from 2 Mar) mostly 320–420 (Mehr News: 505). The share of military posts rises from 4–5% to 36–45%, the share of domestic-politics
+1. **Volume and topics** change strongly with the war. Averaged over the groups, a channel publishes 122–134 posts per day before the war, in the
+   first full week of the war (from 2 Mar) 321–423 (single channels: 227 at IRNA to 505 at Mehr News). The share of military posts rises from 4–5% to 36–45%, the share of domestic-politics
    posts falls from 24–31% to 6–10% (AI classification).
 2. **The highest values for "martyr" and "revenge"** are not at the start of the war but in the weeks of the funeral
    ceremony and processions for Ali Khamenei (3–10 July).
@@ -59,8 +59,8 @@ reach – and how do these patterns change around key events? (Tone is not evalu
 |---|---|
 | before the war | 1 Jan – 27 Feb |
 | war | 28 Feb – 7 Apr |
-| ceasefire | 8 Apr – 7 Jul |
-| after the collapse of the ceasefire | 8 Jul – 31 Aug |
+| ceasefire | 8 Apr – 6 Jul |
+| after the collapse of the ceasefire | 7 Jul – 31 Aug |
 
 **Events for orientation** (from the project's background material, `scripts/ai/background.txt`; 1 March as the day of
 the official confirmation is set by the author, the dates of the funeral ceremony come from Al Jazeera reports):
@@ -111,9 +111,10 @@ three groups ([04, section 7](04_analysis.md#7-topics-according-to-the-ai)).
 | Other (service, weather, sport, culture), state | 20.5 | 5.2 | 18.5 | 17.9 |
 
 - Jamaran has the highest share of diplomacy in every phase.
-- **Activity:** before the war a channel publishes 120–135 posts per day; in the first week of the war (from 2 Mar)
-  320–420, at Mehr News 505. A second peak lies in the weeks from 29 Jun and 6 Jul (funeral ceremony, collapse of the
-  ceasefire).
+- **Activity:** averaged over the groups, a channel publishes 122–134 posts per day before the war (single channels
+  109–178); in the first week of the war (from 2 Mar) 321–423 (IRNA 227, Mehr News 505). A second peak lies in the state and
+  IRGC-affiliated channels in the weeks from 29 Jun and 6 Jul (funeral ceremony, collapse of the ceasefire), at Jamaran in
+  the week from 13 Jul.
 - **Caution:** the AI assigned *military* too often and *diplomacy* too rarely; changes over time are more reliable than
   the level of the values. For Jamaran the assignment was the least certain (55.9% correct, 34 posts checked).
 
@@ -157,7 +158,7 @@ three groups ([04, section 7](04_analysis.md#7-topics-according-to-the-ai)).
 - **President Pezeshkian** is named less often in the war: IRGC-affiliated 0.17 per 1,000 words (before the war 0.60, in
   the ceasefire and after 0.37), state 0.26 (before 0.55).
 
-### 2.4 Ceasefire and negotiations (8 Apr – 7 Jul)
+### 2.4 Ceasefire and negotiations (8 Apr – 6 Jul)
 
 ([04, section 5](04_analysis.md#5-change-over-time-what-happened-when) and [6](04_analysis.md#6-countries-and-allies)). Values for individual countries: all groups together.
 
@@ -304,7 +305,7 @@ collected.
 - **Countries:** `عمان` means Oman and Amman; `آذربایجان` alone counts as the Republic of Azerbaijan but sometimes means
   Iranian provinces (value too high); Egypt is missing; part of the mentions of European countries concerns sport.
 - **January:** IRNA and Jamaran published hardly any posts in mid-January (internet blackout).
-- **Time zone:** days, weeks and phases are based on the UTC date of the posts (Tehran: UTC+3:30); only the AI topic shares use the Tehran date.
+- **Time zone:** days, weeks and phases are based on the UTC date of the posts (Tehran: UTC+3:30); only the AI topic shares use the Tehran date (there the ceasefire ends on 7 Jul instead of 6 Jul). By UTC date, 48 of 10,750 AI posts would fall into another phase (37 of them at this boundary), and the group shares would change by at most 1.5 percentage points.
 - **Scope of the project:** it is primarily technical and gives a reliable overview, not an in-depth scholarly analysis;
   such a study would read the posts individually and run to 100 pages or more. For firmer results, several native Persian
   speakers should code independently and discuss the codebook together.

@@ -41,8 +41,13 @@ HOW
 
 OUTPUT (folder results/words)
   phrases.csv – all fixed terms, with source (auto / added), share in percent (share_pct),
-                count      = all places of the word sequence, also inside longer terms
-                count_used = places where it was counted as this term (the numbers in terms.csv)
+                count      = places of the word sequence, also inside longer terms – a LOWER BOUND: only the channel/phase
+                             parts in which the sequence occurs at least MIN_COUNT (5) times are summed, so up to 4 places
+                             per part (96 over the 24 parts) are missing; count is the basis of the selection of the fixed
+                             terms (PHRASE_MIN_COUNT, PHRASE_SHARE) and decides which of two overlapping terms of the same
+                             length wins
+                count_used = places where it was counted as this term (exact, before spelling variants are merged; basis of terms.csv)
+                so count_used can be larger than count for a sequence that is rarely part of a longer term
                 e.g. اسلامی ایران: high count, but count_used small – it stands mostly inside جمهوری اسلامی ایران
   terms.xlsx  – sheet 'channels', sheet 'groups', then one sheet per channel and per group with the phases
   terms.csv   – the same numbers as one long table (for later analysis and the dashboard)
@@ -58,7 +63,7 @@ TOP_N = 1000                                                 # terms per list
 MAX_WORDS = 4                                                # longest automatic term; longer names: phrase_corrections.csv
 PHRASE_MIN_COUNT = 100                                       # a fixed term must occur at least this often
 PHRASE_SHARE = 0.25                                          # see "HOW" above
-MIN_COUNT = 5                                                # rarer sequences are dropped early to save memory
+MIN_COUNT = 5                                                # per channel and phase, rarer sequences are dropped early to save memory (missing from count)
 OUTPUT_DIR = Path(__file__).resolve().parents[2] / "results" / "words"
 STOPWORD_FILE = Path(__file__).resolve().parents[1] / "database" / "stopwords_fa.txt"
 CORRECTIONS_FILE = Path(__file__).resolve().parent / "phrase_corrections.csv"
@@ -276,7 +281,7 @@ def main():
     used = Counter()
     counts, words = count_terms(df, phrase_counts, merge_map, used)
     table, phase_names = build_table(df, counts, words)
-    # count = all places of the word sequence; count_used = places where it was counted as this term
+    # count = places of the word sequence (lower bound, see MIN_COUNT); count_used = places where it was counted as this term
     # (not inside a longer term): اسلامی ایران occurs often, but mostly inside جمهوری اسلامی ایران
     phrases["count_used"] = phrases["term"].str.replace(" ", JOIN).map(used).fillna(0).astype(int)
     phrases = phrases.sort_values("count_used", ascending=False, ignore_index=True)

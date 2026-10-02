@@ -12,7 +12,7 @@ WHAT IT DOES
   A group is the sum of its channels (larger channels count more, as in the word analysis).
 
   Only TOPICS are evaluated. The TONE is not compared between groups: in the final validation (Phase C) the AI
-  recognised only 45% of the non-neutral posts, and this varied by group (state 8% instead of 20% non-neutral,
+  marked only 45% of the non-neutral posts as non-neutral (18 of 40; the same tone for 14), and this varied by group (state 8% instead of 20% non-neutral,
   IRGC-affiliated 18% instead of 21%). AI tone shares would therefore show differences between groups that the
   manual coding does not show. See docs/en/03_ai_classification.md.
 
@@ -39,7 +39,9 @@ GROUPS = {"irna_1313": "state", "iribnews": "state", "mehrnews": "state",
           "Tasnimnews": "irgc_affiliated", "farsna": "irgc_affiliated", "jamarannews": "reformist"}
 CHANNELS = {"irna_1313": "IRNA", "iribnews": "IRIB News", "mehrnews": "Mehr News",
             "Tasnimnews": "Tasnim News", "farsna": "Fars News", "jamarannews": "Jamaran"}
-# phase boundaries as in the database; the database assigns days by UTC date, here the date is converted to Tehran time
+# phase boundaries by TEHRAN date: ceasefire until 7 Jul, collapse phase from 8 Jul. The database (02_load_database.py)
+# assigns days by UTC date and ends the ceasefire on 6 Jul. Compared with UTC days, 48 of the 10,750 posts fall into
+# another phase (37 of them at the ceasefire/collapse boundary); group shares differ by at most 1.5 percentage points.
 PHASES = [("before_war", None, "2026-02-27"), ("war", "2026-02-28", "2026-04-07"),
           ("ceasefire", "2026-04-08", "2026-07-07"), ("after_truce_collapse", "2026-07-08", None)]
 PHASE_LABELS = {"before_war": "before war", "war": "war", "ceasefire": "ceasefire",

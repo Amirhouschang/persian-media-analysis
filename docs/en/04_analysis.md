@@ -107,7 +107,7 @@ clear in all three channels:
 | Judiciary | `محسنی اژه‌ای` *Mohseni-Ejei* (Gholam-Hossein Mohseni-Ejei, head of the judiciary) | 3.5 |
 | Military statements | `بسم الله قاصم الجبارین` *besmellah qasem al-jabbarin* ("in the name of God, the breaker of tyrants" – heading of military statements) · `قاتلوهم` *qatiluhum* ("fight them", Quran verse) | 3–5 |
 | Education | `دانش آموزان` *daneshamuzan* (pupils) · `سازمان سنجش آموزش کشور` (national examination authority) · `آزمون` (exam) · `رشته` (field of study) · `کلاس درس` (classroom) | 3–6 |
-| Administration and services | `استان` *ostan* (province) · `مدیرکل` *modir-kol* (director general) · `راهداری` (road authority) · `سازمان هواشناسی` (weather service) · `زلزله` (earthquake) · `جمعیت هلال احمر` (Red Crescent) | 4–11 |
+| Administration and services | `استان` *ostan* (province) · `مدیرکل` *modir-kol* (director general) · `راهداری` (road authority) · `سازمان هواشناسی` (weather service) · `زلزله` (earthquake) · `جمعیت هلال احمر` (Red Crescent) | 3–11 |
 | Calendar | month names `اردیبهشت` *ordibehesht*, `خرداد` *khordad*, `تیر` *tir*, `مرداد` *mordad*, `شهریور` *shahrivar* · weekdays | 4–11 |
 | Culture, sport, religion | `جشنواره فیلم فجر` (Fajr film festival) · taekwondo, wrestling · `اربعین` *arbain* (pilgrimage to Karbala) | 4–5 |
 
@@ -127,7 +127,7 @@ on `تجمعات شبانه` (nightly pro-government rallies). Mehr News is the 
 | Allies | `حزب‌الله` *Hezbollah* – the most typical term of the group (z 20.8) · `یمن` (Yemen) · `النبطیه` (Nabatieh, southern Lebanon) | 5–21 |
 | Protests as "riots" | `اغتشاشات` *eghteshashat* ("riots") · `اغتشاشگران` ("rioters") · `آشوبگران` ("agitators") · `ضدانقلاب` ("counter-revolution") · `منافقین` ("hypocrites" = People's Mojahedin) · `کشته‌سازی` *koshteh-sazi* ("staged deaths") | 6–14 |
 | Security and arrests | `دستگیر` (arrested) · `بازداشت` (detention) · `کشف` (discovered) · `عناصر` ("elements") · `تروریست` (terrorist) · `سازمان اطلاعات سپاه` (IRGC intelligence organisation) | 5–12 |
-| Opposition abroad | `اینترنشنال` (Iran International, Persian-language broadcaster abroad) · `رضا پهلوی` *Reza Pahlavi* (son of the last Shah) | 10–12 |
+| Opposition abroad | `اینترنشنال` (Iran International, Persian-language broadcaster abroad) · `رضا پهلوی` *Reza Pahlavi* (son of the last Shah) | 11–12 |
 | Mobilisation and religion | `بیعت` *bey'at* (oath of allegiance – above all during the war, after the selection of the new Leader) · `خونخواهی` *khunkhahi* (blood revenge) · `انتقام` *enteqam* (revenge) · `لبیک` ("at your service") · `مداحی` (religious lament singing) · `حرم حضرت معصومه` (shrine in Qom) · `خیابان`, `تجمع` (street, rally) | 5–13 |
 | Killed commanders | `شهید پاکپور` (Mohammad Pakpour, IRGC commander, killed 28 Feb) · `شهید سلامی` (Hossein Salami, killed 2025) · `غلامرضا سلیمانی` (Basij commander, killed 17 Mar) · `شهید رئیسی` (Ebrahim Raisi, president, died in a crash in 2024) | 5–7 |
 | Football | `پرسپولیس` (Persepolis) · `استقلال` (Esteghlal) · `تراکتور` (Tractor) | 6–9 |
@@ -152,8 +152,9 @@ banks.
 
 ## 2. Whom the channels name
 
-Mentions per 1,000 words, whole period. Name and name variants are counted (`naming_terms.csv`, e.g.
-`محمدباقر قالیباف` *Mohammad-Bagher Ghalibaf* and `قالیباف` *Ghalibaf*).
+Mentions per 1,000 words, whole period. Name and name variants are counted (`naming_terms.csv`, e.g. for Ghalibaf the
+spellings `قالیباف`, `قالی‌باف` and `قالی باف`; the full name `محمدباقر قالیباف` *Mohammad-Bagher Ghalibaf* is counted
+via the surname).
 
 | Persian | Person | Role | state | IRGC-affiliated | Jamaran |
 |---|---|---|---|---|---|
@@ -231,12 +232,12 @@ Share of all names for Israel:
 | `رژیم صهیونیستی` *rezhim-e sahyunisti* ("Zionist regime"), whole period | 48% | 40% | 29% |
 | – before the war (until 27 Feb) | 46% | 40% | 28% |
 | – war (28 Feb – 7 Apr) | 42% | 35% | 31% |
-| – ceasefire (8 Apr – 7 Jul) | 48% | 40% | 29% |
-| – after the collapse (from 8 Jul) | **57%** | **53%** | 26% |
+| – ceasefire (8 Apr – 6 Jul) | 48% | 40% | 29% |
+| – after the collapse (from 7 Jul) | **57%** | **53%** | 26% |
 | `اسرائیل` *Esra'il* ("Israel"), whole period | 45% | 50% | **65%** |
 | `صهیونیست‌ها` *sahyunist-ha* ("the Zionists") | 4% | **6%** | 3% |
 
-- After 8 July, state and IRGC-affiliated channels use "Zionist regime" clearly more often; Jamaran does not.
+- After the collapse of the ceasefire (from 7 July), state and IRGC-affiliated channels use "Zionist regime" clearly more often; Jamaran does not.
 - For Israeli territory, IRGC-affiliated channels more often write `فلسطین اشغالی` *felestin-e eshghali*
   ("occupied Palestine", 10% compared with 3% at Jamaran).
 
@@ -314,7 +315,7 @@ terms: `results/timeline/peak_weeks.csv`.
 | 15 Jun | Jamaran 4.1 · IRGC-affiliated 2.9 | `تفاهم‌نامه` *tafahom-nameh* (memorandum) · `امضای` (signing) · `محرم` (month of Muharram) | "Islamabad Memorandum" (17–18 Jun) |
 
 Jamaran writes most about negotiations in each of these weeks. After the collapse of the ceasefire, Jamaran's value
-stays more than twice as high as in the other groups (1.39 compared with 0.59 and 0.62).
+stays more than twice as high as in the other groups (1.39 compared with 0.58 and 0.60).
 
 ### Ceasefire and Trump
 
@@ -363,7 +364,7 @@ week from 29 Jun – the week of the farewell ceremony for Ali Khamenei (3–5 J
 
 | Week from | peak | typical terms of this week | Event |
 |---|---|---|---|
-| 12 Jan | all groups | riots, terrorists (see above) | internet blackout from 8 Jan |
+| 12 Jan | IRGC-affiliated 0.66 · state 0.49 | riots, terrorists (see above) | internet blackout from 8 Jan |
 | 11 May | Jamaran 1.74 · state 0.56 | `اینترنت پرو` ("Internet Pro") · `چین` (China) · `شی جین‌پینگ` (Xi Jinping) · `بریکس` (BRICS) · `دهلی‌نو` (New Delhi) | debate on "Internet Pro"; foreign policy with China and BRICS |
 | 25 May | Jamaran **1.76** | `اتصال` *ettesal* (connection) · `بازگشایی` (reopening) · `فضای مجازی` (internet, literally "virtual space") · `خاتمی` (Mohammad Khatami) | debate on reopening the internet |
 
@@ -702,9 +703,10 @@ analyses of the war.
 
 ![Posts per day](../../results/activity/charts/posts_per_day.png)
 
-- **Activity:** Before the war a channel publishes 120–135 posts a day on average. In the first week of the war (from
-  2 Mar) it is 320–420 – at Mehr News even 505. The second peak is in the week of the farewell ceremony and the collapse
-  of the ceasefire (from 29 Jun / 6 Jul).
+- **Activity:** Before the war a channel publishes 122–134 posts a day, averaged over the groups (single channels
+  109–178). In the first week of the war (from 2 Mar) it is 321–423 – for single channels from 227 (IRNA) to 505 (Mehr
+  News). The second peak is, in the state and IRGC-affiliated channels, in the week of the farewell ceremony and the
+  collapse of the ceasefire (from 29 Jun / 6 Jul), at Jamaran in the week from 13 Jul.
 - **January:** In the week from 12 Jan Jamaran posts only 20 posts a day and IRNA nothing at all – the time of the
   internet blackout.
 - **Reach:** the IRGC-affiliated channels reach seven to nine times as many views per post (median 11,858 against
@@ -715,8 +717,8 @@ analyses of the war.
   median stays the same (1,803 before, 1,802 during the war); the single channels fall only slightly (IRNA 1,643 to
   1,510, IRIB News 3,322 to 2,742, Mehr News 1,466 to 1,408). Possible reasons – more posts for the same readers,
   restricted internet access – cannot be separated with these data.
-- **Forwards:** Posts of state channels and Jamaran are forwarded about twice as often per view as those of
-  IRGC-affiliated channels.
+- **Forwards:** Posts of state channels and Jamaran are forwarded 2.0 to 2.4 times as often per view as those of
+  IRGC-affiliated channels (per 1,000 views: state 5.1, Jamaran 4.2, IRGC-affiliated 2.1).
 
 More charts: [views](../../results/activity/charts/views_median.png) ·
 [forwards per 1,000 views](../../results/activity/charts/forwards_per_1000_views.png)
@@ -738,7 +740,7 @@ More charts: [views](../../results/activity/charts/views_median.png) ·
 - **No network analysis:** for forwarded posts only the sender name was saved during collection, which is usually empty
   for channels (96 of 328,330 posts). Who forwards whom can therefore not be analysed.
 - **Gaps in January:** IRNA and Jamaran hardly posted in mid-January (internet blackout, see [01](01_data_collection.md)).
-- **Time zone:** days, weeks and phases of the word, timeline and activity analyses are based on the UTC date of the posts (Tehran: UTC+3:30). Only the AI topic shares per phase use the Tehran date.
+- **Time zone:** days, weeks and phases of the word, timeline and activity analyses are based on the UTC date of the posts (Tehran: UTC+3:30). Only the AI topic shares per phase use the Tehran date; there the ceasefire ends on 7 Jul (database: 6 Jul). By UTC date 48 of 10,750 AI posts would fall into another phase, and the group shares would change by at most 1.5 percentage points (details: [06](06_methodology.md#3-data-quality-and-gaps)).
 - **Countries:** `عمان` means Oman, but also Amman (capital of Jordan); the Gulf of Oman (`دریای عمان`) is removed
   first. `آذربایجان` alone counts as the Republic of Azerbaijan but sometimes means the Iranian provinces of East and
   West Azerbaijan – weather terms are typical of the state posts about it; the value is therefore too high. Egypt is
@@ -769,7 +771,11 @@ exactly once.
 | In the text the longer term wins; with the same length the more frequent one | `رهبر شهید انقلاب` ("martyred Leader of the Revolution") counts once, not also as `رهبر شهید` |
 
 Result: **1,501 fixed terms** (1,490 automatic, 11 added by the author). `phrases.csv` shows how often a word sequence
-occurs in total (`count`) and how often it was counted as a term of its own (`count_used`).
+occurs (`count`, also inside longer terms) and how often it was counted as a term of its own (`count_used`,
+before spelling variants are merged). `count` is a lower bound: occurrences in channel/phase parts in which the sequence appears fewer than 5 times are
+not added (at most 4 per part, at most 96 over the 24 parts); `count_used` is exact and can therefore be larger than `count` for
+a sequence that is rarely part of a longer term. The selection of the fixed terms rests on `count`; for sequences close to the
+thresholds (100 occurrences, 25%) it can differ from an exact count (not recalculated – the unpublished raw texts are needed).
 
 **Corrections list** (`phrase_corrections.csv`) – the author's decisions, kept openly in one file:
 
@@ -834,7 +840,7 @@ IRGC-affiliated red, Jamaran green – checked for colour-vision deficiency.
 ### AI topics (`scripts/ai/03e_topics.py`)
 
 Weighted share of every topic per group, channel and phase: each post counts with its weight (posts of its
-channel-week / posts drawn). Phases here by date in Tehran time (the database and all other analyses use UTC days, see [06](06_methodology.md#3-data-quality-and-gaps)). Classification and testing of the
+channel-week / posts drawn). Phases here by date in Tehran time (ceasefire until 7 Jul, then from 8 Jul; the database and all other analyses use UTC days with the boundary 6/7 Jul, see [06](06_methodology.md#3-data-quality-and-gaps)). Classification and testing of the
 AI: [03](03_ai_classification.md).
 
 ### Detours and helper scripts

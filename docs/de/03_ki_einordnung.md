@@ -168,7 +168,7 @@ Der Modellvergleich und die ersten rund 2.800 Beiträge des Hauptlaufs liefen mi
 - Ergebnis: 78,0 % statt 80,0 % – 5 Beiträge besser, 8 schlechter, also Zufallsschwankung.
 - **Erkenntnis:** Das Wissen kam an (die KI erkannte nun z. B. regierungsnahe Kundgebungen), aber die verbleibenden
   Fehler lagen an **unscharfen Grenzen zwischen Kategorien**, nicht an fehlendem Wissen.
-  Der erweiterte Hintergrund wurde trotzdem beibehalten, weil er für die ~10.500 Beiträge des Hauptlaufs inhaltlich nützlich ist.
+  Der erweiterte Hintergrund wurde trotzdem beibehalten, weil er für die ~10.750 Beiträge des Hauptlaufs inhaltlich nützlich ist.
 
 ### Irrweg 2 – Nebenthema durch die KI (v7)
 
@@ -271,8 +271,9 @@ Beim Thema allein liegt Jamaran am niedrigsten (55,9 %, Intervall 39,5–71,1 %)
 
 ### Ton: die KI ist zu vorsichtig – und das je Gruppe verschieden
 
-- Von 40 Beiträgen mit nicht-neutralem Ton erkennt die KI nur **18 (45 %)**; am häufigsten übersehen: *accusatory*
-  (10-mal *neutral*). Wenn die KI einen Ton vergibt, stimmt er meist (18 von 23).
+- Von 40 Beiträgen mit nicht-neutralem Ton stuft die KI nur **18 (45 %)** als nicht-neutral ein und vergibt bei **14 (35 %)**
+  genau denselben Ton; am häufigsten übersehen: *accusatory* (10-mal *neutral*). Vergibt die KI einen nicht-neutralen Ton
+  (23-mal), ist der Beitrag in 18 Fällen auch manuell nicht-neutral, in 14 Fällen stimmt der Ton genau.
 - Die hohe Übereinstimmung beim Ton (84,5 %) kommt vor allem daher, dass 80 % der Beiträge neutral sind. Kappa 0,46
   zeigt, dass die seltenen Töne nur mäßig erkannt werden.
 

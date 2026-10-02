@@ -167,7 +167,7 @@ six dates and price figures were corrected, without any effect on categories or 
 - Result: 78.0% instead of 80.0% – 5 posts better, 8 worse, i.e. random variation.
 - **Finding:** the knowledge arrived (the AI now recognised pro-government rallies, for example), but the remaining
   errors were due to **fuzzy boundaries between categories**, not missing knowledge.
-  The extended background was kept anyway because it is useful for the ~10,500 posts of the main run.
+  The extended background was kept anyway because it is useful for the ~10,750 posts of the main run.
 
 ### Dead end 2 – secondary topic set by the AI (v7)
 
@@ -270,8 +270,9 @@ On topic alone Jamaran is lowest (55.9%, interval 39.5–71.1%).
 
 ### Tone: the AI is too cautious – and differently for each group
 
-- Of 40 posts with a non-neutral tone the AI recognises only **18 (45%)**; most often missed: *accusatory*
-  (10 times *neutral*). When the AI does assign a tone, it is mostly right (18 of 23).
+- Of 40 posts with a non-neutral tone the AI marks only **18 (45%)** as non-neutral and assigns exactly the same tone to
+  **14 (35%)**; most often missed: *accusatory* (10 times *neutral*). When the AI assigns a non-neutral tone (23 times), the
+  post is also non-neutral in the manual coding in 18 cases, and the tone is exactly the same in 14.
 - The high tone agreement (84.5%) comes mainly from the fact that 80% of posts are neutral. Kappa 0.46 shows that
   the rarer tones are recognised only moderately.
 

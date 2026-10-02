@@ -36,8 +36,8 @@ Posts are at the centre; descriptive tables are linked via keys
 |---|---|---|
 | `before_war` | 1 Jan – 27 Feb | protests and internet blackout in January, negotiations |
 | `war` | 28 Feb – 7 Apr | from the US-Israeli strikes until the ceasefire |
-| `ceasefire` | 8 Apr – 7 Jul | ceasefire, naval blockade, Islamabad memorandum; fragile, with clashes |
-| `after_truce_collapse` | 8 Jul – 31 Aug | after the ceasefire collapsed on 8 July |
+| `ceasefire` | 8 Apr – 6 Jul | ceasefire, naval blockade, Islamabad memorandum; fragile, with clashes |
+| `after_truce_collapse` | 7 Jul – 31 Aug | after the ceasefire collapsed (7/8 July) |
 
 The boundaries are the author's choice based on key events and are defined in `02_load_database.py`.
 

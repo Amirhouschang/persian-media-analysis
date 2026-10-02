@@ -34,7 +34,7 @@ These decisions are open in files. Other settings would give slightly different 
 | Setting | Content | File |
 |---|---|---|
 | Choice of sources and groups | 6 channels in 3 groups; channel descriptions worded neutrally ("widely described as IRGC-affiliated") | `README.md`, `02_load_database.py` |
-| Phases | before the war 1 Jan – 27 Feb · war 28 Feb – 7 Apr · ceasefire 8 Apr – 7 Jul · after the collapse 8 Jul – 31 Aug | `02_load_database.py` |
+| Phases | before the war 1 Jan – 27 Feb · war 28 Feb – 7 Apr · ceasefire 8 Apr – 6 Jul · after the collapse 7 Jul – 31 Aug | `02_load_database.py` |
 | Event dates | Ali Khamenei's death officially confirmed 1 Mar; Mojtaba Khamenei elected 8 Mar | `06_leader_mentions.py` |
 | Correction list | 347 entries: 12 titles, 11 long names, 5 removals, 56 merges, 263 ignored terms | `phrase_corrections.csv` |
 | Naming list | 113 terms, 188 spellings, 10 categories | `naming_terms.csv` |
@@ -58,8 +58,12 @@ These decisions are open in files. Other settings would give slightly different 
 - **Time zone:** Telegram delivers UTC. Days, weeks and phases of the database and of all analyses built on it (terms,
   timeline, activity) use the UTC date; the weights of the AI sample are also based on UTC weeks. Iran is at UTC+3:30;
   posts between 20:30 and 24:00 UTC belong to the next day in Tehran time. Only the AI topic shares per phase
-  (`03e_topics.py`) use the Tehran date. Only posts at the boundaries of days, weeks and phases are affected; the extent
-  was not quantified.
+  (`03e_topics.py`) use the Tehran date; there the ceasefire ends on 7 Jul and the next phase begins on 8 Jul (database: 6 and
+  7 Jul). Only posts at the boundaries of days, weeks and phases are affected. Recalculated for the AI topic shares: by the
+  UTC date of the database instead of the Tehran date, 48 of 10,750 posts (37 of them at the ceasefire/collapse boundary)
+  would fall into another phase; the topic shares of the groups would change by at most 1.5 percentage points (2 of 108
+  values above 1 point), those of the single channels by at most 2.1 (4 of 216 values above 1 point). For the other
+  analyses the extent was not quantified. The event line "collapse of the ceasefire" in the charts is at 8 Jul.
 - **State of the data:** Texts, views and forwards correspond to the time of collection; anything deleted before then is
   missing. Posts from the last days before the collection had less time to collect views. The first week (from 1 Jan) and
   the last week (31 Aug only) are incomplete and are left out of the weekly charts.
@@ -83,7 +87,7 @@ These decisions are open in files. Other settings would give slightly different 
 | **Reach** | Views count readers of the channel, not unique people; they describe reach, not quality. Subscriber numbers are missing; the differences in views probably depend mostly on the number of subscribers. |
 | **Countries** | `عمان` means Oman and Amman; `آذربایجان` alone counts as the Republic of Azerbaijan but sometimes means Iranian provinces (value too high); Egypt is missing because `مصر` also means "persistent"; part of the mentions of European countries, Turkey and Qatar concerns sport. |
 | **AI topics** | Topic correct in 72.5% of cases (95% interval 65.9–78.2%). Military is rather overestimated, diplomacy rather underestimated; changes over time are more reliable than the level of the shares. For Jamaran the assignment was the least certain (55.9% correct, 34 posts checked). The sampling error of the shares (excluding errors of the AI assignment) is about ±2.5 percentage points per channel and about ±6 per channel and month. |
-| **AI tone** | The AI recognised 18 of 40 non-neutral posts and missed them to a different degree in each group (non-neutral, manual/AI: state 20%/8%, IRGC-affiliated 21%/18%, Jamaran 18%/9%). Tone is therefore not compared. |
+| **AI tone** | The AI marked only 18 of 40 non-neutral posts as non-neutral (exactly the same tone for 14) and missed them to a different degree in each group (non-neutral, manual/AI: state 20%/8%, IRGC-affiliated 21%/18%, Jamaran 18%/9%). Tone is therefore not compared. |
 | **Reference for the AI check** | It comes from one person. In phase A it was pre-coded with the help of an AI assistant (Claude), checked by the author and adjusted after seeing the AI results; it was not created fully blind. The values of the test set are therefore rather optimistic, the final validation (200 new posts coded blind) is decisive. |
 | **Hardware** | A laptop without a separate graphics card limits model size and sample; a stratified sample is therefore classified, not the whole corpus. |
 
