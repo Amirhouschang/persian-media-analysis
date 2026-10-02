@@ -211,3 +211,9 @@ is itself a subject of the analysis.
 No human being may be killed – not even senior politicians and generals of the Islamic Republic of Iran, and least
 of all in their homes, together with their families. This project is therefore no place for language that
 trivialises or justifies such killings, including terms such as "elimination".
+
+---
+
+## Rights
+
+© 2026 Amirhoushang Rahmannejad. All rights reserved. You are welcome to read and review this project. Copying, modifying or redistributing it requires my written permission.
