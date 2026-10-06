@@ -12,31 +12,16 @@ It covers automated data collection, a relational database and classification wi
 models. The focus is on method: how can foreign-language media be analysed systematically, verifiably
 and reproducibly?
 
-> **Note:** Code, methodology and results are public. The raw post texts are not part of this repository
-> for copyright reasons; every post can be found publicly via channel and ID (`t.me/<channel>/<id>`).
+**[Open the interactive dashboard](https://persian-media-analysis-ijvfxggccjhs6zroefhwcc.streamlit.app/?lang=en)** · **[Results report](docs/en/report.md)** · [Analysis with all charts](docs/en/04_analysis.md)
 
-> **Scope:** The project is primarily technical: data collection, processing, counting and a reliable overview of
-> wording, countries, topics and activity in six channels. It is not an in-depth scholarly analysis; such a study
-> would have to read and interpret the posts individually and would run to 100 pages or more.
-> It works best as group work: the reference for checking the AI and the codebook come from **one** person and
-> reflect his view. For firmer results, two or three native Persian speakers should code the posts
-> independently, measure their agreement with each other and with the AI, and discuss the categories of the codebook
-> together. The codebook can be adapted to other questions and institutions (e.g. security, political science,
-> political interests and ideology).
+![Share of "Zionist regime" among all names for Israel](results/timeline/charts/israel_zionist_regime_share.png)
 
-> **Wording and neutrality:** The analysis makes no moral or political judgement. Terms – including derogatory or
-> hostile ones – appear as they appear in the sources and are counted and reported. They are the wording of the
-> channels, not the opinion of the author, who harbours no hostility towards Jews or Americans. The texts stay
-> scholarly and technical and follow the sources.
+**Three results at a glance**
+- After the collapse of the ceasefire, state and IRGC-affiliated channels call Israel the "Zionist regime" in 57% and 53% of mentions; the reformist channel Jamaran in 26%.
+- During the war 36–45% of posts are military, depending on the group (before the war: 4–5%).
+- IRGC-affiliated channels reach a median of 11,858 views per post; state channels 1,259 and Jamaran 1,593.
 
-> **Further queries:** To understand the material for himself, the author ran several further SQL queries. They and
-> the data belonging to them are not on GitHub: the project is already very extensive, and more material would
-> confuse readers without prior knowledge rather than help them.
-
-> **Results report:** the findings in brief, with the key figures:
-> [Wording, Topics and Reach of Iranian News Channels on Telegram](docs/en/report.md)
->
-> **Interactive dashboard:** the results as charts, in German and English: [open the dashboard](https://persian-media-analysis-ijvfxggccjhs6zroefhwcc.streamlit.app/?lang=en)
+> **Scope:** The project is primarily technical – a reliable overview, not an in-depth scholarly analysis. Details: [Scope and notes](#scope-and-notes).
 
 ---
 
@@ -44,6 +29,7 @@ and reproducibly?
 
 How do state, IRGC-affiliated and reformist news channels differ in **volume, choice of topics, wording,
 tone and reach** – and how do these patterns change around key events?
+(Tone was classified by the AI but is not compared between groups, see step 3.)
 
 ## Sources
 
@@ -95,7 +81,7 @@ tone and reach** – and how do these patterns change around key events?
 - **Codebook** with operational definitions, developed over eight versions
 - **Context:** neutral background on events, actors, international law and a glossary of Persian terms
 - **Model comparison** on 150 manually checked posts: Gemma 4 (26B, 31B), Qwen 3.6 (27B, 35B), Qwen 2.5 (32B), Aya Expanse (32B)
-- **Selected model: Gemma 4 31B** – on the test set 80.7% exact agreement on topic and tone; Cohen's kappa topic 0.85, tone 0.79
+- **Selected model: Gemma 4 31B** – on the test set 80.7% exact agreement on topic and tone; Cohen's kappa (agreement beyond chance) topic 0.85, tone 0.79
 - **Main run:** stratified sample of 10,750 posts (50 per channel and week), weighted
 - **Final validation on 200 new posts coded blind:** topic **72.5%** correct (95% interval 65.9–78.2%), topic and tone 62.5% – clearly below the test set, probably because the codebook was developed on it
 - **Honest result:** topics are usable (military rather over-, diplomacy rather underestimated); the AI often misses the tone, and to a different degree for each group – tone is therefore not used for comparisons between groups
@@ -106,21 +92,21 @@ tone and reach** – and how do these patterns change around key events?
 - **Typical terms** per source group with the weighted log-odds ratio (Monroe et al. 2008) – a term only counts if it is typical for every channel of the group
 - **Naming:** how each group names Israel, the USA, opponents and persons; words next to Trump and Netanyahu
 - **Which Khamenei?** Rule-based assignment of every mention of the Leader to Ali or Mojtaba Khamenei, checked with samples
-- **Weekly time series** around key events – every peak explained with the terms typical of that week – and **activity and reach** (posts, views, forwards)
+- **Weekly time series** around key events – almost every peak can be linked to an event through the terms typical of that week (one exception, see [04](docs/en/04_analysis.md)) – and **activity and reach** (posts, views, forwards)
 - **Countries and allies:** 35 countries and groups (Gulf states, Lebanon and Hezbollah, Iraq, Yemen, Russia, China, Pakistan, Europe …) – how often, in which weeks, and how each group presents them
 - **Topics according to the AI:** weighted shares per group and phase, with measured accuracy
 
 Selected findings:
 - **Three groups:** state channels speak as government and administration (spokespeople, ministers, the language of international law – "aggression", "condemnation"); IRGC-affiliated channels report on missiles, drones, arrests and "riots"; Jamaran on negotiations, US politics, the nuclear issue and the internet.
-- After the collapse of the ceasefire, state and IRGC-affiliated channels call Israel the "Zionist regime" (*rezhim-e sahyunisti*) in 57% and 53% of mentions; at Jamaran it is 26%, and "Israel" is its most frequent designation over the whole period (65%).
-- No channel calls Mojtaba Khamenei the Leader before his selection on 8 March; even afterwards 74% (ceasefire) and 79% (after the collapse) of the posts that name one of the two Khameneis concern Ali Khamenei.
-- The highest values for "martyr" and "revenge" are not at the start of the war but in the weeks of the farewell ceremony and funeral processions for Ali Khamenei (3–10 July).
-- Former presidents and ministers of the reformist camp – Mohammad Khatami, Hassan Rouhani, Mohammad Javad Zarif – appear much more often at Jamaran than in the other groups; President Masoud Pezeshkian is named much less often during the war.
-- With the start of the war the focus shifts to the region: Russia and China fall to a third in the IRGC-affiliated channels; Bahrain and Kuwait, hardly named before, become scenes of action. The same country looks different in each group – the UAE are a currency hub for the state media, a target (port of Fujairah) for the IRGC-affiliated channels and an actor of US politics for Jamaran.
-- Topics according to the AI: during the war 36–45% of posts are military (before: 4–5%); Jamaran has the highest share of diplomacy in every phase.
+- After the collapse of the ceasefire, state and IRGC-affiliated channels call Israel the "Zionist regime" (*rizhīm-i ṣahyūnīstī*) in 57% and 53% of mentions; at Jamaran it is 26%, and "Israel" is its most frequent designation over the whole period (65%).
+- No channel calls Mojtaba Khamenei the Leader before his selection on 8 March. Even afterwards the killed Ali Khamenei stays more present: of the posts about one of the two, 74% (ceasefire) and 79% (after the collapse) are about him.
+- The highest values for "martyr" and "revenge" are not at the start of the war but in the weeks of the farewell ceremony and funeral processions for Ali Khamenei (3–10 July), four months after his death on 28 February.
+- Former presidents and ministers of the reformist camp – Mohammad Khatami, Hassan Rouhani, Mohammad Javad Zarif – appear much more often at Jamaran than in the other groups.
+- President Masoud Pezeshkian is mentioned much less often during the war than before, in all groups.
+- With the start of the war the focus shifts to the region: in the IRGC-affiliated channels Russia and China are mentioned only a third as often as before the war; Bahrain and Kuwait, hardly mentioned before, become scenes of action.
+- The same country looks different in each group: the UAE are a currency hub for the state media, a target (port of Fujairah) for the IRGC-affiliated channels and an actor of US politics for Jamaran.
+- Topics according to the AI: during the war 36–45% of posts are military, depending on the group (before: 4–5%); Jamaran has the highest share of diplomacy in every phase.
 - IRGC-affiliated channels reach a median of 11,858 views per post (state channels 1,259, Jamaran 1,593), but are forwarded less often relative to their views.
-
-![Share of "Zionist regime" among all names for Israel](results/timeline/charts/israel_zionist_regime_share.png)
 
 Details, all charts and limitations: [04 – Analysis](docs/en/04_analysis.md)
 
@@ -175,6 +161,31 @@ persian-media-analysis/
 
 ---
 
+## Scope and notes
+
+> **Note:** Code, methodology and results are public. The raw post texts are not part of this repository
+> for copyright reasons; every post can be found publicly via channel and ID (`t.me/<channel>/<id>`).
+
+> **Scope:** The project is primarily technical: data collection, processing, counting and a reliable overview of
+> wording, countries, topics and activity in six channels. It is not an in-depth scholarly analysis; such a study
+> would have to read and interpret the posts individually and would run to 100 pages or more.
+> It works best as group work: the reference for checking the AI and the codebook come from **one** person and
+> reflect his view. For firmer results, two or three native Persian speakers should code the posts
+> independently, measure their agreement with each other and with the AI, and discuss the categories of the codebook
+> together. The codebook can be adapted to other questions and institutions (e.g. security, political science,
+> political interests and ideology).
+
+> **Wording and neutrality:** The analysis makes no moral or political judgement. Terms – including derogatory or
+> hostile ones – appear as they appear in the sources and are counted and reported. They are the wording of the
+> channels, not the opinion of the author, who harbours no hostility towards Jews or Americans. The texts stay
+> scholarly and technical and follow the sources.
+
+> **Further queries:** To understand the material for himself, the author ran several further SQL queries. They and
+> the data belonging to them are not on GitHub: the project is already very extensive, and more material would
+> confuse readers without prior knowledge rather than help them.
+
+---
+
 ## Data protection & methodology
 
 - only **publicly available** editorial publications
@@ -182,7 +193,7 @@ persian-media-analysis/
 - processing and AI classification run **locally** (exception: the 150 posts of test set 2 were pre-coded with an AI assistant, see [06 – Methodology](docs/en/06_methodology.md))
 - credentials only as environment variables; raw data and session files excluded from the repository
 - AI results are not taken over unchecked but validated on new posts coded blind – with confidence intervals
-- Settings of the author, limits of the statements and reproducibility: [06 – Methodology](docs/en/06_methodology.md)
+- The author's decisions, limits of the findings and reproducibility: [06 – Methodology](docs/en/06_methodology.md)
 
 ## Skills demonstrated
 

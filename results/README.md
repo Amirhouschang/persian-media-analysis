@@ -1,8 +1,18 @@
-# Results
+# Result files
 
-Numbers, terms and links – no post texts (copyright). The AI result files in `ai/` contain short AI reasons that may repeat single phrases of a post. Every file is produced by a script in `scripts/analysis/` (or `scripts/ai/`)
-and can be recreated from the database. CSV files are UTF-8 with BOM, so Persian shows correctly in Excel and
-LibreOffice (in LibreOffice choose the language "English (USA)" when opening, otherwise decimal numbers are misread).
+This folder contains the result tables of the analysis (CSV and Excel) and the charts. This page explains which file
+comes from which script and what the columns mean.
+**Looking for the findings?** See the [results report](../docs/en/report.md) · Deutsch: [Ergebnisbericht](../docs/de/bericht.md).
+
+*Deutsch: Dieser Ordner enthält die Ergebnistabellen (CSV und Excel) und die Diagramme. Diese Seite erklärt, welche Datei
+von welchem Skript stammt und was die Spalten bedeuten.*
+
+- **No post texts:** only numbers, terms and links (copyright). The AI files in `ai/` contain short AI reasons that may
+  repeat single phrases of a post.
+- **Origin:** every file is produced by a script in `scripts/analysis/` or `scripts/ai/` and can be recreated from the
+  database. Terms with the same count can change places in the top lists from run to run; the counts stay the same.
+- **Opening the CSV files:** UTF-8 with BOM, so Persian shows correctly in Excel and LibreOffice. In LibreOffice choose
+  the language "English (USA)" when opening, otherwise decimal numbers are misread.
 
 Method and interpretation: [docs/en/04_analysis.md](../docs/en/04_analysis.md) · Deutsch: [docs/de/04_analyse.md](../docs/de/04_analyse.md)
 
@@ -15,7 +25,7 @@ Common columns: `level` = `group` (source group) or `channel` · `name` = group 
 | File | Script | Content |
 |---|---|---|
 | `word_frequency.csv` / `.xlsx` | `01_word_frequency.py` | most frequent single words per channel, group and phase |
-| `phrases.csv` | `03_terms.py` | all 1,501 fixed terms: `count` = places of the word sequence, also inside longer terms (lower bound: channel/phase parts with fewer than 5 places are not summed, at most 96 too low; basis of the term selection), `count_used` = places counted as this term (exact), `share_pct`, `source` (auto / added) |
+| `phrases.csv` | `03_terms.py` | all 1,501 fixed terms. `count` = how often the word sequence occurs, also inside longer terms (a lower bound: up to 96 occurrences can be missing, see [04, section 10](../docs/en/04_analysis.md#10-method); basis of the term selection) · `count_used` = how often it was counted as this term (exact) · `share_pct` · `source` (auto = found automatically, added = added by the author) |
 | `terms.csv` / `.xlsx` | `03_terms.py` | top 1,000 terms (single words and fixed terms) per channel, group and phase; every place counted once |
 | `typical_terms.csv` / `.xlsx` | `07_typical_terms.py` | terms a group or channel uses clearly more often than the others: `z` (log-odds z-score), `z_by_channel`, `per_1000`, `per_1000_rest` |
 

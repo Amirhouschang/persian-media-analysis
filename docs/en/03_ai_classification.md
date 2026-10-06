@@ -121,9 +121,10 @@ six dates and price figures were corrected, without any effect on categories or 
 ### Phase 1 – First tests (codebook v1–v3, 29 posts)
 
 - Test set of 29 posts from the first five channels (IRNA, IRIB News, Mehr, Tasnim, Fars), coded manually.
-- Tested: Gemma 4 (26B, 31B), Qwen 3.6 (27B), Qwen 2.5 (32B), Aya Expanse (8B, 32B) – each **with and without context**.
+- Tested: Gemma 4 (26B, 31B), Qwen 3.6 (27B), Qwen 2.5 (32B), Aya Expanse (32B) – each **with and without context** (v3); Aya Expanse 8B only in v1 and v2, where context was not yet varied.
 - **Finding 1:** the first categories described interpretations ("propagandistic"). After switching to visible text
-  features, Gemma 4 26B's agreement rose from 55% to 72%.
+  features, Gemma 4 26B's agreement rose from 55% (v1) to 72% (v3, without context). Part of this increase comes from the reference itself:
+  between v1 and v3 the manual coding was corrected for 10 of the 29 posts.
 - **Finding 2:** background knowledge improved topic classification for most models.
 - Best result (v3): Gemma 4 31B with context – topic 97%, tone 86%, both 83%.
 - **But:** 29 posts are few, and the codebook had been developed on exactly these posts. The figure was too optimistic.
@@ -165,6 +166,8 @@ six dates and price figures were corrected, without any effect on categories or 
 
 - After analysing the errors, the background was extended with a glossary, foreign relations and international law.
 - Result: 78.0% instead of 80.0% – 5 posts better, 8 worse, i.e. random variation.
+- The published files `model_comparison_v6_*.csv` are this run with the extended background (topic 84.7%, tone 89.3%, both 78.0%).
+  The earlier v6 run (85.3% / 91.3% / 80.0%) was overwritten by it and no longer exists as a file.
 - **Finding:** the knowledge arrived (the AI now recognised pro-government rallies, for example), but the remaining
   errors were due to **fuzzy boundaries between categories**, not missing knowledge.
   The extended background was kept anyway because it is useful for the ~10,750 posts of the main run.
@@ -315,7 +318,7 @@ reference.**
 ## 10. What I learned
 
 1. **Definitions beat model size.** The biggest gains came from clearer rules, not larger models.
-2. **Small test sets deceive.** 83% on 29 posts became 70% on 150 new posts.
+2. **Small test sets deceive.** 83% on 29 posts became 69% on 150 new posts (Gemma 4 31B, v3 → v5).
 3. **Agreement is not truth.** When AI and human disagree, the error is not always the AI's.
 4. **Every adjustment on the same test set inflates the figure.** Hence: freeze, then measure on unseen data.
 5. **Hardware is part of the method.** Runtime, memory and sleep mode have to be planned for.

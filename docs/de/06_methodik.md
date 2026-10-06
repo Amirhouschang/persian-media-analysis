@@ -56,16 +56,18 @@ Diese Entscheidungen liegen offen in Dateien. Andere Setzungen ergäben leicht a
 
 - **Januar-Lücken:** IRNA wurde gezielt erneut abgefragt; die Beiträge fehlen auch direkt auf Telegram. Die Lücken bei IRNA
   und Jamaran fallen in die Zeit der Internetsperre. Für den 16.–17.03. nennt die Dokumentation keine Ursache.
-- **Zeitzone:** Telegram liefert UTC. Tage, Wochen und Phasen der Datenbank und aller darauf beruhenden Auswertungen
-  (Begriffe, Zeitverlauf, Aktivität) bilden das UTC-Datum; auch die Gewichte der KI-Stichprobe beruhen auf UTC-Wochen. Iran
-  liegt bei UTC+3:30; Beiträge zwischen 20:30 und 24:00 UTC gehören nach Teheraner Zeit zum Folgetag. Nur die KI-Themenanteile
-  pro Phase (`03e_topics.py`) verwenden das Teheraner Datum; dort endet die Waffenruhe am 07.07. und die Folgephase beginnt am 08.07.
-  (Datenbank: 06.07. und 07.07.). Betroffen sind nur Beiträge an Tages-, Wochen- und Phasengrenzen. Für die KI-Themenanteile
-  nachgerechnet: Nach dem UTC-Datum der Datenbank statt nach dem Teheraner Datum fielen 48 von 10.750 Beiträgen (davon 37 an der
-  Grenze Waffenruhe/Zusammenbruch) in eine andere Phase; die Themenanteile der Gruppen änderten sich um höchstens 1,5
-  Prozentpunkte (2 von 108 Werten über 1 Punkt), die der Einzelkanäle um höchstens 2,1 (4 von 216 Werten über 1 Punkt).
-  Für die übrigen Auswertungen wurde das Ausmaß nicht beziffert. Die Ereignislinie „Zusammenbruch der Waffenruhe“ in den
-  Diagrammen steht am 08.07.
+- **Zeitzone:** Telegram liefert UTC; Iran liegt bei UTC+3:30. Beiträge zwischen 20:30 und 24:00 UTC gehören nach Teheraner
+  Zeit schon zum Folgetag.
+  - **Regel:** Tage, Wochen und Phasen der Datenbank und aller darauf beruhenden Auswertungen (Begriffe, Zeitverlauf,
+    Aktivität) folgen dem UTC-Datum; auch die Gewichte der KI-Stichprobe beruhen auf UTC-Wochen.
+  - **Ausnahme:** Nur die KI-Themenanteile pro Phase (`03e_topics.py`) verwenden das Teheraner Datum. Dort endet die
+    Waffenruhe am 07.07. und die Folgephase beginnt am 08.07. (Datenbank: 06.07. und 07.07.).
+  - **Auswirkung:** Betroffen sind nur Beiträge an Tages-, Wochen- und Phasengrenzen. Für die KI-Themenanteile nachgerechnet:
+    Nach dem UTC-Datum statt nach dem Teheraner Datum fielen 48 von 10.750 Beiträgen (davon 37 an der Grenze
+    Waffenruhe/Zusammenbruch) in eine andere Phase. Die Themenanteile der Gruppen änderten sich um höchstens 1,5
+    Prozentpunkte (2 von 108 Werten über 1 Punkt), die der Einzelkanäle um höchstens 2,1 (4 von 216 Werten über 1 Punkt).
+    Für die übrigen Auswertungen wurde das Ausmaß nicht beziffert.
+  - **Diagramme:** Die Ereignislinie „Zusammenbruch der Waffenruhe“ steht am 08.07.
 - **Stand der Daten:** Texte, Aufrufe und Weiterleitungen entsprechen dem Zeitpunkt der Sammlung; was vorher gelöscht
   wurde, fehlt. Beiträge aus den letzten Tagen vor der Sammlung hatten weniger Zeit, Aufrufe zu sammeln. Die erste (ab
   01.01.) und die letzte Woche (nur 31.08.) sind unvollständig und fehlen in den Wochendiagrammen.
@@ -151,6 +153,10 @@ Diese Entscheidungen liegen offen in Dateien. Andere Setzungen ergäben leicht a
   verschiedener Versionen sich nicht überschreiben. Der Modellvergleich und die ersten rund 2.800 Beiträge des Hauptlaufs
   liefen mit einer früheren Fassung von `background.txt`; danach wurden sechs Daten- und Preisangaben korrigiert, ohne
   Einfluss auf Kategorien oder Regeln. Der Hauptlauf brauchte 67 Stunden.
+- **Gleichstand:** Haben mehrere Begriffe dieselbe Anzahl, ist ihre Reihenfolge nicht festgelegt. Ränge und die letzten Plätze der
+  Top-Listen (Top 1.000 Begriffe, Top 20 Nachbarwörter, Top 15 Begriffe einer Spitzenwoche) können deshalb von Lauf zu Lauf
+  wechseln; die Zählwerte selbst bleiben gleich. Ein vollständiger Neulauf aus den Rohdaten im Oktober 2026 hat alle Zählwerte
+  reproduziert: Acht Ergebnisdateien waren byte-gleich, die übrigen unterschieden sich nur in der Reihenfolge bei Gleichstand.
 - **Umgebung:** Linux, Python 3.11, PostgreSQL 18, Ollama; Pakete der Skripte: [requirements-scripts.txt](../../requirements-scripts.txt), des Dashboards: `dashboard/requirements.txt`.
 - **Grenze:** Die Rohdaten sind nicht veröffentlicht. Wer die Auswertung wiederholen will, muss die Beiträge mit den
   Skripten neu sammeln; Aufrufe und Weiterleitungen sowie später gelöschte Beiträge können dann abweichen.

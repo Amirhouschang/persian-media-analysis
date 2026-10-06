@@ -122,9 +122,10 @@ Der Modellvergleich und die ersten rund 2.800 Beiträge des Hauptlaufs liefen mi
 ### Phase 1 – Erste Tests (Codebuch v1–v3, 29 Beiträge)
 
 - Testset aus 29 Beiträgen der ersten fünf Kanäle (IRNA, IRIB News, Mehr, Tasnim, Fars), manuell kodiert.
-- Getestet: Gemma 4 (26B, 31B), Qwen 3.6 (27B), Qwen 2.5 (32B), Aya Expanse (8B, 32B) – jeweils **mit und ohne Kontext**.
+- Getestet: Gemma 4 (26B, 31B), Qwen 3.6 (27B), Qwen 2.5 (32B), Aya Expanse (32B) – jeweils **mit und ohne Kontext** (v3); Aya Expanse 8B nur in v1 und v2, dort noch ohne Kontextvergleich.
 - **Erkenntnis 1:** Die ersten Kategorien beschrieben Deutungen („propagandistisch“). Nach Umstellung auf sichtbare Textmerkmale
-  stieg die Übereinstimmung von Gemma 4 26B von 55 % auf 72 %.
+  stieg die Übereinstimmung von Gemma 4 26B von 55 % (v1) auf 72 % (v3, ohne Kontext). Ein Teil des Anstiegs kommt aus der Referenz selbst:
+  Zwischen v1 und v3 wurde die manuelle Kodierung bei 10 der 29 Beiträge korrigiert.
 - **Erkenntnis 2:** Hintergrundwissen verbesserte bei den meisten Modellen die Themenzuordnung.
 - Bestes Ergebnis (v3): Gemma 4 31B mit Kontext – Thema 97 %, Ton 86 %, beides 83 %.
 - **Aber:** 29 Beiträge sind wenig, und das Codebuch war an genau diesen Beiträgen entwickelt worden. Die Zahl war zu optimistisch.
@@ -166,6 +167,8 @@ Der Modellvergleich und die ersten rund 2.800 Beiträge des Hauptlaufs liefen mi
 
 - Nach Analyse der Fehler wurde der Hintergrund um Glossar, Außenbeziehungen und Völkerrecht erweitert.
 - Ergebnis: 78,0 % statt 80,0 % – 5 Beiträge besser, 8 schlechter, also Zufallsschwankung.
+- Die veröffentlichten Dateien `model_comparison_v6_*.csv` sind dieser Lauf mit dem erweiterten Hintergrund (Thema 84,7 %, Ton 89,3 %, beides 78,0 %).
+  Der frühere v6-Lauf (85,3 % / 91,3 % / 80,0 %) wurde dabei überschrieben und liegt nicht mehr als Datei vor.
 - **Erkenntnis:** Das Wissen kam an (die KI erkannte nun z. B. regierungsnahe Kundgebungen), aber die verbleibenden
   Fehler lagen an **unscharfen Grenzen zwischen Kategorien**, nicht an fehlendem Wissen.
   Der erweiterte Hintergrund wurde trotzdem beibehalten, weil er für die ~10.750 Beiträge des Hauptlaufs inhaltlich nützlich ist.
@@ -315,7 +318,7 @@ Kanäle doppelt so oft als nicht neutral zeigen wie staatliche – **ein Untersc
 ## 10. Was ich gelernt habe
 
 1. **Definitionen schlagen Modellgröße.** Die größten Sprünge kamen von klareren Regeln, nicht von größeren Modellen.
-2. **Kleine Testsets täuschen.** 83 % an 29 Beiträgen wurden an 150 neuen Beiträgen zu 70 %.
+2. **Kleine Testsets täuschen.** 83 % an 29 Beiträgen wurden an 150 neuen Beiträgen zu 69 % (Gemma 4 31B, v3 → v5).
 3. **Übereinstimmung ist nicht Wahrheit.** Wenn KI und Mensch abweichen, liegt der Fehler nicht immer bei der KI.
 4. **Jede Anpassung am selben Testset schönt die Zahl.** Deshalb: einfrieren, dann an unbekannten Daten messen.
 5. **Hardware ist Teil der Methode.** Laufzeit, Arbeitsspeicher und Ruhezustand müssen eingeplant werden.

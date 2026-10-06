@@ -22,15 +22,15 @@ Israel, den USA und Iran ab dem 28.02.2026, die Waffenruhe ab dem 08.04. und ihr
 Die Beiträge wurden vollständig ausgezählt; zusätzlich ordnete ein lokal betriebenes Sprachmodell 10.750 Beiträge nach
 Thema ein.
 
-1. **Umfang und Themen** ändern sich mit dem Krieg stark. Im Mittel der Gruppen veröffentlicht ein Kanal vor dem Krieg 122–134 Beiträge pro Tag,
-   in der ersten vollen Kriegswoche (ab 02.03.) 321–423 (Einzelkanäle: 227 bei IRNA bis 505 bei Mehr News). Der Anteil militärischer Beiträge steigt von 4–5 % auf 36–45 %, der Anteil
-   innenpolitischer fällt von 24–31 % auf 6–10 % (KI-Einordnung).
+1. **Umfang und Themen** ändern sich mit dem Krieg stark. Vor dem Krieg veröffentlicht ein Kanal je nach Gruppe 122–134 Beiträge pro Tag,
+   in der ersten vollen Kriegswoche (ab 02.03.) 321–423; bei den einzelnen Kanälen reicht das von 227 (IRNA) bis 505 (Mehr News).
+   Laut KI-Einordnung steigt der Anteil militärischer Beiträge von 4–5 % auf 36–45 %, der Anteil innenpolitischer fällt von 24–31 % auf 6–10 %.
 2. **Die höchsten Werte für „Märtyrer“ und „Rache“** liegen nicht beim Kriegsbeginn, sondern in den Wochen der Trauerfeier
    und der Trauerzüge für Ali Khamenei (03.–10.07.).
 3. **„Zionistisches Regime“** macht nach dem Zusammenbruch der Waffenruhe 57 % (staatlich) und 53 % (IRGC-nah) aller
    Bezeichnungen für Israel aus, bei Jamaran 26 %; „Israel“ ist bei Jamaran über den ganzen Zeitraum mit 65 % die häufigste Bezeichnung.
-4. **Mojtaba Khamenei** wird von keinem Kanal vor seiner Wahl am 08.03. „Führer“ genannt. In den Beiträgen über einen der
-   beiden Khamenei betreffen danach 74 % (Waffenruhe) bzw. 79 % (nach dem Zusammenbruch) den getöteten Ali Khamenei.
+4. **Mojtaba Khamenei** wird von keinem Kanal vor seiner Wahl am 08.03. „Führer“ genannt. Auch danach bleibt der getötete Ali Khamenei präsenter:
+   Von den Beiträgen über einen der beiden Khamenei handeln 74 % (Waffenruhe) bzw. 79 % (nach dem Zusammenbruch) von ihm.
 5. **Die drei Gruppen** unterscheiden sich in Begriffen, Themen und Ländern: Die staatlichen Kanäle nutzen die Sprache
    von Regierung, Verwaltung und Völkerrecht, die IRGC-nahen Kanäle die von Waffen, Zielen und Mobilisierung, Jamaran die
    von Verhandlungen, USA und Atomfrage.
@@ -89,12 +89,14 @@ Tag der offiziellen Bestätigung ist vom Autor gesetzt, die Daten der Trauerfeie
   genau einmal gezählt (1.501 Begriffe). Staaten, Personen und Akteure wurden anhand einer offenen Liste gezählt
   (113 Begriffe mit 188 Schreibweisen in 10 Kategorien). Einheit: Nennungen **pro 1.000 Wörter**; Zeitverlauf pro
   Kalenderwoche (Beginn Montag), nur vollständige Wochen.
-- **Typische Begriffe:** gewichtetes Log-Odds-Verhältnis mit z-Wert (über 1,96 statistisch deutlich). Ein Begriff zählt für
+- **Typische Begriffe:** Welche Begriffe verwendet eine Gruppe deutlich häufiger als die anderen? Gemessen mit dem gewichteten
+  Log-Odds-Verhältnis; der z-Wert gibt die Stärke des Unterschieds an (über 1,96 statistisch deutlich). Ein Begriff zählt für
   eine Gruppe nur, wenn jeder ihrer Kanäle ihn häufiger verwendet. Für Spitzenwochen wird eine Woche mit allen anderen
   Wochen derselben Gruppe verglichen.
-- **Themen:** Gemma 4 31B (lokal), Codebuch v8, 10.750 Beiträge, gewichtet auf alle 231.406 Beiträge mit mehr als
-  80 Zeichen. Endvalidierung an 200 neuen, von Hand kodierten Beiträgen: Thema in 72,5 % der Fälle richtig
-  (95-%-Intervall 65,9–78,2 %; Kappa 0,68).
+- **Themen:** Ein lokal betriebenes Sprachmodell (Gemma 4 31B, Codebuch v8) ordnete eine Stichprobe von 10.750 Beiträgen ein.
+  Die Stichprobe ist so gewichtet, dass sie für alle 231.406 Beiträge mit mehr als 80 Zeichen steht. Geprüft an 200 neuen,
+  von Hand kodierten Beiträgen: Thema in 72,5 % der Fälle richtig (95-%-Intervall 65,9–78,2 %; Kappa 0,68 – Kappa misst die
+  Übereinstimmung über den Zufall hinaus).
 - **Ton:** nicht ausgewertet (Kappa 0,46; die KI übersieht nicht-neutrale Töne, je Gruppe verschieden stark).
 
 ---
@@ -116,7 +118,7 @@ drei Gruppen ([04, Abschnitt 7](04_analyse.md#7-themen-laut-ki)).
 | Sonstiges (Service, Wetter, Sport, Kultur), staatlich | 20,5 | 5,2 | 18,5 | 17,9 |
 
 - Jamaran hat in jeder Phase den höchsten Anteil an Diplomatie.
-- **Aktivität:** Im Mittel der Gruppen veröffentlicht ein Kanal vor dem Krieg 122–134 Beiträge pro Tag (Einzelkanäle 109–178);
+- **Aktivität:** Vor dem Krieg veröffentlicht ein Kanal je nach Gruppe 122–134 Beiträge pro Tag (Einzelkanäle 109–178);
   in der ersten Kriegswoche (ab 02.03.) 321–423 (IRNA 227, Mehr News 505). Eine zweite Spitze liegt bei den staatlichen und
   IRGC-nahen Kanälen in den Wochen ab 29.06. und 06.07. (Trauerfeier, Zusammenbruch der Waffenruhe), bei Jamaran in der Woche
   ab 13.07.
@@ -125,7 +127,7 @@ drei Gruppen ([04, Abschnitt 7](04_analyse.md#7-themen-laut-ki)).
 
 ### 2.2 Januar und Februar: Proteste, Internetsperre, Verhandlungen
 
-([04, Abschnitt 5](04_analyse.md#5-zeitverlauf-was-wann-geschah) und [6](04_analyse.md#6-länder-und-verbündete)). Werte für einzelne Länder sind Nennungen pro 1.000 Wörter, alle Gruppen zusammen.
+Details: [04, Abschnitt 5](04_analyse.md#5-zeitverlauf-was-wann-geschah) und [6](04_analyse.md#6-länder-und-verbündete). Werte für einzelne Länder sind Nennungen pro 1.000 Wörter, alle Gruppen zusammen.
 
 - **Gegnerbegriffe** (z. B. „Randalierer“, „Verräter“, „Konterrevolution“): Höchstwert bei den IRGC-nahen Kanälen in der
   Woche ab 05.01. (3,34 pro 1.000 Wörter). Typisch für diese Woche waren u. a. „Randalierer“, „Protest“,
@@ -142,7 +144,7 @@ drei Gruppen ([04, Abschnitt 7](04_analyse.md#7-themen-laut-ki)).
 
 ### 2.3 Kriegsbeginn und Führerwechsel (28.02.–08.03.)
 
-([04, Abschnitt 4](04_analyse.md#4-welcher-khamenei-ist-gemeint) und [3](04_analyse.md#3-wie-die-kanäle-benennen))
+Details: [04, Abschnitt 4](04_analyse.md#4-welcher-khamenei-ist-gemeint) und [3](04_analyse.md#3-wie-die-kanäle-benennen).
 
 - Am 01.03., dem Tag der offiziellen Bestätigung, schreiben alle sechs Kanäle zum ersten Mal „der Märtyrer-Führer“
   (`رهبر شهید`).
@@ -167,7 +169,7 @@ drei Gruppen ([04, Abschnitt 7](04_analyse.md#7-themen-laut-ki)).
 
 ### 2.4 Waffenruhe und Verhandlungen (08.04.–06.07.)
 
-([04, Abschnitt 5](04_analyse.md#5-zeitverlauf-was-wann-geschah) und [6](04_analyse.md#6-länder-und-verbündete)). Werte für einzelne Länder: alle Gruppen zusammen.
+Details: [04, Abschnitt 5](04_analyse.md#5-zeitverlauf-was-wann-geschah) und [6](04_analyse.md#6-länder-und-verbündete). Werte für einzelne Länder: alle Gruppen zusammen.
 
 - **Trump:** In der Woche ab 13.04. (US-Seeblockade) erreicht „Trump“ in allen Gruppen den Höchstwert: Jamaran 4,5,
   IRGC-nah 4,0, staatlich 3,4.
@@ -186,12 +188,12 @@ drei Gruppen ([04, Abschnitt 7](04_analyse.md#7-themen-laut-ki)).
   Netanjahus mit Dementi).
 - **China:** Höchstwert in der Woche ab 11.05. (1,81; typisch: „Trump“, „Reise“, „Xi Jinping“, „Peking“ – Trumps Reise
   nach Peking); 0,90 in der Woche ab 18.05. („Putin“, „Reise“).
-- **Internet:** Jamaran nennt das Internet von April bis Anfang Juni mehr als fünfmal so oft wie die anderen Gruppen
+- **Internet:** Jamaran nennt das Internet von Anfang April bis Mitte Juni (06.04.–14.06.) mehr als fünfmal so oft wie die anderen Gruppen
   (1,04 gegenüber 0,17 und 0,20). Höchstwerte: Woche ab 11.05. (1,74; „Internet Pro“) und ab 25.05. (1,76; „Wiederöffnung“).
 
 ### 2.5 Juli: Trauerfeier und Zusammenbruch der Waffenruhe
 
-([04, Abschnitt 5](04_analyse.md#5-zeitverlauf-was-wann-geschah) und [6](04_analyse.md#6-länder-und-verbündete))
+Details: [04, Abschnitt 5](04_analyse.md#5-zeitverlauf-was-wann-geschah) und [6](04_analyse.md#6-länder-und-verbündete).
 
 | Woche ab | Messwert pro 1.000 Wörter | typische Begriffe der Woche |
 |---|---|---|
@@ -212,7 +214,7 @@ drei Gruppen ([04, Abschnitt 7](04_analyse.md#7-themen-laut-ki)).
 
 ### 2.6 Bezeichnungen und Personen
 
-([04, Abschnitt 2](04_analyse.md#2-wen-die-kanäle-nennen) und [3](04_analyse.md#3-wie-die-kanäle-benennen))
+Details: [04, Abschnitt 2](04_analyse.md#2-wen-die-kanäle-nennen) und [3](04_analyse.md#3-wie-die-kanäle-benennen).
 
 Anteil an allen Bezeichnungen für Israel:
 
@@ -237,7 +239,7 @@ Anteil an allen Bezeichnungen für Israel:
 
 ### 2.7 Länder
 
-([04, Abschnitt 6](04_analyse.md#6-länder-und-verbündete))
+Details: [04, Abschnitt 6](04_analyse.md#6-länder-und-verbündete).
 
 Rund ein Viertel aller Beiträge mit Text (67.669) nennt mindestens ein Land oder eine Gruppe der Liste ([04, Abschnitt 6](04_analyse.md#6-länder-und-verbündete)).
 Am häufigsten genannt werden Libanon (20.759 Nennungen), Irak (11.655) und Russland (10.056). Die IRGC-nahen Kanäle nennen
@@ -268,7 +270,7 @@ Dasselbe Land erscheint in den Gruppen mit verschiedenen Begriffen (typische Beg
 
 ### 2.8 Profile der Gruppen
 
-([04, Abschnitt 1](04_analyse.md#1-worüber-jede-gruppe-schreibt))
+Details: [04, Abschnitt 1](04_analyse.md#1-worüber-jede-gruppe-schreibt).
 
 - **Staatlich:** Regierungssprecher und Diplomatie („Außenamtssprecher“, „Außenminister“), Sprache des Völkerrechts
   („Aggression“, „Verurteilung“, „Vereinte Nationen“), Verwaltung und Service (Provinzen, Wetterdienst, Erdbeben,
@@ -281,7 +283,7 @@ Dasselbe Land erscheint in den Gruppen mit verschiedenen Begriffen (typische Beg
 
 ### 2.9 Aktivität und Reichweite
 
-([04, Abschnitt 8](04_analyse.md#8-aktivität-und-reichweite))
+Details: [04, Abschnitt 8](04_analyse.md#8-aktivität-und-reichweite).
 
 | | staatlich | IRGC-nah | Jamaran |
 |---|---|---|---|
@@ -312,7 +314,10 @@ Abonnenten, die nicht erhoben wurde.
 - **Länder:** `عمان` meint Oman und Amman; `آذربایجان` allein zählt als Republik Aserbaidschan, meint aber manchmal iranische
   Provinzen (Wert zu hoch); Ägypten fehlt; ein Teil der Nennungen europäischer Länder betrifft Sport.
 - **Januar:** IRNA und Jamaran veröffentlichten Mitte Januar kaum Beiträge (Internetsperre).
-- **Zeitzone:** Tage, Wochen und Phasen beruhen auf dem UTC-Datum der Beiträge (Teheran: UTC+3:30); nur die KI-Themenanteile verwenden das Teheraner Datum (dort endet die Waffenruhe am 07.07. statt am 06.07.). Nach dem UTC-Datum fielen 48 von 10.750 KI-Beiträgen in eine andere Phase (37 davon an dieser Grenze), die Gruppenanteile änderten sich um höchstens 1,5 Prozentpunkte.
+- **Zeitzone:** Tage, Wochen und Phasen beruhen auf dem UTC-Datum der Beiträge (Teheran: UTC+3:30). Einzige Ausnahme sind die
+  KI-Themenanteile: Sie verwenden das Teheraner Datum, dort endet die Waffenruhe am 07.07. statt am 06.07. Der Unterschied ist
+  klein: Nach dem UTC-Datum fielen 48 von 10.750 KI-Beiträgen in eine andere Phase (37 davon an dieser Grenze), und die
+  Gruppenanteile änderten sich um höchstens 1,5 Prozentpunkte.
 - **Einordnung des Projekts:** Es ist vor allem technisch und liefert einen belastbaren Überblick, keine wissenschaftliche
   Tiefenanalyse; eine solche Studie würde die Beiträge einzeln lesen und 100 Seiten und mehr umfassen. Für belastbarere
   Ergebnisse sollten mehrere persische Muttersprachler unabhängig kodieren und das Codebuch gemeinsam diskutieren.

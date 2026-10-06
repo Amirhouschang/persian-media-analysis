@@ -27,9 +27,9 @@ data and credentials were protected. Details are in [01](01_data_collection.md) 
 
 ---
 
-## 2. Settings by the author
+## 2. Decisions made by the author
 
-These decisions are open in files. Other settings would give slightly different numbers.
+These decisions are documented in files. Other decisions would give slightly different numbers.
 
 | Setting | Content | File |
 |---|---|---|
@@ -55,15 +55,18 @@ These decisions are open in files. Other settings would give slightly different 
 
 - **January gaps:** IRNA was queried again on purpose; the posts are missing on Telegram itself. The gaps at IRNA and
   Jamaran fall in the time of the internet blackout. For 16–17 Mar the documentation gives no cause.
-- **Time zone:** Telegram delivers UTC. Days, weeks and phases of the database and of all analyses built on it (terms,
-  timeline, activity) use the UTC date; the weights of the AI sample are also based on UTC weeks. Iran is at UTC+3:30;
-  posts between 20:30 and 24:00 UTC belong to the next day in Tehran time. Only the AI topic shares per phase
-  (`03e_topics.py`) use the Tehran date; there the ceasefire ends on 7 Jul and the next phase begins on 8 Jul (database: 6 and
-  7 Jul). Only posts at the boundaries of days, weeks and phases are affected. Recalculated for the AI topic shares: by the
-  UTC date of the database instead of the Tehran date, 48 of 10,750 posts (37 of them at the ceasefire/collapse boundary)
-  would fall into another phase; the topic shares of the groups would change by at most 1.5 percentage points (2 of 108
-  values above 1 point), those of the single channels by at most 2.1 (4 of 216 values above 1 point). For the other
-  analyses the extent was not quantified. The event line "collapse of the ceasefire" in the charts is at 8 Jul.
+- **Time zone:** Telegram delivers UTC; Iran is at UTC+3:30. Posts between 20:30 and 24:00 UTC already belong to the next
+  day in Tehran time.
+  - **Rule:** days, weeks and phases of the database and of all analyses built on it (terms, timeline, activity) use the
+    UTC date; the weights of the AI sample are also based on UTC weeks.
+  - **Exception:** only the AI topic shares per phase (`03e_topics.py`) use the Tehran date. There the ceasefire ends on
+    7 Jul and the next phase begins on 8 Jul (database: 6 and 7 Jul).
+  - **Effect:** only posts at the boundaries of days, weeks and phases are affected. Recalculated for the AI topic shares:
+    by the UTC date instead of the Tehran date, 48 of 10,750 posts (37 of them at the ceasefire/collapse boundary) would
+    fall into another phase. The topic shares of the groups would change by at most 1.5 percentage points (2 of 108 values
+    above 1 point), those of the single channels by at most 2.1 (4 of 216 values above 1 point). For the other analyses
+    the extent was not quantified.
+  - **Charts:** the event line "collapse of the ceasefire" is at 8 Jul.
 - **State of the data:** Texts, views and forwards correspond to the time of collection; anything deleted before then is
   missing. Posts from the last days before the collection had less time to collect views. The first week (from 1 Jan) and
   the last week (31 Aug only) are incomplete and are left out of the weekly charts.
@@ -76,7 +79,7 @@ These decisions are open in files. Other settings would give slightly different 
 
 ---
 
-## 4. Limits of the statements
+## 4. Limits of the findings
 
 | Limit | Consequence for reading |
 |---|---|
@@ -145,6 +148,10 @@ These decisions are open in files. Other settings would give slightly different 
   versions do not overwrite each other. The model comparison and the first about 2,800 posts of the main run used an
   earlier version of `background.txt`; afterwards six date and price details were corrected, without effect on categories
   or rules. The main run took 67 hours.
+- **Ties:** Where several terms have the same count, their order is not fixed. Ranks and the last places of the top lists
+  (top 1,000 terms, top 20 neighbouring words, top 15 terms of a peak week) can therefore change from run to run; the counts
+  themselves stay the same. A complete re-run from the raw data in October 2026 reproduced all counts: eight result
+  files were byte-identical, the others differed only in the order of tied terms.
 - **Environment:** Linux, Python 3.11, PostgreSQL 18, Ollama; packages of the scripts: [requirements-scripts.txt](../../requirements-scripts.txt), of the dashboard: `dashboard/requirements.txt`.
 - **Limit:** The raw data are not published. Anyone who wants to repeat the analysis has to collect the posts again with
   the scripts; views and forwards as well as posts deleted later may then differ.

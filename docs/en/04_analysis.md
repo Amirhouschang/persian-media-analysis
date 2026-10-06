@@ -1,6 +1,6 @@
 **English** | [Deutsch](../de/04_analyse.md)
 
-# 04 – Analysis: what the channels say, whom they name and how they name
+# 04 – Analysis: what the channels write about, whom they mention and which names they use
 
 [← back to overview](../../README.md)
 
@@ -8,10 +8,10 @@ This page shows the results of the analysis of the **complete corpus** – with 
 Python. It answers five questions:
 
 1. **What** does each source group write about clearly more than the others?
-2. **Whom** do they name – and how often?
-3. **How do they name** the same actors (Israel, the USA, opponents at home)?
+2. **Whom** do they mention – and how often?
+3. **Which names** do they use for the same actors (Israel, the USA, opponents at home)?
 4. **When** does this change – and which event is behind each peak?
-5. **Which countries and allies** do they name – when and in which context?
+5. **Which countries and allies** do they mention – when and in which context?
 
 The method is at the end of the page ([section 10](#10-method)). Section 7 adds the topics according to the AI
 classification of a weighted sample ([03](03_ai_classification.md)) – with measured accuracy.
@@ -21,7 +21,7 @@ classification of a weighted sample ([03](03_ai_classification.md)) – with mea
 | Basis | 328,330 posts from 6 channels, 267,548 of them with text; 1 Jan – 31 Aug 2026 |
 | Groups | **state**: IRNA, IRIB News, Mehr News · **IRGC-affiliated**: Tasnim News, Fars News · **reformist**: Jamaran |
 | Unit | frequency **per 1,000 words** – so groups of different size can be compared |
-| Notation | Persian terms with transliteration and translation: `رژیم صهیونیستی` *rezhim-e sahyunisti* ("Zionist regime") |
+| Notation | Persian terms with transliteration and translation: `رژیم صهیونیستی` *rizhīm-i ṣahyūnīstī* ("Zionist regime"). Transliteration follows the IJMES system for Persian; names of persons and well-known places keep their usual spelling (Khamenei, Ghalibaf, Mashhad) |
 | Result files | numbers, terms and links, in `results/` – no post texts; the AI files contain short AI reasons ([description](../../results/README.md)) |
 
 ### Timeline
@@ -58,12 +58,12 @@ funeral ceremonies from Al Jazeera reports.
   internet** – and quotes international media and reformist politicians.
 - **Israel is called the "Zionist regime" more and more often** – in state and IRGC-affiliated channels in 57% and 53%
   of mentions after the collapse of the ceasefire (before: 42–48% and 35–40%). At Jamaran it is 26%; "Israel" is its most frequent designation over the whole period (65%).
-- **Jamaran names Trump most often and most often writes "Trump claims"** (8.2% of all words directly after "Trump",
+- **Jamaran mentions Trump most often and most often writes "Trump claims"** (8.2% of all words directly after "Trump",
   3% in the other groups). IRGC-affiliated channels more often call him "criminal" and "gambler".
 - **No channel calls Mojtaba Khamenei the Leader before his selection on 8 March.** Nevertheless, of the
-  posts that name one of the two Khameneis, **74%** in the ceasefire and **79%** after the collapse concern the killed
+  posts that mention one of the two Khameneis, **74%** in the ceasefire and **79%** after the collapse concern the killed
   Ali Khamenei (war: 55%).
-- **Persons:** President Pezeshkian is named much less often during the war (IRGC-affiliated: from 0.60 to 0.17
+- **Persons:** President Pezeshkian is mentioned much less often during the war (IRGC-affiliated: from 0.60 to 0.17
   per 1,000 words). Speaker of Parliament **Ghalibaf** gains weight during the ceasefire. Former presidents and
   ministers of the reformist camp – **Khatami, Rouhani, Zarif** – appear much more often at Jamaran (Khatami 0.12 per 1,000 words against 0.01 and 0.02).
 - **The largest peaks are not at the start of the war** but at the beginning of July: in the weeks of the
@@ -73,7 +73,7 @@ funeral ceremonies from Al Jazeera reports.
   Memorandum (17–18 Jun); opponent labels in the weeks of the protests and the internet blackout in January. One exception: the crime terms of
   the IRGC-affiliated channels peak in the week from 20 Jul with no single event recognisable.
 - **Countries:** with the start of the war the focus shifts to the region – Russia and China fall to a third in the
-  IRGC-affiliated channels, Gaza to between a fifth and a third in all groups. Bahrain and Kuwait, hardly named before,
+  IRGC-affiliated channels, Gaza to between a fifth and a third in all groups. Bahrain and Kuwait, hardly mentioned before,
   become scenes of action. Every phase has its country: Lebanon and Pakistan in the ceasefire, Saudi Arabia, Yemen and
   Iraq afterwards.
 - **One country, three pictures:** for the state media the UAE are a currency hub, for the IRGC-affiliated channels a
@@ -102,33 +102,33 @@ clear in all three channels:
 
 | Theme | typical terms | z |
 |---|---|---|
-| Government spokespeople and diplomacy | `بقائی` *Baghaei* (Esmail Baghaei, foreign ministry spokesman) · `وزیر امور خارجه` *vazir-e omur-e kharejeh* (foreign minister) · `غریب‌آبادی` *Gharibabadi* (Kazem Gharibabadi, deputy foreign minister) · `مهاجرانی` *Mohajerani* (Fatemeh Mohajerani, government spokeswoman) · `مجلس شورای اسلامی` *majles* (parliament) | 3–9 |
-| Language of international law | `تجاوز` *tajavoz* (aggression) · `محکوم` / `محکومیت` *mahkum* (condemned / condemnation) · `نقض` *naqz* (violation) · `سازمان ملل` *sazman-e melal* (United Nations) · `حقوق بشر سازمان ملل` *hoquq-e bashar* (UN human rights council) · `جنایت` *jenayat* (crime) · `جنگ تحمیلی` *jang-e tahmili* ("imposed war") | 3–6 |
+| Government spokespeople and diplomacy | `بقائی` *Baghaei* (Esmail Baghaei, foreign ministry spokesman) · `وزیر امور خارجه` *vazīr-i umūr-i khārijih* (foreign minister) · `غریب‌آبادی` *Gharibabadi* (Kazem Gharibabadi, deputy foreign minister) · `مهاجرانی` *Mohajerani* (Fatemeh Mohajerani, government spokeswoman) · `مجلس شورای اسلامی` *majlis* (parliament) | 3–9 |
+| Language of international law | `تجاوز` *tajāvuz* (aggression) · `محکوم` / `محکومیت` *maḥkūm* (condemned / condemnation) · `نقض` *naqż* (violation) · `سازمان ملل` *sāzmān-i milal* (United Nations) · `حقوق بشر سازمان ملل` *ḥuqūq-i bashar* (UN human rights council) · `جنایت` *jināyat* (crime) · `جنگ تحمیلی` *jang-i taḥmīlī* ("imposed war") | 3–6 |
 | Judiciary | `محسنی اژه‌ای` *Mohseni-Ejei* (Gholam-Hossein Mohseni-Ejei, head of the judiciary) | 3.5 |
-| Military statements | `بسم الله قاصم الجبارین` *besmellah qasem al-jabbarin* ("in the name of God, the breaker of tyrants" – heading of military statements) · `قاتلوهم` *qatiluhum* ("fight them", Quran verse) | 3–5 |
-| Education | `دانش آموزان` *daneshamuzan* (pupils) · `سازمان سنجش آموزش کشور` (national examination authority) · `آزمون` (exam) · `رشته` (field of study) · `کلاس درس` (classroom) | 3–6 |
-| Administration and services | `استان` *ostan* (province) · `مدیرکل` *modir-kol* (director general) · `راهداری` (road authority) · `سازمان هواشناسی` (weather service) · `زلزله` (earthquake) · `جمعیت هلال احمر` (Red Crescent) | 3–11 |
-| Calendar | month names `اردیبهشت` *ordibehesht*, `خرداد` *khordad*, `تیر` *tir*, `مرداد` *mordad*, `شهریور` *shahrivar* · weekdays | 4–11 |
-| Culture, sport, religion | `جشنواره فیلم فجر` (Fajr film festival) · taekwondo, wrestling · `اربعین` *arbain* (pilgrimage to Karbala) | 4–5 |
+| Military statements | `بسم الله قاصم الجبارین` *bism Allāh qāṣim al-jabbārīn* ("in the name of God, the breaker of tyrants" – heading of military statements) · `قاتلوهم` *qātilūhum* ("fight them", Quran verse) | 3–5 |
+| Education | `دانش آموزان` *dānish-āmūzān* (pupils) · `سازمان سنجش آموزش کشور` (national examination authority) · `آزمون` (exam) · `رشته` (field of study) · `کلاس درس` (classroom) | 3–6 |
+| Administration and services | `استان` *ustān* (province) · `مدیرکل` *mudīr-i kull* (director general) · `راهداری` (road authority) · `سازمان هواشناسی` (weather service) · `زلزله` (earthquake) · `جمعیت هلال احمر` (Red Crescent) | 3–11 |
+| Calendar | month names `اردیبهشت` *urdībihisht*, `خرداد` *khurdād*, `تیر` *tīr*, `مرداد` *murdād*, `شهریور` *shahrīvar* · weekdays | 4–11 |
+| Culture, sport, religion | `جشنواره فیلم فجر` (Fajr film festival) · taekwondo, wrestling · `اربعین` *arbaʿīn* (pilgrimage to Karbala) | 4–5 |
 
 **The three state channels differ** (each channel compared with the five others): IRNA writes about government,
 economy and culture (`دولت چهاردهم` "14th government" = Pezeshkian's government, gold, tourism, theatre). IRIB News
 warns during the war (`آژیرها` sirens, `هشدار نارنجی` "orange alert", `پناهگاه بروند` "go to the shelters") and reports
 on `تجمعات شبانه` (nightly pro-government rallies). Mehr News is the channel of mourning and mobilisation: `سوگ`
 (mourning), `مراسم تشییع پیکر` (funeral procession), `رهبر شهید` (the martyred Leader), `میناب` (Minab), `جنگ رمضان`
-*jang-e ramazan* ("Ramadan war" – the war began during Ramadan).
+*jang-i ramażān* ("Ramadan war" – the war began during Ramadan).
 
 ### IRGC-affiliated channels – war, security and mobilisation
 
 | Theme | typical terms | z |
 |---|---|---|
-| Weapons and attacks | `پهپاد` *pahpad* (drone) · `موشک` *mushak* (missile) · `پهپاد انتحاری` (kamikaze drone) · `هدف قرار` (targeted) · `اصابت` (impact) · `انهدام` (destruction) | 7–15 |
-| Targets in Israel and the Gulf | `حیفا` (Haifa) · `الجلیل` (Galilee) · `کریات شمونه` (Kiryat Shmona) · `فلسطین اشغالی` *felestin-e eshghali* ("occupied Palestine" = Israel) · `فجیره` (Fujairah, UAE) · `اربیل` (Erbil, Iraq) · Saudi Arabia, UAE, Kuwait, Bahrain | 5–11 |
-| Allies | `حزب‌الله` *Hezbollah* – the most typical term of the group (z 20.8) · `یمن` (Yemen) · `النبطیه` (Nabatieh, southern Lebanon) | 5–21 |
-| Protests as "riots" | `اغتشاشات` *eghteshashat* ("riots") · `اغتشاشگران` ("rioters") · `آشوبگران` ("agitators") · `ضدانقلاب` ("counter-revolution") · `منافقین` ("hypocrites" = People's Mojahedin) · `کشته‌سازی` *koshteh-sazi* ("staged deaths") | 6–14 |
+| Weapons and attacks | `پهپاد` *pahpād* (drone) · `موشک` *mūshak* (missile) · `پهپاد انتحاری` (kamikaze drone) · `هدف قرار` (targeted) · `اصابت` (impact) · `انهدام` (destruction) | 7–15 |
+| Targets in Israel and the Gulf | `حیفا` (Haifa) · `الجلیل` (Galilee) · `کریات شمونه` (Kiryat Shmona) · `فلسطین اشغالی` *Filasṭīn-i ishghālī* ("occupied Palestine" = Israel) · `فجیره` (Fujairah, UAE) · `اربیل` (Erbil, Iraq) · Saudi Arabia, UAE, Kuwait, Bahrain | 5–11 |
+| Allies | `حزب‌الله` *Ḥizbullāh* (Hezbollah) – the most typical term of the group (z 20.8) · `یمن` (Yemen) · `النبطیه` (Nabatieh, southern Lebanon) | 5–21 |
+| Protests as "riots" | `اغتشاشات` *ightishāshāt* ("riots") · `اغتشاشگران` ("rioters") · `آشوبگران` ("agitators") · `ضدانقلاب` ("counter-revolution") · `منافقین` ("hypocrites" = People's Mojahedin) · `کشته‌سازی` *kushtih-sāzī* ("staged deaths") | 6–14 |
 | Security and arrests | `دستگیر` (arrested) · `بازداشت` (detention) · `کشف` (discovered) · `عناصر` ("elements") · `تروریست` (terrorist) · `سازمان اطلاعات سپاه` (IRGC intelligence organisation) | 5–12 |
 | Opposition abroad | `اینترنشنال` (Iran International, Persian-language broadcaster abroad) · `رضا پهلوی` *Reza Pahlavi* (son of the last Shah) | 11–12 |
-| Mobilisation and religion | `بیعت` *bey'at* (oath of allegiance – above all during the war, after the selection of the new Leader) · `خونخواهی` *khunkhahi* (blood revenge) · `انتقام` *enteqam* (revenge) · `لبیک` ("at your service") · `مداحی` (religious lament singing) · `حرم حضرت معصومه` (shrine in Qom) · `خیابان`, `تجمع` (street, rally) | 5–13 |
+| Mobilisation and religion | `بیعت` *bayʿat* (oath of allegiance – above all during the war, after the selection of the new Leader) · `خونخواهی` *khūnkhvāhī* (blood revenge) · `انتقام` *intiqām* (revenge) · `لبیک` ("at your service") · `مداحی` (religious lament singing) · `حرم حضرت معصومه` (shrine in Qom) · `خیابان`, `تجمع` (street, rally) | 5–13 |
 | Killed commanders | `شهید پاکپور` (Mohammad Pakpour, IRGC commander, killed 28 Feb) · `شهید سلامی` (Hossein Salami, killed 2025) · `غلامرضا سلیمانی` (Basij commander, killed 17 Mar) · `شهید رئیسی` (Ebrahim Raisi, president, died in a crash in 2024) | 5–7 |
 | Football | `پرسپولیس` (Persepolis) · `استقلال` (Esteghlal) · `تراکتور` (Tractor) | 6–9 |
 
@@ -141,7 +141,7 @@ banks.
 |---|---|---|
 | USA and negotiations | `ترامپ` *Trump* – the most typical term (z 44.6) · `ایالات متحده` (United States) · `مذاکرات` (negotiations) · `توافق` (agreement) · `ونس` (JD Vance) · `روبیو` (Marco Rubio) · `ویتکاف` (Steve Witkoff) · `کوشنر` (Jared Kushner) · `برجام` (2015 nuclear deal) | 9–45 |
 | Nuclear issue | `هسته‌ای` (nuclear) · `غنی‌سازی` (enrichment) · `اورانیوم` (uranium) · `گروسی` (Rafael Grossi, head of the IAEA) | 10–23 |
-| Distance from statements | `مدعی` *moddai* ("claims") · `ادعای` ("claim") · `احتمالا` (probably) · `بعید` (unlikely) · `ظاهرا` (apparently) | 8–33 |
+| Distance from statements | `مدعی` *muddaʿī* ("claims") · `ادعای` ("claim") · `احتمالا` (probably) · `بعید` (unlikely) · `ظاهرا` (apparently) | 8–33 |
 | International media | `آکسیوس` (Axios) · CNN · Fox News · New York Times · Wall Street Journal · Bloomberg · Reuters · Al Jazeera · RIA Novosti | 9–22 |
 | Reformist camp | `سید حسن خمینی` (Hassan Khomeini, grandson of the founder of the revolution) · `خاتمی` (Mohammad Khatami, president 1997–2005) · `ظریف` (Mohammad Javad Zarif, foreign minister 2013–2021) · `حسن روحانی` (Hassan Rouhani, president 2013–2021) · `ابطحی` (Mohammad-Ali Abtahi, vice president under Khatami) · `زیدآبادی` (Ahmad Zeidabadi, journalist) · `عارف` (Mohammad Reza Aref, first vice president) · `اصلاحات` (reforms) | 10–28 |
 | Opponents at home | `کیهان` (Kayhan, conservative newspaper) · `شریعتمداری` (Hossein Shariatmadari, editor of Kayhan) · `نبویان` (Mahmoud Nabavian, member of parliament) · `اصولگرا` (principlists) · `تندروها` (hardliners) | 9–15 |
@@ -150,7 +150,7 @@ banks.
 
 ---
 
-## 2. Whom the channels name
+## 2. Whom the channels mention
 
 Mentions per 1,000 words, whole period. Name and name variants are counted (`naming_terms.csv`, e.g. for Ghalibaf the
 spellings `قالیباف`, `قالی‌باف` and `قالی باف`; the full name `محمدباقر قالیباف` *Mohammad-Bagher Ghalibaf* is counted
@@ -186,7 +186,7 @@ Rouhani 78 compared with 30 (state) and 16 (IRGC-affiliated). Rouhani is only co
 
 - The **president** recedes into the background during the war – most strongly in the IRGC-affiliated channels.
 - The **foreign minister** is most present before the war, at the time of the nuclear talks.
-- **Ghalibaf** is named two to four times as often during the ceasefire as before the war.
+- **Ghalibaf** is mentioned two to four times as often during the ceasefire as before the war.
 
 ### Ghalibaf over time
 
@@ -197,11 +197,11 @@ The peaks fall on three events. The right column lists the terms that were most 
 
 | Week from | highest value | typical terms of this week | Event |
 |---|---|---|---|
-| 13 Apr | IRGC-affiliated 0.95 | `آتش‌بس` *atash-bas* (ceasefire) · `محاصره دریایی` *mohasereh-ye darya'i* (naval blockade) · `مذاکرات` *mozakerat* (negotiations) · `تنگه هرمز` (Strait of Hormuz) | talks in Islamabad (11–12 Apr), US naval blockade (13 Apr) |
-| 29 Jun | Jamaran 1.04 · state 0.56 | `مراسم وداع` *marasem-e veda'* (farewell ceremony) · `رهبر شهید` *rahbar-e shahid* (the martyred Leader) · `مصلی تهران` *mosalla* (Tehran prayer ground) · `ادای احترام` (paying respects) | farewell ceremony for Ali Khamenei |
-| 17 Aug | Jamaran 0.87 · IRGC-affiliated 0.82 · state 0.65 | `چهلم` *chehelom* (40th-day memorial) · `تدفین` *tadfin* (burial) · `اقتصادی` (economic) · `بنزین` *benzin* (petrol) · `نفوذ` *nofuz* ("infiltration") · `مصدق` *Mosaddegh* (anniversary of the coup of 19 Aug 1953) | memorial ceremonies for Ali Khamenei; debates on the economy and petrol |
+| 13 Apr | IRGC-affiliated 0.95 | `آتش‌بس` *ātash-bas* (ceasefire) · `محاصره دریایی` *muḥāṣirih-yi daryāʾī* (naval blockade) · `مذاکرات` *muẕākirāt* (negotiations) · `تنگه هرمز` (Strait of Hormuz) | talks in Islamabad (11–12 Apr), US naval blockade (13 Apr) |
+| 29 Jun | Jamaran 1.04 · state 0.56 | `مراسم وداع` *marāsim-i vidāʿ* (farewell ceremony) · `رهبر شهید` *rahbar-i shahīd* (the martyred Leader) · `مصلی تهران` *muṣallā* (Tehran prayer ground) · `ادای احترام` (paying respects) | farewell ceremony for Ali Khamenei |
+| 17 Aug | Jamaran 0.87 · IRGC-affiliated 0.82 · state 0.65 | `چهلم` *chihilum* (40th-day memorial) · `تدفین` *tadfīn* (burial) · `اقتصادی` (economic) · `بنزین` *binzīn* (petrol) · `نفوذ` *nufūẕ* ("infiltration") · `مصدق` *Mosaddegh* (anniversary of the coup of 19 Aug 1953) | memorial ceremonies for Ali Khamenei; debates on the economy and petrol |
 
-Ghalibaf is named often in three very different contexts: the negotiations, the mourning for the Leader and economic
+Ghalibaf is mentioned often in three very different contexts: the negotiations, the mourning for the Leader and economic
 policy afterwards. The terms show the context of the week, not every single statement about him; the exact content is
 shown by `04_context.py قالیباف`.
 
@@ -209,19 +209,18 @@ shown by `04_context.py قالیباف`.
 
 | Word directly after "Trump" | state | IRGC-affiliated | Jamaran |
 |---|---|---|---|
-| `مدعی` *moddai* ("claims") | 2.8% | 3.0% | **8.2%** |
-| `جنایتکار` *jenayatkar* ("criminal") | 0.5% | **1.4%** | – |
-| `قمارباز` *qomarbaz* ("gambler") | – | **0.6%** | – |
+| `مدعی` *muddaʿī* ("claims") | 2.8% | 3.0% | **8.2%** |
+| `جنایتکار` *jināyatkār* ("criminal") | 0.5% | **1.4%** | – |
+| `قمارباز` *qumārbāz* ("gambler") | – | **0.6%** | – |
 
 Share of all words directly after "Trump"; "–" = not among the 20 most frequent. Before "Trump", all groups most often
 write `دونالد` (Donald), then `دولت` (administration) and `ادعای` ("the claim of") – 5.2% at Jamaran, 3.2–3.3% in the
-others. Before "Netanyahu", the most frequent word is `بنیامین` (Benjamin; 25–40%); `توهمات` (*tavahhomat*, "delusions") is among the
-20 most frequent words before him in all groups (0.5–1.1%). Full lists:
+others. Before "Netanyahu", the most frequent word is `بنیامین` (Benjamin; 25–40%); `توهمات` (*tavahhumāt*, "delusions") is among the 20 most frequent words before him in the state channels (1.1%) and at Jamaran (0.5%); in the IRGC-affiliated channels it occurs 5 times, level with other words at the edge of the top 20. Full lists:
 `results/naming/neighbours.csv`.
 
 ---
 
-## 3. How the channels name
+## 3. Which names the channels use
 
 ### Israel
 
@@ -229,24 +228,24 @@ Share of all names for Israel:
 
 | | state | IRGC-affiliated | Jamaran |
 |---|---|---|---|
-| `رژیم صهیونیستی` *rezhim-e sahyunisti* ("Zionist regime"), whole period | 48% | 40% | 29% |
+| `رژیم صهیونیستی` *rizhīm-i ṣahyūnīstī* ("Zionist regime"), whole period | 48% | 40% | 29% |
 | – before the war (until 27 Feb) | 46% | 40% | 28% |
 | – war (28 Feb – 7 Apr) | 42% | 35% | 31% |
 | – ceasefire (8 Apr – 6 Jul) | 48% | 40% | 29% |
 | – after the collapse (from 7 Jul) | **57%** | **53%** | 26% |
-| `اسرائیل` *Esra'il* ("Israel"), whole period | 45% | 50% | **65%** |
-| `صهیونیست‌ها` *sahyunist-ha* ("the Zionists") | 4% | **6%** | 3% |
+| `اسرائیل` *Isrāʾīl* ("Israel"), whole period | 45% | 50% | **65%** |
+| `صهیونیست‌ها` *ṣahyūnīst-hā* ("the Zionists") | 4% | **6%** | 3% |
 
 - After the collapse of the ceasefire (from 7 July), state and IRGC-affiliated channels use "Zionist regime" clearly more often; Jamaran does not.
-- For Israeli territory, IRGC-affiliated channels more often write `فلسطین اشغالی` *felestin-e eshghali*
+- For Israeli territory, IRGC-affiliated channels more often write `فلسطین اشغالی` *Filasṭīn-i ishghālī*
   ("occupied Palestine", 10% compared with 3% at Jamaran).
 
 ![Share of "Zionist regime"](../../results/timeline/charts/israel_zionist_regime_share.png)
 
 ### USA
 
-- `آمریکا` *Amrika* ("America") is the main name everywhere (76–84%).
-- Jamaran more often uses the formal name `ایالات متحده` *Eyalat-e Mottahedeh* ("United States"): 11% compared with
+- `آمریکا` *Āmrīkā* ("America") is the main name everywhere (76–84%).
+- Jamaran more often uses the formal name `ایالات متحده` *Iyālāt-i Muttaḥidih* ("United States"): 11% compared with
   7% (state) and 5% (IRGC-affiliated).
 - Pejorative names such as `ارتش تروریستی آمریکا` ("terrorist army of America") and `ارتش کودک‌کش آمریکا`
   ("child-killing army of America") increase clearly after the collapse of the ceasefire: together 3–5% of all names
@@ -259,10 +258,10 @@ Per 1,000 words, whole period:
 
 | Group of terms | Examples | state | IRGC-affiliated | Jamaran |
 |---|---|---|---|---|
-| Diplomacy | `مذاکره` *mozakereh* (negotiation) · `توافق` *tavafoq* (agreement) · `آتش‌بس` *atash-bas* (ceasefire) · `صلح` *solh* (peace) | 3.88 | 3.04 | **5.39** |
-| Crimes | `جنایت` *jenayat* (crime) · `نسل‌کشی` *nasl-koshi* (genocide) · `کودک‌کش` *kudak-kosh* (child-killer) · `میناب` (Minab) | **1.03** | 0.90 | 0.75 |
-| Opponents at home | `مزدور` *mozdur* (mercenary) · `خائن` *kha'en* (traitor) · `اغتشاشگر` *eghteshashgar* (rioter) · `وطن‌فروش` *vatan-forush* (traitor to the homeland) · `ضدانقلاب` (counter-revolution) | 0.25 | **0.48** | 0.22 |
-| Revenge | `انتقام` *enteqam* (revenge) · `خونخواهی` *khunkhahi* (blood revenge) · `قصاص` *qesas* (retribution) · `انتقام سخت` ("harsh revenge") | 0.20 | **0.32** | 0.12 |
+| Diplomacy | `مذاکره` *muẕākirih* (negotiation) · `توافق` *tavāfuq* (agreement) · `آتش‌بس` *ātash-bas* (ceasefire) · `صلح` *ṣulḥ* (peace) | 3.88 | 3.04 | **5.39** |
+| Crimes | `جنایت` *jināyat* (crime) · `نسل‌کشی` *nasl-kushī* (genocide) · `کودک‌کش` *kūdak-kush* (child-killer) · `میناب` (Minab) | **1.03** | 0.90 | 0.75 |
+| Opponents at home | `مزدور` *muzdūr* (mercenary) · `خائن` *khāʾin* (traitor) · `اغتشاشگر` *ightishāshgar* (rioter) · `وطن‌فروش` *vaṭan-furūsh* (traitor to the homeland) · `ضدانقلاب` (counter-revolution) | 0.25 | **0.48** | 0.22 |
+| Revenge | `انتقام` *intiqām* (revenge) · `خونخواهی` *khūnkhvāhī* (blood revenge) · `قصاص` *qiṣāṣ* (retribution) · `انتقام سخت` ("harsh revenge") | 0.20 | **0.32** | 0.12 |
 
 - About a third of the crime terms concern the strike on the school in **Minab** (32–37%).
 - At Jamaran, "blood revenge" is rare (16% of the revenge terms compared with 34–35%).
@@ -275,10 +274,10 @@ Per 1,000 words, whole period:
 successor Mojtaba Khamenei. Every mention was assigned with rules and checked with samples (method:
 [section 10](#10-method)).
 
-- All six channels write `رهبر شهید` *rahbar-e shahid* ("the martyred Leader") for the first time on **1 March** – the
+- All six channels write `رهبر شهید` *rahbar-i shahīd* ("the martyred Leader") for the first time on **1 March** – the
   day the death was officially confirmed.
 - All six channels mention Mojtaba Khamenei in one sentence with "Leader" for the first time on **8 March** – the day
-  of his selection, **no channel earlier**. Jamaran and Mehr name him from 3 March, Tasnim from 5 March – not yet as
+  of his selection, **no channel earlier**. Jamaran and Mehr mention him from 3 March, Tasnim from 5 March – not yet as
   the Leader.
 - Afterwards, the killed Leader stays more present than the new one:
 
@@ -310,9 +309,9 @@ terms: `results/timeline/peak_weeks.csv`.
 
 | Week from | peak (per 1,000 words) | typical terms of this week | Event |
 |---|---|---|---|
-| 2 Feb | Jamaran 6.2 · state 3.7 · IRGC-affiliated 3.5 | `مسقط` *Masqat* (Muscat) · `عراقچی` (Abbas Araghchi) · `ویتکاف` (Steve Witkoff) | nuclear talks in Muscat (6 Feb) |
+| 2 Feb | Jamaran 6.2 · state 3.7 · IRGC-affiliated 3.5 | `مسقط` *Masqaṭ* (Muscat) · `عراقچی` (Abbas Araghchi) · `ویتکاف` (Steve Witkoff) | nuclear talks in Muscat (6 Feb) |
 | 6 Apr | Jamaran 4.4 · IRGC-affiliated 3.5 · state 3.0 | `آتش‌بس` (ceasefire) · `اسلام‌آباد` (Islamabad) · `پاکستان` (Pakistan) · `لبنان` (Lebanon) · `چهلمین روز شهادت` (40th day after Ali Khamenei's death) · `خرازی` (Kamal Kharazi, former foreign minister, died 9 Apr) | ceasefire (8 Apr), talks in Islamabad (11–12 Apr) |
-| 15 Jun | Jamaran 4.1 · IRGC-affiliated 2.9 | `تفاهم‌نامه` *tafahom-nameh* (memorandum) · `امضای` (signing) · `محرم` (month of Muharram) | "Islamabad Memorandum" (17–18 Jun) |
+| 15 Jun | Jamaran 4.1 · IRGC-affiliated 2.9 | `تفاهم‌نامه` *tafāhum-nāmih* (memorandum) · `امضای` (signing) · `محرم` (month of Muharram) | "Islamabad Memorandum" (17–18 Jun) |
 
 Jamaran writes most about negotiations in each of these weeks. After the collapse of the ceasefire, Jamaran's value
 stays more than twice as high as in the other groups (1.39 compared with 0.58 and 0.60).
@@ -323,13 +322,13 @@ stays more than twice as high as in the other groups (1.39 compared with 0.58 an
 |---|---|---|
 | 6 Apr | ceasefire · Islamabad · Pakistan | the ceasefire takes effect (8 Apr) |
 | 13 Apr | `محاصره دریایی` (naval blockade) · `تنگه هرمز` (Strait of Hormuz) · `پاپ لئو` (Pope Leo) · `ترامپ` (Trump) | US naval blockade (13 Apr) – the highest value for "Trump" in all groups (Jamaran 4.5, IRGC-affiliated 4.0, state 3.4) |
-| 20 Apr | `تمدید` *tamdid* (extension) · ceasefire · naval blockade | Trump extends the ceasefire (21 Apr) |
+| 20 Apr | `تمدید` *tamdīd* (extension) · ceasefire · naval blockade | Trump extends the ceasefire (21 Apr) |
 
 ![Ceasefire](../../results/timeline/charts/ceasefire.png)
 
 ![Trump](../../results/timeline/charts/trump.png)
 
-Jamaran names Trump most often in almost every week. For state and IRGC-affiliated channels the low point is the
+Jamaran mentions Trump most often in almost every week. For state and IRGC-affiliated channels the low point is the
 week from 29 Jun – the week of the farewell ceremony for Ali Khamenei (3–5 Jul); for Jamaran one week earlier.
 
 ### Martyr and revenge – the farewell ceremony for Ali Khamenei
@@ -340,9 +339,9 @@ week from 29 Jun – the week of the farewell ceremony for Ali Khamenei (3–5 J
 
 | Week from | peak | typical terms of this week | Event |
 |---|---|---|---|
-| 2 Mar | revenge: IRGC-affiliated 0.89 | `موشک‌های` (missiles) · `خامنه‌ای` (Khamenei) · `سوگ` *sug* (mourning) · `مجلس خبرگان` (Assembly of Experts) · `عملیات وعده صادق` ("Operation True Promise") | killing of Ali Khamenei (28 Feb), selection of his successor |
-| 29 Jun | martyr: IRGC-affiliated 19.1 · state 14.1 · Jamaran 7.6 | `مراسم وداع` *marasem-e veda'* (farewell ceremony) · `مصلی تهران` *mosalla-ye Tehran* (Tehran prayer ground) · `ادای احترام` (paying respects) · `بدرقه` *badragheh* (send-off) | farewell ceremony for Ali Khamenei in Tehran |
-| 6 Jul | martyr: IRGC-affiliated **21.6** · state 17.5 · revenge: IRGC-affiliated **1.48** · state 0.84 · Jamaran 0.54 | `تشییع` *tashyi'* (funeral procession) · `پیکر مطهر` (the holy body) · `مشهد` (Mashhad) · `نجف` (Najaf) | funeral processions in Mashhad and Najaf |
+| 2 Mar | revenge: IRGC-affiliated 0.89 | `موشک‌های` (missiles) · `خامنه‌ای` (Khamenei) · `سوگ` *sūg* (mourning) · `مجلس خبرگان` (Assembly of Experts) · `عملیات وعده صادق` ("Operation True Promise") | killing of Ali Khamenei (28 Feb), selection of his successor |
+| 29 Jun | martyr: IRGC-affiliated 19.1 · state 14.1 · Jamaran 7.6 | `مراسم وداع` *marāsim-i vidāʿ* (farewell ceremony) · `مصلی تهران` *muṣallā-yi Tihrān* (Tehran prayer ground) · `ادای احترام` (paying respects) · `بدرقه` *badraqih* (send-off) | farewell ceremony for Ali Khamenei in Tehran |
+| 6 Jul | martyr: IRGC-affiliated **21.6** · state 17.5 · revenge: IRGC-affiliated **1.48** · state 0.84 · Jamaran 0.54 | `تشییع` *tashyīʿ* (funeral procession) · `پیکر مطهر` (the holy body) · `مشهد` (Mashhad) · `نجف` (Najaf) | funeral processions in Mashhad and Najaf |
 | 13 Jul (second peak) | revenge: state 0.58 · Jamaran 0.41 | `بندرعباس` (Bandar Abbas) · `هرمزگان` (Hormozgan province) · `بوشهر` (Bushehr) · `اهواز` (Ahvaz) · `انفجار` (explosion) · `کویت` (Kuwait) · `اردن` (Jordan) | attacks after the collapse of the ceasefire (7–8 Jul) |
 
 - The **highest values** for "martyr" and "revenge" in the whole period are **not** at the start of the war, but in
@@ -357,8 +356,8 @@ week from 29 Jun – the week of the farewell ceremony for Ali Khamenei (3–5 J
 
 | Week from | peak | typical terms of this week | Event |
 |---|---|---|---|
-| 5 Jan | opponent labels: IRGC-affiliated **3.34** | `اغتشاشگران` (rioters) · `اعتراض` (protest) · `کالابرگ` *kalabarg* (food coupon) · `ارز` *arz* (foreign currency) · `روغن` (cooking oil) · `ونزوئلا` (Venezuela) · `مادورو` (Maduro) | protests over prices and the fall of the rial |
-| 12 Jan | opponent labels: state 2.17 · internet: IRGC-affiliated 0.66 | `اغتشاشات` (riots) · `تروریست‌ها` (terrorists) · `مسلح` (armed) · `آشوبگران` (agitators) · `فتنه` *fetneh* ("sedition") · `پهلوی` (Pahlavi) · `موساد` (Mossad) | internet blackout from 8 Jan; the protests are presented as terrorism and as directed from abroad |
+| 5 Jan | opponent labels: IRGC-affiliated **3.34** | `اغتشاشگران` (rioters) · `اعتراض` (protest) · `کالابرگ` *kālābarg* (food coupon) · `ارز` *arz* (foreign currency) · `روغن` (cooking oil) · `ونزوئلا` (Venezuela) · `مادورو` (Maduro) | protests over prices and the fall of the rial |
+| 12 Jan | opponent labels: state 2.17 · internet: IRGC-affiliated 0.66 | `اغتشاشات` (riots) · `تروریست‌ها` (terrorists) · `مسلح` (armed) · `آشوبگران` (agitators) · `فتنه` *fitnih* ("sedition") · `پهلوی` (Pahlavi) · `موساد` (Mossad) | internet blackout from 8 Jan; the protests are presented as terrorism and as directed from abroad |
 
 ![Internet](../../results/timeline/charts/internet.png)
 
@@ -366,9 +365,9 @@ week from 29 Jun – the week of the farewell ceremony for Ali Khamenei (3–5 J
 |---|---|---|---|
 | 12 Jan | IRGC-affiliated 0.66 · state 0.49 | riots, terrorists (see above) | internet blackout from 8 Jan |
 | 11 May | Jamaran 1.74 · state 0.56 | `اینترنت پرو` ("Internet Pro") · `چین` (China) · `شی جین‌پینگ` (Xi Jinping) · `بریکس` (BRICS) · `دهلی‌نو` (New Delhi) | debate on "Internet Pro"; foreign policy with China and BRICS |
-| 25 May | Jamaran **1.76** | `اتصال` *ettesal* (connection) · `بازگشایی` (reopening) · `فضای مجازی` (internet, literally "virtual space") · `خاتمی` (Mohammad Khatami) | debate on reopening the internet |
+| 25 May | Jamaran **1.76** | `اتصال` *ittiṣāl* (connection) · `بازگشایی` (reopening) · `فضای مجازی` (internet, literally "virtual space") · `خاتمی` (Mohammad Khatami) | debate on reopening the internet |
 
-Jamaran is the only channel that makes the internet a topic for months – from April to early June more than five
+Jamaran is the only channel that makes the internet a topic for months – from early April to mid-June (6 Apr – 14 Jun) more than five
 times as often as the other groups (1.04 compared with 0.17 and 0.20 per 1,000 words). State and IRGC-affiliated
 channels mention the internet above all in January, in connection with the "riots".
 
@@ -395,58 +394,58 @@ IRGC-affiliated channels to 15% and 10% (Memorandum). In IRGC-affiliated channel
 
 ## 6. Countries and allies
 
-Which countries and groups do the channels name – how often, when and in which context? Counted with the same rules as
-in section 3 (`12_countries.py`, list in `naming_terms.csv`). About a quarter of all posts with text (67,669) name at
+Which countries and groups do the channels mention – how often, when and in which context? Counted with the same rules as
+in section 3 (`12_countries.py`, list in `naming_terms.csv`). About a quarter of all posts with text (67,669) mention at
 least one country or group on the list. This section shows the 33 with the most mentions (all 35: `results/countries/countries.xlsx`), in four regions.
 
-### Who is named most often
+### Who is mentioned most often
 
 Per 1,000 words, whole period; bold = highest value. Full list: `results/countries/countries.xlsx`.
 
 | Country / group | state | IRGC-affiliated | Jamaran | mentions in total |
 |---|---|---|---|---|
-| `لبنان` *Lobnan* – Lebanon | 1.22 | **1.49** | 1.05 | 20,759 |
-| `عراق` *Eraq* – Iraq | 0.72 | **0.75** | 0.62 | 11,655 |
-| `روسیه` *Rusiyeh* – Russia | 0.63 | 0.54 | **0.70** | 10,056 |
-| `حزب‌الله` *Hezbollah* – Hezbollah | 0.45 | **0.85** | 0.44 | 9,271 |
-| `پاکستان` *Pakestan* – Pakistan | 0.52 | 0.42 | **0.58** | 8,266 |
-| `عربستان` *Arabestan* – Saudi Arabia | 0.40 | **0.57** | 0.49 | 7,609 |
-| `چین` *Chin* – China | 0.38 | 0.37 | **0.51** | 6,541 |
-| `اتحادیه اروپا` *Ettehadiyeh-ye Orupa* – EU / Europe | **0.40** | 0.26 | 0.35 | 5,751 |
-| `غزه` *Ghazzeh* – Gaza | **0.37** | 0.35 | 0.23 | 5,477 |
-| `امارات` *Emarat* – UAE | 0.23 | **0.40** | 0.39 | 5,079 |
-| `انگلیس` *Engelis* – United Kingdom | **0.31** | 0.26 | 0.26 | 4,741 |
+| `لبنان` *Lubnān* – Lebanon | 1.22 | **1.49** | 1.05 | 20,759 |
+| `عراق` *ʿIrāq* – Iraq | 0.72 | **0.75** | 0.62 | 11,655 |
+| `روسیه` *Rūsiyyih* – Russia | 0.63 | 0.54 | **0.70** | 10,056 |
+| `حزب‌الله` *Ḥizbullāh* – Hezbollah | 0.45 | **0.85** | 0.44 | 9,271 |
+| `پاکستان` *Pākistān* – Pakistan | 0.52 | 0.42 | **0.58** | 8,266 |
+| `عربستان` *ʿArabistān* – Saudi Arabia | 0.40 | **0.57** | 0.49 | 7,609 |
+| `چین` *Chīn* – China | 0.38 | 0.37 | **0.51** | 6,541 |
+| `اتحادیه اروپا` *Ittiḥādiyyih-yi Urūpā* – EU / Europe | **0.40** | 0.26 | 0.35 | 5,751 |
+| `غزه` *Ghazzih* – Gaza | **0.37** | 0.35 | 0.23 | 5,477 |
+| `امارات` *Imārāt* – UAE | 0.23 | **0.40** | 0.39 | 5,079 |
+| `انگلیس` *Ingilīs* – United Kingdom | **0.31** | 0.26 | 0.26 | 4,741 |
 | `یمن` *Yaman* – Yemen | 0.26 | **0.37** | 0.19 | 4,519 |
-| `ترکیه` *Torkiyeh* – Turkey | 0.27 | 0.23 | **0.28** | 4,305 |
-| `عمان` *Oman* – Oman | 0.25 | 0.24 | **0.34** | 4,302 |
-| `قطر` *Qatar* – Qatar | 0.23 | 0.26 | **0.30** | 4,126 |
-| `کویت` *Kuweyt* – Kuwait | 0.19 | **0.31** | 0.24 | 3,858 |
-| `اوکراین` *Ukrayn* – Ukraine | **0.24** | 0.22 | 0.21 | 3,704 |
-| `فلسطین` *Felestin* – Palestine | **0.25** | 0.20 | 0.13 | 3,493 |
-| `بحرین` *Bahreyn* – Bahrain | 0.18 | **0.28** | 0.17 | 3,392 |
-| `فرانسه` *Faranseh* – France | **0.22** | 0.18 | 0.20 | 3,367 |
-| `ونزوئلا` *Venezuela* – Venezuela | 0.18 | 0.15 | **0.23** | 2,986 |
-| `سوریه` *Suriyeh* – Syria | **0.18** | 0.17 | 0.16 | 2,833 |
-| `هند` *Hend* – India | 0.16 | 0.15 | **0.17** | 2,543 |
-| `اردن` *Ordon* – Jordan | 0.13 | **0.17** | 0.13 | 2,319 |
-| `آلمان` *Alman* – Germany | **0.15** | 0.12 | 0.13 | 2,267 |
-| `اسپانیا` *Espaniya* – Spain | **0.13** | 0.11 | 0.09 | 1,921 |
-| `حماس` *Hamas* – Hamas | **0.13** | 0.07 | 0.07 | 1,648 |
-| `ژاپن` *Zhapon* – Japan | **0.10** | 0.09 | 0.08 | 1,536 |
+| `ترکیه` *Turkiyyih* – Turkey | 0.27 | 0.23 | **0.28** | 4,305 |
+| `عمان` *ʿUmān* – Oman | 0.25 | 0.24 | **0.34** | 4,302 |
+| `قطر` *Qaṭar* – Qatar | 0.23 | 0.26 | **0.30** | 4,126 |
+| `کویت` *Kuvayt* – Kuwait | 0.19 | **0.31** | 0.24 | 3,858 |
+| `اوکراین` *Ūkrāyn* – Ukraine | **0.24** | 0.22 | 0.21 | 3,704 |
+| `فلسطین` *Filasṭīn* – Palestine | **0.25** | 0.20 | 0.13 | 3,493 |
+| `بحرین` *Baḥrayn* – Bahrain | 0.18 | **0.28** | 0.17 | 3,392 |
+| `فرانسه` *Farānsih* – France | **0.22** | 0.18 | 0.20 | 3,367 |
+| `ونزوئلا` *Vinizūʾilā* – Venezuela | 0.18 | 0.15 | **0.23** | 2,986 |
+| `سوریه` *Sūriyyih* – Syria | **0.18** | 0.17 | 0.16 | 2,833 |
+| `هند` *Hind* – India | 0.16 | 0.15 | **0.17** | 2,543 |
+| `اردن` *Urdun* – Jordan | 0.13 | **0.17** | 0.13 | 2,319 |
+| `آلمان` *Ālmān* – Germany | **0.15** | 0.12 | 0.13 | 2,267 |
+| `اسپانیا` *Ispāniyā* – Spain | **0.13** | 0.11 | 0.09 | 1,921 |
+| `حماس` *Ḥamās* – Hamas | **0.13** | 0.07 | 0.07 | 1,648 |
+| `ژاپن` *Zhāpun* – Japan | **0.10** | 0.09 | 0.08 | 1,536 |
 | `جمهوری آذربایجان` – Republic of Azerbaijan¹ | **0.11** | 0.08 | 0.07 | 1,520 |
-| `انصارالله` *Ansarollah* / `حوثی‌ها` *Huthi-ha* – Houthis | 0.07 | **0.09** | 0.07 | 1,289 |
-| `ایتالیا` *Italiya* – Italy | **0.08** | 0.06 | 0.07 | 1,152 |
-| `افغانستان` *Afghanestan* – Afghanistan | 0.07 | 0.05 | **0.08** | 1,037 |
-| `حشد شعبی` *Hashd-e Sha'bi* / `مقاومت عراق` – Iraqi militias | 0.04 | **0.08** | 0.03 | 799 |
+| `انصارالله` *Anṣārullāh* / `حوثی‌ها` *Ḥūs̱ī-hā* – Houthis | 0.07 | **0.09** | 0.07 | 1,289 |
+| `ایتالیا` *Ītāliyā* – Italy | **0.08** | 0.06 | 0.07 | 1,152 |
+| `افغانستان` *Afghānistān* – Afghanistan | 0.07 | 0.05 | **0.08** | 1,037 |
+| `حشد شعبی` *Ḥashd-i Shaʿbī* / `مقاومت عراق` – Iraqi militias | 0.04 | **0.08** | 0.03 | 799 |
 
 ¹ Too high: `آذربایجان` alone sometimes means the Iranian provinces (see [limitations](#9-limitations)).
 
-- **IRGC-affiliated channels** name **Hezbollah almost twice as often** as the others. They also name Saudi Arabia,
+- **IRGC-affiliated channels** mention **Hezbollah almost twice as often** as the others. They also mention Saudi Arabia,
   the UAE, Kuwait, Bahrain, Jordan, Yemen and the Iraqi militias most often – the places from which they report
   attacks.
-- **Jamaran** names the **great powers and mediators** most often: Russia, China, Pakistan, Oman, Qatar. Jamaran names
+- **Jamaran** mentions the **great powers and mediators** most often: Russia, China, Pakistan, Oman, Qatar. Jamaran mentions
   Palestine, Gaza and Hamas least often.
-- **State channels** name Europe, the United Kingdom, France, Germany, Palestine and Hamas most often.
+- **State channels** mention Europe, the United Kingdom, France, Germany, Palestine and Hamas most often.
 
 ### In the war the world shrinks
 
@@ -472,19 +471,19 @@ sheet `phases`.
 | Jordan, all groups | 0.07–0.09 | 0.09–0.15 | 0.03–0.06 | **0.30–0.46** |
 
 - **With the start of the war, distant countries fall sharply in the news** – most strongly in the
-  IRGC-affiliated channels: Russia and China are named there only a third as often as before the war. At Jamaran
-  Russia falls by only a quarter (0.98 → 0.72) and is named three times as often during the war as in the
+  IRGC-affiliated channels: Russia and China are mentioned there only a third as often as before the war. At Jamaran
+  Russia falls by only a quarter (0.98 → 0.72) and is mentioned three times as often during the war as in the
   IRGC-affiliated channels.
 - **Bahrain and Kuwait** are practically absent before the war. With the start of the war they become scenes of
   action: Iran attacks US bases in the Gulf states.
-- **Hezbollah** enters the war on 2 March and is named three to seven times as often in the war and the ceasefire as
+- **Hezbollah** enters the war on 2 March and is mentioned three to seven times as often in the war and the ceasefire as
   before. After the collapse of the ceasefire it falls almost back to its pre-war level.
 - **Every phase has its country:** **Lebanon** in the ceasefire, **Pakistan** as the mediator of the ceasefire,
   **Saudi Arabia, Yemen, Iraq and Jordan** after the collapse.
 
 ### Which Gulf state was in focus when
 
-| Phase | named most often (range of the three groups) | context |
+| Phase | mentioned most often (range of the three groups) | context |
 |---|---|---|
 | before the war | Oman 0.28–0.46 · Saudi Arabia 0.30–0.32 | Oman mediates the nuclear talks in Muscat |
 | war | UAE 0.36–0.56 · Kuwait 0.33–0.47 · Bahrain 0.33–0.46 | Iran attacks US bases in the Gulf |
@@ -503,14 +502,14 @@ weeks. The tables show the most typical terms. All values: `results/countries/pe
 
 | Country | week from (value) | typical terms of the posts about the country in that week | event |
 |---|---|---|---|
-| UAE | 4 May (1.36) | `بندر فجیره` *bandar-e Fujeyreh* (port of Fujairah) · `تنگه هرمز` (Strait of Hormuz) · `کوبنده` *kubandeh* ("crushing") · `نیروهای مسلح جمهوری اسلامی ایران` (Iran's armed forces) | attack on the port of Fujairah |
-| UAE | 11 May (0.99) | `نتانیاهو` (Netanyahu) · `سفر` (trip) · `مخفیانه` *makhfiyaneh* (secret) · `تکذیب` *takzib* (denial) · `براکه` (Barakah nuclear power plant) | reports of a secret visit by Netanyahu to the UAE, with a denial |
+| UAE | 4 May (1.36) | `بندر فجیره` *bandar-i Fujayrih* (port of Fujairah) · `تنگه هرمز` (Strait of Hormuz) · `کوبنده` *kūbandih* ("crushing") · `نیروهای مسلح جمهوری اسلامی ایران` (Iran's armed forces) | attack on the port of Fujairah |
+| UAE | 11 May (0.99) | `نتانیاهو` (Netanyahu) · `سفر` (trip) · `مخفیانه` *makhfiyānih* (secret) · `تکذیب` *takẕīb* (denial) · `براکه` (Barakah nuclear power plant) | reports of a secret visit by Netanyahu to the UAE, with a denial |
 | Saudi Arabia | 27 Jul (2.10) | `عراق` (Iraq) · `حملات` (attacks) · `الحشد الشعبی` (Hashd militias) · `تجاوز` (aggression) · `محکوم` (condemned) · `اربعین` (Arbaeen) · `کربلا` (Karbala) | attacks on positions of the Iraqi militias, attributed to Saudi Arabia in these posts |
-| Saudi Arabia | 3 Aug (1.71) | `مزدوران` *mozduran* ("mercenaries") · `یمن` (Yemen) · `مارب` (Marib) · `المخا` (Mocha) · `توافقنامه دفاعی` (defence agreement) · `ترکیه` (Turkey) | fighting in Yemen; defence agreement with Turkey |
-| Kuwait | 13 Jul (1.14), 20 Jul (0.90) | `عملیات صاعقه` *amaliyat-e sa'eqeh* ("Operation Thunderbolt") · `عریفجان` (US base Camp Arifjan) · `آشیانه` (hangar) · `پاتریوت` (Patriot air defence) · `ارتش تروریستی آمریکا` ("terrorist army of America") | Iranian attacks on US bases after the collapse of the ceasefire |
+| Saudi Arabia | 3 Aug (1.71) | `مزدوران` *muzdūrān* ("mercenaries") · `یمن` (Yemen) · `مارب` (Marib) · `المخا` (Mocha) · `توافقنامه دفاعی` (defence agreement) · `ترکیه` (Turkey) | fighting in Yemen; defence agreement with Turkey |
+| Kuwait | 13 Jul (1.14), 20 Jul (0.90) | `عملیات صاعقه` *ʿamaliyyāt-i ṣāʿiqih* ("Operation Thunderbolt") · `عریفجان` (US base Camp Arifjan) · `آشیانه` (hangar) · `پاتریوت` (Patriot air defence) · `ارتش تروریستی آمریکا` ("terrorist army of America") | Iranian attacks on US bases after the collapse of the ceasefire |
 | Bahrain | 13 Jul (0.76), 20 Jul (0.60) | `مخازن سوخت` (fuel tanks) · `شیخ عیسی` (Isa Air Base) · `عملیات صاعقه` ("Operation Thunderbolt") · `آمازون` (Amazon) | the same wave of attacks |
 | Jordan | 13 Jul (0.86), 20 Jul (0.71) | `مخازن سوخت` (fuel tanks) · `عملیات صاعقه` · `جنگنده‌ها` (fighter jets) | the same wave of attacks |
-| Oman | 2 Feb (0.78) | `مسقط` *Masqat* (Muscat) · `استیو ویتکاف` (Steve Witkoff, US special envoy) · `هسته‌ای` (nuclear) | nuclear talks in Muscat (6 Feb) |
+| Oman | 2 Feb (0.78) | `مسقط` *Masqaṭ* (Muscat) · `استیو ویتکاف` (Steve Witkoff, US special envoy) · `هسته‌ای` (nuclear) | nuclear talks in Muscat (6 Feb) |
 | Oman | 3 Aug (0.83) | `تنگه هرمز` · `ترتیبات موقت` (interim arrangements) · `کریدور` (corridor) · `بازگشایی` (reopening) | arrangements for passage through Hormuz |
 | Qatar | 22 Jun (0.50) | `کمیته فنی` (technical committee) · `نظارت` (monitoring) · `سوئیس` (Switzerland) · `چهارجانبه` (four-party) | implementation of the Islamabad Memorandum |
 
@@ -520,19 +519,19 @@ weeks. The tables show the most typical terms. All values: `results/countries/pe
 
 | Country / group | week from (value) | typical terms of the posts in that week | event |
 |---|---|---|---|
-| Lebanon | 1 Jun (**3.82**) | `ضاحیه` *Zahiyeh* (Dahiyeh, southern Beirut) · `قلعه` (castle – Beaufort) · `متوقف` (stopped) · `تماس‌های تلفنی` (phone calls) · `عراقچی` (Araghchi) · `تشدید` (escalation) | escalation in Lebanon; phone calls of the foreign minister – highest weekly value of any country |
-| Hezbollah | 1 Jun (1.39) | `قلعه` / `الشقیف` (Beaufort castle, *Qal'at al-Shaqif*) · `بیروت` (Beirut) · `نبیه بری` (Nabih Berri, Speaker of Lebanon's parliament) · `ضاحیه` | the same week |
+| Lebanon | 1 Jun (**3.82**) | `ضاحیه` *Żāḥiyih* (Dahiyeh, southern Beirut) · `قلعه` (castle – Beaufort) · `متوقف` (stopped) · `تماس‌های تلفنی` (phone calls) · `عراقچی` (Araghchi) · `تشدید` (escalation) | escalation in Lebanon; phone calls of the foreign minister – highest weekly value of any country |
+| Hezbollah | 1 Jun (1.39) | `قلعه` / `الشقیف` (Beaufort castle, *Qalʿat al-Shaqīf*) · `بیروت` (Beirut) · `نبیه بری` (Nabih Berri, Speaker of Lebanon's parliament) · `ضاحیه` | the same week |
 | Lebanon | 15 Jun (3.40) | `تفاهم‌نامه` (memorandum) · `خاتمه جنگ` (end of the war) · `بندهای` (clauses) · `ونس` (JD Vance, US Vice President) | Lebanon as part of the Islamabad Memorandum |
 | Hezbollah | 13 Apr (1.08) | `آتش‌بس` (ceasefire) · `پذیرش مشروط` (conditional acceptance) · `بنت‌جبیل` (Bint Jbeil) | ceasefire; fighting around Bint Jbeil |
 | Iraq | 6 Jul (2.07) | `نجف` (Najaf) · `تشییع` (funeral procession) · `رهبر شهید` (the martyred Leader) | funeral procession for Ali Khamenei in Najaf |
 | Iraq | 27 Jul (2.11) | `عربستان` (Saudi Arabia) · `زائران` (pilgrims) · `اربعین` · `حملات` (attacks) · `محکوم` (condemned) | attacks on the Hashd militias; Arbaeen pilgrimage |
 | Yemen | 20 Jul (1.02) | `محاصره دریایی` (naval blockade) · `الحدیده` (Hodeidah) · `جیزان` (Jizan) · `نفتکش` (tanker) | Houthi naval blockade against Saudi Arabia (20–22 Jul) |
 | Yemen | 3 Aug (1.20) | `مارب` (Marib) · `المخا` (Mocha) · `مزدوران` ("mercenaries") | fighting in Yemen |
-| Gaza | 19 Jan (0.67), 16 Feb (0.60) | `شورای صلح` *shura-ye solh* ("Board of Peace") · `ترامپ` · `منشور` (charter) · `دعوت` (invitation) | Trump's "Board of Peace" for Gaza |
-| Palestine | 9 Feb (0.36) | `کرانه باختری` (West Bank) · `الحاق` *elhaq* (annexation) · `آلبانیز` (Francesca Albanese, UN Special Rapporteur) · `غیرقانونی` (illegal) | annexation plans in the West Bank |
+| Gaza | 19 Jan (0.67), 16 Feb (0.60) | `شورای صلح` *shūrā-yi ṣulḥ* ("Board of Peace") · `ترامپ` · `منشور` (charter) · `دعوت` (invitation) | Trump's "Board of Peace" for Gaza |
+| Palestine | 9 Feb (0.36) | `کرانه باختری` (West Bank) · `الحاق` *ilḥāq* (annexation) · `آلبانیز` (Francesca Albanese, UN Special Rapporteur) · `غیرقانونی` (illegal) | annexation plans in the West Bank |
 | Palestine | 11 May (0.40) | `یامال` (Lamine Yamal) · `بارسلونا` (FC Barcelona) · `پرچم` (flag) · `نکبت` *Nakbat* (Nakba Day, 15 May) · `عزالدین الحداد` (Izz ad-Din al-Haddad, commander of Hamas's Qassam Brigades) | football and Nakba Day |
 | Hamas | 20 Jul (0.27) | `خلیل الحیه` (Khalil al-Hayya) · `انتخاب` (election) · `تبریک` (congratulations) | al-Hayya new Hamas leader |
-| Hamas | 27 Jul (0.28) | `خلع سلاح` *khal'-e selah* (disarmament) · `پیش‌نویس` (draft) | draft on disarming Hamas |
+| Hamas | 27 Jul (0.28) | `خلع سلاح` *khalʿ-i silāḥ* (disarmament) · `پیش‌نویس` (draft) | draft on disarming Hamas |
 | Syria | 19 Jan (0.72) | `قسد` (SDF, Kurdish-led forces) · `کردها` (Kurds) · `فرار` (escape) · `داعش` (ISIS) | fighting in north-eastern Syria, ISIS prisoners |
 | Syria | 17 Aug (0.59) | `ترکیه` (Turkey) · `ابوالظهور` (Abu al-Duhur airfield) · `ادلب` (Idlib) · `الشیبانی` (Asaad al-Shaibani, Syria's foreign minister) · `اسرائیل` | Turkey and Israel in Syria |
 
@@ -542,7 +541,7 @@ weeks. The tables show the most typical terms. All values: `results/countries/pe
 
 | Country | week from (value) | typical terms of the posts in that week | event |
 |---|---|---|---|
-| Venezuela | 5 Jan (2.50) | `ربوده` *robudeh* ("abducted") · `همسر` (wife) · `دادگاه` (court) · `حقوق بین‌الملل` (international law) · `نقض` (violation) | capture of Nicolás Maduro and his wife by the US – in Iranian channels an "abduction" and a breach of international law |
+| Venezuela | 5 Jan (2.50) | `ربوده` *rubūdih* ("abducted") · `همسر` (wife) · `دادگاه` (court) · `حقوق بین‌الملل` (international law) · `نقض` (violation) | capture of Nicolás Maduro and his wife by the US – in Iranian channels an "abduction" and a breach of international law |
 | Turkey | 26 Jan (0.73) | `عراقچی` · `مشورت‌ها` (consultations) · `کاهش تنش‌ها` (de-escalation) | the foreign minister's consultations with Turkey |
 | Russia | 16 Feb (1.48) | `رزمایش` (exercise) · `نیروی دریایی` (navy) · `اقیانوس هند` (Indian Ocean) · `مشترک` (joint) | joint naval exercise |
 | India | 16 Feb (0.30) | `رزمایش` (exercise) · `میلان` (MILAN) · `دریادار` (admiral) | naval exercise MILAN |
@@ -568,7 +567,7 @@ weeks. The tables show the most typical terms. All values: `results/countries/pe
 | Italy | 22 Jun (0.28) | `ناتو` (NATO) · `پایگاه‌های` (bases) · `رومانی` (Romania) | NATO bases in Europe |
 | United Kingdom, France, Spain | 13 Jul (0.61 / 0.33 / 0.45) | `جام جهانی` (World Cup) · `فینال` (final) · `آرژانتین` (Argentina) · `مسی` (Messi) | football World Cup |
 
-In the week of the World Cup final Spain is named more often than in any other week, France already in the group stage
+In the week of the World Cup final Spain is mentioned more often than in any other week, France already in the group stage
 (22 Jun): part of the mentions of European countries is sport.
 
 ### How each group presents a country
@@ -597,8 +596,8 @@ about the same country? A selection of the most typical terms; all lists: `resul
 | EU / Europe | `بروکسل` (Brussels) · `دیپلماسی` · `حقوق بین‌الملل` (international law) | `رضا پهلوی` (Reza Pahlavi) · `تجمع` (rally) – **place of the opposition** | `تضمین` (guarantee) · `آینده` (future) |
 | United Kingdom | `لندن` · `داونینگ‌استریت` (Downing Street) | `کشتی` (ship) · `حادثه` (incident) · `نفتکش` (tanker) – **shipping incidents** | `مصدق` (Mohammad Mossadegh, 1953 coup) · `نفت` (oil) – **history** |
 
-**Differences between the channels** (per 1,000 words, `countries.csv`, level `channel`): IRNA names Russia during the
-war almost as often as before (0.66 → 0.63), Fars, Tasnim and Mehr only a third as often (0.21–0.27). IRNA names
+**Differences between the channels** (per 1,000 words, `countries.csv`, level `channel`): IRNA mentions Russia during the
+war almost as often as before (0.66 → 0.63), Fars, Tasnim and Mehr only a third as often (0.21–0.27). IRNA mentions
 Hezbollah least often (0.28, Tasnim 0.88) and the UAE least often (0.19, Fars 0.48). Pakistan reaches its highest value
 in all six channels during the ceasefire (0.63–0.92).
 
@@ -613,7 +612,7 @@ in all six channels during the ceasefire (0.63–0.92).
   Netanyahu, secret, denial – the UAE's closeness to Israel becomes a topic. At Jamaran `ابوظبی` (Abu Dhabi) also
   appears in the posts about Pakistan, Saudi Arabia, Yemen and India: the UAE as an actor in the background.
 - **Saudi Arabia** is a partner in talks for the state media and the opponent in Yemen ("mercenaries") for the
-  IRGC-affiliated channels. After the collapse of the ceasefire it is named there four and a half times as often as
+  IRGC-affiliated channels. After the collapse of the ceasefire it is mentioned there four and a half times as often as
   before.
 - **Kuwait and Bahrain:** the state channels report the attacks there with the statements of the Revolutionary Guards,
   the IRGC-affiliated channels with "sources", images and explosions that "were heard".
@@ -703,7 +702,7 @@ analyses of the war.
 
 ![Posts per day](../../results/activity/charts/posts_per_day.png)
 
-- **Activity:** Before the war a channel publishes 122–134 posts a day, averaged over the groups (single channels
+- **Activity:** Before the war a channel publishes 122–134 posts a day, depending on the group (single channels
   109–178). In the first week of the war (from 2 Mar) it is 321–423 – for single channels from 227 (IRNA) to 505 (Mehr
   News). The second peak is, in the state and IRGC-affiliated channels, in the week of the farewell ceremony and the
   collapse of the ceasefire (from 29 Jun / 6 Jul), at Jamaran in the week from 13 Jul.
@@ -740,13 +739,16 @@ More charts: [views](../../results/activity/charts/views_median.png) ·
 - **No network analysis:** for forwarded posts only the sender name was saved during collection, which is usually empty
   for channels (96 of 328,330 posts). Who forwards whom can therefore not be analysed.
 - **Gaps in January:** IRNA and Jamaran hardly posted in mid-January (internet blackout, see [01](01_data_collection.md)).
-- **Time zone:** days, weeks and phases of the word, timeline and activity analyses are based on the UTC date of the posts (Tehran: UTC+3:30). Only the AI topic shares per phase use the Tehran date; there the ceasefire ends on 7 Jul (database: 6 Jul). By UTC date 48 of 10,750 AI posts would fall into another phase, and the group shares would change by at most 1.5 percentage points (details: [06](06_methodology.md#3-data-quality-and-gaps)).
+- **Time zone:** days, weeks and phases of the word, timeline and activity analyses are based on the UTC date of the posts
+  (Tehran: UTC+3:30). The only exception are the AI topic shares per phase: they use the Tehran date; there the ceasefire
+  ends on 7 Jul (database: 6 Jul). The difference is small: by UTC date 48 of 10,750 AI posts would fall into another phase,
+  and the group shares would change by at most 1.5 percentage points (details: [06](06_methodology.md#3-data-quality-and-gaps)).
 - **Countries:** `عمان` means Oman, but also Amman (capital of Jordan); the Gulf of Oman (`دریای عمان`) is removed
   first. `آذربایجان` alone counts as the Republic of Azerbaijan but sometimes means the Iranian provinces of East and
   West Azerbaijan – weather terms are typical of the state posts about it; the value is therefore too high. Egypt is
-  missing because `مصر` also means "insistent" (*moser*). Part of the mentions of European countries, Turkey and Qatar
+  missing because `مصر` also means "insistent" (*muṣirr*). Part of the mentions of European countries, Turkey and Qatar
   is about sport.
-- **How a country is presented:** the typical terms describe the posts that name a country – not every statement
+- **How a country is presented:** the typical terms describe the posts that mention a country – not every statement
   about the country. A post naming several countries counts for each of them.
 - **AI topics:** based on a weighted sample of 10,750 posts; the topic is correct in 72.5% of cases (final
   validation). Military is rather overestimated, diplomacy underestimated; tone is not evaluated (see 03).
@@ -770,12 +772,16 @@ exactly once.
 | Office words (`وزیر` minister, `رئیس` president, `سخنگوی` spokesman …) only as the first word | `عباس عراقچی وزیر امور` → not a term, person and office stay separate |
 | In the text the longer term wins; with the same length the more frequent one | `رهبر شهید انقلاب` ("martyred Leader of the Revolution") counts once, not also as `رهبر شهید` |
 
-Result: **1,501 fixed terms** (1,490 automatic, 11 added by the author). `phrases.csv` shows how often a word sequence
-occurs (`count`, also inside longer terms) and how often it was counted as a term of its own (`count_used`,
-before spelling variants are merged). `count` is a lower bound: occurrences in channel/phase parts in which the sequence appears fewer than 5 times are
-not added (at most 4 per part, at most 96 over the 24 parts); `count_used` is exact and can therefore be larger than `count` for
-a sequence that is rarely part of a longer term. The selection of the fixed terms rests on `count`; for sequences close to the
-thresholds (100 occurrences, 25%) it can differ from an exact count (not recalculated – the unpublished raw texts are needed).
+Result: **1,501 fixed terms** (1,490 automatic, 11 added by the author). `phrases.csv` gives two counts for each of them:
+
+- `count` – how often the word sequence occurs, also inside longer terms. This value is a lower bound: occurrences in
+  channel/phase parts in which the sequence appears fewer than 5 times are not added (at most 4 per part, at most 96 over
+  the 24 parts).
+- `count_used` – how often the sequence was counted as a term of its own, before spelling variants are merged. This value
+  is exact. For a sequence that is rarely part of a longer term it can therefore be larger than `count`.
+
+The selection of the fixed terms rests on `count`. For sequences close to the thresholds (100 occurrences, 25%) it can
+therefore differ from an exact count (not recalculated – the unpublished raw texts are needed).
 
 **Corrections list** (`phrase_corrections.csv`) – the author's decisions, kept openly in one file:
 
@@ -788,7 +794,7 @@ thresholds (100 occurrences, 25%) it can differ from an exact count (not recalcu
 | `ignore` – without content, counted but not listed | 263 | channel names, "live", "photo", reporting verbs such as `تاکید` ("emphasised"), titles without a name |
 
 In addition, 3,824 spellings that differ only by the half-space are merged. Singular and plural stay separate:
-`کشور` *keshvar* (country – often Iran itself) and `کشورهای` *keshvar-ha-ye* (countries – other states). The list was
+`کشور` *kishvar* (country – often Iran itself) and `کشورهای` *kishvar-hā-yi* (countries – other states). The list was
 checked in several rounds; work stopped when further corrections no longer changed the findings.
 
 ### Typical terms (`07_typical_terms.py`, `11_peak_weeks.py`)

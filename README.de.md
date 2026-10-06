@@ -11,34 +11,16 @@ und der folgenden Waffenruhen. Von der automatisierten Datensammlung über eine 
 lokal betriebenen Sprachmodellen. Im Mittelpunkt steht die Methode: Wie lassen sich fremdsprachige Medien
 systematisch, überprüfbar und reproduzierbar auswerten?
 
-> **Hinweis:** Code, Methodik und Ergebnisse sind öffentlich. Die Rohtexte der Beiträge sind aus
-> urheberrechtlichen Gründen nicht Teil des Repositorys; jeder Beitrag ist über Kanal und ID
-> (`t.me/<kanal>/<id>`) öffentlich auffindbar.
+**[Interaktives Dashboard öffnen](https://persian-media-analysis-ijvfxggccjhs6zroefhwcc.streamlit.app/?lang=de)** · **[Ergebnisbericht](docs/de/bericht.md)** · [Analyse mit allen Diagrammen](docs/de/04_analyse.md)
 
-> **Einordnung:** Das Projekt ist vor allem technisch: Datenerhebung, Aufbereitung, Auszählung und ein belastbarer
-> Überblick über Wortwahl, Länder, Themen und Aktivität in sechs Kanälen. Es ist keine wissenschaftliche
-> Tiefenanalyse; eine solche Studie müsste die Beiträge einzeln lesen und einordnen und würde 100 Seiten und mehr
-> umfassen.
-> Am besten funktioniert das Projekt als Gruppenarbeit: Die Referenz für die Prüfung der KI und das Codebuch stammen
-> von **einer** Person und spiegeln ihre Sicht. Für belastbarere Ergebnisse sollten zwei bis drei persische
-> Muttersprachler (z. B. Iranisten) die Beiträge unabhängig voneinander kodieren, ihre Übereinstimmung untereinander
-> und mit der KI messen und die Kategorien des Codebuchs gemeinsam diskutieren. Das Codebuch lässt sich für andere
-> Fragestellungen und Institutionen anpassen (z. B. Sicherheit, Politikwissenschaft, politische Interessen und
-> Ideologie).
+![Anteil „zionistisches Regime“ an allen Bezeichnungen für Israel](results/timeline/charts/israel_zionist_regime_share.png)
 
-> **Wortwahl und Neutralität:** Die Auswertung bewertet nichts moralisch oder politisch. Begriffe – auch abwertende
-> oder feindselige – stehen so da, wie sie in den Quellen stehen, und werden gezählt und berichtet. Sie sind die
-> Wortwahl der Kanäle, nicht die Meinung des Autors; er hegt keine Feindseligkeit gegenüber Juden oder Amerikanern.
-> Die Texte bleiben wissenschaftlich und technisch und folgen den Quellen.
+**Drei Ergebnisse auf einen Blick**
+- Nach dem Zusammenbruch der Waffenruhe nennen staatliche und IRGC-nahe Kanäle Israel in 57 % bzw. 53 % der Nennungen „zionistisches Regime“; der reformorientierte Kanal Jamaran in 26 %.
+- Im Krieg sind je nach Gruppe 36–45 % der Beiträge militärisch (vor dem Krieg: 4–5 %).
+- IRGC-nahe Kanäle erreichen im Median 11.858 Aufrufe pro Beitrag; staatliche Kanäle 1.259 und Jamaran 1.593.
 
-> **Weitere Abfragen:** Um das Material für sich selbst zu verstehen, hat der Autor weitere SQL-Abfragen
-> ausgeführt. Sie und die zugehörigen Daten sind nicht auf GitHub: Das Projekt ist schon sehr umfangreich, und mehr
-> Material würde Leser ohne Vorkenntnis eher verwirren als ihnen helfen.
-
-> **Ergebnisbericht:** Die Ergebnisse zusammengefasst, mit den wichtigsten Zahlen:
-> [Wortwahl, Themen und Reichweite iranischer Nachrichtenkanäle auf Telegram](docs/de/bericht.md)
->
-> **Interaktives Dashboard:** die Ergebnisse als Diagramme, auf Deutsch und Englisch: [Dashboard öffnen](https://persian-media-analysis-ijvfxggccjhs6zroefhwcc.streamlit.app/?lang=de)
+> **Einordnung:** Das Projekt ist vor allem technisch – ein belastbarer Überblick, keine wissenschaftliche Tiefenanalyse. Details: [Einordnung und Hinweise](#einordnung-und-hinweise).
 
 ---
 
@@ -46,7 +28,7 @@ systematisch, überprüfbar und reproduzierbar auswerten?
 
 Wie unterscheiden sich staatliche, IRGC-nahe und reformorientierte Nachrichtenkanäle in **Umfang,
 Themenwahl, Wortwahl, Ton und Reichweite** – und wie verändern sich diese Muster rund um einschneidende
-Ereignisse?
+Ereignisse? (Den Ton hat die KI eingeordnet; er wird aber nicht zwischen den Gruppen verglichen, siehe Schritt 3.)
 
 ## Quellen
 
@@ -98,7 +80,7 @@ Ereignisse?
 - **Codebuch** mit operationalen Definitionen, weiterentwickelt über acht Versionen
 - **Kontext:** neutrales Hintergrundwissen zu Ereignissen, Akteuren, Völkerrecht und ein Glossar persischer Begriffe
 - **Modellvergleich** an 150 manuell geprüften Beiträgen: Gemma 4 (26B, 31B), Qwen 3.6 (27B, 35B), Qwen 2.5 (32B), Aya Expanse (32B)
-- **Gewähltes Modell: Gemma 4 31B** – am Testset 80,7 % exakte Übereinstimmung bei Thema und Ton; Cohens Kappa Thema 0,85, Ton 0,79
+- **Gewähltes Modell: Gemma 4 31B** – am Testset 80,7 % exakte Übereinstimmung bei Thema und Ton; Cohens Kappa (Übereinstimmung über den Zufall hinaus) Thema 0,85, Ton 0,79
 - **Hauptlauf:** geschichtete Stichprobe von 10.750 Beiträgen (50 pro Kanal und Woche), gewichtet hochgerechnet
 - **Endvalidierung an 200 neuen, blind kodierten Beiträgen:** Thema **72,5 %** richtig (95-%-Intervall 65,9–78,2 %), Thema und Ton 62,5 % – deutlich unter dem Testset, vermutlich weil das Codebuch dort entwickelt wurde
 - **Ehrliches Ergebnis:** Themen sind brauchbar (Militär eher über-, Diplomatie eher unterschätzt); den Ton übersieht die KI oft und je Gruppe verschieden stark – er wird deshalb nicht für Gruppenvergleiche verwendet
@@ -109,21 +91,21 @@ Ereignisse?
 - **Typische Begriffe** je Quellengruppe mit dem gewichteten Log-Odds-Verhältnis (Monroe et al. 2008) – ein Begriff zählt nur, wenn er für jeden Kanal der Gruppe typisch ist
 - **Benennungen:** wie jede Gruppe Israel, die USA, Gegner und Personen benennt; Wörter neben Trump und Netanjahu
 - **Welcher Khamenei?** Regelbasierte Zuordnung jeder Erwähnung des Führers zu Ali oder Mojtaba Khamenei, mit Stichproben geprüft
-- **Zeitreihen pro Woche** rund um Schlüsselereignisse – jede Spitze erklärt mit den Begriffen, die in dieser Woche typisch waren – sowie **Aktivität und Reichweite** (Beiträge, Aufrufe, Weiterleitungen)
+- **Zeitreihen pro Woche** rund um Schlüsselereignisse – fast jede Spitze lässt sich über die Begriffe, die in dieser Woche typisch waren, einem Ereignis zuordnen (eine Ausnahme, siehe [04](docs/de/04_analyse.md)) – sowie **Aktivität und Reichweite** (Beiträge, Aufrufe, Weiterleitungen)
 - **Länder und Verbündete:** 35 Länder und Gruppen (Golfstaaten, Libanon und Hisbollah, Irak, Jemen, Russland, China, Pakistan, Europa …) – wie oft, in welchen Wochen und wie jede Gruppe sie darstellt
 - **Themen laut KI:** gewichtete Anteile pro Gruppe und Phase, mit gemessener Trefferquote
 
 Ausgewählte Ergebnisse:
 - **Drei Gruppen:** Staatliche Kanäle sprechen als Regierung und Verwaltung (Sprecher, Minister, Sprache des Völkerrechts – „Aggression“, „Verurteilung“); IRGC-nahe Kanäle berichten über Raketen, Drohnen, Festnahmen und „Unruhen“; Jamaran über Verhandlungen, US-Politik, Atomfrage und Internet.
-- Nach dem Zusammenbruch der Waffenruhe nennen staatliche und IRGC-nahe Kanäle Israel in 57 % bzw. 53 % der Nennungen „zionistisches Regime“ (*rezhim-e sahyunisti*); bei Jamaran sind es 26 %, und „Israel“ ist dort über den ganzen Zeitraum mit 65 % die häufigste Bezeichnung.
-- Kein Kanal nennt Mojtaba Khamenei vor seiner Wahl am 08.03. Führer; auch danach betreffen 74 % (Waffenruhe) bzw. 79 % (nach dem Zusammenbruch) der Beiträge, die einen der beiden Khamenei nennen, den getöteten Ali Khamenei.
-- Die höchsten Werte für „Märtyrer“ und „Rache“ liegen nicht beim Kriegsbeginn, sondern in den Wochen der Trauerfeier und der Trauerzüge für Ali Khamenei (03.–10.07.).
-- Frühere Präsidenten und Minister des Reformlagers – Mohammad Khatami, Hassan Rouhani, Mohammad Javad Zarif – kommen bei Jamaran deutlich häufiger vor als in den anderen Gruppen; Präsident Masoud Pezeshkian wird im Krieg deutlich seltener genannt.
-- Mit Kriegsbeginn verschiebt sich der Blick auf die Region: Russland und China fallen in den IRGC-nahen Kanälen auf ein Drittel; Bahrain und Kuwait, vorher kaum genannt, werden zu Schauplätzen. Dasselbe Land sieht in jeder Gruppe anders aus – die VAE sind für die Staatsmedien ein Devisenplatz, für die IRGC-nahen Kanäle ein Angriffsziel (Hafen Fudschaira), für Jamaran ein Akteur der US-Politik.
-- Themen laut KI: Im Krieg sind 36–45 % der Beiträge militärisch (vorher 4–5 %); Jamaran hat in jeder Phase den höchsten Anteil an Diplomatie.
+- Nach dem Zusammenbruch der Waffenruhe nennen staatliche und IRGC-nahe Kanäle Israel in 57 % bzw. 53 % der Nennungen „zionistisches Regime“ (*rizhīm-i ṣahyūnīstī*); bei Jamaran sind es 26 %, und „Israel“ ist dort über den ganzen Zeitraum mit 65 % die häufigste Bezeichnung.
+- Kein Kanal nennt Mojtaba Khamenei vor seiner Wahl am 08.03. Führer. Auch danach bleibt der getötete Ali Khamenei präsenter: Von den Beiträgen über einen der beiden handeln 74 % (Waffenruhe) bzw. 79 % (nach dem Zusammenbruch) von ihm.
+- Die höchsten Werte für „Märtyrer“ und „Rache“ liegen nicht beim Kriegsbeginn, sondern in den Wochen der Trauerfeier und der Trauerzüge für Ali Khamenei (03.–10.07.), vier Monate nach seinem Tod am 28.02.
+- Frühere Präsidenten und Minister des Reformlagers – Mohammad Khatami, Hassan Rouhani, Mohammad Javad Zarif – kommen bei Jamaran deutlich häufiger vor als in den anderen Gruppen.
+- Präsident Masoud Pezeshkian wird im Krieg in allen Gruppen deutlich seltener genannt als davor.
+- Mit Kriegsbeginn richtet sich der Blick auf die Region: Russland und China werden in den IRGC-nahen Kanälen nur noch ein Drittel so oft genannt wie vor dem Krieg; Bahrain und Kuwait, vorher kaum genannt, werden zu Schauplätzen.
+- Dasselbe Land sieht in jeder Gruppe anders aus: Die VAE sind für die Staatsmedien ein Devisenplatz, für die IRGC-nahen Kanäle ein Angriffsziel (Hafen Fudschaira), für Jamaran ein Akteur der US-Politik.
+- Themen laut KI: Im Krieg sind je nach Gruppe 36–45 % der Beiträge militärisch (vorher 4–5 %); Jamaran hat in jeder Phase den höchsten Anteil an Diplomatie.
 - IRGC-nahe Kanäle erreichen im Median 11.858 Aufrufe pro Beitrag (staatliche Kanäle 1.259, Jamaran 1.593), werden im Verhältnis zu ihren Aufrufen aber seltener weitergeleitet.
-
-![Anteil „zionistisches Regime“ an allen Bezeichnungen für Israel](results/timeline/charts/israel_zionist_regime_share.png)
 
 Details, alle Diagramme und Grenzen: [04 – Analyse](docs/de/04_analyse.md)
 
@@ -175,6 +157,34 @@ persian-media-analysis/
 │   └── ai/              ← KI: Modellvergleich, Hauptlauf, Endvalidierung, Themen (ohne Beitragstexte; mit kurzen KI-Begründungen)
 └── data/                ← Rohdaten (nicht im Repository)
 ```
+
+---
+
+## Einordnung und Hinweise
+
+> **Hinweis:** Code, Methodik und Ergebnisse sind öffentlich. Die Rohtexte der Beiträge sind aus
+> urheberrechtlichen Gründen nicht Teil des Repositorys; jeder Beitrag ist über Kanal und ID
+> (`t.me/<kanal>/<id>`) öffentlich auffindbar.
+
+> **Einordnung:** Das Projekt ist vor allem technisch: Datenerhebung, Aufbereitung, Auszählung und ein belastbarer
+> Überblick über Wortwahl, Länder, Themen und Aktivität in sechs Kanälen. Es ist keine wissenschaftliche
+> Tiefenanalyse; eine solche Studie müsste die Beiträge einzeln lesen und einordnen und würde 100 Seiten und mehr
+> umfassen.
+> Am besten funktioniert das Projekt als Gruppenarbeit: Die Referenz für die Prüfung der KI und das Codebuch stammen
+> von **einer** Person und spiegeln ihre Sicht. Für belastbarere Ergebnisse sollten zwei bis drei persische
+> Muttersprachler (z. B. Iranisten) die Beiträge unabhängig voneinander kodieren, ihre Übereinstimmung untereinander
+> und mit der KI messen und die Kategorien des Codebuchs gemeinsam diskutieren. Das Codebuch lässt sich für andere
+> Fragestellungen und Institutionen anpassen (z. B. Sicherheit, Politikwissenschaft, politische Interessen und
+> Ideologie).
+
+> **Wortwahl und Neutralität:** Die Auswertung bewertet nichts moralisch oder politisch. Begriffe – auch abwertende
+> oder feindselige – stehen so da, wie sie in den Quellen stehen, und werden gezählt und berichtet. Sie sind die
+> Wortwahl der Kanäle, nicht die Meinung des Autors; er hegt keine Feindseligkeit gegenüber Juden oder Amerikanern.
+> Die Texte bleiben wissenschaftlich und technisch und folgen den Quellen.
+
+> **Weitere Abfragen:** Um das Material für sich selbst zu verstehen, hat der Autor weitere SQL-Abfragen
+> ausgeführt. Sie und die zugehörigen Daten sind nicht auf GitHub: Das Projekt ist schon sehr umfangreich, und mehr
+> Material würde Leser ohne Vorkenntnis eher verwirren als ihnen helfen.
 
 ---
 

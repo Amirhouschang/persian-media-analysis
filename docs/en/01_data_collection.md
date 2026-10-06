@@ -85,7 +85,7 @@ A dedicated check script tests the data on seven points and saves a report for e
 For IRNA, the January period was **specifically re-queried** with a separate script.
 Result: the posts are also missing directly on Telegram – the collection was complete; the gap lies in the channel itself.
 
-The January gaps at IRNA and Jamaran fall into early January, when internet access in Iran was heavily
+The January gaps at IRNA and Jamaran fall into mid-January, when internet access in Iran was heavily
 restricted during the protests. They are taken into account in the analysis
 (comparisons per day instead of absolute totals, January considered separately).
 
@@ -98,7 +98,7 @@ computing time. The data is reserved for a separate analysis.
 
 ### First observation from the weekly table
 Publishing activity rises sharply from late February for almost all channels
-and shows a second increase in July. IRNA hardly follows this pattern. Details will follow in 04 – Analysis.
+and shows a second increase in July. IRNA hardly follows this pattern. Details: [04 – Analysis](04_analysis.md).
 
 ---
 

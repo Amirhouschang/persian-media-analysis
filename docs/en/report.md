@@ -20,15 +20,15 @@ one reformist channel (Jamaran). The period includes the protests at the turn of
 and Iran from 28 Feb 2026, the ceasefire from 8 April and its collapse on 7/8 July. All posts were counted in full; in
 addition, a locally run language model assigned a topic to 10,750 posts.
 
-1. **Volume and topics** change strongly with the war. Averaged over the groups, a channel publishes 122–134 posts per day before the war, in the
-   first full week of the war (from 2 Mar) 321–423 (single channels: 227 at IRNA to 505 at Mehr News). The share of military posts rises from 4–5% to 36–45%, the share of domestic-politics
-   posts falls from 24–31% to 6–10% (AI classification).
+1. **Volume and topics** change strongly with the war. Before the war a channel publishes 122–134 posts per day, depending on the group, in the
+   first full week of the war (from 2 Mar) 321–423; for single channels this ranges from 227 (IRNA) to 505 (Mehr News).
+   According to the AI classification, the share of military posts rises from 4–5% to 36–45%, and the share of domestic-politics posts falls from 24–31% to 6–10%.
 2. **The highest values for "martyr" and "revenge"** are not at the start of the war but in the weeks of the funeral
    ceremony and processions for Ali Khamenei (3–10 July).
 3. **"Zionist regime"** makes up 57% (state) and 53% (IRGC-affiliated) of all designations for Israel after the collapse
    of the ceasefire, 26% at Jamaran; "Israel" is Jamaran's most frequent designation over the whole period at 65%.
-4. **Mojtaba Khamenei** is called "leader" by no channel before his election on 8 March. Of the posts about one of the two
-   Khameneis, 74% (ceasefire) and 79% (after the collapse) concern the killed Ali Khamenei.
+4. **Mojtaba Khamenei** is called "leader" by no channel before his election on 8 March. Even afterwards the killed Ali Khamenei stays more present:
+   of the posts about one of the two Khameneis, 74% (ceasefire) and 79% (after the collapse) are about him.
 5. **The three groups** differ in terms, topics and countries: the state channels use the language of government,
    administration and international law, the IRGC-affiliated channels that of weapons, targets and mobilisation, Jamaran
    that of negotiations, the US and the nuclear issue.
@@ -85,11 +85,13 @@ the official confirmation is set by the author, the dates of the funeral ceremon
   counted exactly once (1,501 terms). States, persons and actors were counted from an open list (113 terms with 188
   spellings in 10 categories). Unit: mentions **per 1,000 words**; time series per calendar week (starting Monday),
   complete weeks only.
-- **Typical terms:** weighted log-odds ratio with z-score (above 1.96 statistically clear). A term counts for a group only
+- **Typical terms:** Which terms does a group use clearly more often than the others? Measured with the weighted log-odds
+  ratio; the z-score gives the strength of the difference (above 1.96 statistically clear). A term counts for a group only
   if every one of its channels uses it more often. For peak weeks, one week is compared with all other weeks of the same
   group.
-- **Topics:** Gemma 4 31B (local), codebook v8, 10,750 posts, weighted to all 231,406 posts with more than 80 characters.
-  Final validation on 200 new, hand-coded posts: topic correct in 72.5% of cases (95% interval 65.9–78.2%; kappa 0.68).
+- **Topics:** A locally run language model (Gemma 4 31B, codebook v8) classified a sample of 10,750 posts. The sample is
+  weighted so that it stands for all 231,406 posts with more than 80 characters. Checked on 200 new, hand-coded posts:
+  topic correct in 72.5% of cases (95% interval 65.9–78.2%; kappa 0.68 – kappa measures agreement beyond chance).
 - **Tone:** not evaluated (kappa 0.46; the AI overlooks non-neutral tones, to a different degree in each group).
 
 ---
@@ -111,7 +113,7 @@ three groups ([04, section 7](04_analysis.md#7-topics-according-to-the-ai)).
 | Other (service, weather, sport, culture), state | 20.5 | 5.2 | 18.5 | 17.9 |
 
 - Jamaran has the highest share of diplomacy in every phase.
-- **Activity:** averaged over the groups, a channel publishes 122–134 posts per day before the war (single channels
+- **Activity:** before the war a channel publishes 122–134 posts per day, depending on the group (single channels
   109–178); in the first week of the war (from 2 Mar) 321–423 (IRNA 227, Mehr News 505). A second peak lies in the state and
   IRGC-affiliated channels in the weeks from 29 Jun and 6 Jul (funeral ceremony, collapse of the ceasefire), at Jamaran in
   the week from 13 Jul.
@@ -120,7 +122,7 @@ three groups ([04, section 7](04_analysis.md#7-topics-according-to-the-ai)).
 
 ### 2.2 January and February: protests, internet blackout, negotiations
 
-([04, section 5](04_analysis.md#5-change-over-time-what-happened-when) and [6](04_analysis.md#6-countries-and-allies)). Values for individual countries are mentions per 1,000 words, all groups together.
+Details: [04, section 5](04_analysis.md#5-change-over-time-what-happened-when) and [6](04_analysis.md#6-countries-and-allies). Values for individual countries are mentions per 1,000 words, all groups together.
 
 - **Opponent labels** (e.g. "rioters", "traitors", "counter-revolution"): highest value in the IRGC-affiliated channels in
   the week from 5 Jan (3.34 per 1,000 words). Typical for that week were, among others, "rioters", "protest", "food
@@ -136,7 +138,7 @@ three groups ([04, section 7](04_analysis.md#7-topics-according-to-the-ai)).
 
 ### 2.3 Start of the war and change of leader (28 Feb – 8 Mar)
 
-([04, section 4](04_analysis.md#4-which-khamenei-is-meant) and [3](04_analysis.md#3-how-the-channels-name))
+Details: [04, section 4](04_analysis.md#4-which-khamenei-is-meant) and [3](04_analysis.md#3-which-names-the-channels-use).
 
 - On 1 March, the day of the official confirmation, all six channels write "the martyr leader" (`رهبر شهید`) for the first
   time.
@@ -145,9 +147,9 @@ three groups ([04, section 7](04_analysis.md#7-topics-according-to-the-ai)).
   the IRGC-affiliated channels this week (1.60) is second; their highest value (1.79) lies in the week from 20 Jul, with no
   single event recognisable. Over the whole period about a third of the crime terms (32–37%) concern the strike on the
   elementary school in Minab.
-- All six channels name Mojtaba Khamenei in a sentence with "leader" for the first time on 8 March, the day of his
+- All six channels mention Mojtaba Khamenei in a sentence with "leader" for the first time on 8 March, the day of his
   election, none earlier. Jamaran and Mehr News write his name from 3 March, Tasnim from 5 March, not yet as leader.
-- Share of the posts that name one of the two Khameneis (22,897 posts, all six channels):
+- Share of the posts that mention one of the two Khameneis (22,897 posts, all six channels):
 
   | Phase | Ali Khamenei | Mojtaba Khamenei | both |
   |---|---|---|---|
@@ -155,12 +157,12 @@ three groups ([04, section 7](04_analysis.md#7-topics-according-to-the-ai)).
   | ceasefire | 74% | 22% | 4% |
   | after the collapse | 79% | 17% | 3% |
 
-- **President Pezeshkian** is named less often in the war: IRGC-affiliated 0.17 per 1,000 words (before the war 0.60, in
+- **President Pezeshkian** is mentioned less often in the war: IRGC-affiliated 0.17 per 1,000 words (before the war 0.60, in
   the ceasefire and after 0.37), state 0.26 (before 0.55).
 
 ### 2.4 Ceasefire and negotiations (8 Apr – 6 Jul)
 
-([04, section 5](04_analysis.md#5-change-over-time-what-happened-when) and [6](04_analysis.md#6-countries-and-allies)). Values for individual countries: all groups together.
+Details: [04, section 5](04_analysis.md#5-change-over-time-what-happened-when) and [6](04_analysis.md#6-countries-and-allies). Values for individual countries: all groups together.
 
 - **Trump:** in the week from 13 Apr (US naval blockade) "Trump" reaches its highest value in all groups: Jamaran 4.5,
   IRGC-affiliated 4.0, state 3.4.
@@ -178,13 +180,13 @@ three groups ([04, section 7](04_analysis.md#7-topics-according-to-the-ai)).
   from 11 May (typical: "Netanyahu", "trip", "secret", "denial" – reports of a secret visit by Netanyahu, with a denial).
 - **China:** highest value in the week from 11 May (1.81; typical: "Trump", "trip", "Xi Jinping", "Beijing" – Trump's trip
   to Beijing); 0.90 in the week from 18 May ("Putin", "trip").
-- **Internet:** from April to early June Jamaran names the internet more than five times as often as the other groups
+- **Internet:** from early April to mid-June (6 Apr – 14 Jun) Jamaran mentions the internet more than five times as often as the other groups
   (1.04 versus 0.17 and 0.20). Highest values: week from 11 May (1.74; "Internet Pro") and from 25 May (1.76;
   "reopening").
 
 ### 2.5 July: funeral ceremony and collapse of the ceasefire
 
-([04, section 5](04_analysis.md#5-change-over-time-what-happened-when) and [6](04_analysis.md#6-countries-and-allies))
+Details: [04, section 5](04_analysis.md#5-change-over-time-what-happened-when) and [6](04_analysis.md#6-countries-and-allies).
 
 | Week from | Value per 1,000 words | Typical terms of the week |
 |---|---|---|
@@ -195,17 +197,17 @@ three groups ([04, section 7](04_analysis.md#7-topics-according-to-the-ai)).
 - The highest values for "martyr" and "revenge" in the whole period lie in these weeks, not in the first week of the war
   (revenge terms then: IRGC-affiliated 0.89).
 - After the collapse of the ceasefire Kuwait (week from 13 Jul: 1.14), Bahrain (0.76) and Jordan (0.86) also reach their
-  highest values; typical for the posts about these countries were "Operation Blitz" (Kuwait: week from 20 Jul) and "fuel
+  highest values; typical for the posts about these countries were "Operation Thunderbolt" (Kuwait: week from 20 Jul) and "fuel
   tanks" (Bahrain, Jordan).
 - In the week from 29 Jun (funeral ceremony) Jamaran writes "Zionist regime" in 44% of the designations for Israel – the
   channel's highest value in the whole period (second highest: 39%, week from 20 Apr).
-- **Saudi Arabia** is named 1.35 per 1,000 words in the IRGC-affiliated channels after the collapse (before 0.30–0.44),
+- **Saudi Arabia** is mentioned 1.35 per 1,000 words in the IRGC-affiliated channels after the collapse (before 0.30–0.44),
   **Yemen** 1.00 (before 0.18–0.21), **Iraq** 1.45 (before 0.44–0.66). **Hezbollah** falls to 0.16–0.22 (ceasefire:
   0.59–1.20; before the war: 0.14–0.18).
 
 ### 2.6 Designations and persons
 
-([04, section 2](04_analysis.md#2-whom-the-channels-name) and [3](04_analysis.md#3-how-the-channels-name))
+Details: [04, section 2](04_analysis.md#2-whom-the-channels-mention) and [3](04_analysis.md#3-which-names-the-channels-use).
 
 Share of all designations for Israel:
 
@@ -225,15 +227,15 @@ Share of all designations for Israel:
 - **Words directly after "Trump":** "claims" 8.2% at Jamaran, 2.8% state, 3.0% IRGC-affiliated; "criminal" 1.4% in the
   IRGC-affiliated channels (state 0.5%); "gambler" 0.6% (among the 20 most frequent only in the IRGC-affiliated channels).
 - **Mentions per 1,000 words, whole period:** Trump 1.86 (state), 2.06 (IRGC-affiliated), 3.11 (Jamaran); Khatami
-  0.01 / 0.02 / 0.12. In absolute numbers Khatami is named 366 times at Jamaran, 122 times in the three state channels
+  0.01 / 0.02 / 0.12. In absolute numbers Khatami is mentioned 366 times at Jamaran, 122 times in the three state channels
   together.
 
 ### 2.7 Countries
 
-([04, section 6](04_analysis.md#6-countries-and-allies))
+Details: [04, section 6](04_analysis.md#6-countries-and-allies).
 
-About a quarter of all posts with text (67,669) name at least one country or group of the list ([04, section 6](04_analysis.md#6-countries-and-allies)). Named most
-often are Lebanon (20,759 mentions), Iraq (11,655) and Russia (10,056). The IRGC-affiliated channels name Hezbollah almost
+About a quarter of all posts with text (67,669) mention at least one country or group of the list ([04, section 6](04_analysis.md#6-countries-and-allies)). Named most
+often are Lebanon (20,759 mentions), Iraq (11,655) and Russia (10,056). The IRGC-affiliated channels mention Hezbollah almost
 twice as often as the others (0.85 versus 0.45 and 0.44).
 
 Mentions per 1,000 words by phase (for "all groups": lowest to highest value of the three groups):
@@ -261,7 +263,7 @@ The same country appears in the groups with different terms (typical terms of th
 
 ### 2.8 Profiles of the groups
 
-([04, section 1](04_analysis.md#1-what-each-group-writes-about))
+Details: [04, section 1](04_analysis.md#1-what-each-group-writes-about).
 
 - **State:** government spokespeople and diplomacy ("foreign ministry spokesman", "foreign minister"), the language of
   international law ("aggression", "condemnation", "United Nations"), administration and service (provinces, weather
@@ -274,7 +276,7 @@ The same country appears in the groups with different terms (typical terms of th
 
 ### 2.9 Activity and reach
 
-([04, section 8](04_analysis.md#8-activity-and-reach))
+Details: [04, section 8](04_analysis.md#8-activity-and-reach).
 
 | | state | IRGC-affiliated | Jamaran |
 |---|---|---|---|
@@ -297,7 +299,7 @@ collected.
   events is an interpretation based on the data and the timeline.
 - **Selection:** six channels on Telegram, the reformist camp represented by one channel only; opposition and exile
   media are not included. The results apply to these channels.
-- **The author's settings:** correction list, naming list, phase and event dates; other settings would give slightly
+- **The author's decisions:** correction list, naming list, phase and event dates; other decisions would give slightly
   different numbers.
 - **AI topics:** weighted sample, topic correct in 72.5% of cases; military rather overestimated, diplomacy rather
   underestimated; the reference and the codebook come from one person. Tone is not evaluated.
@@ -305,7 +307,10 @@ collected.
 - **Countries:** `عمان` means Oman and Amman; `آذربایجان` alone counts as the Republic of Azerbaijan but sometimes means
   Iranian provinces (value too high); Egypt is missing; part of the mentions of European countries concerns sport.
 - **January:** IRNA and Jamaran published hardly any posts in mid-January (internet blackout).
-- **Time zone:** days, weeks and phases are based on the UTC date of the posts (Tehran: UTC+3:30); only the AI topic shares use the Tehran date (there the ceasefire ends on 7 Jul instead of 6 Jul). By UTC date, 48 of 10,750 AI posts would fall into another phase (37 of them at this boundary), and the group shares would change by at most 1.5 percentage points.
+- **Time zone:** days, weeks and phases are based on the UTC date of the posts (Tehran: UTC+3:30). The only exception are
+  the AI topic shares: they use the Tehran date, where the ceasefire ends on 7 Jul instead of 6 Jul. The difference is
+  small: by UTC date, 48 of 10,750 AI posts would fall into another phase (37 of them at this boundary), and the group
+  shares would change by at most 1.5 percentage points.
 - **Scope of the project:** it is primarily technical and gives a reliable overview, not an in-depth scholarly analysis;
   such a study would read the posts individually and run to 100 pages or more. For firmer results, several native Persian
   speakers should code independently and discuss the codebook together.

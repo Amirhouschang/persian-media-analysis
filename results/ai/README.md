@@ -1,5 +1,8 @@
 # AI classification – published results
 
+This folder contains the result files of the AI classification: model comparison, main run, final validation and topic
+shares. This page explains each file. The method and the findings are in [03 – AI classification](../../docs/en/03_ai_classification.md).
+
 No post texts are included (copyright). The AI reasons (columns `reason` and `reason_ai`) are short and may repeat single phrases of a post. Every post can be opened via the `url` column (`t.me/<channel>/<id>`).
 All files are produced by `scripts/ai/03d_export_results.py`, except `topics/` (`scripts/ai/03e_topics.py`).
 
@@ -12,14 +15,14 @@ All files are produced by `scripts/ai/03d_export_results.py`, except `topics/` (
 |---|---|
 | `model_comparison_v8_summary.csv` | one row per model: agreement with manual coding (exact and including borderline cases) with 95% intervals, Cohen's kappa, seconds per post (median) – codebook v8 |
 | `model_comparison_v8_details.csv` | every single AI answer: channel, post ID, manual coding, AI coding, AI reasoning |
-| `model_comparison_v6_*.csv`, `model_comparison_v7_*.csv` | the same for codebook v6 and v7 (one model each) |
+| `model_comparison_v6_*.csv`, `model_comparison_v7_*.csv` | the same for codebook v6 and v7 (one model each); the v6 files are the run with the extended background (both 78.0%, see 03, "Dead end 1") |
 | `testset_labels.csv`, `testset2_labels.csv` | manual reference coding of test set 1 (29 posts) and test set 2 (150 posts): topic, optional secondary topic, tone |
 
 ## Main run (10,750 posts)
 
 | File | Content |
 |---|---|
-| `main_run_v8.csv` | AI result for every post of the stratified sample: channel, page, ID, date, week, `gewicht` (weight = posts of its channel-week / posts drawn), topic, tone, AI reasoning, model, codebook |
+| `main_run_v8.csv` | AI result for every post of the stratified sample: channel, source group (`seite`), ID, date, week, `gewicht` (weight = posts of its channel-week / posts drawn), topic, tone, AI reasoning, model, codebook |
 
 ## Final validation (phase C, 200 new posts coded blind)
 

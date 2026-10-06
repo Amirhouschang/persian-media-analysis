@@ -85,7 +85,7 @@ Ein eigenes Prüfskript kontrolliert die Daten auf sieben Punkte und speichert j
 Für IRNA wurde der Januar-Zeitraum mit einem separaten Skript **gezielt erneut abgefragt**.
 Ergebnis: Die Beiträge fehlen auch direkt auf Telegram – die Sammlung war vollständig, die Lücke liegt im Kanal selbst.
 
-Die Januar-Lücken bei IRNA und Jamaran fallen in den Zeitraum Anfang Januar, in dem der Internetzugang in Iran
+Die Januar-Lücken bei IRNA und Jamaran fallen in den Zeitraum Mitte Januar, in dem der Internetzugang in Iran
 während der Proteste stark eingeschränkt war. Sie werden in der Analyse berücksichtigt
 (Vergleiche pro Tag statt absoluter Summen, Januar gesondert betrachtet).
 
@@ -98,7 +98,7 @@ einen deutlich höheren Rechenaufwand. Die Daten sind für eine gesonderte Auswe
 
 ### Erste Beobachtung aus der Wochentabelle
 Die Veröffentlichungsaktivität steigt ab Ende Februar bei fast allen Kanälen deutlich an
-und zeigt einen zweiten Anstieg im Juli. IRNA folgt diesem Muster kaum. Details folgen in 04 – Analyse.
+und zeigt einen zweiten Anstieg im Juli. IRNA folgt diesem Muster kaum. Details: [04 – Analyse](04_analyse.md).
 
 ---
 
