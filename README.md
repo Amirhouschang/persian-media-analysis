@@ -76,7 +76,7 @@ tone and reach** – and how do these patterns change around key events?
 
 ![Database schema](images/database_schema.png)
 
-### 3. AI classification *(complete)*
+### 3. AI classification
 - Classification by **topic** (9 categories) and **tone** (6 categories) with **locally run language models** (`Ollama`) – the posts are not sent to a cloud (exception: the 150 posts of test set 2 were pre-coded with an AI assistant, see [06 – Methodology](docs/en/06_methodology.md))
 - **Codebook** with operational definitions, developed over eight versions
 - **Context:** neutral background on events, actors, international law and a glossary of Persian terms
@@ -87,7 +87,7 @@ tone and reach** – and how do these patterns change around key events?
 - **Honest result:** topics are usable (military rather over-, diplomacy rather underestimated); the AI often misses the tone, and to a different degree for each group – tone is therefore not used for comparisons between groups
 - The full process, including dead ends: [03 – AI classification](docs/en/03_ai_classification.md)
 
-### 4. Analysis *(complete)*
+### 4. Analysis
 - Complete corpus, counted per 1,000 words; fixed terms found **without a predefined word list**, author's corrections kept openly in one file
 - **Typical terms** per source group with the weighted log-odds ratio (Monroe et al. 2008) – a term only counts if it is typical for every channel of the group
 - **Naming:** how each group names Israel, the USA, opponents and persons; words next to Trump and Netanyahu
