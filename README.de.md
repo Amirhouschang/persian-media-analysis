@@ -75,7 +75,7 @@ Ereignisse? (Den Ton hat die KI eingeordnet; er wird aber nicht zwischen den Gru
 
 ![Datenbankschema](images/database_schema.png)
 
-### 3. KI-Einordnung *(abgeschlossen)*
+### 3. KI-Einordnung
 - Einordnung nach **Thema** (9 Kategorien) und **Ton** (6 Kategorien) mit **lokal betriebenen Sprachmodellen** (`Ollama`) – die Beiträge werden nicht an eine Cloud gesendet (Ausnahme: Die 150 Beiträge von Testset 2 wurden mit einem KI-Assistenten vorkodiert, siehe [06 – Methodik](docs/de/06_methodik.md))
 - **Codebuch** mit operationalen Definitionen, weiterentwickelt über acht Versionen
 - **Kontext:** neutrales Hintergrundwissen zu Ereignissen, Akteuren, Völkerrecht und ein Glossar persischer Begriffe
@@ -86,7 +86,7 @@ Ereignisse? (Den Ton hat die KI eingeordnet; er wird aber nicht zwischen den Gru
 - **Ehrliches Ergebnis:** Themen sind brauchbar (Militär eher über-, Diplomatie eher unterschätzt); den Ton übersieht die KI oft und je Gruppe verschieden stark – er wird deshalb nicht für Gruppenvergleiche verwendet
 - Der ganze Weg inklusive Irrwege: [03 – KI-Einordnung](docs/de/03_ki_einordnung.md)
 
-### 4. Analyse *(abgeschlossen)*
+### 4. Analyse
 - Vollständiges Korpus, gezählt pro 1.000 Wörter; feste Begriffe **ohne vorgegebene Wortliste** gefunden, Korrekturen des Autors offen in einer Datei
 - **Typische Begriffe** je Quellengruppe mit dem gewichteten Log-Odds-Verhältnis (Monroe et al. 2008) – ein Begriff zählt nur, wenn er für jeden Kanal der Gruppe typisch ist
 - **Benennungen:** wie jede Gruppe Israel, die USA, Gegner und Personen benennt; Wörter neben Trump und Netanjahu
